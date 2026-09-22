@@ -594,8 +594,8 @@
         <div class="bg-slate-900 border border-slate-800 rounded-2xl p-4 flex flex-col justify-between shadow-xl">
           <div>
             <span class="text-xs font-mono font-bold uppercase tracking-wider text-amber-400 bg-amber-950 border border-amber-800 px-2 py-0.5 rounded">Projected Run Duration</span>
-            <div class="text-3xl sm:text-4xl font-black text-white font-athletic mt-2">62 MINUTES</div>
-            <p class="text-xs text-slate-400">Based on assigned 20:00/mi speed-walk pace.</p>
+            <div id="simTime" class="text-3xl sm:text-4xl font-black text-white font-athletic mt-2">62 MINUTES</div>
+            <p id="simPaceNote" class="text-xs text-slate-400">Based on assigned 20:00/mi speed-walk pace.</p>
           </div>
           <div class="mt-3 pt-3 border-t border-slate-800 space-y-1.5 text-xs">
             <div class="flex justify-between">
@@ -604,7 +604,7 @@
             </div>
             <div class="flex justify-between">
               <span class="text-slate-400">Pints Poured (9 Teams):</span>
-              <span class="text-amber-400 font-bold">27 PINTS</span>
+              <span id="simPints" class="text-amber-400 font-bold">27 PINTS</span>
             </div>
           </div>
         </div>
@@ -617,11 +617,11 @@
               <span class="text-xs font-mono font-bold uppercase tracking-wider text-slate-950 bg-amber-400 px-2 py-0.5 rounded font-black">Estimated Tab</span>
               <span class="text-xs text-slate-400">$7.00 / pint</span>
             </div>
-            <div class="text-4xl sm:text-5xl font-black text-amber-400 font-athletic mt-2 tracking-tight">$189.00</div>
-            <p class="text-xs text-slate-300 mt-1">Dowdle fucking sucks' wallet on the line for 9 thirsty league mates waiting at the finish line.</p>
+            <div id="simTabAmt" class="text-4xl sm:text-5xl font-black text-amber-400 font-athletic mt-2 tracking-tight">$189.00</div>
+            <p id="simDesc" class="text-xs text-slate-300 mt-1">Dowdle fucking sucks' wallet on the line for 9 thirsty league mates waiting at the finish line.</p>
           </div>
           <div class="mt-3 pt-3 border-t border-slate-800/80 text-[11px] text-slate-400 flex items-center justify-between">
-            <span>9 members × 3.0 pints</span>
+            <span id="simPintsCalc">9 members × 3.0 pints</span>
             <span class="text-emerald-400 font-bold">+ Tip & Tax</span>
           </div>
         </div>
@@ -633,48 +633,48 @@
           <h3 class="text-xs font-bold uppercase tracking-wider text-slate-300 flex items-center gap-1.5">
             <span>⚙️</span> Simulate What Other Franchises Would Pay If They Finish 10th
           </h3>
-          <button onclick="resetToPedro()" class="text-xs text-amber-400 hover:text-white font-bold transition">
+          <button onclick="resetToPedro(this)" class="text-xs text-amber-400 hover:text-white font-bold transition">
             ↺ Reset to Dowdle fucking sucks (Current 10th)
           </button>
         </div>
         <div class="grid grid-cols-2 sm:grid-cols-5 gap-2" id="teamSimulatorBtns">
-          <button onclick="simulateTeam('Dowdle fucking sucks', 20, 62, 27, 189)" class="sim-btn text-left p-2.5 rounded-xl border border-red-500 border-2 bg-slate-950 hover:bg-slate-800 transition">
+          <button onclick="simulateTeam('Dowdle fucking sucks', 20, 62, 27, 189, this)" class="sim-btn text-left p-2.5 rounded-xl border border-red-500 border-2 bg-slate-950 hover:bg-slate-800 transition">
             <div class="text-[11px] font-bold text-white truncate">Dowdle fucking sucks</div>
             <div class="text-[10px] text-red-400 font-mono font-bold">$189.00 • 20m pace</div>
           </button>
-          <button onclick="simulateTeam('CULT OF THE LAMB', 18, 55, 24, 168)" class="sim-btn text-left p-2.5 rounded-xl border border-slate-800 bg-slate-950 hover:bg-slate-800 transition">
+          <button onclick="simulateTeam('CULT OF THE LAMB', 18, 55, 24, 168, this)" class="sim-btn text-left p-2.5 rounded-xl border border-slate-800 bg-slate-950 hover:bg-slate-800 transition">
             <div class="text-[11px] font-bold text-white truncate">CULT OF THE LAMB</div>
             <div class="text-[10px] text-slate-400 font-mono">$168.00 • 18m pace</div>
           </button>
-          <button onclick="simulateTeam('1 4 Ma’homies', 15, 46, 20, 140)" class="sim-btn text-left p-2.5 rounded-xl border border-slate-800 bg-slate-950 hover:bg-slate-800 transition">
+          <button onclick="simulateTeam('1 4 Ma’homies', 15, 46, 20, 140, this)" class="sim-btn text-left p-2.5 rounded-xl border border-slate-800 bg-slate-950 hover:bg-slate-800 transition">
             <div class="text-[11px] font-bold text-white truncate">1 4 Ma’homies</div>
             <div class="text-[10px] text-slate-400 font-mono">$140.00 • 15m pace</div>
           </button>
-          <button onclick="simulateTeam('Saquon Deez Nacuas', 15, 46, 20, 140)" class="sim-btn text-left p-2.5 rounded-xl border border-slate-800 bg-slate-950 hover:bg-slate-800 transition">
+          <button onclick="simulateTeam('Saquon Deez Nacuas', 15, 46, 20, 140, this)" class="sim-btn text-left p-2.5 rounded-xl border border-slate-800 bg-slate-950 hover:bg-slate-800 transition">
             <div class="text-[11px] font-bold text-white truncate">Saquon Deez Nacuas</div>
             <div class="text-[10px] text-slate-400 font-mono">$140.00 • 15m pace</div>
           </button>
-          <button onclick="simulateTeam('TheGreatSwagsby', 12, 37, 16, 112)" class="sim-btn text-left p-2.5 rounded-xl border border-slate-800 bg-slate-950 hover:bg-slate-800 transition">
+          <button onclick="simulateTeam('TheGreatSwagsby', 12, 37, 16, 112, this)" class="sim-btn text-left p-2.5 rounded-xl border border-slate-800 bg-slate-950 hover:bg-slate-800 transition">
             <div class="text-[11px] font-bold text-white truncate">TheGreatSwagsby</div>
             <div class="text-[10px] text-slate-400 font-mono">$112.00 • 12m pace</div>
           </button>
-          <button onclick="simulateTeam('Show me dem TDs', 15, 46, 20, 140)" class="sim-btn text-left p-2.5 rounded-xl border border-slate-800 bg-slate-950 hover:bg-slate-800 transition">
+          <button onclick="simulateTeam('Show me dem TDs', 15, 46, 20, 140, this)" class="sim-btn text-left p-2.5 rounded-xl border border-slate-800 bg-slate-950 hover:bg-slate-800 transition">
             <div class="text-[11px] font-bold text-white truncate">Show me dem TDs</div>
             <div class="text-[10px] text-slate-400 font-mono">$140.00 • 15m pace</div>
           </button>
-          <button onclick="simulateTeam('Brock To The Future', 13, 40, 18, 126)" class="sim-btn text-left p-2.5 rounded-xl border border-slate-800 bg-slate-950 hover:bg-slate-800 transition">
+          <button onclick="simulateTeam('Brock To The Future', 13, 40, 18, 126, this)" class="sim-btn text-left p-2.5 rounded-xl border border-slate-800 bg-slate-950 hover:bg-slate-800 transition">
             <div class="text-[11px] font-bold text-white truncate">Brock To The Future</div>
             <div class="text-[10px] text-slate-400 font-mono font-bold text-amber-400">$126.00 • 13m pace</div>
           </button>
-          <button onclick="simulateTeam('MyDakMakesHerWaddle', 15, 46, 20, 140)" class="sim-btn text-left p-2.5 rounded-xl border border-slate-800 bg-slate-950 hover:bg-slate-800 transition">
+          <button onclick="simulateTeam('MyDakMakesHerWaddle', 15, 46, 20, 140, this)" class="sim-btn text-left p-2.5 rounded-xl border border-slate-800 bg-slate-950 hover:bg-slate-800 transition">
             <div class="text-[11px] font-bold text-white truncate">MyDakMakesHerWaddle</div>
             <div class="text-[10px] text-slate-400 font-mono">$140.00 • 15m pace</div>
           </button>
-          <button onclick="simulateTeam('Njigbas in Paris', 18, 55, 24, 168)" class="sim-btn text-left p-2.5 rounded-xl border border-slate-800 bg-slate-950 hover:bg-slate-800 transition">
+          <button onclick="simulateTeam('Njigbas in Paris', 18, 55, 24, 168, this)" class="sim-btn text-left p-2.5 rounded-xl border border-slate-800 bg-slate-950 hover:bg-slate-800 transition">
             <div class="text-[11px] font-bold text-white truncate">Njigbas in Paris</div>
             <div class="text-[10px] text-slate-400 font-mono">$168.00 • 18m pace</div>
           </button>
-          <button onclick="simulateTeam('Amon-Ra’s Maye-hem', 13, 40, 18, 126)" class="sim-btn text-left p-2.5 rounded-xl border border-slate-800 bg-slate-950 hover:bg-slate-800 transition">
+          <button onclick="simulateTeam('Amon-Ra’s Maye-hem', 13, 40, 18, 126, this)" class="sim-btn text-left p-2.5 rounded-xl border border-slate-800 bg-slate-950 hover:bg-slate-800 transition">
             <div class="text-[11px] font-bold text-white truncate">Amon-Ra’s Maye-hem</div>
             <div class="text-[10px] text-slate-400 font-mono font-bold text-amber-400">$126.00 • 13m pace</div>
           </button>
@@ -3370,7 +3370,7 @@
             </div>
             <div class="flex items-baseline gap-3 my-2">
               <span class="text-5xl font-black font-athletic text-amber-400" id="dedicatedTabAmt">$189.00</span>
-              <span class="text-xs text-slate-400 uppercase font-bold tracking-wider">Estimated Tab on Dowdle fucking sucks' Card</span>
+              <span class="text-xs text-slate-400 uppercase font-bold tracking-wider" id="dedicatedTabTeam">Estimated Tab on Dowdle fucking sucks' Card</span>
             </div>
             <div class="grid grid-cols-3 gap-2.5 mt-3 text-center">
               <div class="bg-slate-950/80 p-2.5 rounded-xl border border-slate-800">
@@ -3390,7 +3390,7 @@
               </div>
             </div>
           </div>
-          <p class="text-xs text-amber-300/90 mt-3 bg-slate-950/70 p-2.5 rounded-lg border border-slate-800">
+          <p class="text-xs text-amber-300/90 mt-3 bg-slate-950/70 p-2.5 rounded-lg border border-slate-800" id="dedicatedGrace">
             🍻 <em>Casual Drinker Grace:</em> Even with everyone pacing themselves and nursing their $7 craft drafts, taking 62 minutes to show up leaves Dowdle fucking sucks on the hook for a $189 tab.
           </p>
         </div>
@@ -5045,37 +5045,73 @@
     }
 
     // Bar Tab Simulator
-    function simulateTeam(teamName, pace, mins, pints, tab, manager) {
+    function simulateTeam(teamName, pace, mins, pints, tab, btnElement) {
       document.querySelectorAll('.sim-btn').forEach(b => {
         b.classList.remove('border-red-500', 'border-2');
         b.classList.add('border-slate-800');
       });
-      if (event && event.currentTarget) {
-        event.currentTarget.classList.remove('border-slate-800');
-        event.currentTarget.classList.add('border-red-500', 'border-2');
+
+      // Highlight active button
+      let targetBtn = btnElement;
+      if (!targetBtn && typeof window !== 'undefined' && window.event && window.event.currentTarget) {
+        targetBtn = window.event.currentTarget;
+      }
+      if (!targetBtn) {
+        document.querySelectorAll('.sim-btn').forEach(b => {
+          if (b.innerText && b.innerText.includes(teamName)) {
+            targetBtn = b;
+          }
+        });
+      }
+      if (targetBtn) {
+        targetBtn.classList.remove('border-slate-800');
+        targetBtn.classList.add('border-red-500', 'border-2');
       }
 
-      const tabElem = document.querySelector('.font-athletic.text-amber-400');
-      if (tabElem) tabElem.innerText = '$' + tab.toFixed(2);
+      const formattedTab = '$' + Number(tab).toFixed(2);
+      const formattedMins = mins + ' MINUTES';
+      const formattedPints = pints + ' PINTS';
 
-      const minsElem = document.querySelector('.text-base.sm\\:text-lg.font-black.text-white.font-athletic');
-      if (minsElem) minsElem.innerText = mins + ' MINUTES';
+      // Update Slide 3 (Week 2) metrics
+      const tabElem = document.getElementById('simTabAmt');
+      if (tabElem) tabElem.innerText = formattedTab;
 
-      const pintsElem = document.querySelector('.text-base.sm\\:text-lg.font-black.text-amber-400.font-athletic');
-      if (pintsElem) pintsElem.innerText = pints + ' PINTS';
+      const minsElem = document.getElementById('simTime');
+      if (minsElem) minsElem.innerText = formattedMins;
 
-      // Also update dedicated tab view if present
+      const pintsElem = document.getElementById('simPints');
+      if (pintsElem) pintsElem.innerText = formattedPints;
+
+      const paceElem = document.getElementById('simPaceNote');
+      if (paceElem) paceElem.innerText = `Based on assigned ${pace}:00/mi speed-walk pace.`;
+
+      const descElem = document.getElementById('simDesc');
+      if (descElem) descElem.innerText = `${teamName}'s wallet on the line for 9 thirsty league mates waiting at the finish line.`;
+
+      const pintsCalcElem = document.getElementById('simPintsCalc');
+      if (pintsCalcElem) {
+        const pintsPerTeam = (pints / 9).toFixed(1);
+        pintsCalcElem.innerText = `9 members × ${pintsPerTeam} pints`;
+      }
+
+      // Also update View 2 Dedicated Tab elements if present
       const dTab = document.getElementById('dedicatedTabAmt');
-      if (dTab) dTab.innerText = '$' + tab.toFixed(2);
+      if (dTab) dTab.innerText = formattedTab;
       const dTime = document.getElementById('dedicatedTime');
-      if (dTime) dTime.innerText = mins + ' MINUTES';
+      if (dTime) dTime.innerText = formattedMins;
       const dPints = document.getElementById('dedicatedPints');
-      if (dPints) dPints.innerText = pints + ' PINTS';
+      if (dPints) dPints.innerText = formattedPints;
+      const dTeam = document.getElementById('dedicatedTabTeam');
+      if (dTeam) dTeam.innerText = `Estimated Tab on ${teamName}'s Card`;
+      const dGrace = document.getElementById('dedicatedGrace');
+      if (dGrace) dGrace.innerHTML = `🍻 <em>Casual Drinker Grace:</em> Even with everyone pacing themselves and nursing their $7 craft drafts, taking ${mins} minutes to show up leaves ${teamName} on the hook for a ${formattedTab} tab.`;
     }
 
-    function resetToPedro() {
-      simulateTeam('Dowdle fucking sucks', 20, 62, 27, 189, 'GuyNamedPedro');
+    function resetToPedro(btnElement) {
+      const defaultBtn = btnElement || document.querySelector('#teamSimulatorBtns .sim-btn');
+      simulateTeam('Dowdle fucking sucks', 20, 62, 27, 189, defaultBtn);
     }
+    function resetToDowdle() { resetToPedro(); }
   </script>
 </body>
 </html>
