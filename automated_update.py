@@ -226,10 +226,34 @@ def deploy_to_netlify(site_id, token, website_dir):
         print(f"❌ Deploy error: {e}")
         return False
 
+# 7. Push to GitHub to trigger Netlify auto-deployment
+def push_to_github(website_dir):
+    try:
+        import subprocess
+        git_dir = os.path.join(website_dir, '.git')
+        if not os.path.exists(git_dir):
+            return
+        print("\nSyncing with GitHub repository...")
+        subprocess.run(['git', 'add', '.'], cwd=website_dir, check=True)
+        now_str = datetime.now().strftime('%b %d, %Y • %I:%M %p')
+        res = subprocess.run(['git', 'commit', '-m', f'Auto-update: {now_str}'], cwd=website_dir, capture_output=True, text=True)
+        if "nothing to commit" in res.stdout or "nothing to commit" in res.stderr:
+            print("   Git: Working tree clean (no new changes to commit).")
+        else:
+            print("   Git: Committed changes. Pushing to GitHub (origin main)...")
+            push_res = subprocess.run(['git', 'push', 'origin', 'main'], cwd=website_dir, capture_output=True, text=True)
+            if push_res.returncode == 0:
+                print("   🎉 Successfully pushed to GitHub! Netlify is auto-deploying to ffucleague.com.")
+            else:
+                print(f"   Git push warning: {push_res.stderr.strip()}")
+    except Exception as e:
+        print(f"   Git push notice: {e}")
+
 # Run deploy if credentials exist
 site_id = config.get("netlify_site_id")
 token = config.get("netlify_token")
 deploy_to_netlify(site_id, token, SCRIPT_DIR)
+push_to_github(SCRIPT_DIR)
 
 print("\n==================================================")
 print("AUTOMATION SCRIPT EXECUTION COMPLETED")
