@@ -1,0 +1,10 @@
+# Python cache
+__pycache__/
+*.pyc
+
+# Local backup files
+*.backup.html
+*.tmp
+
+# Cache files
+# players_cache.json is 14MB; optional to commit or ignore

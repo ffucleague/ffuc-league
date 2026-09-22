@@ -1,0 +1,112 @@
+{
+  "league_id": "1389724575532613632",
+  "pickem_id": "1402701854898450432",
+  "domain": "ffucleague.com",
+  "netlify_site_id": "",
+  "netlify_token": "",
+  "managers": {
+    "1": {
+      "name": "Mark",
+      "username": "fattymcfatty",
+      "titles": [
+        2017,
+        2021
+      ],
+      "draft_pick": 8
+    },
+    "2": {
+      "name": "Joey",
+      "username": "TheGreatSwagsby",
+      "titles": [
+        2024
+      ],
+      "draft_pick": 3
+    },
+    "3": {
+      "name": "Pedro",
+      "username": "GuyNamedPedro",
+      "titles": [],
+      "draft_pick": 10
+    },
+    "4": {
+      "name": "Franky",
+      "username": "ChanciscoFravez",
+      "titles": [
+        2016,
+        2022,
+        2023
+      ],
+      "draft_pick": 9
+    },
+    "5": {
+      "name": "Eric",
+      "username": "emedina13",
+      "titles": [],
+      "draft_pick": 6
+    },
+    "6": {
+      "name": "Herrador",
+      "username": "DirtyDirties",
+      "titles": [
+        2018,
+        2019,
+        2020
+      ],
+      "draft_pick": 4
+    },
+    "7": {
+      "name": "Arnulfo",
+      "username": "AEscamilla94",
+      "titles": [],
+      "draft_pick": 1
+    },
+    "8": {
+      "name": "iRob",
+      "username": "irobgarza16",
+      "titles": [],
+      "draft_pick": 5
+    },
+    "9": {
+      "name": "Alex",
+      "username": "abarrera731",
+      "titles": [],
+      "draft_pick": 7
+    },
+    "10": {
+      "name": "Robert",
+      "username": "YaBoyRoZ",
+      "titles": [
+        2025
+      ],
+      "draft_pick": 2
+    }
+  },
+  "bounties": {
+    "1": "Most Points ($10)",
+    "2": "Highest Scoring QB ($10)",
+    "3": "Highest Scoring RB ($10)",
+    "4": "Highest Scoring WR ($10)",
+    "5": "Highest Scoring TE ($10)",
+    "6": "Highest Scoring DEF ($10)",
+    "7": "Narrowest Victory ($10)",
+    "8": "Biggest Blowout ($10)",
+    "9": "Highest Scoring Flex ($10)",
+    "10": "Highest Scoring Kicker ($10)",
+    "11": "Highest Scoring Bench Player ($10)",
+    "12": "Most Total Touchdowns ($10)",
+    "13": "Highest Scoring QB+WR Stack ($10)",
+    "14": "Most Points Overall ($10)"
+  },
+  "paces": {
+    "1": 15,
+    "2": 12,
+    "3": 20,
+    "4": 18,
+    "5": 15,
+    "6": 13,
+    "7": 15,
+    "8": 18,
+    "9": 13,
+    "10": 15
+  }
+}

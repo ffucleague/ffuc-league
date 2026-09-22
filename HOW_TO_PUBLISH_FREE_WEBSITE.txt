@@ -1,0 +1,35 @@
+===================================================================
+F.F.U.C. FANTASY LEAGUE - HOW TO PUBLISH YOUR FREE WEBSITE IN 30 SECONDS
+===================================================================
+
+Your website is 100% ready in this folder (index.html).
+Because all fonts, team logos, and charts are built right into index.html,
+it requires ZERO setup, ZERO databases, and is 100% FREE forever.
+
+-------------------------------------------------------------------
+METHOD 1: NETLIFY DROP (EASIEST - NO ACCOUNT REQUIRED TO TEST)
+-------------------------------------------------------------------
+1. Open Google Chrome or any browser.
+2. Go to: https://app.netlify.com/drop
+3. Drag this entire folder ("FFUC_Website") and drop it into the browser window.
+4. Within 5 seconds, Netlify will generate a live HTTPS link!
+   Example: https://ffuc-commissioner-report.netlify.app
+5. You can change the link name in Site Settings -> Change Site Name.
+6. Copy the link and paste it into the Sleeper chat!
+
+-------------------------------------------------------------------
+METHOD 2: GITHUB PAGES (PERMANENT & FREE)
+-------------------------------------------------------------------
+1. Go to https://github.com and create a free repository named "ffuc".
+2. Upload this "index.html" file.
+3. In Settings -> Pages, select "Deploy from Branch: main".
+4. Your site will be live at: https://<your-username>.github.io/ffuc/
+
+-------------------------------------------------------------------
+IN SLEEPER CHAT:
+-------------------------------------------------------------------
+Post the link in your league chat or pin it as the Commissioner Announcement.
+When your league mates tap the link, it opens instantly inside Sleeper's
+mobile browser with crisp, crystal-clear text, mobile swipe gestures,
+and the live interactive bar tab calculator!
+===================================================================
