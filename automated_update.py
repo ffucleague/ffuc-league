@@ -177,56 +177,7 @@ try:
 except Exception as e:
     print(f"Notice on timestamp update: {e}")
 
-# 6. Deploy to Netlify function
-def deploy_to_netlify(site_id, token, website_dir):
-    if not site_id or not token:
-        print("\n⚠️ Netlify auto-deployment skipped: 'netlify_site_id' or 'netlify_token' not set in config.json.")
-        print("   (Local files updated successfully in Desktop/FFUC_Website).")
-        return False
-
-    print(f"\nPackaging and deploying live to Netlify (Site ID: {site_id})...")
-    
-    # Create in-memory zip
-    zip_buffer = io.BytesIO()
-    with zipfile.ZipFile(zip_buffer, 'w', zipfile.ZIP_DEFLATED) as zf:
-        for root, dirs, files in os.walk(website_dir):
-            for file in files:
-                if file.endswith(('.html', '.png', '.jpg', '.jpeg', '.svg', '.css', '.js', '.json', '.txt', '.pdf', '.toml')):
-                    file_path = os.path.join(root, file)
-                    arcname = os.path.relpath(file_path, website_dir)
-                    zf.write(file_path, arcname)
-    
-    zip_buffer.seek(0)
-    zip_data = zip_buffer.read()
-
-    url = f"https://api.netlify.com/api/v1/sites/{site_id}/deploys"
-    req = urllib.request.Request(
-        url,
-        data=zip_data,
-        headers={
-            'Authorization': f'Bearer {token}',
-            'Content-Type': 'application/zip',
-            'User-Agent': 'FFUC-Automation-Bot/1.0'
-        },
-        method='POST'
-    )
-    
-    try:
-        with urllib.request.urlopen(req) as resp:
-            data = json.loads(resp.read().decode('utf-8'))
-            deploy_url = data.get('deploy_ssl_url') or data.get('ssl_url') or 'https://ffucleague.com'
-            print(f"🎉 DEPLOYMENT SUCCESSFUL!")
-            print(f"   Live at: {deploy_url}")
-            print(f"   State: {data.get('state')}")
-            return True
-    except urllib.error.HTTPError as e:
-        print(f"❌ Netlify API Error: {e.code} - {e.read().decode('utf-8', errors='ignore')}")
-        return False
-    except Exception as e:
-        print(f"❌ Deploy error: {e}")
-        return False
-
-# 7. Push to GitHub to trigger Netlify auto-deployment
+# 6. Push to GitHub (automatically publishes live via GitHub Pages to ffucleague.com)
 def push_to_github(website_dir):
     try:
         import subprocess
@@ -243,16 +194,12 @@ def push_to_github(website_dir):
             print("   Git: Committed changes. Pushing to GitHub (origin main)...")
             push_res = subprocess.run(['git', 'push', 'origin', 'main'], cwd=website_dir, capture_output=True, text=True)
             if push_res.returncode == 0:
-                print("   🎉 Successfully pushed to GitHub! Netlify is auto-deploying to ffucleague.com.")
+                print("   🎉 Successfully pushed to GitHub! Site is automatically published live to ffucleague.com.")
             else:
                 print(f"   Git push warning: {push_res.stderr.strip()}")
     except Exception as e:
         print(f"   Git push notice: {e}")
 
-# Run deploy if credentials exist
-site_id = config.get("netlify_site_id")
-token = config.get("netlify_token")
-deploy_to_netlify(site_id, token, SCRIPT_DIR)
 push_to_github(SCRIPT_DIR)
 
 print("\n==================================================")
