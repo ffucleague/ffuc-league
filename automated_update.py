@@ -19,8 +19,6 @@ default_config = {
     "league_id": "1389724575532613632",
     "pickem_id": "1402701854898450432",
     "domain": "ffucleague.com",
-    "netlify_site_id": "",
-    "netlify_token": "",
     "bounties": {
         "1": "Most Points ($10)",
         "2": "Highest Scoring QB ($10)",
