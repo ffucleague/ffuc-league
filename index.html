@@ -205,8 +205,8 @@
         <button onclick="goToSlide(5)" class="nav-pill px-3 py-1.5 rounded-full text-xs font-semibold whitespace-nowrap transition bg-slate-900 text-slate-400 hover:text-white">6. 📈 Power Rankings</button>
         <button onclick="goToSlide(6)" class="nav-pill px-3 py-1.5 rounded-full text-xs font-semibold whitespace-nowrap transition bg-slate-900 text-slate-400 hover:text-white">7. 💰 FAAB Receipts</button>
         <button onclick="goToSlide(7)" class="nav-pill px-3 py-1.5 rounded-full text-xs font-semibold whitespace-nowrap transition bg-slate-900 text-slate-400 hover:text-white">8. 🎯 Pick-em ($45)</button>
-        <button onclick="goToSlide(8)" class="nav-pill px-3 py-1.5 rounded-full text-xs font-semibold whitespace-nowrap transition bg-slate-900 text-slate-400 hover:text-white">9. 🚀 Booms</button>
-        <button onclick="goToSlide(9)" class="nav-pill px-3 py-1.5 rounded-full text-xs font-semibold whitespace-nowrap transition bg-slate-900 text-slate-400 hover:text-white">10. 👻 Busts</button>
+        <button onclick="goToSlide(8)" class="nav-pill px-3 py-1.5 rounded-full text-xs font-semibold whitespace-nowrap transition bg-slate-900 text-slate-400 hover:text-white">9. 💥 Booms & Busts</button>
+        <button onclick="goToSlide(9)" class="nav-pill px-3 py-1.5 rounded-full text-xs font-semibold whitespace-nowrap transition bg-slate-900 text-slate-400 hover:text-white">10. 🎰 Vegas Odds (O/U)</button>
         <button onclick="goToSlide(10)" class="nav-pill px-3 py-1.5 rounded-full text-xs font-semibold whitespace-nowrap transition bg-slate-900 text-slate-400 hover:text-white">11. 🏥 Injuries</button>
         <button onclick="goToSlide(11)" class="nav-pill px-3 py-1.5 rounded-full text-xs font-semibold whitespace-nowrap transition bg-slate-900 text-slate-400 hover:text-white">12. ⚔️ Scoreboard</button>
         <button onclick="goToSlide(12)" class="nav-pill px-3 py-1.5 rounded-full text-xs font-semibold whitespace-nowrap transition bg-slate-900 text-slate-400 hover:text-white">13. ⚡ Wk 3 Live (TNF)</button>
@@ -1290,257 +1290,773 @@
     </section>
 
 
+    <!-- ================= COMBINED SLIDE 8: THE BOOM SQUAD & THE GHOST PROTOCOL ================= -->
     <section id="wk2-slide-8" class="slide space-y-4 animate-fade">
-      <div class="bg-gradient-to-r from-emerald-950/60 to-slate-900 border border-emerald-500/40 rounded-2xl p-5 shadow-xl">
-        <div class="flex items-center gap-2">
-          <span class="text-2xl">🚀</span>
-          <div>
-            <h2 class="text-2xl sm:text-3xl font-black uppercase tracking-tight text-white">The Boom Squad</h2>
-            <p class="text-emerald-400 text-xs font-semibold">Certified Ballers Who Shattered Projections in Week 2</p>
+      <!-- Header Banner -->
+      <div class="bg-gradient-to-r from-emerald-950/70 via-slate-900 to-red-950/70 border border-slate-700 rounded-2xl p-5 shadow-2xl flex flex-col sm:flex-row sm:items-center justify-between gap-3">
+        <div>
+          <div class="flex items-center gap-2">
+            <span class="bg-gradient-to-r from-emerald-500 to-red-500 text-slate-950 text-[10px] font-black px-2.5 py-0.5 rounded uppercase tracking-wider">
+              Extreme Performances
+            </span>
+            <span class="text-[10px] bg-slate-950 text-slate-300 border border-slate-700 px-2 py-0.5 rounded font-mono font-bold">
+              WEEK 2 AUDIT
+            </span>
           </div>
+          <h2 class="text-2xl sm:text-3xl font-black uppercase tracking-tight text-white mt-1">
+            💥 The Boom Squad & 👻 Ghost Protocol
+          </h2>
+          <p class="text-slate-300 text-xs">
+            Week 2's top 8 ceiling smashers side-by-side with the 8 sub-zero fantasy heartbreak duds.
+          </p>
+        </div>
+
+        <!-- Filter Buttons -->
+        <div class="flex items-center gap-1.5 bg-slate-950/90 border border-slate-800 p-1.5 rounded-xl self-start sm:self-center shadow-inner">
+          <button onclick="filterBoomBust('all')" id="btn-filter-all" class="px-2.5 py-1 text-xs font-bold rounded-lg bg-amber-500 text-slate-950 transition">
+            All (16)
+          </button>
+          <button onclick="filterBoomBust('booms')" id="btn-filter-booms" class="px-2.5 py-1 text-xs font-bold rounded-lg bg-slate-900 text-emerald-400 border border-emerald-900 hover:bg-slate-800 transition">
+            🚀 Booms (8)
+          </button>
+          <button onclick="filterBoomBust('busts')" id="btn-filter-busts" class="px-2.5 py-1 text-xs font-bold rounded-lg bg-slate-900 text-red-400 border border-red-900 hover:bg-slate-800 transition">
+            👻 Busts (8)
+          </button>
         </div>
       </div>
 
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
+      <!-- 2-Column Split View -->
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-4">
         
-        <div class="bg-slate-900 border border-slate-800 rounded-xl p-3.5 flex items-center justify-between shadow-lg">
-          <div class="min-w-0 pr-2">
-            <div class="flex items-center gap-2">
-              <span class="font-black text-white text-sm truncate">Josh Allen</span>
-              <span class="text-[10px] font-mono font-bold bg-emerald-950 text-emerald-400 border border-emerald-800 px-1.5 py-0.2 rounded">QB - BUF</span>
-            </div>
-            <div class="text-[11px] text-slate-400">Show me dem TDs</div>
-            <div class="text-[11px] text-slate-300 mt-1 leading-snug">342 passing yards, 3 pass TDs, 2 rush TDs. Unstoppable MVP juggernaut who cashed the $10 QB bounty.</div>
+        <!-- LEFT COLUMN: THE BOOM SQUAD -->
+        <div id="col-booms" class="space-y-3">
+          <div class="flex items-center justify-between pb-1 border-b border-emerald-500/30">
+            <h3 class="text-sm font-black uppercase tracking-wider text-emerald-400 flex items-center gap-1.5">
+              <span>🚀</span> The Boom Squad (Top 8 Ballers)
+            </h3>
+            <span class="text-[10px] bg-emerald-950 text-emerald-400 border border-emerald-800 px-2 py-0.5 rounded font-mono font-bold">
+              CEILING HITTERS
+            </span>
           </div>
-          <div class="text-right flex-shrink-0">
-            <span class="text-xl font-athletic font-black text-emerald-400">40.82 PTS</span>
+
+          <div class="space-y-2.5">
+            <!-- 1. Josh Allen -->
+            <div class="bg-slate-900/90 border border-emerald-500/30 rounded-xl p-3 flex items-center justify-between shadow-lg hover:border-emerald-500/60 transition">
+              <div class="min-w-0 pr-2">
+                <div class="flex items-center gap-1.5">
+                  <span class="font-black text-white text-sm truncate">Josh Allen</span>
+                  <span class="text-[9px] font-mono font-bold bg-emerald-950 text-emerald-400 border border-emerald-800 px-1.5 py-0.2 rounded">QB - BUF</span>
+                </div>
+                <div class="text-[11px] text-slate-400">Show me dem TDs</div>
+                <div class="text-[11px] text-slate-300 mt-0.5 leading-snug">342 pass yds, 3 pass TDs, 2 rush TDs. Unstoppable MVP clinic that locked up the $10 bounty.</div>
+              </div>
+              <div class="text-right flex-shrink-0 pl-2">
+                <span class="text-xl font-athletic font-black text-emerald-400">40.82 PTS</span>
+              </div>
+            </div>
+
+            <!-- 2. JSN -->
+            <div class="bg-slate-900/90 border border-emerald-500/30 rounded-xl p-3 flex items-center justify-between shadow-lg hover:border-emerald-500/60 transition">
+              <div class="min-w-0 pr-2">
+                <div class="flex items-center gap-1.5">
+                  <span class="font-black text-white text-sm truncate">Jaxon Smith-Njigba</span>
+                  <span class="text-[9px] font-mono font-bold bg-emerald-950 text-emerald-400 border border-emerald-800 px-1.5 py-0.2 rounded">WR - SEA</span>
+                </div>
+                <div class="text-[11px] text-slate-400">Njigbas in Paris</div>
+                <div class="text-[11px] text-slate-300 mt-0.5 leading-snug">12 catches on 16 targets for 117 yards and 2 scores. Complete alpha target dominance.</div>
+              </div>
+              <div class="text-right flex-shrink-0 pl-2">
+                <span class="text-xl font-athletic font-black text-emerald-400">38.00 PTS</span>
+              </div>
+            </div>
+
+            <!-- 3. Davante Adams -->
+            <div class="bg-slate-900/90 border border-emerald-500/30 rounded-xl p-3 flex items-center justify-between shadow-lg hover:border-emerald-500/60 transition">
+              <div class="min-w-0 pr-2">
+                <div class="flex items-center gap-1.5">
+                  <span class="font-black text-white text-sm truncate">Davante Adams</span>
+                  <span class="text-[9px] font-mono font-bold bg-emerald-950 text-emerald-400 border border-emerald-800 px-1.5 py-0.2 rounded">WR - LAR</span>
+                </div>
+                <div class="text-[11px] text-slate-400">1 4 Ma’homies</div>
+                <div class="text-[11px] text-slate-300 mt-0.5 leading-snug">Toasted opposing corners for 9 receptions, 110 yards, and 2 touchdowns. Vintage masterclass.</div>
+              </div>
+              <div class="text-right flex-shrink-0 pl-2">
+                <span class="text-xl font-athletic font-black text-emerald-400">35.50 PTS</span>
+              </div>
+            </div>
+
+            <!-- 4. CeeDee Lamb -->
+            <div class="bg-slate-900/90 border border-emerald-500/30 rounded-xl p-3 flex items-center justify-between shadow-lg hover:border-emerald-500/60 transition">
+              <div class="min-w-0 pr-2">
+                <div class="flex items-center gap-1.5">
+                  <span class="font-black text-white text-sm truncate">CeeDee Lamb</span>
+                  <span class="text-[9px] font-mono font-bold bg-emerald-950 text-emerald-400 border border-emerald-800 px-1.5 py-0.2 rounded">WR - DAL</span>
+                </div>
+                <div class="text-[11px] text-slate-400">CULT OF THE LAMB</div>
+                <div class="text-[11px] text-slate-300 mt-0.5 leading-snug">Carried the whole Dallas passing tree on his back with 9 catches for 90 yards and a score.</div>
+              </div>
+              <div class="text-right flex-shrink-0 pl-2">
+                <span class="text-xl font-athletic font-black text-emerald-400">31.30 PTS</span>
+              </div>
+            </div>
+
+            <!-- 5. Amon-Ra St. Brown -->
+            <div class="bg-slate-900/90 border border-emerald-500/30 rounded-xl p-3 flex items-center justify-between shadow-lg hover:border-emerald-500/60 transition">
+              <div class="min-w-0 pr-2">
+                <div class="flex items-center gap-1.5">
+                  <span class="font-black text-white text-sm truncate">Amon-Ra St. Brown</span>
+                  <span class="text-[9px] font-mono font-bold bg-emerald-950 text-emerald-400 border border-emerald-800 px-1.5 py-0.2 rounded">WR - DET</span>
+                </div>
+                <div class="text-[11px] text-slate-400">Amon-Ra's Maye-hem</div>
+                <div class="text-[11px] text-slate-300 mt-0.5 leading-snug">The Sun God hauled in 11 balls for 119 yards and a TD to keep Maye-hem unbeaten at 2-0.</div>
+              </div>
+              <div class="text-right flex-shrink-0 pl-2">
+                <span class="text-xl font-athletic font-black text-emerald-400">30.70 PTS</span>
+              </div>
+            </div>
+
+            <!-- 6. Dak Prescott -->
+            <div class="bg-slate-900/90 border border-emerald-500/30 rounded-xl p-3 flex items-center justify-between shadow-lg hover:border-emerald-500/60 transition">
+              <div class="min-w-0 pr-2">
+                <div class="flex items-center gap-1.5">
+                  <span class="font-black text-white text-sm truncate">Dak Prescott</span>
+                  <span class="text-[9px] font-mono font-bold bg-emerald-950 text-emerald-400 border border-emerald-800 px-1.5 py-0.2 rounded">QB - DAL</span>
+                </div>
+                <div class="text-[11px] text-slate-400">MyDakMakesHerWaddle</div>
+                <div class="text-[11px] text-slate-300 mt-0.5 leading-snug">330 passing yards and 3 passing TDs to spearhead the week's 146.56 High Roller explosion.</div>
+              </div>
+              <div class="text-right flex-shrink-0 pl-2">
+                <span class="text-xl font-athletic font-black text-emerald-400">29.76 PTS</span>
+              </div>
+            </div>
+
+            <!-- 7. Brock Purdy -->
+            <div class="bg-slate-900/90 border border-emerald-500/30 rounded-xl p-3 flex items-center justify-between shadow-lg hover:border-emerald-500/60 transition">
+              <div class="min-w-0 pr-2">
+                <div class="flex items-center gap-1.5">
+                  <span class="font-black text-white text-sm truncate">Brock Purdy</span>
+                  <span class="text-[9px] font-mono font-bold bg-emerald-950 text-emerald-400 border border-emerald-800 px-1.5 py-0.2 rounded">QB - SF</span>
+                </div>
+                <div class="text-[11px] text-slate-400">Njigbas in Paris</div>
+                <div class="text-[11px] text-slate-300 mt-0.5 leading-snug">Surgical 319-yard, 3-TD efficiency clinic to engineer Paris' high-scoring victory.</div>
+              </div>
+              <div class="text-right flex-shrink-0 pl-2">
+                <span class="text-xl font-athletic font-black text-emerald-400">28.48 PTS</span>
+              </div>
+            </div>
+
+            <!-- 8. Jonathan Taylor -->
+            <div class="bg-slate-900/90 border border-emerald-500/30 rounded-xl p-3 flex items-center justify-between shadow-lg hover:border-emerald-500/60 transition">
+              <div class="min-w-0 pr-2">
+                <div class="flex items-center gap-1.5">
+                  <span class="font-black text-white text-sm truncate">Jonathan Taylor</span>
+                  <span class="text-[9px] font-mono font-bold bg-emerald-950 text-emerald-400 border border-emerald-800 px-1.5 py-0.2 rounded">RB - IND</span>
+                </div>
+                <div class="text-[11px] text-slate-400">Show me dem TDs</div>
+                <div class="text-[11px] text-slate-300 mt-0.5 leading-snug">103 rushing yards, 2 touchdowns, and 3 receptions in the 144–139 Game of the Year duel.</div>
+              </div>
+              <div class="text-right flex-shrink-0 pl-2">
+                <span class="text-xl font-athletic font-black text-emerald-400">27.20 PTS</span>
+              </div>
+            </div>
           </div>
         </div>
 
-        <div class="bg-slate-900 border border-slate-800 rounded-xl p-3.5 flex items-center justify-between shadow-lg">
-          <div class="min-w-0 pr-2">
-            <div class="flex items-center gap-2">
-              <span class="font-black text-white text-sm truncate">Jaxon Smith-Njigba</span>
-              <span class="text-[10px] font-mono font-bold bg-emerald-950 text-emerald-400 border border-emerald-800 px-1.5 py-0.2 rounded">WR - SEA</span>
-            </div>
-            <div class="text-[11px] text-slate-400">Njigbas in Paris</div>
-            <div class="text-[11px] text-slate-300 mt-1 leading-snug">12 receptions on 16 targets for 117 yards and 2 touchdowns. Absolute fantasy cheat code.</div>
+        <!-- RIGHT COLUMN: THE GHOST PROTOCOL -->
+        <div id="col-busts" class="space-y-3">
+          <div class="flex items-center justify-between pb-1 border-b border-red-500/30">
+            <h3 class="text-sm font-black uppercase tracking-wider text-red-400 flex items-center gap-1.5">
+              <span>👻</span> The Ghost Protocol (Top 8 Duds)
+            </h3>
+            <span class="text-[10px] bg-red-950 text-red-400 border border-red-800 px-2 py-0.5 rounded font-mono font-bold">
+              SUB-ZERO CARNAGE
+            </span>
           </div>
-          <div class="text-right flex-shrink-0">
-            <span class="text-xl font-athletic font-black text-emerald-400">38.00 PTS</span>
-          </div>
-        </div>
 
-        <div class="bg-slate-900 border border-slate-800 rounded-xl p-3.5 flex items-center justify-between shadow-lg">
-          <div class="min-w-0 pr-2">
-            <div class="flex items-center gap-2">
-              <span class="font-black text-white text-sm truncate">Davante Adams</span>
-              <span class="text-[10px] font-mono font-bold bg-emerald-950 text-emerald-400 border border-emerald-800 px-1.5 py-0.2 rounded">WR - LAR</span>
+          <div class="space-y-2.5">
+            <!-- 1. DJ Moore -->
+            <div class="bg-slate-900/90 border border-red-500/30 rounded-xl p-3 flex items-center justify-between shadow-lg hover:border-red-500/60 transition">
+              <div class="min-w-0 pr-2">
+                <div class="flex items-center gap-1.5">
+                  <span class="font-black text-white text-sm truncate">DJ Moore</span>
+                  <span class="text-[9px] font-mono font-bold bg-red-950 text-red-400 border border-red-800 px-1.5 py-0.2 rounded">WR - BUF</span>
+                </div>
+                <div class="text-[11px] text-slate-400">Njigbas in Paris</div>
+                <div class="text-[11px] text-slate-300 mt-0.5 leading-snug">Managed the elusive negative fantasy line. 1 target, 0 catches, 1 rush for -1 yard. Stunner.</div>
+              </div>
+              <div class="text-right flex-shrink-0 pl-2">
+                <span class="text-xl font-athletic font-black text-red-500">-0.10 PTS</span>
+              </div>
             </div>
-            <div class="text-[11px] text-slate-400">1 4 Ma’homies</div>
-            <div class="text-[11px] text-slate-300 mt-1 leading-snug">Vintage Davante toasted defensive secondaries with 9 catches, 110 yards, and 2 scores.</div>
-          </div>
-          <div class="text-right flex-shrink-0">
-            <span class="text-xl font-athletic font-black text-emerald-400">35.50 PTS</span>
-          </div>
-        </div>
 
-        <div class="bg-slate-900 border border-slate-800 rounded-xl p-3.5 flex items-center justify-between shadow-lg">
-          <div class="min-w-0 pr-2">
-            <div class="flex items-center gap-2">
-              <span class="font-black text-white text-sm truncate">CeeDee Lamb</span>
-              <span class="text-[10px] font-mono font-bold bg-emerald-950 text-emerald-400 border border-emerald-800 px-1.5 py-0.2 rounded">WR - DAL</span>
+            <!-- 2. Malik Nabers -->
+            <div class="bg-slate-900/90 border border-red-500/30 rounded-xl p-3 flex items-center justify-between shadow-lg hover:border-red-500/60 transition">
+              <div class="min-w-0 pr-2">
+                <div class="flex items-center gap-1.5">
+                  <span class="font-black text-white text-sm truncate">Malik Nabers</span>
+                  <span class="text-[9px] font-mono font-bold bg-red-950 text-red-400 border border-red-800 px-1.5 py-0.2 rounded">WR - NYG</span>
+                </div>
+                <div class="text-[11px] text-slate-400">CULT OF THE LAMB</div>
+                <div class="text-[11px] text-slate-300 mt-0.5 leading-snug">1 reception for 6 yards. Completely suffocated by opposing bracket safety coverage.</div>
+              </div>
+              <div class="text-right flex-shrink-0 pl-2">
+                <span class="text-xl font-athletic font-black text-red-500">0.60 PTS</span>
+              </div>
             </div>
-            <div class="text-[11px] text-slate-400">CULT OF THE LAMB</div>
-            <div class="text-[11px] text-slate-300 mt-1 leading-snug">Carried the entire Dallas passing attack with 9 catches for 90 yards and a score.</div>
-          </div>
-          <div class="text-right flex-shrink-0">
-            <span class="text-xl font-athletic font-black text-emerald-400">31.30 PTS</span>
-          </div>
-        </div>
 
-        <div class="bg-slate-900 border border-slate-800 rounded-xl p-3.5 flex items-center justify-between shadow-lg">
-          <div class="min-w-0 pr-2">
-            <div class="flex items-center gap-2">
-              <span class="font-black text-white text-sm truncate">Amon-Ra St. Brown</span>
-              <span class="text-[10px] font-mono font-bold bg-emerald-950 text-emerald-400 border border-emerald-800 px-1.5 py-0.2 rounded">WR - DET</span>
+            <!-- 3. Jaxson Dart -->
+            <div class="bg-slate-900/90 border border-red-500/30 rounded-xl p-3 flex items-center justify-between shadow-lg hover:border-red-500/60 transition">
+              <div class="min-w-0 pr-2">
+                <div class="flex items-center gap-1.5">
+                  <span class="font-black text-white text-sm truncate">Jaxson Dart</span>
+                  <span class="text-[9px] font-mono font-bold bg-red-950 text-red-400 border border-red-800 px-1.5 py-0.2 rounded">QB - NYG</span>
+                </div>
+                <div class="text-[11px] text-slate-400">CULT OF THE LAMB</div>
+                <div class="text-[11px] text-slate-300 mt-0.5 leading-snug">Started over Patrick Mahomes (28.98 on bench). Knocked out with knee injury with 0.80 pts.</div>
+              </div>
+              <div class="text-right flex-shrink-0 pl-2">
+                <span class="text-xl font-athletic font-black text-red-500">0.80 PTS</span>
+              </div>
             </div>
-            <div class="text-[11px] text-slate-400">Amon-Ra's Maye-hem</div>
-            <div class="text-[11px] text-slate-300 mt-1 leading-snug">The Sun God caught 11 balls for 119 yards and a touchdown, keeping the squad unblemished at 2-0.</div>
-          </div>
-          <div class="text-right flex-shrink-0">
-            <span class="text-xl font-athletic font-black text-emerald-400">30.70 PTS</span>
-          </div>
-        </div>
 
-        <div class="bg-slate-900 border border-slate-800 rounded-xl p-3.5 flex items-center justify-between shadow-lg">
-          <div class="min-w-0 pr-2">
-            <div class="flex items-center gap-2">
-              <span class="font-black text-white text-sm truncate">Dak Prescott</span>
-              <span class="text-[10px] font-mono font-bold bg-emerald-950 text-emerald-400 border border-emerald-800 px-1.5 py-0.2 rounded">QB - DAL</span>
+            <!-- 4. Colston Loveland -->
+            <div class="bg-slate-900/90 border border-red-500/30 rounded-xl p-3 flex items-center justify-between shadow-lg hover:border-red-500/60 transition">
+              <div class="min-w-0 pr-2">
+                <div class="flex items-center gap-1.5">
+                  <span class="font-black text-white text-sm truncate">Colston Loveland</span>
+                  <span class="text-[9px] font-mono font-bold bg-red-950 text-red-400 border border-red-800 px-1.5 py-0.2 rounded">TE - CHI</span>
+                </div>
+                <div class="text-[11px] text-slate-400">Dowdle fucking sucks</div>
+                <div class="text-[11px] text-slate-300 mt-0.5 leading-snug">1 catch for 8 yards on 2 targets. Did 60 minutes of cardio while the team scored 65.46 pts.</div>
+              </div>
+              <div class="text-right flex-shrink-0 pl-2">
+                <span class="text-xl font-athletic font-black text-red-500">0.80 PTS</span>
+              </div>
             </div>
-            <div class="text-[11px] text-slate-400">MyDakMakesHerWaddle</div>
-            <div class="text-[11px] text-slate-300 mt-1 leading-snug">Threw for 330 yards and 3 touchdowns to power the 146.56 High Roller explosion.</div>
-          </div>
-          <div class="text-right flex-shrink-0">
-            <span class="text-xl font-athletic font-black text-emerald-400">29.76 PTS</span>
-          </div>
-        </div>
 
-        <div class="bg-slate-900 border border-slate-800 rounded-xl p-3.5 flex items-center justify-between shadow-lg">
-          <div class="min-w-0 pr-2">
-            <div class="flex items-center gap-2">
-              <span class="font-black text-white text-sm truncate">Brock Purdy</span>
-              <span class="text-[10px] font-mono font-bold bg-emerald-950 text-emerald-400 border border-emerald-800 px-1.5 py-0.2 rounded">QB - SF</span>
+            <!-- 5. Devin Singletary -->
+            <div class="bg-slate-900/90 border border-red-500/30 rounded-xl p-3 flex items-center justify-between shadow-lg hover:border-red-500/60 transition">
+              <div class="min-w-0 pr-2">
+                <div class="flex items-center gap-1.5">
+                  <span class="font-black text-white text-sm truncate">Devin Singletary</span>
+                  <span class="text-[9px] font-mono font-bold bg-red-950 text-red-400 border border-red-800 px-1.5 py-0.2 rounded">RB - NYG</span>
+                </div>
+                <div class="text-[11px] text-slate-400">Saquon Deez Nacuas</div>
+                <div class="text-[11px] text-slate-300 mt-0.5 leading-snug">Carried 4 times for 9 yards before vanishing from the Giants' game plan entirely.</div>
+              </div>
+              <div class="text-right flex-shrink-0 pl-2">
+                <span class="text-xl font-athletic font-black text-red-500">0.90 PTS</span>
+              </div>
             </div>
-            <div class="text-[11px] text-slate-400">Njigbas in Paris</div>
-            <div class="text-[11px] text-slate-300 mt-1 leading-snug">Surgical 319-yard, 3-TD performance to deliver victory in Week 2.</div>
-          </div>
-          <div class="text-right flex-shrink-0">
-            <span class="text-xl font-athletic font-black text-emerald-400">28.48 PTS</span>
-          </div>
-        </div>
 
-        <div class="bg-slate-900 border border-slate-800 rounded-xl p-3.5 flex items-center justify-between shadow-lg">
-          <div class="min-w-0 pr-2">
-            <div class="flex items-center gap-2">
-              <span class="font-black text-white text-sm truncate">Jonathan Taylor</span>
-              <span class="text-[10px] font-mono font-bold bg-emerald-950 text-emerald-400 border border-emerald-800 px-1.5 py-0.2 rounded">RB - IND</span>
+            <!-- 6. Cameron Dicker -->
+            <div class="bg-slate-900/90 border border-red-500/30 rounded-xl p-3 flex items-center justify-between shadow-lg hover:border-red-500/60 transition">
+              <div class="min-w-0 pr-2">
+                <div class="flex items-center gap-1.5">
+                  <span class="font-black text-white text-sm truncate">Cameron Dicker</span>
+                  <span class="text-[9px] font-mono font-bold bg-red-950 text-red-400 border border-red-800 px-1.5 py-0.2 rounded">K - LAC</span>
+                </div>
+                <div class="text-[11px] text-slate-400">Dowdle fucking sucks</div>
+                <div class="text-[11px] text-slate-300 mt-0.5 leading-snug">Kickers are people too, but 1 solitary extra point is a kick to the shins of fantasy owners.</div>
+              </div>
+              <div class="text-right flex-shrink-0 pl-2">
+                <span class="text-xl font-athletic font-black text-red-500">1.00 PTS</span>
+              </div>
             </div>
-            <div class="text-[11px] text-slate-400">Show me dem TDs</div>
-            <div class="text-[11px] text-slate-300 mt-1 leading-snug">103 rushing yards, 2 touchdowns, and 3 receptions in the Game of the Week duel.</div>
-          </div>
-          <div class="text-right flex-shrink-0">
-            <span class="text-xl font-athletic font-black text-emerald-400">27.20 PTS</span>
+
+            <!-- 7. Saquon Barkley -->
+            <div class="bg-slate-900/90 border border-red-500/30 rounded-xl p-3 flex items-center justify-between shadow-lg hover:border-red-500/60 transition">
+              <div class="min-w-0 pr-2">
+                <div class="flex items-center gap-1.5">
+                  <span class="font-black text-white text-sm truncate">Saquon Barkley</span>
+                  <span class="text-[9px] font-mono font-bold bg-red-950 text-red-400 border border-red-800 px-1.5 py-0.2 rounded">RB - PHI</span>
+                </div>
+                <div class="text-[11px] text-slate-400">Saquon Deez Nacuas</div>
+                <div class="text-[11px] text-slate-300 mt-0.5 leading-snug">From Week 1 superhero to Week 2 ghost. 11 carries for 25 yards. Fueled the 53-point collapse.</div>
+              </div>
+              <div class="text-right flex-shrink-0 pl-2">
+                <span class="text-xl font-athletic font-black text-red-500">2.50 PTS</span>
+              </div>
+            </div>
+
+            <!-- 8. Trevor Lawrence -->
+            <div class="bg-slate-900/90 border border-red-500/30 rounded-xl p-3 flex items-center justify-between shadow-lg hover:border-red-500/60 transition">
+              <div class="min-w-0 pr-2">
+                <div class="flex items-center gap-1.5">
+                  <span class="font-black text-white text-sm truncate">Trevor Lawrence</span>
+                  <span class="text-[9px] font-mono font-bold bg-red-950 text-red-400 border border-red-800 px-1.5 py-0.2 rounded">QB - JAX</span>
+                </div>
+                <div class="text-[11px] text-slate-400">Dowdle fucking sucks</div>
+                <div class="text-[11px] text-slate-300 mt-0.5 leading-snug">Struggled for 4 quarters. Pedro benched Bryce Young (24.08) to endure this 7-point dud.</div>
+              </div>
+              <div class="text-right flex-shrink-0 pl-2">
+                <span class="text-xl font-athletic font-black text-red-500">7.16 PTS</span>
+              </div>
+            </div>
           </div>
         </div>
 
       </div>
     </section>
 
-
+    <!-- ================= NEW SLIDE 9: VEGAS BETTING ODDS & LEAGUE PROPS (O/U) ================= -->
     <section id="wk2-slide-9" class="slide space-y-4 animate-fade">
-      <div class="bg-gradient-to-r from-red-950/60 to-slate-900 border border-red-500/40 rounded-2xl p-5 shadow-xl">
-        <div class="flex items-center gap-2">
-          <span class="text-2xl">📉</span>
+      <!-- Sportsbook Header Banner -->
+      <div class="relative overflow-hidden bg-gradient-to-r from-amber-950/80 via-slate-900 to-yellow-950/80 border-2 border-amber-500/60 rounded-2xl p-5 shadow-2xl">
+        <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3">
           <div>
-            <h2 class="text-2xl sm:text-3xl font-black uppercase tracking-tight text-white">The Ghost Protocol</h2>
-            <p class="text-red-400 text-xs font-semibold">Starters Who Left Their Fantasy Teams in Complete Despair</p>
+            <div class="flex items-center gap-2">
+              <span class="bg-amber-500 text-slate-950 text-[10px] font-black px-2.5 py-0.5 rounded uppercase tracking-wider shadow">
+                🎰 F.F.U.C. SPORTSBOOK
+              </span>
+              <span class="text-[10px] bg-amber-950 text-amber-300 border border-amber-700 px-2 py-0.5 rounded font-mono font-bold">
+                WEEK 3 VEGAS ODDS & PROPS
+              </span>
+            </div>
+            <h2 class="text-2xl sm:text-3xl font-black uppercase tracking-tight text-white mt-1">
+              Vegas Over/Under & League Prop Board
+            </h2>
+            <p class="text-slate-300 text-xs mt-0.5">
+              Interactive community betting terminal. Tap your picks on score O/Us and personal franchise milestone props below to track sharp action!
+            </p>
           </div>
+
+          <!-- Bet Slip Status & Reset Button -->
+          <div class="flex items-center gap-2.5 self-start sm:self-center">
+            <div class="bg-slate-950/90 border border-slate-800 p-2.5 rounded-xl text-center">
+              <span class="text-[9px] uppercase font-bold text-slate-400 block tracking-wider">Your Bet Slip</span>
+              <span id="vegasPicksCounter" class="text-base font-black text-amber-400 font-mono">0 / 8 Picked</span>
+            </div>
+            <button onclick="resetVegasPicks()" class="px-2.5 py-2 bg-slate-800 hover:bg-slate-700 border border-slate-700 text-slate-300 hover:text-white rounded-xl text-xs font-bold transition flex items-center gap-1 shadow">
+              <span>🔄</span> <span class="hidden sm:inline">Reset</span>
+            </button>
+          </div>
+        </div>
+
+        <div class="mt-3 pt-2.5 border-t border-amber-900/40 flex flex-wrap items-center justify-between text-[11px] text-slate-400 gap-2">
+          <span>💡 <strong>Live Consensus:</strong> Every vote updates the community split in real-time and persists in your browser.</span>
+          <span class="text-amber-400/90 font-mono">House Juice: Standard -110 / Sharp Odds</span>
         </div>
       </div>
 
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
-        
-        <div class="bg-slate-900 border border-slate-800 rounded-xl p-3.5 flex items-center justify-between shadow-lg">
-          <div class="min-w-0 pr-2">
-            <div class="flex items-center gap-2">
-              <span class="font-black text-white text-sm truncate">DJ Moore</span>
-              <span class="text-[10px] font-mono font-bold bg-red-950 text-red-400 border border-red-800 px-1.5 py-0.2 rounded">WR - BUF</span>
+      <!-- 8 Interactive Prop Betting Cards Grid -->
+      <div id="vegasPropsContainer" class="grid grid-cols-1 md:grid-cols-2 gap-4">
+
+        <!-- PROP #1: Dowdle First Win (Personal Milestone) -->
+        <div id="card-prop_dowdle_win" class="bg-slate-900/95 border border-slate-800 rounded-xl p-4 shadow-xl flex flex-col justify-between space-y-3 hover:border-slate-700 transition">
+          <div class="space-y-1.5">
+            <div class="flex items-center justify-between gap-2">
+              <span class="text-[10px] font-black uppercase text-amber-400 bg-amber-950/80 border border-amber-800/80 px-2 py-0.5 rounded">
+                FRANCHISE MILESTONE • PERSONAL PROP
+              </span>
+              <span class="text-[10px] font-mono text-slate-400 bg-slate-950 border border-slate-800 px-1.5 py-0.5 rounded">
+                PROP #1
+              </span>
             </div>
-            <div class="text-[11px] text-slate-400">Njigbas in Paris</div>
-            <div class="text-[11px] text-slate-300 mt-1 leading-snug">Managed the elusive negative fantasy output. 1 target, 0 catches, 1 rush for -1 yard. Stunner.</div>
+            <h4 class="text-sm font-extrabold text-white leading-snug">
+              Will Dowdle fucking sucks (0-2) get their first win of the season in Week 3?
+            </h4>
+            <div class="text-[11px] font-mono text-slate-400">Matchup: Dowdle fucking sucks vs Brock To The Future (1-1)</div>
+            <p class="text-xs text-slate-300 leading-relaxed pt-0.5">
+              After an 81-pt demolition in Week 2, Pedro catches Brock without Jayden Daniels (elbow) and Brock Bowers (knee). Can Pedro escape the 0-3 cellar?
+            </p>
           </div>
-          <div class="text-right flex-shrink-0">
-            <span class="text-xl font-athletic font-black text-red-500">-0.10 PTS</span>
+
+          <!-- Betting Action Buttons -->
+          <div class="space-y-2 pt-1 border-t border-slate-800/80">
+            <div class="grid grid-cols-2 gap-2">
+              <button onclick="castVegasVote('prop_dowdle_win', 'over')" id="btn-prop_dowdle_win-over" class="vegas-btn p-2 rounded-lg bg-slate-950 border border-slate-800 hover:border-amber-500/70 text-left transition flex flex-col justify-between">
+                <div class="flex items-center justify-between w-full">
+                  <span class="text-xs font-bold text-white">YES (First Win)</span>
+                  <span class="text-[10px] font-mono font-bold text-emerald-400">+155</span>
+                </div>
+                <div class="flex items-center justify-between w-full mt-1">
+                  <span class="text-[10px] text-slate-400 font-mono tally-label" id="tally-prop_dowdle_win-over">4 Picks (36%)</span>
+                  <span class="text-[9px] text-amber-400 font-bold hidden pick-indicator">✓ YOUR PICK</span>
+                </div>
+              </button>
+
+              <button onclick="castVegasVote('prop_dowdle_win', 'under')" id="btn-prop_dowdle_win-under" class="vegas-btn p-2 rounded-lg bg-slate-950 border border-slate-800 hover:border-amber-500/70 text-left transition flex flex-col justify-between">
+                <div class="flex items-center justify-between w-full">
+                  <span class="text-xs font-bold text-white">NO (0-3 Freefall)</span>
+                  <span class="text-[10px] font-mono font-bold text-red-400">-185</span>
+                </div>
+                <div class="flex items-center justify-between w-full mt-1">
+                  <span class="text-[10px] text-slate-400 font-mono tally-label" id="tally-prop_dowdle_win-under">7 Picks (64%)</span>
+                  <span class="text-[9px] text-amber-400 font-bold hidden pick-indicator">✓ YOUR PICK</span>
+                </div>
+              </button>
+            </div>
+
+            <!-- Consensus Progress Bar -->
+            <div class="w-full bg-slate-950 rounded-full h-1.5 overflow-hidden flex">
+              <div id="bar-prop_dowdle_win-over" class="bg-emerald-500 h-1.5 transition-all duration-300" style="width: 36%"></div>
+              <div id="bar-prop_dowdle_win-under" class="bg-red-500 h-1.5 transition-all duration-300" style="width: 64%"></div>
+            </div>
           </div>
         </div>
 
-        <div class="bg-slate-900 border border-slate-800 rounded-xl p-3.5 flex items-center justify-between shadow-lg">
-          <div class="min-w-0 pr-2">
-            <div class="flex items-center gap-2">
-              <span class="font-black text-white text-sm truncate">Malik Nabers</span>
-              <span class="text-[10px] font-mono font-bold bg-red-950 text-red-400 border border-red-800 px-1.5 py-0.2 rounded">WR - NYG</span>
+        <!-- PROP #2: Saquon Deez Nacuas Total Score (Team O/U) -->
+        <div id="card-prop_saquon_total" class="bg-slate-900/95 border border-slate-800 rounded-xl p-4 shadow-xl flex flex-col justify-between space-y-3 hover:border-slate-700 transition">
+          <div class="space-y-1.5">
+            <div class="flex items-center justify-between gap-2">
+              <span class="text-[10px] font-black uppercase text-amber-400 bg-amber-950/80 border border-amber-800/80 px-2 py-0.5 rounded">
+                TEAM SCORING O/U • REDEMPTION CLOCK
+              </span>
+              <span class="text-[10px] font-mono text-slate-400 bg-slate-950 border border-slate-800 px-1.5 py-0.5 rounded">
+                PROP #2
+              </span>
             </div>
-            <div class="text-[11px] text-slate-400">CULT OF THE LAMB</div>
-            <div class="text-[11px] text-slate-300 mt-1 leading-snug">1 catch for 6 yards. Completely swallowed up by opposing secondary bracket coverage.</div>
+            <h4 class="text-sm font-extrabold text-white leading-snug">
+              Saquon Deez Nacuas Week 3 Total Score: Over / Under 115.5 PTS
+            </h4>
+            <div class="text-[11px] font-mono text-slate-400">Matchup: Saquon Deez Nacuas vs Amon-Ra's Maye-hem (2-0)</div>
+            <p class="text-xs text-slate-300 leading-relaxed pt-0.5">
+              Mark bounced back from Week 2's 53.92 collapse with Jordan Love's 19.48 pts on TNF. With 8 starters left, can Saquon, Kamara, and Kyler Murray clear 115.5?
+            </p>
           </div>
-          <div class="text-right flex-shrink-0">
-            <span class="text-xl font-athletic font-black text-red-500">0.60 PTS</span>
+
+          <div class="space-y-2 pt-1 border-t border-slate-800/80">
+            <div class="grid grid-cols-2 gap-2">
+              <button onclick="castVegasVote('prop_saquon_total', 'over')" id="btn-prop_saquon_total-over" class="vegas-btn p-2 rounded-lg bg-slate-950 border border-slate-800 hover:border-amber-500/70 text-left transition flex flex-col justify-between">
+                <div class="flex items-center justify-between w-full">
+                  <span class="text-xs font-bold text-white">OVER 115.5 PTS</span>
+                  <span class="text-[10px] font-mono font-bold text-emerald-400">-110</span>
+                </div>
+                <div class="flex items-center justify-between w-full mt-1">
+                  <span class="text-[10px] text-slate-400 font-mono tally-label" id="tally-prop_saquon_total-over">7 Picks (64%)</span>
+                  <span class="text-[9px] text-amber-400 font-bold hidden pick-indicator">✓ YOUR PICK</span>
+                </div>
+              </button>
+
+              <button onclick="castVegasVote('prop_saquon_total', 'under')" id="btn-prop_saquon_total-under" class="vegas-btn p-2 rounded-lg bg-slate-950 border border-slate-800 hover:border-amber-500/70 text-left transition flex flex-col justify-between">
+                <div class="flex items-center justify-between w-full">
+                  <span class="text-xs font-bold text-white">UNDER 115.5 PTS</span>
+                  <span class="text-[10px] font-mono font-bold text-amber-400">-110</span>
+                </div>
+                <div class="flex items-center justify-between w-full mt-1">
+                  <span class="text-[10px] text-slate-400 font-mono tally-label" id="tally-prop_saquon_total-under">4 Picks (36%)</span>
+                  <span class="text-[9px] text-amber-400 font-bold hidden pick-indicator">✓ YOUR PICK</span>
+                </div>
+              </button>
+            </div>
+
+            <div class="w-full bg-slate-950 rounded-full h-1.5 overflow-hidden flex">
+              <div id="bar-prop_saquon_total-over" class="bg-emerald-500 h-1.5 transition-all duration-300" style="width: 64%"></div>
+              <div id="bar-prop_saquon_total-under" class="bg-amber-500 h-1.5 transition-all duration-300" style="width: 36%"></div>
+            </div>
           </div>
         </div>
 
-        <div class="bg-slate-900 border border-slate-800 rounded-xl p-3.5 flex items-center justify-between shadow-lg">
-          <div class="min-w-0 pr-2">
-            <div class="flex items-center gap-2">
-              <span class="font-black text-white text-sm truncate">Jaxson Dart</span>
-              <span class="text-[10px] font-mono font-bold bg-red-950 text-red-400 border border-red-800 px-1.5 py-0.2 rounded">QB - NYG</span>
+        <!-- PROP #3: CULT OF THE LAMB Comeback (Personal Desperation Bowl) -->
+        <div id="card-prop_desperation_comeback" class="bg-slate-900/95 border border-slate-800 rounded-xl p-4 shadow-xl flex flex-col justify-between space-y-3 hover:border-slate-700 transition">
+          <div class="space-y-1.5">
+            <div class="flex items-center justify-between gap-2">
+              <span class="text-[10px] font-black uppercase text-red-400 bg-red-950/80 border border-red-800/80 px-2 py-0.5 rounded">
+                THE DESPERATION BOWL • COMEBACK PROP
+              </span>
+              <span class="text-[10px] font-mono text-slate-400 bg-slate-950 border border-slate-800 px-1.5 py-0.5 rounded">
+                PROP #3
+              </span>
             </div>
-            <div class="text-[11px] text-slate-400">CULT OF THE LAMB</div>
-            <div class="text-[11px] text-slate-300 mt-1 leading-snug">Started over Patrick Mahomes (28.98 on bench). Ended with sub-1 point. Instant regret.</div>
+            <h4 class="text-sm font-extrabold text-white leading-snug">
+              Will CULT OF THE LAMB mount a 58.20+ pt comeback to beat 1 4 Ma’homies?
+            </h4>
+            <div class="text-[11px] font-mono text-slate-400">Matchup: 1 4 Ma'homies (58.20) vs CULT OF THE LAMB (0.00)</div>
+            <p class="text-xs text-slate-300 leading-relaxed pt-0.5">
+              Bijan Robinson (34.30) & Drake London (23.90) staked Robert to an enormous lead. Patrick Mahomes, Breece Hall, and CeeDee Lamb need an offensive eruption on Sunday.
+            </p>
           </div>
-          <div class="text-right flex-shrink-0">
-            <span class="text-xl font-athletic font-black text-red-500">0.80 PTS</span>
+
+          <div class="space-y-2 pt-1 border-t border-slate-800/80">
+            <div class="grid grid-cols-2 gap-2">
+              <button onclick="castVegasVote('prop_desperation_comeback', 'over')" id="btn-prop_desperation_comeback-over" class="vegas-btn p-2 rounded-lg bg-slate-950 border border-slate-800 hover:border-amber-500/70 text-left transition flex flex-col justify-between">
+                <div class="flex items-center justify-between w-full">
+                  <span class="text-xs font-bold text-white">YES (CULT Comeback)</span>
+                  <span class="text-[10px] font-mono font-bold text-emerald-400">+280</span>
+                </div>
+                <div class="flex items-center justify-between w-full mt-1">
+                  <span class="text-[10px] text-slate-400 font-mono tally-label" id="tally-prop_desperation_comeback-over">3 Picks (27%)</span>
+                  <span class="text-[9px] text-amber-400 font-bold hidden pick-indicator">✓ YOUR PICK</span>
+                </div>
+              </button>
+
+              <button onclick="castVegasVote('prop_desperation_comeback', 'under')" id="btn-prop_desperation_comeback-under" class="vegas-btn p-2 rounded-lg bg-slate-950 border border-slate-800 hover:border-amber-500/70 text-left transition flex flex-col justify-between">
+                <div class="flex items-center justify-between w-full">
+                  <span class="text-xs font-bold text-white">NO (Ma'homies Holds)</span>
+                  <span class="text-[10px] font-mono font-bold text-red-400">-340</span>
+                </div>
+                <div class="flex items-center justify-between w-full mt-1">
+                  <span class="text-[10px] text-slate-400 font-mono tally-label" id="tally-prop_desperation_comeback-under">8 Picks (73%)</span>
+                  <span class="text-[9px] text-amber-400 font-bold hidden pick-indicator">✓ YOUR PICK</span>
+                </div>
+              </button>
+            </div>
+
+            <div class="w-full bg-slate-950 rounded-full h-1.5 overflow-hidden flex">
+              <div id="bar-prop_desperation_comeback-over" class="bg-emerald-500 h-1.5 transition-all duration-300" style="width: 27%"></div>
+              <div id="bar-prop_desperation_comeback-under" class="bg-red-500 h-1.5 transition-all duration-300" style="width: 73%"></div>
+            </div>
           </div>
         </div>
 
-        <div class="bg-slate-900 border border-slate-800 rounded-xl p-3.5 flex items-center justify-between shadow-lg">
-          <div class="min-w-0 pr-2">
-            <div class="flex items-center gap-2">
-              <span class="font-black text-white text-sm truncate">Colston Loveland</span>
-              <span class="text-[10px] font-mono font-bold bg-red-950 text-red-400 border border-red-800 px-1.5 py-0.2 rounded">TE - CHI</span>
+        <!-- PROP #4: 1 4 Ma’homies High Roller Total (Score O/U) -->
+        <div id="card-prop_mahomies_highroller" class="bg-slate-900/95 border border-slate-800 rounded-xl p-4 shadow-xl flex flex-col justify-between space-y-3 hover:border-slate-700 transition">
+          <div class="space-y-1.5">
+            <div class="flex items-center justify-between gap-2">
+              <span class="text-[10px] font-black uppercase text-amber-400 bg-amber-950/80 border border-amber-800/80 px-2 py-0.5 rounded">
+                SEASON HIGH ROLLER • SCORING PROP
+              </span>
+              <span class="text-[10px] font-mono text-slate-400 bg-slate-950 border border-slate-800 px-1.5 py-0.5 rounded">
+                PROP #4
+              </span>
             </div>
-            <div class="text-[11px] text-slate-400">Dowdle fucking sucks</div>
-            <div class="text-[11px] text-slate-300 mt-1 leading-snug">1 catch for 8 yards on 2 targets. Did 60 minutes of cardio while the team scored 65 pts.</div>
+            <h4 class="text-sm font-extrabold text-white leading-snug">
+              1 4 Ma’homies Total Week 3 Score: Over / Under 146.5 PTS
+            </h4>
+            <div class="text-[11px] font-mono text-slate-400">Target Benchmark: MyDak's 146.56 Season High</div>
+            <p class="text-xs text-slate-300 leading-relaxed pt-0.5">
+              With 58.20 already banked through 2 players on Thursday night, Robert is pacing for 170+ pts. Can his remaining 7 starters eclipse the 146.56 season benchmark?
+            </p>
           </div>
-          <div class="text-right flex-shrink-0">
-            <span class="text-xl font-athletic font-black text-red-500">0.80 PTS</span>
+
+          <div class="space-y-2 pt-1 border-t border-slate-800/80">
+            <div class="grid grid-cols-2 gap-2">
+              <button onclick="castVegasVote('prop_mahomies_highroller', 'over')" id="btn-prop_mahomies_highroller-over" class="vegas-btn p-2 rounded-lg bg-slate-950 border border-slate-800 hover:border-amber-500/70 text-left transition flex flex-col justify-between">
+                <div class="flex items-center justify-between w-full">
+                  <span class="text-xs font-bold text-white">OVER 146.5 PTS</span>
+                  <span class="text-[10px] font-mono font-bold text-emerald-400">-120</span>
+                </div>
+                <div class="flex items-center justify-between w-full mt-1">
+                  <span class="text-[10px] text-slate-400 font-mono tally-label" id="tally-prop_mahomies_highroller-over">7 Picks (64%)</span>
+                  <span class="text-[9px] text-amber-400 font-bold hidden pick-indicator">✓ YOUR PICK</span>
+                </div>
+              </button>
+
+              <button onclick="castVegasVote('prop_mahomies_highroller', 'under')" id="btn-prop_mahomies_highroller-under" class="vegas-btn p-2 rounded-lg bg-slate-950 border border-slate-800 hover:border-amber-500/70 text-left transition flex flex-col justify-between">
+                <div class="flex items-center justify-between w-full">
+                  <span class="text-xs font-bold text-white">UNDER 146.5 PTS</span>
+                  <span class="text-[10px] font-mono font-bold text-amber-400">EVEN</span>
+                </div>
+                <div class="flex items-center justify-between w-full mt-1">
+                  <span class="text-[10px] text-slate-400 font-mono tally-label" id="tally-prop_mahomies_highroller-under">4 Picks (36%)</span>
+                  <span class="text-[9px] text-amber-400 font-bold hidden pick-indicator">✓ YOUR PICK</span>
+                </div>
+              </button>
+            </div>
+
+            <div class="w-full bg-slate-950 rounded-full h-1.5 overflow-hidden flex">
+              <div id="bar-prop_mahomies_highroller-over" class="bg-emerald-500 h-1.5 transition-all duration-300" style="width: 64%"></div>
+              <div id="bar-prop_mahomies_highroller-under" class="bg-amber-500 h-1.5 transition-all duration-300" style="width: 36%"></div>
+            </div>
           </div>
         </div>
 
-        <div class="bg-slate-900 border border-slate-800 rounded-xl p-3.5 flex items-center justify-between shadow-lg">
-          <div class="min-w-0 pr-2">
-            <div class="flex items-center gap-2">
-              <span class="font-black text-white text-sm truncate">Devin Singletary</span>
-              <span class="text-[10px] font-mono font-bold bg-red-950 text-red-400 border border-red-800 px-1.5 py-0.2 rounded">RB - NYG</span>
+        <!-- PROP #5: Swagsby FAAB ROI (Personal Prop) -->
+        <div id="card-prop_swagsby_faab" class="bg-slate-900/95 border border-slate-800 rounded-xl p-4 shadow-xl flex flex-col justify-between space-y-3 hover:border-slate-700 transition">
+          <div class="space-y-1.5">
+            <div class="flex items-center justify-between gap-2">
+              <span class="text-[10px] font-black uppercase text-purple-400 bg-purple-950/80 border border-purple-800/80 px-2 py-0.5 rounded">
+                FAAB ROI • WAIVER SPECIAL
+              </span>
+              <span class="text-[10px] font-mono text-slate-400 bg-slate-950 border border-slate-800 px-1.5 py-0.5 rounded">
+                PROP #5
+              </span>
             </div>
-            <div class="text-[11px] text-slate-400">Saquon Deez Nacuas</div>
-            <div class="text-[11px] text-slate-300 mt-1 leading-snug">Carried the ball 4 times for 9 yards before disappearing entirely from the field.</div>
+            <h4 class="text-sm font-extrabold text-white leading-snug">
+              Joey (TheGreatSwagsby) FAAB Bids: Schultz + Tucker Over / Under 21.5 Combined PTS
+            </h4>
+            <div class="text-[11px] font-mono text-slate-400">Investment: $26 Total FAAB Spent ($18 Schultz, $8 Tucker)</div>
+            <p class="text-xs text-slate-300 leading-relaxed pt-0.5">
+              Swagsby emptied 26% of his FAAB war chest on Dalton Schultz and speed burner Tre Tucker. Will Joey's aggressive bids pay immediate fantasy dividends?
+            </p>
           </div>
-          <div class="text-right flex-shrink-0">
-            <span class="text-xl font-athletic font-black text-red-500">0.90 PTS</span>
+
+          <div class="space-y-2 pt-1 border-t border-slate-800/80">
+            <div class="grid grid-cols-2 gap-2">
+              <button onclick="castVegasVote('prop_swagsby_faab', 'over')" id="btn-prop_swagsby_faab-over" class="vegas-btn p-2 rounded-lg bg-slate-950 border border-slate-800 hover:border-amber-500/70 text-left transition flex flex-col justify-between">
+                <div class="flex items-center justify-between w-full">
+                  <span class="text-xs font-bold text-white">OVER 21.5 PTS</span>
+                  <span class="text-[10px] font-mono font-bold text-emerald-400">-110</span>
+                </div>
+                <div class="flex items-center justify-between w-full mt-1">
+                  <span class="text-[10px] text-slate-400 font-mono tally-label" id="tally-prop_swagsby_faab-over">5 Picks (45%)</span>
+                  <span class="text-[9px] text-amber-400 font-bold hidden pick-indicator">✓ YOUR PICK</span>
+                </div>
+              </button>
+
+              <button onclick="castVegasVote('prop_swagsby_faab', 'under')" id="btn-prop_swagsby_faab-under" class="vegas-btn p-2 rounded-lg bg-slate-950 border border-slate-800 hover:border-amber-500/70 text-left transition flex flex-col justify-between">
+                <div class="flex items-center justify-between w-full">
+                  <span class="text-xs font-bold text-white">UNDER 21.5 PTS</span>
+                  <span class="text-[10px] font-mono font-bold text-amber-400">-110</span>
+                </div>
+                <div class="flex items-center justify-between w-full mt-1">
+                  <span class="text-[10px] text-slate-400 font-mono tally-label" id="tally-prop_swagsby_faab-under">6 Picks (55%)</span>
+                  <span class="text-[9px] text-amber-400 font-bold hidden pick-indicator">✓ YOUR PICK</span>
+                </div>
+              </button>
+            </div>
+
+            <div class="w-full bg-slate-950 rounded-full h-1.5 overflow-hidden flex">
+              <div id="bar-prop_swagsby_faab-over" class="bg-purple-500 h-1.5 transition-all duration-300" style="width: 45%"></div>
+              <div id="bar-prop_swagsby_faab-under" class="bg-amber-500 h-1.5 transition-all duration-300" style="width: 55%"></div>
+            </div>
           </div>
         </div>
 
-        <div class="bg-slate-900 border border-slate-800 rounded-xl p-3.5 flex items-center justify-between shadow-lg">
-          <div class="min-w-0 pr-2">
-            <div class="flex items-center gap-2">
-              <span class="font-black text-white text-sm truncate">Cameron Dicker</span>
-              <span class="text-[10px] font-mono font-bold bg-red-950 text-red-400 border border-red-800 px-1.5 py-0.2 rounded">K - LAC</span>
+        <!-- PROP #6: $10 Bounty Snatch (Player Spike Prop) -->
+        <div id="card-prop_bounty_snatch" class="bg-slate-900/95 border border-slate-800 rounded-xl p-4 shadow-xl flex flex-col justify-between space-y-3 hover:border-slate-700 transition">
+          <div class="space-y-1.5">
+            <div class="flex items-center justify-between gap-2">
+              <span class="text-[10px] font-black uppercase text-amber-400 bg-amber-950/80 border border-amber-800/80 px-2 py-0.5 rounded">
+                💵 $10 CASH BOUNTY • PLAYER PROP
+              </span>
+              <span class="text-[10px] font-mono text-slate-400 bg-slate-950 border border-slate-800 px-1.5 py-0.5 rounded">
+                PROP #6
+              </span>
             </div>
-            <div class="text-[11px] text-slate-400">Dowdle fucking sucks</div>
-            <div class="text-[11px] text-slate-300 mt-1 leading-snug">Kickers are people too, but 1 solitary extra point is a kick to the shins of fantasy owners.</div>
+            <h4 class="text-sm font-extrabold text-white leading-snug">
+              Will any Sunday RB beat Bijan Robinson's 34.30 PTS to steal the $10 Bounty?
+            </h4>
+            <div class="text-[11px] font-mono text-slate-400">Target: 34.31+ Fantasy Points (Clubhouse Leader: Bijan)</div>
+            <p class="text-xs text-slate-300 leading-relaxed pt-0.5">
+              Bijan ran wild on TNF for 34.30 pts. Jonathan Taylor (Show me dem TDs), Saquon Barkley (Saquon Deez Nacuas), or Kyren Williams (Swagsby) must explode Sunday.
+            </p>
           </div>
-          <div class="text-right flex-shrink-0">
-            <span class="text-xl font-athletic font-black text-red-500">1.00 PTS</span>
+
+          <div class="space-y-2 pt-1 border-t border-slate-800/80">
+            <div class="grid grid-cols-2 gap-2">
+              <button onclick="castVegasVote('prop_bounty_snatch', 'over')" id="btn-prop_bounty_snatch-over" class="vegas-btn p-2 rounded-lg bg-slate-950 border border-slate-800 hover:border-amber-500/70 text-left transition flex flex-col justify-between">
+                <div class="flex items-center justify-between w-full">
+                  <span class="text-xs font-bold text-white">YES (Bounty Snapped)</span>
+                  <span class="text-[10px] font-mono font-bold text-emerald-400">+225</span>
+                </div>
+                <div class="flex items-center justify-between w-full mt-1">
+                  <span class="text-[10px] text-slate-400 font-mono tally-label" id="tally-prop_bounty_snatch-over">4 Picks (36%)</span>
+                  <span class="text-[9px] text-amber-400 font-bold hidden pick-indicator">✓ YOUR PICK</span>
+                </div>
+              </button>
+
+              <button onclick="castVegasVote('prop_bounty_snatch', 'under')" id="btn-prop_bounty_snatch-under" class="vegas-btn p-2 rounded-lg bg-slate-950 border border-slate-800 hover:border-amber-500/70 text-left transition flex flex-col justify-between">
+                <div class="flex items-center justify-between w-full">
+                  <span class="text-xs font-bold text-white">NO (Bijan Cashes)</span>
+                  <span class="text-[10px] font-mono font-bold text-red-400">-270</span>
+                </div>
+                <div class="flex items-center justify-between w-full mt-1">
+                  <span class="text-[10px] text-slate-400 font-mono tally-label" id="tally-prop_bounty_snatch-under">7 Picks (64%)</span>
+                  <span class="text-[9px] text-amber-400 font-bold hidden pick-indicator">✓ YOUR PICK</span>
+                </div>
+              </button>
+            </div>
+
+            <div class="w-full bg-slate-950 rounded-full h-1.5 overflow-hidden flex">
+              <div id="bar-prop_bounty_snatch-over" class="bg-emerald-500 h-1.5 transition-all duration-300" style="width: 36%"></div>
+              <div id="bar-prop_bounty_snatch-under" class="bg-red-500 h-1.5 transition-all duration-300" style="width: 64%"></div>
+            </div>
           </div>
         </div>
 
-        <div class="bg-slate-900 border border-slate-800 rounded-xl p-3.5 flex items-center justify-between shadow-lg">
-          <div class="min-w-0 pr-2">
-            <div class="flex items-center gap-2">
-              <span class="font-black text-white text-sm truncate">Saquon Barkley</span>
-              <span class="text-[10px] font-mono font-bold bg-red-950 text-red-400 border border-red-800 px-1.5 py-0.2 rounded">RB - PHI</span>
+        <!-- PROP #7: Heavyweight Shootout (Game O/U) -->
+        <div id="card-prop_shootout_ou" class="bg-slate-900/95 border border-slate-800 rounded-xl p-4 shadow-xl flex flex-col justify-between space-y-3 hover:border-slate-700 transition">
+          <div class="space-y-1.5">
+            <div class="flex items-center justify-between gap-2">
+              <span class="text-[10px] font-black uppercase text-cyan-400 bg-cyan-950/80 border border-cyan-800/80 px-2 py-0.5 rounded">
+                MATCHUP COMBINED TOTAL • GAME O/U
+              </span>
+              <span class="text-[10px] font-mono text-slate-400 bg-slate-950 border border-slate-800 px-1.5 py-0.5 rounded">
+                PROP #7
+              </span>
             </div>
-            <div class="text-[11px] text-slate-400">Saquon Deez Nacuas</div>
-            <div class="text-[11px] text-slate-300 mt-1 leading-snug">From Week 1 superhero to Week 2 ghost. 11 carries for 25 yards. Contributed to the 53 total pts.</div>
+            <h4 class="text-sm font-extrabold text-white leading-snug">
+              Amon-Ra's Maye-hem vs Show me dem TDs Matchup Total: Over / Under 255.5 PTS
+            </h4>
+            <div class="text-[11px] font-mono text-slate-400">Matchup: 2-0 Undefeated Heavyweight Clash</div>
+            <p class="text-xs text-slate-300 leading-relaxed pt-0.5">
+              Week 2 featured a 284-pt thriller. Now 2-0 scoring leaders Show me dem TDs collide with undefeated 2-0 Maye-hem. Are we witnessing another 260+ point shootout?
+            </p>
           </div>
-          <div class="text-right flex-shrink-0">
-            <span class="text-xl font-athletic font-black text-red-500">2.50 PTS</span>
+
+          <div class="space-y-2 pt-1 border-t border-slate-800/80">
+            <div class="grid grid-cols-2 gap-2">
+              <button onclick="castVegasVote('prop_shootout_ou', 'over')" id="btn-prop_shootout_ou-over" class="vegas-btn p-2 rounded-lg bg-slate-950 border border-slate-800 hover:border-amber-500/70 text-left transition flex flex-col justify-between">
+                <div class="flex items-center justify-between w-full">
+                  <span class="text-xs font-bold text-white">OVER 255.5 PTS</span>
+                  <span class="text-[10px] font-mono font-bold text-emerald-400">-115</span>
+                </div>
+                <div class="flex items-center justify-between w-full mt-1">
+                  <span class="text-[10px] text-slate-400 font-mono tally-label" id="tally-prop_shootout_ou-over">8 Picks (73%)</span>
+                  <span class="text-[9px] text-amber-400 font-bold hidden pick-indicator">✓ YOUR PICK</span>
+                </div>
+              </button>
+
+              <button onclick="castVegasVote('prop_shootout_ou', 'under')" id="btn-prop_shootout_ou-under" class="vegas-btn p-2 rounded-lg bg-slate-950 border border-slate-800 hover:border-amber-500/70 text-left transition flex flex-col justify-between">
+                <div class="flex items-center justify-between w-full">
+                  <span class="text-xs font-bold text-white">UNDER 255.5 PTS</span>
+                  <span class="text-[10px] font-mono font-bold text-amber-400">-105</span>
+                </div>
+                <div class="flex items-center justify-between w-full mt-1">
+                  <span class="text-[10px] text-slate-400 font-mono tally-label" id="tally-prop_shootout_ou-under">3 Picks (27%)</span>
+                  <span class="text-[9px] text-amber-400 font-bold hidden pick-indicator">✓ YOUR PICK</span>
+                </div>
+              </button>
+            </div>
+
+            <div class="w-full bg-slate-950 rounded-full h-1.5 overflow-hidden flex">
+              <div id="bar-prop_shootout_ou-over" class="bg-cyan-500 h-1.5 transition-all duration-300" style="width: 73%"></div>
+              <div id="bar-prop_shootout_ou-under" class="bg-amber-500 h-1.5 transition-all duration-300" style="width: 27%"></div>
+            </div>
           </div>
         </div>
 
-        <div class="bg-slate-900 border border-slate-800 rounded-xl p-3.5 flex items-center justify-between shadow-lg">
-          <div class="min-w-0 pr-2">
-            <div class="flex items-center gap-2">
-              <span class="font-black text-white text-sm truncate">Trevor Lawrence</span>
-              <span class="text-[10px] font-mono font-bold bg-red-950 text-red-400 border border-red-800 px-1.5 py-0.2 rounded">QB - JAX</span>
+        <!-- PROP #8: $200 Bar Tab Liability (Personal Punishment Prop) -->
+        <div id="card-prop_bartab_200" class="bg-slate-900/95 border border-slate-800 rounded-xl p-4 shadow-xl flex flex-col justify-between space-y-3 hover:border-slate-700 transition">
+          <div class="space-y-1.5">
+            <div class="flex items-center justify-between gap-2">
+              <span class="text-[10px] font-black uppercase text-amber-400 bg-amber-950/80 border border-amber-800/80 px-2 py-0.5 rounded">
+                🍻 5K BAR TAB METER • PUNISHMENT PROP
+              </span>
+              <span class="text-[10px] font-mono text-slate-400 bg-slate-950 border border-slate-800 px-1.5 py-0.5 rounded">
+                PROP #8
+              </span>
             </div>
-            <div class="text-[11px] text-slate-400">Dowdle fucking sucks</div>
-            <div class="text-[11px] text-slate-300 mt-1 leading-snug">Struggled through 4 quarters. Benched Bryce Young (24.08) to watch this 7-point dud.</div>
+            <h4 class="text-sm font-extrabold text-white leading-snug">
+              Will any franchise cross $200 in projected Open Bar Tab liability after Week 3?
+            </h4>
+            <div class="text-[11px] font-mono text-slate-400">Current Danger Team: Dowdle fucking sucks ($189)</div>
+            <p class="text-xs text-slate-300 leading-relaxed pt-0.5">
+              Dowdle fucking sucks sits at $189 at 20:00/mi pace. Another sub-80 point disaster or dropped matchup automatically sends Pedro over the $200 bar tab cliff!
+            </p>
           </div>
-          <div class="text-right flex-shrink-0">
-            <span class="text-xl font-athletic font-black text-red-500">7.16 PTS</span>
+
+          <div class="space-y-2 pt-1 border-t border-slate-800/80">
+            <div class="grid grid-cols-2 gap-2">
+              <button onclick="castVegasVote('prop_bartab_200', 'over')" id="btn-prop_bartab_200-over" class="vegas-btn p-2 rounded-lg bg-slate-950 border border-slate-800 hover:border-amber-500/70 text-left transition flex flex-col justify-between">
+                <div class="flex items-center justify-between w-full">
+                  <span class="text-xs font-bold text-white">OVER $200 TAB</span>
+                  <span class="text-[10px] font-mono font-bold text-red-400">-140</span>
+                </div>
+                <div class="flex items-center justify-between w-full mt-1">
+                  <span class="text-[10px] text-slate-400 font-mono tally-label" id="tally-prop_bartab_200-over">7 Picks (64%)</span>
+                  <span class="text-[9px] text-amber-400 font-bold hidden pick-indicator">✓ YOUR PICK</span>
+                </div>
+              </button>
+
+              <button onclick="castVegasVote('prop_bartab_200', 'under')" id="btn-prop_bartab_200-under" class="vegas-btn p-2 rounded-lg bg-slate-950 border border-slate-800 hover:border-amber-500/70 text-left transition flex flex-col justify-between">
+                <div class="flex items-center justify-between w-full">
+                  <span class="text-xs font-bold text-white">UNDER $200 TAB</span>
+                  <span class="text-[10px] font-mono font-bold text-emerald-400">+115</span>
+                </div>
+                <div class="flex items-center justify-between w-full mt-1">
+                  <span class="text-[10px] text-slate-400 font-mono tally-label" id="tally-prop_bartab_200-under">4 Picks (36%)</span>
+                  <span class="text-[9px] text-amber-400 font-bold hidden pick-indicator">✓ YOUR PICK</span>
+                </div>
+              </button>
+            </div>
+
+            <div class="w-full bg-slate-950 rounded-full h-1.5 overflow-hidden flex">
+              <div id="bar-prop_bartab_200-over" class="bg-red-500 h-1.5 transition-all duration-300" style="width: 64%"></div>
+              <div id="bar-prop_bartab_200-under" class="bg-emerald-500 h-1.5 transition-all duration-300" style="width: 36%"></div>
+            </div>
           </div>
         </div>
 
@@ -3461,173 +3977,215 @@
     </section>
 
 <section id="wk1-slide-8" class="slide space-y-4 animate-fade">
-      <div class="bg-gradient-to-r from-emerald-950/60 to-slate-900 border border-emerald-500/40 rounded-2xl p-5 shadow-xl">
-        <div class="flex items-center gap-2">
-          <span class="text-2xl">🚀</span>
-          <div>
-            <h2 class="text-2xl sm:text-3xl font-black uppercase tracking-tight text-white">The Boom Squad</h2>
-            <p class="text-emerald-400 text-xs font-semibold">Certified Ballers Who Shattered Projections in Week 1</p>
-          </div>
+      <div class="bg-gradient-to-r from-emerald-950/70 via-slate-900 to-red-950/70 border border-slate-700 rounded-2xl p-5 shadow-xl flex items-center justify-between">
+        <div>
+          <div class="inline-block bg-gradient-to-r from-emerald-500 to-red-500 text-slate-950 text-xs font-bold px-2.5 py-0.5 rounded uppercase tracking-wider mb-1">Week 1 Outliers</div>
+          <h2 class="text-2xl sm:text-3xl font-black uppercase tracking-tight text-white">💥 The Boom Squad & 👻 Ghost Protocol</h2>
+          <p class="text-slate-400 text-xs">Week 1 certified ballers vs the starters who left fantasy owners in complete despair.</p>
         </div>
+        <div class="text-3xl hidden sm:block">⚡</div>
       </div>
 
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
-        <!-- Player 1 -->
-        <div class="bg-slate-900 border border-slate-800 rounded-xl p-4 flex flex-col justify-between">
-          <div class="flex items-start justify-between">
-            <div>
-              <div class="text-xs font-bold text-emerald-400 uppercase">QB • Chicago Bears</div>
-              <div class="text-lg font-extrabold text-white">Caleb Williams</div>
-              <div class="text-xs text-slate-400">Team: Saquon Deez Nacuas</div>
-            </div>
-            <div class="text-right">
-              <div class="text-2xl font-black font-athletic text-emerald-400">37.26</div>
-              <div class="text-[10px] uppercase font-bold text-slate-500">Fantasy Pts</div>
-            </div>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <!-- Booms Column -->
+        <div class="space-y-3">
+          <div class="text-xs font-black uppercase tracking-wider text-emerald-400 flex items-center gap-1.5 pb-1 border-b border-emerald-500/30">
+            <span>🚀</span> Week 1 Boom Squad (Top 4)
           </div>
-          <p class="text-xs text-slate-300 mt-2 bg-slate-950/60 p-2.5 rounded-lg border border-slate-800/80">
-            Showed out with dual-threat dominance. The engine behind the week’s highest score and the $10 weekly bonus.
-          </p>
+          <!-- Player 1 -->
+          <div class="bg-slate-900 border border-slate-800 rounded-xl p-3.5 flex flex-col justify-between shadow-lg">
+            <div class="flex items-start justify-between">
+              <div>
+                <div class="text-xs font-bold text-emerald-400 uppercase">QB • Chicago Bears</div>
+                <div class="text-base font-extrabold text-white">Caleb Williams</div>
+                <div class="text-xs text-slate-400">Team: Saquon Deez Nacuas</div>
+              </div>
+              <div class="text-right">
+                <div class="text-2xl font-black font-athletic text-emerald-400">37.26</div>
+                <div class="text-[10px] uppercase font-bold text-slate-500">Fantasy Pts</div>
+              </div>
+            </div>
+            <p class="text-xs text-slate-300 mt-2 bg-slate-950/60 p-2 rounded-lg border border-slate-800/80">
+              Showed out with dual-threat dominance. The engine behind the week’s highest score and the $10 weekly bonus.
+            </p>
+          </div>
+
+          <!-- Player 2 -->
+          <div class="bg-slate-900 border border-slate-800 rounded-xl p-3.5 flex flex-col justify-between shadow-lg">
+            <div class="flex items-start justify-between">
+              <div>
+                <div class="text-xs font-bold text-emerald-400 uppercase">QB • Buffalo Bills</div>
+                <div class="text-base font-extrabold text-white">Josh Allen</div>
+                <div class="text-xs text-slate-400">Team: Show me dem TDs</div>
+              </div>
+              <div class="text-right">
+                <div class="text-2xl font-black font-athletic text-emerald-400">35.66</div>
+                <div class="text-[10px] uppercase font-bold text-slate-500">Fantasy Pts</div>
+              </div>
+            </div>
+            <p class="text-xs text-slate-300 mt-2 bg-slate-950/60 p-2 rounded-lg border border-slate-800/80">
+              Single-handedly dragged his team to victory, overcoming a -1.00 pt Houston defense.
+            </p>
+          </div>
+
+          <!-- Player 3 -->
+          <div class="bg-slate-900 border border-slate-800 rounded-xl p-3.5 flex flex-col justify-between shadow-lg">
+            <div class="flex items-start justify-between">
+              <div>
+                <div class="text-xs font-bold text-emerald-400 uppercase">RB • Baltimore Ravens</div>
+                <div class="text-base font-extrabold text-white">Derrick Henry</div>
+                <div class="text-xs text-slate-400">Team: Amon-Ra's Maye-hem</div>
+              </div>
+              <div class="text-right">
+                <div class="text-2xl font-black font-athletic text-emerald-400">34.80</div>
+                <div class="text-[10px] uppercase font-bold text-slate-500">Fantasy Pts</div>
+              </div>
+            </div>
+            <p class="text-xs text-slate-300 mt-2 bg-slate-950/60 p-2 rounded-lg border border-slate-800/80">
+              King Henry freight train mode. Bruising red-zone scores powered the week's 51-point blowout.
+            </p>
+          </div>
+
+          <!-- Player 4 -->
+          <div class="bg-slate-900 border border-slate-800 rounded-xl p-3.5 flex flex-col justify-between shadow-lg">
+            <div class="flex items-start justify-between">
+              <div>
+                <div class="text-xs font-bold text-emerald-400 uppercase">RB • Las Vegas Raiders</div>
+                <div class="text-base font-extrabold text-white">Ashton Jeanty</div>
+                <div class="text-xs text-slate-400">Team: Dicker Dowdle</div>
+              </div>
+              <div class="text-right">
+                <div class="text-2xl font-black font-athletic text-emerald-400">29.70</div>
+                <div class="text-[10px] uppercase font-bold text-slate-500">Fantasy Pts</div>
+              </div>
+            </div>
+            <p class="text-xs text-slate-300 mt-2 bg-slate-950/60 p-2 rounded-lg border border-slate-800/80">
+              Accounted for nearly 33% of his entire team's points. A lone heroic warrior on the last-place roster.
+            </p>
+          </div>
         </div>
 
-        <!-- Player 2 -->
-        <div class="bg-slate-900 border border-slate-800 rounded-xl p-4 flex flex-col justify-between">
-          <div class="flex items-start justify-between">
-            <div>
-              <div class="text-xs font-bold text-emerald-400 uppercase">QB • Buffalo Bills</div>
-              <div class="text-lg font-extrabold text-white">Josh Allen</div>
-              <div class="text-xs text-slate-400">Team: Show me dem TDs</div>
-            </div>
-            <div class="text-right">
-              <div class="text-2xl font-black font-athletic text-emerald-400">35.66</div>
-              <div class="text-[10px] uppercase font-bold text-slate-500">Fantasy Pts</div>
-            </div>
+        <!-- Busts Column -->
+        <div class="space-y-3">
+          <div class="text-xs font-black uppercase tracking-wider text-red-400 flex items-center gap-1.5 pb-1 border-b border-red-500/30">
+            <span>👻</span> Week 1 Ghost Protocol (Top 4)
           </div>
-          <p class="text-xs text-slate-300 mt-2 bg-slate-950/60 p-2.5 rounded-lg border border-slate-800/80">
-            Single-handedly dragged his team to victory, overcoming a -1.00 pt Houston defense.
-          </p>
-        </div>
+          <!-- Dud 1 -->
+          <div class="bg-slate-900 border border-slate-800 rounded-xl p-3.5 flex flex-col justify-between shadow-lg">
+            <div class="flex items-start justify-between">
+              <div>
+                <div class="text-xs font-bold text-red-400 uppercase">TE • Atlanta Falcons</div>
+                <div class="text-base font-extrabold text-white">Kyle Pitts</div>
+                <div class="text-xs text-slate-400">Team: Njigbas in Paris</div>
+              </div>
+              <div class="text-right">
+                <div class="text-2xl font-black font-athletic text-red-400">0.00</div>
+                <div class="text-[10px] uppercase font-bold text-slate-500">Donut</div>
+              </div>
+            </div>
+            <p class="text-xs text-slate-300 mt-2 bg-slate-950/60 p-2 rounded-lg border border-slate-800/80">
+              The annual tradition of Kyle Pitts running wind sprints for zero targets is already in midseason form.
+            </p>
+          </div>
 
-        <!-- Player 3 -->
-        <div class="bg-slate-900 border border-slate-800 rounded-xl p-4 flex flex-col justify-between">
-          <div class="flex items-start justify-between">
-            <div>
-              <div class="text-xs font-bold text-emerald-400 uppercase">RB • Baltimore Ravens</div>
-              <div class="text-lg font-extrabold text-white">Derrick Henry</div>
-              <div class="text-xs text-slate-400">Team: Amon-Ra's Maye-hem</div>
+          <!-- Dud 2 -->
+          <div class="bg-slate-900 border border-slate-800 rounded-xl p-3.5 flex flex-col justify-between shadow-lg">
+            <div class="flex items-start justify-between">
+              <div>
+                <div class="text-xs font-bold text-red-400 uppercase">TE • Chicago Bears</div>
+                <div class="text-base font-extrabold text-white">Colston Loveland</div>
+                <div class="text-xs text-slate-400">Team: Dicker Dowdle</div>
+              </div>
+              <div class="text-right">
+                <div class="text-2xl font-black font-athletic text-red-400">0.00</div>
+                <div class="text-[10px] uppercase font-bold text-slate-500">Donut</div>
+              </div>
             </div>
-            <div class="text-right">
-              <div class="text-2xl font-black font-athletic text-emerald-400">34.80</div>
-              <div class="text-[10px] uppercase font-bold text-slate-500">Fantasy Pts</div>
-            </div>
+            <p class="text-xs text-slate-300 mt-2 bg-slate-950/60 p-2 rounded-lg border border-slate-800/80">
+              A zero at tight end to firmly anchor Dicker Dowdle into 10th place and fuel the 5K bar run nightmare.
+            </p>
           </div>
-          <p class="text-xs text-slate-300 mt-2 bg-slate-950/60 p-2.5 rounded-lg border border-slate-800/80">
-            King Henry freight train mode. Bruising red-zone scores powered the week's 51-point blowout.
-          </p>
-        </div>
 
-        <!-- Player 4 -->
-        <div class="bg-slate-900 border border-slate-800 rounded-xl p-4 flex flex-col justify-between">
-          <div class="flex items-start justify-between">
-            <div>
-              <div class="text-xs font-bold text-emerald-400 uppercase">RB • Las Vegas Raiders</div>
-              <div class="text-lg font-extrabold text-white">Ashton Jeanty</div>
-              <div class="text-xs text-slate-400">Team: Dicker Dowdle</div>
+          <!-- Dud 3 -->
+          <div class="bg-slate-900 border border-slate-800 rounded-xl p-3.5 flex flex-col justify-between shadow-lg">
+            <div class="flex items-start justify-between">
+              <div>
+                <div class="text-xs font-bold text-red-400 uppercase">WR • Denver Broncos</div>
+                <div class="text-base font-extrabold text-white">Jaylen Waddle</div>
+                <div class="text-xs text-slate-400">Team: MyDakMakesHerWaddle</div>
+              </div>
+              <div class="text-right">
+                <div class="text-2xl font-black font-athletic text-red-400">0.70</div>
+                <div class="text-[10px] uppercase font-bold text-slate-500">Sub-1.00 PT</div>
+              </div>
             </div>
-            <div class="text-right">
-              <div class="text-2xl font-black font-athletic text-emerald-400">29.70</div>
-              <div class="text-[10px] uppercase font-bold text-slate-500">Fantasy Pts</div>
-            </div>
+            <p class="text-xs text-slate-300 mt-2 bg-slate-950/60 p-2 rounded-lg border border-slate-800/80">
+              Featured prominently in the team name, but totally absent from the football field. 0.70 total fantasy points.
+            </p>
           </div>
-          <p class="text-xs text-slate-300 mt-2 bg-slate-950/60 p-2.5 rounded-lg border border-slate-800/80">
-            Accounted for nearly 33% of his entire team's points. A lone heroic warrior on the last-place roster.
-          </p>
+
+          <!-- Dud 4 -->
+          <div class="bg-slate-900 border border-slate-800 rounded-xl p-3.5 flex flex-col justify-between shadow-lg">
+            <div class="flex items-start justify-between">
+              <div>
+                <div class="text-xs font-bold text-red-400 uppercase">WR • Cincinnati Bengals</div>
+                <div class="text-base font-extrabold text-white">Ja'Marr Chase</div>
+                <div class="text-xs text-slate-400">Team: Brock To The Future</div>
+              </div>
+              <div class="text-right">
+                <div class="text-2xl font-black font-athletic text-red-400">2.20</div>
+                <div class="text-[10px] uppercase font-bold text-slate-500">Round 1 Pick</div>
+              </div>
+            </div>
+            <p class="text-xs text-slate-300 mt-2 bg-slate-950/60 p-2 rounded-lg border border-slate-800/80">
+              Round 1 draft capital turned into 2.2 points. Brock To The Future survived only because Swift dropped 31.9.
+            </p>
+          </div>
         </div>
       </div>
     </section>
 
-<section id="wk1-slide-9" class="slide space-y-4 animate-fade">
-      <div class="bg-gradient-to-r from-red-950/60 to-slate-900 border border-red-500/40 rounded-2xl p-5 shadow-xl">
-        <div class="flex items-center gap-2">
-          <span class="text-2xl">📉</span>
-          <div>
-            <h2 class="text-2xl sm:text-3xl font-black uppercase tracking-tight text-white">The Ghost Protocol</h2>
-            <p class="text-red-400 text-xs font-semibold">Starters Who Left Their Fantasy Teams in Complete Despair</p>
-          </div>
+    <section id="wk1-slide-9" class="slide space-y-4 animate-fade">
+      <div class="bg-gradient-to-r from-amber-950/70 via-slate-900 to-yellow-950/70 border-2 border-amber-500/50 rounded-2xl p-5 shadow-xl flex items-center justify-between">
+        <div>
+          <div class="inline-block bg-amber-500 text-slate-950 text-xs font-bold px-2.5 py-0.5 rounded uppercase tracking-wider mb-1">Archive Sportsbook</div>
+          <h2 class="text-2xl sm:text-3xl font-black uppercase tracking-tight text-white">🎰 Week 1 Vegas Odds & Prop Results</h2>
+          <p class="text-slate-400 text-xs">Official closing lines, results, and consensus outcomes from the 2026 season opener.</p>
         </div>
+        <div class="text-3xl hidden sm:block">🎲</div>
       </div>
 
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
-        <!-- Dud 1 -->
-        <div class="bg-slate-900 border border-slate-800 rounded-xl p-4 flex flex-col justify-between">
-          <div class="flex items-start justify-between">
-            <div>
-              <div class="text-xs font-bold text-red-400 uppercase">TE • Atlanta Falcons</div>
-              <div class="text-lg font-extrabold text-white">Kyle Pitts</div>
-              <div class="text-xs text-slate-400">Team: Njigbas in Paris</div>
-            </div>
-            <div class="text-right">
-              <div class="text-2xl font-black font-athletic text-red-400">0.00</div>
-              <div class="text-[10px] uppercase font-bold text-slate-500">Donut</div>
-            </div>
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 text-xs">
+        <div class="bg-slate-900/90 border border-slate-800 rounded-xl p-3.5 space-y-1.5 shadow">
+          <div class="flex justify-between items-center">
+            <span class="font-bold text-white">Caleb Williams O/U 22.5 Fantasy Pts</span>
+            <span class="text-[10px] bg-emerald-950 text-emerald-400 border border-emerald-800 px-1.5 py-0.5 rounded font-bold font-mono">OVER HIT (37.26)</span>
           </div>
-          <p class="text-xs text-slate-300 mt-2 bg-slate-950/60 p-2.5 rounded-lg border border-slate-800/80">
-            The annual tradition of Kyle Pitts running wind sprints for zero targets is already in midseason form.
-          </p>
+          <p class="text-slate-400 text-[11px]">Consensus: 65% Over. Result: Crushed by 14.76 pts as Caleb took home High Roller honors.</p>
         </div>
 
-        <!-- Dud 2 -->
-        <div class="bg-slate-900 border border-slate-800 rounded-xl p-4 flex flex-col justify-between">
-          <div class="flex items-start justify-between">
-            <div>
-              <div class="text-xs font-bold text-red-400 uppercase">TE • Chicago Bears</div>
-              <div class="text-lg font-extrabold text-white">Colston Loveland</div>
-              <div class="text-xs text-slate-400">Team: Dicker Dowdle</div>
-            </div>
-            <div class="text-right">
-              <div class="text-2xl font-black font-athletic text-red-400">0.00</div>
-              <div class="text-[10px] uppercase font-bold text-slate-500">Donut</div>
-            </div>
+        <div class="bg-slate-900/90 border border-slate-800 rounded-xl p-3.5 space-y-1.5 shadow">
+          <div class="flex justify-between items-center">
+            <span class="font-bold text-white">Josh Allen O/U 28.5 Fantasy Pts</span>
+            <span class="text-[10px] bg-emerald-950 text-emerald-400 border border-emerald-800 px-1.5 py-0.5 rounded font-bold font-mono">OVER HIT (35.66)</span>
           </div>
-          <p class="text-xs text-slate-300 mt-2 bg-slate-950/60 p-2.5 rounded-lg border border-slate-800/80">
-            A zero at tight end to firmly anchor Dicker Dowdle into 10th place and fuel the 5K bar run nightmare.
-          </p>
+          <p class="text-slate-400 text-[11px]">Consensus: 80% Over. Result: 5 total touchdowns to deliver Week 1 victory.</p>
         </div>
 
-        <!-- Dud 3 -->
-        <div class="bg-slate-900 border border-slate-800 rounded-xl p-4 flex flex-col justify-between">
-          <div class="flex items-start justify-between">
-            <div>
-              <div class="text-xs font-bold text-red-400 uppercase">WR • Denver Broncos</div>
-              <div class="text-lg font-extrabold text-white">Jaylen Waddle</div>
-              <div class="text-xs text-slate-400">Team: MyDakMakesHerWaddle</div>
-            </div>
-            <div class="text-right">
-              <div class="text-2xl font-black font-athletic text-red-400">0.70</div>
-              <div class="text-[10px] uppercase font-bold text-slate-500">Sub-1.00 PT</div>
-            </div>
+        <div class="bg-slate-900/90 border border-slate-800 rounded-xl p-3.5 space-y-1.5 shadow">
+          <div class="flex justify-between items-center">
+            <span class="font-bold text-white">Kyle Pitts O/U 7.5 Fantasy Pts</span>
+            <span class="text-[10px] bg-red-950 text-red-400 border border-red-800 px-1.5 py-0.5 rounded font-bold font-mono">UNDER HIT (0.00)</span>
           </div>
-          <p class="text-xs text-slate-300 mt-2 bg-slate-950/60 p-2.5 rounded-lg border border-slate-800/80">
-            Featured prominently in the team name, but totally absent from the football field. 0.70 total fantasy points.
-          </p>
+          <p class="text-slate-400 text-[11px]">Consensus: 52% Over. Result: Complete goose-egg in Atlanta offense.</p>
         </div>
 
-        <!-- Dud 4 -->
-        <div class="bg-slate-900 border border-slate-800 rounded-xl p-4 flex flex-col justify-between">
-          <div class="flex items-start justify-between">
-            <div>
-              <div class="text-xs font-bold text-red-400 uppercase">WR • Cincinnati Bengals</div>
-              <div class="text-lg font-extrabold text-white">Ja'Marr Chase</div>
-              <div class="text-xs text-slate-400">Team: Brock To The Future</div>
-            </div>
-            <div class="text-right">
-              <div class="text-2xl font-black font-athletic text-red-400">2.20</div>
-              <div class="text-[10px] uppercase font-bold text-slate-500">Round 1 Pick</div>
-            </div>
+        <div class="bg-slate-900/90 border border-slate-800 rounded-xl p-3.5 space-y-1.5 shadow">
+          <div class="flex justify-between items-center">
+            <span class="font-bold text-white">Dicker Dowdle Team Total O/U 95.5 PTS</span>
+            <span class="text-[10px] bg-red-950 text-red-400 border border-red-800 px-1.5 py-0.5 rounded font-bold font-mono">UNDER HIT (88.40)</span>
           </div>
-          <p class="text-xs text-slate-300 mt-2 bg-slate-950/60 p-2.5 rounded-lg border border-slate-800/80">
-            Round 1 draft capital turned into 2.2 points. Brock To The Future survived only because Swift dropped 31.9.
-          </p>
+          <p class="text-slate-400 text-[11px]">Consensus: 70% Under. Result: Under hit as Pedro fell to 0-1 and began 5K bar crawl slide.</p>
         </div>
       </div>
     </section>
@@ -5784,6 +6342,193 @@
       simulateTeam('Dowdle fucking sucks', 20, 62, 27, 189, defaultBtn);
     }
     function resetToDowdle() { resetToPedro(); }
+
+    // ================= BOOMS & BUSTS FILTER CONTROLLER =================
+    function filterBoomBust(type) {
+      const colBooms = document.getElementById('col-booms');
+      const colBusts = document.getElementById('col-busts');
+      const btnAll = document.getElementById('btn-filter-all');
+      const btnBooms = document.getElementById('btn-filter-booms');
+      const btnBusts = document.getElementById('btn-filter-busts');
+
+      [btnAll, btnBooms, btnBusts].forEach(b => {
+        if (b) {
+          b.className = 'px-2.5 py-1 text-xs font-bold rounded-lg bg-slate-900 text-slate-400 hover:text-white transition';
+        }
+      });
+
+      if (type === 'all') {
+        if (colBooms) colBooms.classList.remove('hidden');
+        if (colBusts) colBusts.classList.remove('hidden');
+        if (btnAll) btnAll.className = 'px-2.5 py-1 text-xs font-bold rounded-lg bg-amber-500 text-slate-950 transition';
+      } else if (type === 'booms') {
+        if (colBooms) colBooms.classList.remove('hidden');
+        if (colBusts) colBusts.classList.add('hidden');
+        if (btnBooms) btnBooms.className = 'px-2.5 py-1 text-xs font-bold rounded-lg bg-emerald-500 text-slate-950 transition';
+      } else if (type === 'busts') {
+        if (colBooms) colBooms.classList.add('hidden');
+        if (colBusts) colBusts.classList.remove('hidden');
+        if (btnBusts) btnBusts.className = 'px-2.5 py-1 text-xs font-bold rounded-lg bg-red-500 text-white transition';
+      }
+    }
+
+    // ================= VEGAS SPORTSBOOK & LEAGUE PROPS ENGINE =================
+    const defaultVegasData = {
+      prop_dowdle_win: { overVotes: 4, underVotes: 7, name: 'Dowdle First Win' },
+      prop_saquon_total: { overVotes: 7, underVotes: 4, name: 'Saquon Total O/U 115.5' },
+      prop_desperation_comeback: { overVotes: 3, underVotes: 8, name: 'CULT Comeback' },
+      prop_mahomies_highroller: { overVotes: 7, underVotes: 4, name: '1 4 Ma\'homies O/U 146.5' },
+      prop_swagsby_faab: { overVotes: 5, underVotes: 6, name: 'Swagsby FAAB ROI' },
+      prop_bounty_snatch: { overVotes: 4, underVotes: 7, name: '$10 Bounty Snatch' },
+      prop_shootout_ou: { overVotes: 8, underVotes: 3, name: 'Maye-hem vs TDs O/U 255.5' },
+      prop_bartab_200: { overVotes: 7, underVotes: 4, name: '$200 Bar Tab Liability' }
+    };
+
+    function getVegasCommunityVotes() {
+      try {
+        const saved = localStorage.getItem('ffuc_vegas_community_v2');
+        if (saved) return JSON.parse(saved);
+      } catch (e) {}
+      return JSON.parse(JSON.stringify(defaultVegasData));
+    }
+
+    function getVegasUserPicks() {
+      try {
+        const saved = localStorage.getItem('ffuc_vegas_user_picks_v2');
+        if (saved) return JSON.parse(saved);
+      } catch (e) {}
+      return {};
+    }
+
+    function saveVegasCommunityVotes(data) {
+      try {
+        localStorage.setItem('ffuc_vegas_community_v2', JSON.stringify(data));
+      } catch (e) {}
+    }
+
+    function saveVegasUserPicks(picks) {
+      try {
+        localStorage.setItem('ffuc_vegas_user_picks_v2', JSON.stringify(picks));
+      } catch (e) {}
+    }
+
+    function castVegasVote(propId, pickSide) {
+      const votes = getVegasCommunityVotes();
+      const userPicks = getVegasUserPicks();
+
+      if (!votes[propId]) return;
+
+      const previousPick = userPicks[propId];
+
+      if (previousPick === pickSide) {
+        showPortalToast(`Ticket already locked: ${pickSide.toUpperCase()} on ${votes[propId].name}`);
+        return;
+      }
+
+      if (previousPick) {
+        if (previousPick === 'over') votes[propId].overVotes = Math.max(0, votes[propId].overVotes - 1);
+        if (previousPick === 'under') votes[propId].underVotes = Math.max(0, votes[propId].underVotes - 1);
+      }
+
+      if (pickSide === 'over') votes[propId].overVotes += 1;
+      if (pickSide === 'under') votes[propId].underVotes += 1;
+
+      userPicks[propId] = pickSide;
+
+      saveVegasCommunityVotes(votes);
+      saveVegasUserPicks(userPicks);
+
+      renderVegasUI();
+
+      const sideLabel = pickSide === 'over' ? 'OVER / YES' : 'UNDER / NO';
+      showPortalToast(`🎯 Ticket Locked: ${sideLabel} on ${votes[propId].name}!`);
+    }
+
+    function renderVegasUI() {
+      const votes = getVegasCommunityVotes();
+      const userPicks = getVegasUserPicks();
+
+      let pickedCount = 0;
+
+      Object.keys(votes).forEach(propId => {
+        const prop = votes[propId];
+        const userPick = userPicks[propId];
+        if (userPick) pickedCount++;
+
+        const totalVotes = prop.overVotes + prop.underVotes;
+        const overPct = totalVotes > 0 ? Math.round((prop.overVotes / totalVotes) * 100) : 50;
+        const underPct = 100 - overPct;
+
+        // Update Tallies & Percentages
+        const overTallyElem = document.getElementById(`tally-${propId}-over`);
+        if (overTallyElem) overTallyElem.innerText = `${prop.overVotes} Picks (${overPct}%)`;
+
+        const underTallyElem = document.getElementById(`tally-${propId}-under`);
+        if (underTallyElem) underTallyElem.innerText = `${prop.underVotes} Picks (${underPct}%)`;
+
+        // Update Progress Bars
+        const overBarElem = document.getElementById(`bar-${propId}-over`);
+        if (overBarElem) overBarElem.style.width = `${overPct}%`;
+
+        const underBarElem = document.getElementById(`bar-${propId}-under`);
+        if (underBarElem) underBarElem.style.width = `${underPct}%`;
+
+        // Update Button Active Styling
+        const btnOver = document.getElementById(`btn-${propId}-over`);
+        const btnUnder = document.getElementById(`btn-${propId}-under`);
+
+        if (btnOver) {
+          const indicator = btnOver.querySelector('.pick-indicator');
+          if (userPick === 'over') {
+            btnOver.className = 'vegas-btn p-2 rounded-lg bg-amber-950/80 border-2 border-amber-400 ring-1 ring-amber-400 text-left transition flex flex-col justify-between shadow-lg';
+            if (indicator) indicator.classList.remove('hidden');
+          } else {
+            btnOver.className = 'vegas-btn p-2 rounded-lg bg-slate-950 border border-slate-800 hover:border-amber-500/70 text-left transition flex flex-col justify-between';
+            if (indicator) indicator.classList.add('hidden');
+          }
+        }
+
+        if (btnUnder) {
+          const indicator = btnUnder.querySelector('.pick-indicator');
+          if (userPick === 'under') {
+            btnUnder.className = 'vegas-btn p-2 rounded-lg bg-amber-950/80 border-2 border-amber-400 ring-1 ring-amber-400 text-left transition flex flex-col justify-between shadow-lg';
+            if (indicator) indicator.classList.remove('hidden');
+          } else {
+            btnUnder.className = 'vegas-btn p-2 rounded-lg bg-slate-950 border border-slate-800 hover:border-amber-500/70 text-left transition flex flex-col justify-between';
+            if (indicator) indicator.classList.add('hidden');
+          }
+        }
+      });
+
+      // Update Pick Counter
+      const counterElem = document.getElementById('vegasPicksCounter');
+      if (counterElem) counterElem.innerText = `${pickedCount} / 8 Picked`;
+    }
+
+    function resetVegasPicks() {
+      if (confirm('Reset your Vegas Bet Slip picks? Community tallies will revert your previous selections.')) {
+        const votes = getVegasCommunityVotes();
+        const userPicks = getVegasUserPicks();
+
+        Object.keys(userPicks).forEach(propId => {
+          const side = userPicks[propId];
+          if (votes[propId]) {
+            if (side === 'over') votes[propId].overVotes = Math.max(0, votes[propId].overVotes - 1);
+            if (side === 'under') votes[propId].underVotes = Math.max(0, votes[propId].underVotes - 1);
+          }
+        });
+
+        saveVegasCommunityVotes(votes);
+        saveVegasUserPicks({});
+        renderVegasUI();
+        showPortalToast('Bet slip reset! You can now cast fresh picks.');
+      }
+    }
+
+    // Initialize Vegas Odds on DOM Ready
+    window.addEventListener('DOMContentLoaded', () => {
+      renderVegasUI();
+    });
   </script>
 </body>
 </html>
