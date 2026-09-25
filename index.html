@@ -72,7 +72,7 @@
           <div class="flex items-center gap-1.5 px-2 sm:px-2.5 py-1 bg-slate-950/80 border border-slate-800 rounded-lg text-[10px] text-slate-400 shadow-sm">
             <span class="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse"></span>
             <span class="hidden sm:inline text-slate-500">Updated:</span>
-            <strong id="portalLastUpdated" class="text-slate-200" data-build-time="2026-09-22T13:45:00-05:00">Sep 22, 2026 • 1:45 PM CST</strong>
+            <strong id="portalLastUpdated" class="text-slate-200" data-build-time="2026-09-25T15:35:00-05:00">Sep 25, 2026 • 3:35 PM CST (TNF Live)</strong>
           </div>
           <button onclick="copyShareLink()" class="flex items-center gap-1.5 px-2.5 sm:px-3 py-1 sm:py-1.5 text-xs font-bold rounded-lg bg-slate-800 hover:bg-slate-700 text-amber-400 border border-slate-700 transition shadow">
             <span>🔗</span> <span id="copyText" class="hidden sm:inline">Share</span>
@@ -119,6 +119,8 @@
         <div class="ticker-content text-slate-200 text-xs">
           <!-- Segment A -->
           <div class="inline-flex items-center gap-6 pr-6">
+            <span>⚡ <strong>TNF Fireworks:</strong> <span class="text-amber-400 font-bold">Bijan Robinson (34.30)</span> & <span class="text-amber-400 font-bold">Drake London (23.90)</span> erupt on Thursday night to rocket <span class="text-emerald-400 font-bold">1 4 Ma’homies</span> to a 58.20 pt Desperation Bowl lead!</span>
+            <span class="text-slate-500">•</span>
             <span>🚨 <strong>Week 2 Explosion:</strong> <span class="text-amber-400 font-bold">MyDakMakesHerWaddle</span> hangs 146.56 PTS to crush <span class="text-red-400 font-bold">Dowdle fucking sucks</span> (65.46) by +81.10!</span>
             <span class="text-slate-500">•</span>
             <span>💵 <strong>$10 QB Bounty:</strong> <span class="text-emerald-400 font-bold">Show me dem TDs</span> cashes the $10 prize behind Josh Allen's 40.82 PT masterpiece!</span>
@@ -136,6 +138,8 @@
 
           <!-- Segment B (Identical for seamless infinite loop) -->
           <div class="inline-flex items-center gap-6 pr-6" aria-hidden="true">
+            <span>⚡ <strong>TNF Fireworks:</strong> <span class="text-amber-400 font-bold">Bijan Robinson (34.30)</span> & <span class="text-amber-400 font-bold">Drake London (23.90)</span> erupt on Thursday night to rocket <span class="text-emerald-400 font-bold">1 4 Ma’homies</span> to a 58.20 pt Desperation Bowl lead!</span>
+            <span class="text-slate-500">•</span>
             <span>🚨 <strong>Week 2 Explosion:</strong> <span class="text-amber-400 font-bold">MyDakMakesHerWaddle</span> hangs 146.56 PTS to crush <span class="text-red-400 font-bold">Dowdle fucking sucks</span> (65.46) by +81.10!</span>
             <span class="text-slate-500">•</span>
             <span>💵 <strong>$10 QB Bounty:</strong> <span class="text-emerald-400 font-bold">Show me dem TDs</span> cashes the $10 prize behind Josh Allen's 40.82 PT masterpiece!</span>
@@ -171,12 +175,12 @@
         <div class="flex flex-wrap items-center gap-3">
           <span class="text-xs font-bold uppercase text-slate-400">Edition:</span>
           <select id="seasonArchive" onchange="handleArchiveSelect(this.value)" class="bg-slate-950 border border-slate-700 text-amber-400 text-xs font-bold py-1.5 px-3 rounded-lg focus:outline-none focus:border-amber-500 cursor-pointer shadow-sm">
-            <option value="wk2" selected>📅 Week 2: Official Report (Active)</option>
+            <option value="wk2" selected>📅 Week 2: Official Report (Active • TNF Live)</option>
             <option value="wk1">📅 Week 1: Season Opener (Archive)</option>
-            <option value="locked" disabled>🔒 Week 3 (Upcoming)</option>
+            <option value="locked" disabled>🔒 Week 3 (Sunday Slate Upcoming)</option>
           </select>
           <span class="hidden sm:inline text-[11px] text-slate-400 border-l border-slate-800 pl-3 font-mono">
-            🕒 Synced: <strong class="text-slate-200" id="portalSyncedTime">Sep 22, 2026 • 1:45 PM CST</strong>
+            🕒 Synced: <strong class="text-slate-200" id="portalSyncedTime">Sep 25, 2026 • 3:35 PM CST (TNF Live)</strong>
           </span>
         </div>
 
@@ -202,7 +206,7 @@
         <button onclick="goToSlide(9)" class="nav-pill px-3 py-1.5 rounded-full text-xs font-semibold whitespace-nowrap transition bg-slate-900 text-slate-400 hover:text-white">10. 👻 Busts</button>
         <button onclick="goToSlide(10)" class="nav-pill px-3 py-1.5 rounded-full text-xs font-semibold whitespace-nowrap transition bg-slate-900 text-slate-400 hover:text-white">11. 🏥 Injuries</button>
         <button onclick="goToSlide(11)" class="nav-pill px-3 py-1.5 rounded-full text-xs font-semibold whitespace-nowrap transition bg-slate-900 text-slate-400 hover:text-white">12. ⚔️ Scoreboard</button>
-        <button onclick="goToSlide(12)" class="nav-pill px-3 py-1.5 rounded-full text-xs font-semibold whitespace-nowrap transition bg-slate-900 text-slate-400 hover:text-white">13. 🔮 Wk 3 Lookahead</button>
+        <button onclick="goToSlide(12)" class="nav-pill px-3 py-1.5 rounded-full text-xs font-semibold whitespace-nowrap transition bg-slate-900 text-slate-400 hover:text-white">13. ⚡ Wk 3 Live (TNF)</button>
       </nav>
 
       <!-- ================= WEEK 2 ACTIVE DECK & WEEK 1 ARCHIVE ================= -->
@@ -512,14 +516,14 @@
         <!-- Week 3 Preview Card -->
         <div class="bg-slate-900 border border-amber-500/50 rounded-2xl p-5 relative overflow-hidden shadow-xl">
           <div class="flex items-center justify-between mb-3">
-            <span class="text-xs font-bold uppercase bg-amber-950 text-amber-400 border border-amber-700 px-2.5 py-1 rounded-full">Week 03 Upcoming</span>
+            <span class="text-xs font-bold uppercase bg-amber-950 text-amber-400 border border-amber-700 px-2.5 py-1 rounded-full flex items-center gap-1.5"><span class="w-1.5 h-1.5 rounded-full bg-amber-400 animate-pulse"></span> Week 03 Live • TNF In Progress</span>
             <span class="text-2xl font-black font-athletic text-amber-400">$10.00 ON THE LINE</span>
           </div>
           <div class="text-xs text-slate-400 uppercase font-bold tracking-wider">Challenge: Highest Scoring RB</div>
-          <div class="text-2xl font-black text-white mt-1">The Ground & Pound Bounty</div>
-          <div class="text-sm text-amber-400 font-semibold">Which running back erupts to win the $10 bag in Week 3?</div>
+          <div class="text-2xl font-black text-white mt-1">Clubhouse Leader: Bijan Robinson</div>
+          <div class="text-sm text-emerald-400 font-semibold">34.30 PTS • 1 4 Ma’homies (ATL vs GB)</div>
           <p class="text-xs text-slate-300 mt-3 bg-slate-950/80 p-3 rounded-xl border border-slate-800">
-            Top contenders entering Week 3: <strong>Jonathan Taylor</strong> (27.20 in Wk 2), <strong>Brian Robinson Jr.</strong> (22.00), <strong>Saquon Barkley</strong> (seeking revenge after 2.50 dud), <strong>Kenneth Walker</strong>, and <strong>Jahmyr Gibbs</strong>!
+            🔥 <strong>TNF Explosion:</strong> Bijan Robinson set a monstrous <strong>34.30 pt benchmark</strong> on Thursday night! Running backs entering Sunday—<strong>Jonathan Taylor</strong>, <strong>Saquon Barkley</strong>, <strong>Brian Robinson Jr.</strong>, and <strong>Kenneth Walker</strong>—now need historic performances to pry the $10 bag away from Robert!
           </p>
         </div>
       </div>
@@ -1802,90 +1806,192 @@
 
 
     <section id="wk2-slide-12" class="slide space-y-4 animate-fade">
-      <div class="bg-gradient-to-r from-blue-900/40 via-slate-900 to-slate-900 border border-blue-500/40 rounded-2xl p-5 shadow-2xl flex items-center justify-between">
+      <div class="bg-gradient-to-r from-red-950/60 via-slate-900 to-blue-950/60 border border-amber-500/50 rounded-2xl p-5 shadow-2xl flex flex-col sm:flex-row sm:items-center justify-between gap-3">
         <div>
-          <div class="inline-block bg-blue-500 text-slate-950 text-xs font-bold px-2.5 py-0.5 rounded uppercase tracking-wider mb-1">Live Lookahead</div>
-          <h2 class="text-2xl sm:text-3xl font-black uppercase tracking-tight text-white">🔮 Week 3 Preview & $10 RB Bounty</h2>
-          <p class="text-slate-400 text-xs">Crucial divisional matchups, the 0-2 Desperation Bowl, and the $10 Ground & Pound race!</p>
+          <div class="inline-flex items-center gap-1.5 bg-red-600 text-white text-[10px] font-black px-2.5 py-0.5 rounded uppercase tracking-wider mb-1">
+            <span class="w-2 h-2 rounded-full bg-white animate-ping"></span>
+            LIVE IN-PROGRESS • THURSDAY NIGHT FOOTBALL COMPLETE
+          </div>
+          <h2 class="text-2xl sm:text-3xl font-black uppercase tracking-tight text-white">⚡ Week 3 Live Matchup Scoreboard</h2>
+          <p class="text-slate-300 text-xs mt-0.5">Thursday night's Atlanta vs. Green Bay clash unleashed <strong>122.68 fantasy points</strong> across all 5 matchups!</p>
         </div>
-        <div class="text-3xl sm:text-4xl hidden sm:block">⚔️</div>
+        <div class="flex items-center gap-2 self-start sm:self-center">
+          <span class="text-xs bg-slate-950 border border-slate-800 text-amber-400 font-mono font-bold px-3 py-1.5 rounded-xl">
+            Live Week 3 Status
+          </span>
+        </div>
       </div>
 
-      <!-- Matchup Cards -->
+      <!-- THE DESPERATION BOWL LIVE FEATURE CARD -->
+      <div class="bg-gradient-to-r from-red-950/90 via-slate-900 to-red-950/90 border-2 border-red-500 rounded-2xl p-4 sm:p-5 shadow-2xl space-y-3">
+        <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-red-900/60 pb-2.5">
+          <div class="flex items-center gap-2">
+            <span class="bg-red-600 text-white font-black text-[10px] px-2 py-0.5 rounded uppercase tracking-wider">🚨 THE DESPERATION BOWL (0-2 vs 0-2)</span>
+            <span class="text-[10px] bg-red-950 text-red-300 border border-red-800 px-2 py-0.5 rounded font-mono font-bold">MATCHUP 5</span>
+          </div>
+          <span class="text-xs text-red-400 font-bold font-mono">1 4 Ma’homies Leads +58.20 PTS</span>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 items-center">
+          <!-- Team 1: 1 4 Ma'homies -->
+          <div class="bg-slate-950/80 border border-emerald-500/60 rounded-xl p-3.5 space-y-1.5">
+            <div class="flex justify-between items-center">
+              <span class="text-xs text-slate-400 font-bold uppercase">1 4 Ma’homies (0-2)</span>
+              <span class="text-[10px] bg-emerald-950 text-emerald-400 border border-emerald-800 px-1.5 py-0.5 rounded font-bold font-mono">2 / 9 PLAYED</span>
+            </div>
+            <div class="text-2xl sm:text-3xl font-black text-emerald-400 font-mono">58.20 <span class="text-xs font-sans text-slate-400 font-normal">PTS</span></div>
+            <div class="text-[11px] text-slate-300 space-y-0.5 pt-1 border-t border-slate-800">
+              <div>🔥 <strong>Bijan Robinson:</strong> <span class="text-emerald-400 font-bold font-mono">34.30 pts</span> (157 total yds, 2 TD)</div>
+              <div>⚡ <strong>Drake London:</strong> <span class="text-emerald-400 font-bold font-mono">23.90 pts</span> (7 rec, 89 yds, 1 TD)</div>
+            </div>
+          </div>
+
+          <!-- Team 2: CULT OF THE LAMB -->
+          <div class="bg-slate-950/80 border border-slate-800 rounded-xl p-3.5 space-y-1.5">
+            <div class="flex justify-between items-center">
+              <span class="text-xs text-slate-400 font-bold uppercase">CULT OF THE LAMB (0-2)</span>
+              <span class="text-[10px] bg-slate-800 text-slate-400 px-1.5 py-0.5 rounded font-bold font-mono">0 / 9 PLAYED</span>
+            </div>
+            <div class="text-2xl sm:text-3xl font-black text-slate-500 font-mono">0.00 <span class="text-xs font-sans text-slate-500 font-normal">PTS</span></div>
+            <div class="text-[11px] text-slate-400 pt-1 border-t border-slate-800">
+              <span>9 Starters Remaining • Patrick Mahomes, Breece Hall, DeVonta Smith & core take the field Sunday to mount a 58.20 pt comeback!</span>
+            </div>
+          </div>
+        </div>
+
+        <p class="text-xs text-slate-300 leading-relaxed bg-slate-950/60 p-2.5 rounded-xl border border-red-900/40">
+          Robert’s winless squad came out swinging with raw fury on Thursday night! Bijan and London dropped an explosive 58.20 point thunderbolt, leaving Franky with a mountain to climb on Sunday to prevent an 0-3 tailspin.
+        </p>
+      </div>
+
+      <!-- 4 Live In-Progress Matchup Cards -->
       <div class="grid grid-cols-1 md:grid-cols-2 gap-3 text-xs">
-        <div class="bg-slate-900 border border-slate-800 rounded-xl p-4 shadow-lg space-y-2">
-          <div class="flex justify-between items-center">
-            <span class="font-mono text-amber-400 font-bold uppercase text-[10px]">Matchup 1 • David vs Goliath</span>
-            <span class="text-slate-500">Sunday 12:00 PM</span>
+
+        <!-- Matchup 1 -->
+        <div class="bg-slate-900 border border-slate-800 rounded-xl p-4 shadow-lg space-y-2.5">
+          <div class="flex justify-between items-center border-b border-slate-800 pb-1.5">
+            <span class="font-mono text-amber-400 font-bold uppercase text-[10px]">Matchup 1 • David vs. Goliath</span>
+            <span class="text-[10px] bg-emerald-950 text-emerald-400 border border-emerald-800 px-1.5 py-0.5 rounded font-mono font-bold">Dowdle +15.70 Lead</span>
           </div>
-          <div class="flex justify-between items-center text-sm font-black text-white">
-            <span>Dowdle fucking sucks (0-2)</span>
-            <span class="text-amber-400 font-mono">VS</span>
-            <span>Show me dem TDs (2-0)</span>
+          <div class="space-y-1.5">
+            <div class="flex justify-between items-center">
+              <span class="font-extrabold text-sm text-white">Dowdle fucking sucks <span class="text-slate-400 text-xs font-normal">(0-2)</span></span>
+              <span class="font-mono font-black text-base text-emerald-400">18.50 PTS</span>
+            </div>
+            <div class="text-[11px] text-slate-300 pl-2 border-l-2 border-emerald-500">
+              WR Matthew Golden: <strong class="text-emerald-400 font-mono">18.50 pts</strong> (1/9 played)
+            </div>
+            <div class="flex justify-between items-center pt-1 border-t border-slate-800/80">
+              <span class="font-extrabold text-sm text-slate-300">Show me dem TDs <span class="text-slate-400 text-xs font-normal">(2-0)</span></span>
+              <span class="font-mono font-black text-base text-slate-300">2.80 PTS</span>
+            </div>
+            <div class="text-[11px] text-slate-400 pl-2 border-l-2 border-slate-700">
+              RB MarShawn Lloyd: <strong class="text-slate-300 font-mono">2.80 pts</strong> (1/9 played)
+            </div>
           </div>
-          <p class="text-slate-300 text-[11px] leading-relaxed">
-            Can Dowdle fucking sucks mount a historic upset to avoid an 0-3 disaster, or will Show me dem TDs' Josh Allen freight train roll on?
+          <p class="text-[11px] text-slate-400 pt-1 leading-snug">
+            Matthew Golden gave Pedro an early boost with 18.50 pts. However, Eric's 2-0 powerhouse still has Josh Allen, Jonathan Taylor, and Nico Collins waiting for Sunday.
           </p>
         </div>
 
-        <div class="bg-slate-900 border border-slate-800 rounded-xl p-4 shadow-lg space-y-2">
-          <div class="flex justify-between items-center">
+        <!-- Matchup 2 -->
+        <div class="bg-slate-900 border border-slate-800 rounded-xl p-4 shadow-lg space-y-2.5">
+          <div class="flex justify-between items-center border-b border-slate-800 pb-1.5">
             <span class="font-mono text-amber-400 font-bold uppercase text-[10px]">Matchup 2 • Clash of Titans</span>
-            <span class="text-slate-500">Sunday 12:00 PM</span>
+            <span class="text-[10px] bg-emerald-950 text-emerald-400 border border-emerald-800 px-1.5 py-0.5 rounded font-mono font-bold">MyDak +14.50 Lead</span>
           </div>
-          <div class="flex justify-between items-center text-sm font-black text-white">
-            <span>TheGreatSwagsby (2-0)</span>
-            <span class="text-amber-400 font-mono">VS</span>
-            <span>MyDakMakesHerWaddle (1-1)</span>
+          <div class="space-y-1.5">
+            <div class="flex justify-between items-center">
+              <span class="font-extrabold text-sm text-white">MyDakMakesHerWaddle <span class="text-slate-400 text-xs font-normal">(1-1)</span></span>
+              <span class="font-mono font-black text-base text-emerald-400">19.10 PTS</span>
+            </div>
+            <div class="text-[11px] text-slate-300 pl-2 border-l-2 border-emerald-500">
+              WR Christian Watson: <strong class="text-emerald-400 font-mono">19.10 pts</strong> (1/9 played)
+            </div>
+            <div class="flex justify-between items-center pt-1 border-t border-slate-800/80">
+              <span class="font-extrabold text-sm text-slate-300">TheGreatSwagsby <span class="text-slate-400 text-xs font-normal">(2-0)</span></span>
+              <span class="font-mono font-black text-base text-slate-300">4.60 PTS</span>
+            </div>
+            <div class="text-[11px] text-slate-400 pl-2 border-l-2 border-slate-700">
+              TE Tucker Kraft: <strong class="text-slate-300 font-mono">4.60 pts</strong> (1/9 played)
+            </div>
           </div>
-          <p class="text-slate-300 text-[11px] leading-relaxed">
-            TheGreatSwagsby's stingy 2-0 defense faces its ultimate test against MyDakMakesHerWaddle's 146-point High Roller offense.
+          <p class="text-[11px] text-slate-400 pt-1 leading-snug">
+            Watson caught fire for Arnulfo to extend the momentum from Week 2's 146 pt clinic. Joey (TheGreatSwagsby) stays in striking distance with Kraft's 4.60 and unleashes Kyren Williams on Sunday.
           </p>
         </div>
 
-        <div class="bg-slate-900 border border-slate-800 rounded-xl p-4 shadow-lg space-y-2">
-          <div class="flex justify-between items-center">
+        <!-- Matchup 3 -->
+        <div class="bg-slate-900 border border-slate-800 rounded-xl p-4 shadow-lg space-y-2.5">
+          <div class="flex justify-between items-center border-b border-slate-800 pb-1.5">
             <span class="font-mono text-amber-400 font-bold uppercase text-[10px]">Matchup 3 • Heavyweight Bounceback</span>
-            <span class="text-slate-500">Sunday 12:00 PM</span>
+            <span class="text-[10px] bg-blue-950 text-blue-400 border border-blue-800 px-1.5 py-0.5 rounded font-mono font-bold">Sunday 12:00 PM</span>
           </div>
-          <div class="flex justify-between items-center text-sm font-black text-white">
-            <span>Brock To The Future (1-1)</span>
-            <span class="text-amber-400 font-mono">VS</span>
-            <span>Njigbas in Paris (1-1)</span>
+          <div class="space-y-1.5">
+            <div class="flex justify-between items-center">
+              <span class="font-extrabold text-sm text-white">Brock To The Future <span class="text-slate-400 text-xs font-normal">(1-1)</span></span>
+              <span class="font-mono font-black text-base text-slate-400">0.00 PTS</span>
+            </div>
+            <div class="text-[11px] text-slate-400 pl-2 border-l-2 border-slate-800">
+              9 Starters Remaining • Ja'Marr Chase, Kenneth Walker, Brock Purdy
+            </div>
+            <div class="flex justify-between items-center pt-1 border-t border-slate-800/80">
+              <span class="font-extrabold text-sm text-white">Njigbas in Paris <span class="text-slate-400 text-xs font-normal">(1-1)</span></span>
+              <span class="font-mono font-black text-base text-slate-400">0.00 PTS</span>
+            </div>
+            <div class="text-[11px] text-slate-400 pl-2 border-l-2 border-slate-800">
+              9 Starters Remaining • JSN, Lamar Jackson, James Cook
+            </div>
           </div>
-          <p class="text-slate-300 text-[11px] leading-relaxed">
-            Brock To The Future looks to avenge a 139 pt heartbreaker by taking on Njigbas in Paris and the JSN 38-point nuclear option.
+          <p class="text-[11px] text-slate-400 pt-1 leading-snug">
+            Total silence on Thursday night sets up a classic Sunday slugfest. Both teams enter fresh off 127+ pt Week 2 showcases.
           </p>
         </div>
 
-        <div class="bg-slate-900 border border-slate-800 rounded-xl p-4 shadow-lg space-y-2">
-          <div class="flex justify-between items-center">
+        <!-- Matchup 4 -->
+        <div class="bg-slate-900 border border-slate-800 rounded-xl p-4 shadow-lg space-y-2.5">
+          <div class="flex justify-between items-center border-b border-slate-800 pb-1.5">
             <span class="font-mono text-amber-400 font-bold uppercase text-[10px]">Matchup 4 • The Redemption Test</span>
-            <span class="text-slate-500">Sunday 12:00 PM</span>
+            <span class="text-[10px] bg-emerald-950 text-emerald-400 border border-emerald-800 px-1.5 py-0.5 rounded font-mono font-bold">Saquon +19.48 Lead</span>
           </div>
-          <div class="flex justify-between items-center text-sm font-black text-white">
-            <span>Saquon Deez Nacuas (1-1)</span>
-            <span class="text-amber-400 font-mono">VS</span>
-            <span>Amon-Ra's Maye-hem (2-0)</span>
+          <div class="space-y-1.5">
+            <div class="flex justify-between items-center">
+              <span class="font-extrabold text-sm text-white">Saquon Deez Nacuas <span class="text-slate-400 text-xs font-normal">(1-1)</span></span>
+              <span class="font-mono font-black text-base text-emerald-400">19.48 PTS</span>
+            </div>
+            <div class="text-[11px] text-slate-300 pl-2 border-l-2 border-emerald-500">
+              QB Jordan Love: <strong class="text-emerald-400 font-mono">19.48 pts</strong> (1/9 played)
+            </div>
+            <div class="flex justify-between items-center pt-1 border-t border-slate-800/80">
+              <span class="font-extrabold text-sm text-slate-300">Amon-Ra's Maye-hem <span class="text-slate-400 text-xs font-normal">(2-0)</span></span>
+              <span class="font-mono font-black text-base text-slate-400">0.00 PTS</span>
+            </div>
+            <div class="text-[11px] text-slate-400 pl-2 border-l-2 border-slate-800">
+              9 Starters Remaining • Amon-Ra St. Brown, De'Von Achane, Drake Maye
+            </div>
           </div>
-          <p class="text-slate-300 text-[11px] leading-relaxed">
-            Saquon Deez Nacuas seeks urgent redemption after a 53-pt collapse, facing the undefeated, 300-point scoring leader Amon-Ra's Maye-hem!
+          <p class="text-[11px] text-slate-400 pt-1 leading-snug">
+            Jordan Love delivered 19.48 points on Thursday to jumpstart Mark’s redemption campaign after Week 2’s historic collapse. Alex's undefeated 2-0 scoring leaders await Sunday.
           </p>
         </div>
+
       </div>
 
-      <!-- Desperation Bowl Highlight -->
-      <div class="bg-gradient-to-r from-red-950/80 via-slate-900 to-red-950/80 border-2 border-red-500 rounded-2xl p-4 shadow-2xl">
-        <div class="flex items-center justify-between mb-2">
-          <span class="bg-red-600 text-white font-black text-[10px] px-2 py-0.5 rounded uppercase">🚨 THE DESPERATION BOWL</span>
-          <span class="text-xs font-mono font-bold text-red-400">Matchup 5 • Winner Escapes, Loser Drops to 0-3</span>
-        </div>
+      <!-- $10 RB BOUNTY LEADERBOARD CALLOUT -->
+      <div class="bg-gradient-to-r from-amber-950/60 via-slate-900 to-amber-950/60 border border-amber-500/50 rounded-2xl p-4 shadow-xl">
         <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3">
-          <div class="text-lg font-black text-white">
-            CULT OF THE LAMB (0-2) <span class="text-amber-400">VS</span> 1 4 Ma’homies (0-2)
+          <div>
+            <span class="text-[10px] font-black uppercase text-amber-400 bg-amber-950/80 border border-amber-700 px-2 py-0.5 rounded">
+              💵 $10 Ground & Pound Bounty Tracker
+            </span>
+            <h4 class="text-base sm:text-lg font-black text-white mt-1">Clubhouse Leader: Bijan Robinson (34.30 PTS)</h4>
+            <p class="text-xs text-slate-300 mt-0.5">Bijan’s 34.30 pt masterclass on TNF puts Robert in prime position to take home the $10 Week 3 bonus!</p>
           </div>
-          <div class="text-xs text-slate-300 max-w-md">
-            Both franchises are winless. CULT OF THE LAMB must decide between Mahomes and Dart, while 1 4 Ma’homies is desperate to convert Davante Adams' firepower into a W. High stakes drama!
+          <div class="text-xs text-slate-400 bg-slate-950/80 p-2.5 rounded-xl border border-slate-800 whitespace-nowrap">
+            <span class="font-bold text-white block">Top Sunday Challengers:</span>
+            <span>• Jonathan Taylor (Show me dem TDs)</span><br>
+            <span>• Saquon Barkley (Saquon Deez Nacuas)</span><br>
+            <span>• Brian Robinson Jr. (MyDakMakesHerWaddle)</span>
           </div>
         </div>
       </div>
