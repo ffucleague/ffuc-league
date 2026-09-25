@@ -67,15 +67,18 @@
           </div>
         </a>
 
-        <!-- Last Updated Badge & Share Link -->
+        <!-- Last Updated Badge & Share Links -->
         <div class="flex items-center gap-1.5 sm:gap-2 flex-shrink-0">
           <div class="flex items-center gap-1.5 px-2 sm:px-2.5 py-1 bg-slate-950/80 border border-slate-800 rounded-lg text-[10px] text-slate-400 shadow-sm">
             <span class="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse"></span>
             <span class="hidden sm:inline text-slate-500">Updated:</span>
             <strong id="portalLastUpdated" class="text-slate-200" data-build-time="2026-09-25T15:35:00-05:00">Sep 25, 2026 • 3:35 PM CST (TNF Live)</strong>
           </div>
-          <button onclick="copyShareLink()" class="flex items-center gap-1.5 px-2.5 sm:px-3 py-1 sm:py-1.5 text-xs font-bold rounded-lg bg-slate-800 hover:bg-slate-700 text-amber-400 border border-slate-700 transition shadow">
-            <span>🔗</span> <span id="copyText" class="hidden sm:inline">Share</span>
+          <button onclick="copySleeperBlast()" title="Copy pre-formatted announcement for Sleeper chat" class="flex items-center gap-1.5 px-2.5 sm:px-3 py-1 sm:py-1.5 text-xs font-extrabold rounded-lg bg-emerald-600 hover:bg-emerald-500 text-white border border-emerald-500/50 shadow transition">
+            <span>📢</span> <span id="sleeperBtnText" class="hidden sm:inline">Sleeper Blast</span>
+          </button>
+          <button onclick="copyShareLink()" title="Copy clean website link" class="flex items-center gap-1.5 px-2 sm:px-2.5 py-1 sm:py-1.5 text-xs font-bold rounded-lg bg-slate-800 hover:bg-slate-700 text-amber-400 border border-slate-700 transition shadow">
+            <span>🔗</span> <span id="copyText" class="hidden sm:inline">Link</span>
           </button>
         </div>
 
@@ -1816,9 +1819,9 @@
           <p class="text-slate-300 text-xs mt-0.5">Thursday night's Atlanta vs. Green Bay clash unleashed <strong>122.68 fantasy points</strong> across all 5 matchups!</p>
         </div>
         <div class="flex items-center gap-2 self-start sm:self-center">
-          <span class="text-xs bg-slate-950 border border-slate-800 text-amber-400 font-mono font-bold px-3 py-1.5 rounded-xl">
-            Live Week 3 Status
-          </span>
+          <button onclick="copySleeperBlast()" class="px-3 py-1.5 bg-emerald-600 hover:bg-emerald-500 text-white font-bold text-xs rounded-xl transition flex items-center gap-1.5 shadow whitespace-nowrap border border-emerald-500/50">
+            <span>📢</span> <span>Copy Sleeper Blast</span>
+          </button>
         </div>
       </div>
 
@@ -5228,13 +5231,53 @@
       }
     });
 
+    // Toast Notification System
+    function showPortalToast(msg) {
+      let toast = document.getElementById('portalToast');
+      if (!toast) {
+        toast = document.createElement('div');
+        toast.id = 'portalToast';
+        toast.className = 'fixed bottom-5 right-5 z-50 bg-slate-900 border-2 border-emerald-500 text-white text-xs font-bold px-4 py-3 rounded-xl shadow-2xl transition-all duration-300 transform translate-y-10 opacity-0 pointer-events-none flex items-center gap-2 max-w-sm';
+        document.body.appendChild(toast);
+      }
+      toast.innerHTML = `<span>📢</span> <span>${msg}</span>`;
+      toast.classList.remove('translate-y-10', 'opacity-0', 'pointer-events-none');
+      setTimeout(() => {
+        toast.classList.add('translate-y-10', 'opacity-0', 'pointer-events-none');
+      }, 3500);
+    }
+
+    // Copy Sleeper Announcement
+    function copySleeperBlast() {
+      const blast = `🏈 F.F.U.C. OFFICIAL LEAGUE UPDATE 🏈\n` +
+        `The portal is updated live!\n\n` +
+        `⚡ Week 3 Thursday Night Live Highlights:\n` +
+        `• 🚨 Desperation Bowl: 1 4 Ma’homies roars out to a 58.20 - 0.00 lead (Bijan 34.30, London 23.90)!\n` +
+        `• ⚔️ Dowdle leads 18.50 - 2.80 behind Matthew Golden!\n` +
+        `• ⚔️ MyDak leads 19.10 - 4.60 with Christian Watson!\n` +
+        `• ⚔️ Saquon Deez Nacuas grabs early 19.48 lead behind Jordan Love!\n` +
+        `• 💵 $10 RB Bounty Clubhouse Leader: Bijan Robinson (34.30 pts)!\n\n` +
+        `📊 Check live matchups, live rosters, and 5K open bar meter:\n` +
+        `👉 https://ffucleague.com`;
+
+      navigator.clipboard.writeText(blast).then(() => {
+        const btn = document.getElementById('sleeperBtnText');
+        if (btn) btn.innerText = 'Copied!';
+        showPortalToast('Sleeper Blast copied! Paste directly into Sleeper chat.');
+        setTimeout(() => { if (btn) btn.innerText = 'Sleeper Blast'; }, 2500);
+      }).catch(() => {
+        prompt('Copy this Sleeper announcement:', blast);
+      });
+    }
+
     // Share link copy
     function copyShareLink() {
       const url = window.location.protocol.startsWith('http') ? window.location.href : 'https://ffucleague.com';
       navigator.clipboard.writeText(url).then(() => {
         const copyText = document.getElementById('copyText');
-        copyText.innerText = 'Copied!';
-        setTimeout(() => { copyText.innerText = 'Share'; }, 2000);
+        if (copyText) copyText.innerText = 'Copied!';
+        showPortalToast('Website link copied: ' + url);
+        setTimeout(() => { if (copyText) copyText.innerText = 'Link'; }, 2000);
       }).catch(() => {
         alert('Link: ' + url);
       });

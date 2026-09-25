@@ -195,10 +195,47 @@ def push_to_github(website_dir):
                 print("   🎉 Successfully pushed to GitHub! Site is automatically published live to ffucleague.com.")
             else:
                 print(f"   Git push warning: {push_res.stderr.strip()}")
+# 7. Generate Sleeper Chat Announcement
+def generate_sleeper_announcement(high_roller_team, high_roller_pts, toilet_team, toilet_pts, week_num, domain, website_dir):
+    announcement = (
+        f"🏈 F.F.U.C. WEEK {week_num} OFFICIAL REPORT IS LIVE! 🏈\n\n"
+        f"👑 High Roller ($10 Bounty): {high_roller_team} ({high_roller_pts:.2f} PTS)\n"
+        f"🤡 Toilet Nominee (5K Runner): {toilet_team} ({toilet_pts:.2f} PTS)\n\n"
+        f"📊 View the full newsletter, roasts, 5K open bar meter & Pick-Em standings:\n"
+        f"👉 https://{domain}"
+    )
+    print("\n==================================================")
+    print("📢 SLEEPER ANNOUNCEMENT (READY TO PASTE IN CHAT)")
+    print("==================================================")
+    print(announcement)
+    print("==================================================")
+
+    announcement_file = os.path.join(website_dir, 'latest_sleeper_announcement.txt')
+    try:
+        with open(announcement_file, 'w', encoding='utf-8') as f:
+            f.write(announcement)
+        print(f"Saved to: {announcement_file}")
     except Exception as e:
-        print(f"   Git push notice: {e}")
+        print(f"Notice on writing announcement: {e}")
+
+    # Copy to Windows clipboard via PowerShell
+    try:
+        import subprocess
+        subprocess.run(['powershell', '-Command', f'Get-Content -Path "{announcement_file}" -Raw -Encoding UTF8 | Set-Clipboard'], capture_output=True)
+        print("📋 Announcement successfully copied to your Windows clipboard! (Just Ctrl+V into Sleeper)")
+    except Exception as e:
+        pass
 
 push_to_github(SCRIPT_DIR)
+generate_sleeper_announcement(
+    high_roller['team_name'], 
+    high_roller['points'], 
+    toilet_nominee['team_name'], 
+    toilet_nominee['points'], 
+    target_week, 
+    config.get('domain', 'ffucleague.com'), 
+    SCRIPT_DIR
+)
 
 print("\n==================================================")
 print("AUTOMATION SCRIPT EXECUTION COMPLETED")
