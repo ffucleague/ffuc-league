@@ -195,6 +195,9 @@ def push_to_github(website_dir):
                 print("   🎉 Successfully pushed to GitHub! Site is automatically published live to ffucleague.com.")
             else:
                 print(f"   Git push warning: {push_res.stderr.strip()}")
+    except Exception as e:
+        print(f"   Git push notice: {e}")
+
 # 7. Generate Sleeper Chat Announcement
 def generate_sleeper_announcement(high_roller_team, high_roller_pts, toilet_team, toilet_pts, week_num, domain, website_dir):
     announcement = (
