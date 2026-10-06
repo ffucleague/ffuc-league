@@ -72,7 +72,7 @@
           <div class="flex items-center gap-1.5 px-2 sm:px-2.5 py-1 bg-slate-950/80 border border-slate-800 rounded-lg text-[10px] text-slate-400 shadow-sm">
             <span class="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse"></span>
             <span class="hidden sm:inline text-slate-500">Updated:</span>
-            <strong id="portalLastUpdated">Sep 29, 2026 • 11:29 AM CST</strong>
+            <strong id="portalLastUpdated">Oct 06, 2026 • 10:45 AM CST (Week 4 Final Edition)</strong>
           </div>
           <button onclick="copySleeperBlast()" title="Copy pre-formatted announcement for Sleeper chat" class="flex items-center gap-1.5 px-2.5 sm:px-3 py-1 sm:py-1.5 text-xs font-extrabold rounded-lg bg-emerald-600 hover:bg-emerald-500 text-white border border-emerald-500/50 shadow transition">
             <span>📢</span> <span id="sleeperBtnText" class="hidden sm:inline">Sleeper Blast</span>
@@ -178,10 +178,11 @@
         <div class="flex flex-wrap items-center gap-3">
           <span class="text-xs font-bold uppercase text-slate-400">Edition:</span>
           <select id="seasonArchive" onchange="handleArchiveSelect(this.value)" class="bg-slate-950 border border-slate-700 text-amber-400 text-xs font-bold py-1.5 px-3 rounded-lg focus:outline-none focus:border-amber-500 cursor-pointer shadow-sm">
-            <option value="wk3" selected>📅 Week 3: Official Report (Final)</option>
+            <option value="wk4" selected>📅 Week 4: Official Report (Final)</option>
+            <option value="wk3">📅 Week 3: Official Report (Archive)</option>
             <option value="wk2">📅 Week 2: Official Report (Archive)</option>
             <option value="wk1">📅 Week 1: Season Opener (Archive)</option>
-            <option value="locked" disabled>🔒 Week 4 (Upcoming)</option>
+            <option value="locked" disabled>🔒 Week 5 (Upcoming)</option>
           </select>
           <span class="hidden sm:inline text-[11px] text-slate-400 border-l border-slate-800 pl-3 font-mono">
             🕒 Synced: <strong class="text-slate-200" id="portalSyncedTime">Sep 27, 2026 • 8:35 AM CST (Sunday Kickoff Edition)</strong>
@@ -210,11 +211,2088 @@
         <button onclick="goToSlide(9)" class="nav-pill px-3 py-1.5 rounded-full text-xs font-semibold whitespace-nowrap transition bg-slate-900 text-slate-400 hover:text-white">10. 🎰 Vegas Odds (O/U)</button>
         <button onclick="goToSlide(10)" class="nav-pill px-3 py-1.5 rounded-full text-xs font-semibold whitespace-nowrap transition bg-slate-900 text-slate-400 hover:text-white">11. 🏥 Injuries</button>
         <button onclick="goToSlide(11)" class="nav-pill px-3 py-1.5 rounded-full text-xs font-semibold whitespace-nowrap transition bg-slate-900 text-slate-400 hover:text-white">12. ⚔️ Scoreboard</button>
-        <button onclick="goToSlide(12)" class="nav-pill px-3 py-1.5 rounded-full text-xs font-semibold whitespace-nowrap bg-slate-900 text-slate-400 hover:text-white transition">13. ⚡ Wk 4 Gameday Hub</button>
+        <button onclick="goToSlide(12)" class="nav-pill px-3 py-1.5 rounded-full text-xs font-semibold whitespace-nowrap bg-slate-900 text-slate-400 hover:text-white transition">13. ⚡ Wk 5 Gameday Hub</button>
       </nav>
 
       <!-- ================= WEEK 3 ACTIVE DECK & ARCHIVES ================= -->
-      <div id="deck-wk3">
+      <!-- ========================================== -->
+    <!-- DECK 4: WEEK 4 OFFICIAL REPORT             -->
+    <!-- ========================================== -->
+    <div id="deck-wk4">
+
+      <!-- SLIDE 0: HARDWARE & ROASTS -->
+      <section id="wk4-slide-0" class="slide active space-y-4 animate-fade">
+        <div class="bg-gradient-to-r from-amber-500/20 via-slate-900 to-slate-900 border border-amber-500/30 rounded-2xl p-6 shadow-2xl flex items-center justify-between">
+          <div>
+            <div class="inline-block bg-amber-500 text-slate-950 text-xs font-bold px-2.5 py-0.5 rounded uppercase tracking-wider mb-2">Weekly Honors</div>
+            <h2 class="text-3xl sm:text-4xl font-black uppercase tracking-tight text-white">🏆 Week 4 Hardware & Roasts</h2>
+            <p class="text-slate-400 text-sm mt-1">Official Sleeper audit: High rollers, first-win celebrations, blowouts, and toilet bowl nominations.</p>
+          </div>
+          <div class="text-right hidden sm:block">
+            <span class="text-xs text-amber-400 font-mono font-bold bg-amber-950 border border-amber-800 px-3 py-1 rounded">Week 4 Final Audit</span>
+          </div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+          <!-- Team of the Week (Back-to-Back High Roller) -->
+          <div class="bg-slate-900 border border-emerald-500/40 rounded-2xl p-5 relative overflow-hidden shadow-xl flex flex-col justify-between">
+            <div class="absolute top-0 right-0 bg-emerald-500 text-slate-950 text-[10px] font-extrabold px-3 py-1 rounded-bl-xl uppercase tracking-wider">
+              Repeat High Roller
+            </div>
+            <div>
+              <div class="text-emerald-400 text-xs font-bold uppercase tracking-wider">Team of the Week</div>
+              <h3 class="text-xl font-black text-white mt-1">WE GOIN’ BACK 2 BACK</h3>
+              <div class="text-xs text-slate-400">Manager: <strong class="text-slate-200">Robert</strong> (2-2)</div>
+              <div class="text-3xl font-black text-emerald-400 font-athletic my-3">159.68 PTS</div>
+              <p class="text-xs text-slate-300 leading-relaxed">
+                Make it two weeks in a row! After dropping 163.84 pts in Week 3, the defending champion unloaded another 159.68 points to demolish Herrador by 53.04 points. Kyren Williams (31.70), Bijan Robinson (27.20), Lamar Jackson (21.68), and Etienne (20.40) have turned Robert into a runaway locomotive.
+              </p>
+            </div>
+            <div class="mt-4 pt-3 border-t border-slate-800 text-[11px] text-emerald-400 font-semibold flex items-center justify-between">
+              <span>👑 League Leader in PF (555.18)</span>
+              <span class="font-mono">+53.04 pt blowout</span>
+            </div>
+          </div>
+
+          <!-- The Great Escape / First Win: CULT OF THE LAMB -->
+          <div class="bg-slate-900 border border-amber-500/40 rounded-2xl p-5 relative overflow-hidden shadow-xl flex flex-col justify-between">
+            <div class="absolute top-0 right-0 bg-amber-500 text-slate-950 text-[10px] font-extrabold px-3 py-1 rounded-bl-xl uppercase tracking-wider">
+              0-3 Curse Broken
+            </div>
+            <div>
+              <div class="text-amber-400 text-xs font-bold uppercase tracking-wider">The Exorcism (First Win!)</div>
+              <h3 class="text-xl font-black text-white mt-1">CULT OF THE LAMB</h3>
+              <div class="text-xs text-slate-400">Manager: <strong class="text-slate-200">Franky</strong> (1-3)</div>
+              <div class="text-3xl font-black text-amber-400 font-athletic my-3">148.60 PTS</div>
+              <p class="text-xs text-slate-300 leading-relaxed">
+                The fantasy gods finally showed mercy! After putting up top-tier scores in three straight losses, Franky exploded for 148.60 points behind CeeDee Lamb (32.80), Malik Nabers (20.20), and James Cook (18.20) to dismantle Mark (125.28). Franky's 0-4 nightmare is officially cancelled!
+              </p>
+            </div>
+            <div class="mt-4 pt-3 border-t border-slate-800 text-[11px] text-amber-400 font-semibold flex items-center justify-between">
+              <span>🎉 1st Victory of 2026</span>
+              <span class="font-mono">521.94 Season PF</span>
+            </div>
+          </div>
+
+          <!-- Toilet Runner of the Week: Pedro -->
+          <div class="bg-slate-900 border border-red-500/40 rounded-2xl p-5 relative overflow-hidden shadow-xl flex flex-col justify-between">
+            <div class="absolute top-0 right-0 bg-red-600 text-white text-[10px] font-extrabold px-3 py-1 rounded-bl-xl uppercase tracking-wider">
+              5K Pace-Car
+            </div>
+            <div>
+              <div class="text-red-400 text-xs font-bold uppercase tracking-wider">5K Toilet Runner of the Week</div>
+              <h3 class="text-xl font-black text-white mt-1">Bryce Wide Shut</h3>
+              <div class="text-xs text-slate-400">Manager: <strong class="text-slate-200">Pedro</strong> (1-3)</div>
+              <div class="text-3xl font-black text-red-400 font-athletic my-3">76.48 PTS</div>
+              <p class="text-xs text-slate-300 leading-relaxed">
+                The Week 3 honeymoon is over. Pedro crashed into an offensive brick wall with a league-low 76.48 points against Swagsby, taking a 52-point beating. With only 329.68 total points through four weeks (over 140 points behind 9th place), Pedro reclaims the 10th-place 5K running shoes.
+              </p>
+            </div>
+            <div class="mt-4 pt-3 border-t border-slate-800 text-[11px] text-red-400 font-semibold flex items-center justify-between">
+              <span>🏃‍♂️ Low Score in 3 of 4 Wks</span>
+              <span class="font-mono">1-3 Record (329.68 PF)</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-3">
+          <div class="bg-slate-900 border border-slate-800 rounded-xl p-4">
+            <div class="flex items-center gap-2 mb-1">
+              <span class="text-base">🚀</span>
+              <span class="text-xs font-bold uppercase text-emerald-400">WR Bounty King ($10)</span>
+            </div>
+            <div class="font-extrabold text-white text-sm">Tetairoa McMillan • 38.20 PTS</div>
+            <p class="text-xs text-slate-400 mt-1">
+              iRob's rookie wideout exploded for 38.20 fantasy points, leading Njigbas in Paris to a 139.42-point blowout over Eric and pocketing the $10 Week 4 WR Bounty!
+            </p>
+          </div>
+
+          <div class="bg-slate-900 border border-slate-800 rounded-xl p-4">
+            <div class="flex items-center gap-2 mb-1">
+              <span class="text-base">⚔️</span>
+              <span class="text-xs font-bold uppercase text-blue-400">The 6.54-Point Shootout</span>
+            </div>
+            <div class="font-extrabold text-white text-sm">Arnulfo (114.40) def. Alex (107.86)</div>
+            <p class="text-xs text-slate-400 mt-1">
+              In the battle for 1st place, Arnulfo rode Emanuel Wilson's 25.50 pts to edge Alex by 6.54 points, taking sole possession of the #1 seed at 3-1!
+            </p>
+          </div>
+
+          <div class="bg-slate-900 border border-slate-800 rounded-xl p-4">
+            <div class="flex items-center gap-2 mb-1">
+              <span class="text-base">💥</span>
+              <span class="text-xs font-bold uppercase text-amber-400">The 52-Point Statement</span>
+            </div>
+            <div class="font-extrabold text-white text-sm">TheGreatSwagsby (128.52) def. Pedro (76.48)</div>
+            <p class="text-xs text-slate-400 mt-1">
+              Joey responded to Week 3's dud by unleashing Kenneth Walker (30.40) and Nico Collins (27.30) to hammer Pedro and climb to 3-1!
+            </p>
+          </div>
+        </div>
+      </section>
+
+
+      <!-- SLIDE 1: STATE OF THE UNION -->
+      <section id="wk4-slide-1" class="slide space-y-4 animate-fade">
+        <div class="bg-gradient-to-r from-blue-900/40 via-slate-900 to-slate-900 border border-blue-500/30 rounded-2xl p-6 shadow-2xl flex items-center justify-between">
+          <div>
+            <div class="inline-block bg-blue-500 text-slate-950 text-xs font-bold px-2.5 py-0.5 rounded uppercase tracking-wider mb-2">Franchise Audits</div>
+            <h2 class="text-3xl sm:text-4xl font-black uppercase tracking-tight text-white">🏛️ 2026 State of the Union: 10 Franchises Roasted</h2>
+            <p class="text-slate-400 text-sm mt-1">A trio of 3-1 frontrunners, a 4-team gridlock at 2-2, and three fighting to escape the 5K basement.</p>
+          </div>
+          <div class="text-right hidden sm:block">
+            <span class="text-xs text-blue-400 font-mono font-bold bg-blue-950 border border-blue-800 px-3 py-1 rounded">Post-Week 4 Roasts</span>
+          </div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-3.5">
+          <!-- 1. MyDakMakesHerWaddle -->
+          <div class="bg-slate-900 border border-slate-800 hover:border-amber-500/40 rounded-xl p-4 transition shadow-lg">
+            <div class="flex items-center justify-between border-b border-slate-800 pb-2 mb-2">
+              <div class="flex items-center gap-2">
+                <span class="text-amber-400 font-black text-sm">#1</span>
+                <span class="font-extrabold text-white text-sm">MyDakMakesHerWaddle</span>
+                <span class="text-xs text-slate-400">(Arnulfo)</span>
+              </div>
+              <span class="bg-emerald-950 text-emerald-400 border border-emerald-800 text-[10px] font-mono font-bold px-2 py-0.5 rounded">3-1 • 507.80 PF</span>
+            </div>
+            <p class="text-xs text-slate-300 leading-relaxed">
+              Arnulfo stands alone on the throne! Survived a 6.54-point nailbiter against Alex thanks to Emanuel Wilson's surprising 25.50-point start. Dalton Kincaid laid an egg (1.20 pts) and Dak only had 14, but Arnulfo keeps finding ways to stack Ws. #1 seed in the league through one month.
+            </p>
+          </div>
+
+          <!-- 2. Njigbas in Paris -->
+          <div class="bg-slate-900 border border-slate-800 hover:border-amber-500/40 rounded-xl p-4 transition shadow-lg">
+            <div class="flex items-center justify-between border-b border-slate-800 pb-2 mb-2">
+              <div class="flex items-center gap-2">
+                <span class="text-amber-400 font-black text-sm">#2</span>
+                <span class="font-extrabold text-white text-sm">Njigbas in Paris</span>
+                <span class="text-xs text-slate-400">(iRob)</span>
+              </div>
+              <span class="bg-emerald-950 text-emerald-400 border border-emerald-800 text-[10px] font-mono font-bold px-2 py-0.5 rounded">3-1 • 507.70 PF</span>
+            </div>
+            <p class="text-xs text-slate-300 leading-relaxed">
+              Just 0.10 points behind Arnulfo for the top scoring spot in the league! Tetairoa McMillan went nuclear for 38.20 points to collect the $10 WR Bounty and destroy Eric. Even with Jonah Coleman parked permanently on IR and DJ Moore offering 2.20 pts, iRob's young receivers are dominating fantasy football.
+            </p>
+          </div>
+
+          <!-- 3. TheGreatSwagsby -->
+          <div class="bg-slate-900 border border-slate-800 hover:border-amber-500/40 rounded-xl p-4 transition shadow-lg">
+            <div class="flex items-center justify-between border-b border-slate-800 pb-2 mb-2">
+              <div class="flex items-center gap-2">
+                <span class="text-amber-400 font-black text-sm">#3</span>
+                <span class="font-extrabold text-white text-sm">TheGreatSwagsby</span>
+                <span class="text-xs text-slate-400">(Joey)</span>
+              </div>
+              <span class="bg-emerald-950 text-emerald-400 border border-emerald-800 text-[10px] font-mono font-bold px-2 py-0.5 rounded">3-1 • 492.20 PF</span>
+            </div>
+            <p class="text-xs text-slate-300 leading-relaxed">
+              Joey got the perfect get-right game against Pedro and took full advantage, cruising to a 52-point blowout. Kenneth Walker (30.40) and Nico Collins (27.30) carried the load while Dalton Schultz had another quiet afternoon. Joey sits at 3-1 with the softest schedule in the league (only 367.80 PA).
+            </p>
+          </div>
+
+          <!-- 4. WE GOIN’ BACK 2 BACK -->
+          <div class="bg-slate-900 border border-slate-800 hover:border-amber-500/40 rounded-xl p-4 transition shadow-lg">
+            <div class="flex items-center justify-between border-b border-slate-800 pb-2 mb-2">
+              <div class="flex items-center gap-2">
+                <span class="text-emerald-400 font-black text-sm">#4</span>
+                <span class="font-extrabold text-white text-sm">WE GOIN’ BACK 2 BACK</span>
+                <span class="text-xs text-slate-400">(Robert)</span>
+              </div>
+              <span class="bg-blue-950 text-blue-400 border border-blue-800 text-[10px] font-mono font-bold px-2 py-0.5 rounded">2-2 • 555.18 PF (Scoring King)</span>
+            </div>
+            <p class="text-xs text-slate-300 leading-relaxed">
+              Robert is averaging 161.76 points over the last two weeks! An absolute sledgehammer. Kyren Williams (31.70) and Bijan Robinson (27.20) formed an unstoppable two-headed monster that flattened Herrador by 53 points. Robert leads the entire league with 555.18 total points and zero FAAB spent.
+            </p>
+          </div>
+
+          <!-- 5. Amon-Ra's Maye-hem -->
+          <div class="bg-slate-900 border border-slate-800 hover:border-amber-500/40 rounded-xl p-4 transition shadow-lg">
+            <div class="flex items-center justify-between border-b border-slate-800 pb-2 mb-2">
+              <div class="flex items-center gap-2">
+                <span class="text-slate-400 font-black text-sm">#5</span>
+                <span class="font-extrabold text-white text-sm">Amon-Ra's Maye-hem</span>
+                <span class="text-xs text-slate-400">(Alex)</span>
+              </div>
+              <span class="bg-slate-950 text-slate-300 border border-slate-800 text-[10px] font-mono font-bold px-2 py-0.5 rounded">2-2 • 520.66 PF</span>
+            </div>
+            <p class="text-xs text-slate-300 leading-relaxed">
+              From 2-0 to 2-2 in the blink of an eye. Alex suffered a heartbreaking 6.54-point loss to Arnulfo. The painful part? Drake Maye erupted for 27.16 points ON ALEX'S BENCH while Matthew Stafford only generated 13.90 in the starting slot. Starting the wrong QB cost Alex the game and 1st place.
+            </p>
+          </div>
+
+          <!-- 6. Show me dem TDs -->
+          <div class="bg-slate-900 border border-slate-800 hover:border-amber-500/40 rounded-xl p-4 transition shadow-lg">
+            <div class="flex items-center justify-between border-b border-slate-800 pb-2 mb-2">
+              <div class="flex items-center gap-2">
+                <span class="text-slate-400 font-black text-sm">#6</span>
+                <span class="font-extrabold text-white text-sm">Show me dem TDs</span>
+                <span class="text-xs text-slate-400">(Eric)</span>
+              </div>
+              <span class="bg-slate-950 text-slate-300 border border-slate-800 text-[10px] font-mono font-bold px-2 py-0.5 rounded">2-2 • 488.96 PF</span>
+            </div>
+            <p class="text-xs text-slate-300 leading-relaxed">
+              Two straight losses have cooled Eric off significantly. Tee Higgins gave him 21.20 pts and Josh Allen put up 22, but starting Jaylen Wright (0.70 pts) proved lethal as iRob walked away with a 23.6-point victory. Facing Robert's red-hot squad in Week 5 is terrifying timing.
+            </p>
+          </div>
+
+          <!-- 7. Saquon Deez Nacuas -->
+          <div class="bg-slate-900 border border-slate-800 hover:border-amber-500/40 rounded-xl p-4 transition shadow-lg">
+            <div class="flex items-center justify-between border-b border-slate-800 pb-2 mb-2">
+              <div class="flex items-center gap-2">
+                <span class="text-slate-400 font-black text-sm">#7</span>
+                <span class="font-extrabold text-white text-sm">Saquon Deez Nacuas</span>
+                <span class="text-xs text-slate-400">(Mark)</span>
+              </div>
+              <span class="bg-slate-950 text-slate-300 border border-slate-800 text-[10px] font-mono font-bold px-2 py-0.5 rounded">2-2 • 473.64 PF</span>
+            </div>
+            <p class="text-xs text-slate-300 leading-relaxed">
+              A snakebitten afternoon for Mark. Rashee Rice suffered a catastrophic injury on his first drive for a 0.00 doughnut, and Saquon Barkley got completely bottled up for 1.50 pts. Despite Javonte Williams (28.80) and Puka (23.20) going off, Mark gave Franky his first win and fell to 2-2.
+            </p>
+          </div>
+
+          <!-- 8. CULT OF THE LAMB -->
+          <div class="bg-slate-900 border border-slate-800 hover:border-amber-500/40 rounded-xl p-4 transition shadow-lg">
+            <div class="flex items-center justify-between border-b border-slate-800 pb-2 mb-2">
+              <div class="flex items-center gap-2">
+                <span class="text-amber-400 font-black text-sm">#8</span>
+                <span class="font-extrabold text-white text-sm">CULT OF THE LAMB</span>
+                <span class="text-xs text-slate-400">(Franky)</span>
+              </div>
+              <span class="bg-amber-950 text-amber-400 border border-amber-800 text-[10px] font-mono font-bold px-2 py-0.5 rounded">1-3 • 521.94 PF (Top 3 Scoring)</span>
+            </div>
+            <p class="text-xs text-slate-300 leading-relaxed">
+              EXORCISM COMPLETE! Franky dropped 148.60 points on Mark to finally get on the board at 1-3. CeeDee Lamb looked like an MVP candidate with 32.80 pts and Malik Nabers delivered 20.20. Franky has 521.94 total points—more than 1st-place Arnulfo and 1st-place iRob—and is climbing fast.
+            </p>
+          </div>
+
+          <!-- 9. Brock To The Future -->
+          <div class="bg-slate-900 border border-slate-800 hover:border-amber-500/40 rounded-xl p-4 transition shadow-lg">
+            <div class="flex items-center justify-between border-b border-slate-800 pb-2 mb-2">
+              <div class="flex items-center gap-2">
+                <span class="text-red-400 font-black text-sm">#9</span>
+                <span class="font-extrabold text-white text-sm">Brock To The Future</span>
+                <span class="text-xs text-slate-400">(Herrador)</span>
+              </div>
+              <span class="bg-red-950 text-red-400 border border-red-800 text-[10px] font-mono font-bold px-2 py-0.5 rounded">1-3 • 499.14 PF</span>
+            </div>
+            <p class="text-xs text-slate-300 leading-relaxed">
+              Ran directly in front of the Robert freight train and got crushed by 53 points. Chuba Hubbard had 25.40 pts, but Ja'Marr Chase got quiet and Tyler Shough came back to earth. Herrador drops to 1-3 despite putting up nearly 500 total points on the year.
+            </p>
+          </div>
+
+          <!-- 10. Bryce Wide Shut -->
+          <div class="bg-slate-900 border border-red-500/50 hover:border-red-500 rounded-xl p-4 transition shadow-lg">
+            <div class="flex items-center justify-between border-b border-slate-800 pb-2 mb-2">
+              <div class="flex items-center gap-2">
+                <span class="text-red-400 font-black text-sm">#10</span>
+                <span class="font-extrabold text-white text-sm">Bryce Wide Shut</span>
+                <span class="text-xs text-slate-400">(Pedro)</span>
+              </div>
+              <span class="bg-red-950 text-red-400 border border-red-800 text-[10px] font-mono font-bold px-2 py-0.5 rounded">1-3 • 329.68 PF (5K Pace-Car)</span>
+            </div>
+            <p class="text-xs text-slate-300 leading-relaxed">
+              Back to the 5K punishment treadmill. 76.48 points in Week 4 marks the third time in four weeks that Pedro has posted the league-low score. He is 144 points behind 9th place in scoring and sits at 2-34 in All-Play record. The open bar tab is warming up for Pedro.
+            </p>
+          </div>
+        </div>
+      </section>
+
+
+      <!-- SLIDE 2: $10 WEEKLY BOUNTY TRACKER -->
+      <section id="wk4-slide-2" class="slide space-y-4 animate-fade">
+        <div class="bg-gradient-to-r from-emerald-500/20 via-slate-900 to-slate-900 border border-emerald-500/30 rounded-2xl p-6 shadow-2xl flex items-center justify-between">
+          <div>
+            <div class="inline-block bg-emerald-500 text-slate-950 text-xs font-bold px-2.5 py-0.5 rounded uppercase tracking-wider mb-2">Weekly Incentive</div>
+            <h2 class="text-3xl sm:text-4xl font-black uppercase tracking-tight text-white">💵 $10 Weekly Bounty Tracker</h2>
+            <p class="text-slate-400 text-sm mt-1">Every week features a $10 challenge to keep all 10 teams fighting all season long.</p>
+          </div>
+          <div class="text-right hidden sm:block">
+            <span class="text-xs text-emerald-400 font-mono font-bold bg-emerald-950 border border-emerald-800 px-3 py-1 rounded">Week 4 Claimed</span>
+          </div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <!-- Week 4 Winner Card -->
+          <div class="bg-slate-900 border-2 border-emerald-500/70 rounded-2xl p-5 shadow-2xl relative overflow-hidden flex flex-col justify-between">
+            <div class="absolute top-0 right-0 bg-emerald-500 text-slate-950 text-xs font-extrabold px-3 py-1 rounded-bl-xl uppercase tracking-wider">
+              Bounty Collected ($10)
+            </div>
+            <div>
+              <span class="text-xs font-mono font-bold uppercase tracking-wider text-emerald-400">Week 4 Target: Highest Scoring WR ($10)</span>
+              <h3 class="text-2xl font-black text-white mt-1">Tetairoa McMillan • 38.20 PTS</h3>
+              <div class="text-xs text-slate-400 mt-0.5">Manager: <strong class="text-slate-200">iRob</strong> (Njigbas in Paris)</div>
+
+              <div class="my-4 p-3 bg-emerald-950/40 border border-emerald-500/30 rounded-xl space-y-2">
+                <div class="text-xs text-emerald-300 font-semibold">⚡ The Explosive WR Statline:</div>
+                <div class="text-xs text-slate-300 leading-relaxed">
+                  Tetairoa McMillan put on a clinic for Carolina, hauling in explosive downfield catches and multiple red zone touchdowns to post 38.20 fantasy points! iRob officially collects the <strong>$10 cash payout</strong> for Week 4.
+                </div>
+              </div>
+
+              <!-- Top 5 WR Standings -->
+              <div class="space-y-1.5 text-xs font-mono">
+                <div class="flex justify-between items-center bg-slate-950 p-2 rounded-lg border border-emerald-500/40">
+                  <span class="font-bold text-emerald-400">1. Tetairoa McMillan (CAR) • iRob</span>
+                  <span class="font-black text-white">38.20 PTS (WON $10)</span>
+                </div>
+                <div class="flex justify-between items-center bg-slate-950/60 p-2 rounded-lg border border-slate-800 text-slate-300">
+                  <span>2. CeeDee Lamb (DAL) • Franky</span>
+                  <span class="font-bold text-amber-400">32.80 PTS</span>
+                </div>
+                <div class="flex justify-between items-center bg-slate-950/60 p-2 rounded-lg border border-slate-800 text-slate-400">
+                  <span>3. Nico Collins (HOU) • Joey</span>
+                  <span>27.30 PTS</span>
+                </div>
+                <div class="flex justify-between items-center bg-slate-950/60 p-2 rounded-lg border border-slate-800 text-slate-400">
+                  <span>4. Puka Nacua (LAR) • Mark</span>
+                  <span>23.20 PTS</span>
+                </div>
+                <div class="flex justify-between items-center bg-slate-950/60 p-2 rounded-lg border border-slate-800 text-slate-400">
+                  <span>5. Zay Flowers (BAL) • Mark</span>
+                  <span>21.80 PTS</span>
+                </div>
+              </div>
+            </div>
+            <div class="mt-4 pt-3 border-t border-slate-800 flex justify-between text-xs text-slate-400">
+              <span>Bounty Status:</span>
+              <span class="text-emerald-400 font-bold uppercase">Paid / Confirmed</span>
+            </div>
+          </div>
+
+          <!-- Week 5 Next Up Preview -->
+          <div class="bg-slate-900 border border-slate-800 rounded-2xl p-5 shadow-xl flex flex-col justify-between">
+            <div>
+              <span class="text-xs font-mono font-bold uppercase tracking-wider text-amber-400 bg-amber-950 border border-amber-800 px-2 py-0.5 rounded">Next Up</span>
+              <h3 class="text-2xl font-black text-white mt-2">Week 5: Highest Scoring TE ($10)</h3>
+              <p class="text-xs text-slate-300 mt-1">
+                The bounty turns to the tight ends! The single starting TE who posts the highest score across all 10 matchups in Week 5 takes home the $10 prize.
+              </p>
+
+              <div class="mt-4 p-3 bg-slate-950 rounded-xl border border-slate-800 space-y-2">
+                <div class="text-xs font-bold text-white uppercase tracking-wider">Top TE Contenders To Watch:</div>
+                <div class="grid grid-cols-2 gap-2 text-xs">
+                  <div class="bg-slate-900 p-2 rounded border border-slate-800">
+                    <div class="text-slate-400 text-[10px]">Brock To The Future</div>
+                    <div class="font-bold text-white text-xs">Brock Bowers (LV)</div>
+                  </div>
+                  <div class="bg-slate-900 p-2 rounded border border-slate-800">
+                    <div class="text-slate-400 text-[10px]">Saquon Deez Nacuas</div>
+                    <div class="font-bold text-white text-xs">George Kittle (SF)</div>
+                  </div>
+                  <div class="bg-slate-900 p-2 rounded border border-slate-800">
+                    <div class="text-slate-400 text-[10px]">Amon-Ra's Maye-hem</div>
+                    <div class="font-bold text-white text-xs">Trey McBride (ARI)</div>
+                  </div>
+                  <div class="bg-slate-900 p-2 rounded border border-slate-800">
+                    <div class="text-slate-400 text-[10px]">TheGreatSwagsby</div>
+                    <div class="font-bold text-white text-xs">Tucker Kraft / Schultz</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="mt-4 pt-3 border-t border-slate-800 flex justify-between text-xs text-slate-400">
+              <span>Bounty Prize:</span>
+              <span class="text-amber-400 font-bold">$10.00 Direct Venmo</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 14-Week Schedule Board -->
+        <div class="bg-slate-900 border border-slate-800 rounded-2xl p-4 shadow-xl">
+          <div class="text-xs font-bold uppercase tracking-wider text-slate-400 mb-3">2026 Bounty Master Schedule (Weeks 1-7)</div>
+          <div class="grid grid-cols-2 sm:grid-cols-4 md:grid-cols-7 gap-2 text-center text-xs">
+            <div class="bg-emerald-950/50 border border-emerald-600/50 p-2 rounded-lg">
+              <div class="font-bold text-emerald-400">WK 1: $10</div>
+              <div class="text-[11px] text-slate-300">Most Pts</div>
+              <div class="text-[10px] text-emerald-400 font-semibold mt-1">✓ Saquon (167.56)</div>
+            </div>
+            <div class="bg-emerald-950/50 border border-emerald-600/50 p-2 rounded-lg">
+              <div class="font-bold text-emerald-400">WK 2: $10</div>
+              <div class="text-[11px] text-slate-300">Highest QB</div>
+              <div class="text-[10px] text-emerald-400 font-semibold mt-1">✓ TDs / Allen (40.8)</div>
+            </div>
+            <div class="bg-emerald-950/50 border border-emerald-600/50 p-2 rounded-lg">
+              <div class="font-bold text-emerald-400">WK 3: $10</div>
+              <div class="text-[11px] text-slate-300">Highest RB</div>
+              <div class="text-[10px] text-emerald-400 font-semibold mt-1">✓ MyDak / Gibbs (37.9)</div>
+            </div>
+            <div class="bg-emerald-950/50 border border-emerald-600/50 p-2 rounded-lg">
+              <div class="font-bold text-emerald-400">WK 4: $10</div>
+              <div class="text-[11px] text-slate-300">Highest WR</div>
+              <div class="text-[10px] text-emerald-400 font-semibold mt-1">✓ Paris / McMillan (38.2)</div>
+            </div>
+            <div class="bg-amber-950/50 border border-amber-600/50 p-2 rounded-lg">
+              <div class="font-bold text-amber-400">WK 5: $10</div>
+              <div class="text-[11px] text-slate-300">Highest TE</div>
+              <div class="text-[10px] text-amber-400 font-semibold mt-1">⏳ NEXT UP</div>
+            </div>
+            <div class="bg-slate-950 border border-slate-800 p-2 rounded-lg">
+              <div class="font-bold text-slate-300">WK 6: $10</div>
+              <div class="text-[11px] text-slate-400">Highest DEF</div>
+            </div>
+            <div class="bg-slate-950 border border-slate-800 p-2 rounded-lg">
+              <div class="font-bold text-slate-300">WK 7: $10</div>
+              <div class="text-[11px] text-slate-400">Narrowest Win</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+      <!-- SLIDE 3: 5K PUNISHMENT & LIVE BAR TAB METER -->
+      <section id="wk4-slide-3" class="slide space-y-4 animate-fade">
+        <div class="bg-gradient-to-r from-red-600/20 via-slate-900 to-slate-900 border border-red-500/40 rounded-2xl p-5 shadow-2xl flex items-center justify-between">
+          <div>
+            <div class="inline-block bg-red-600 text-white text-xs font-bold px-2.5 py-0.5 rounded uppercase tracking-wider mb-1">High Stakes Reality</div>
+            <h2 class="text-2xl sm:text-3xl font-black uppercase tracking-tight text-white">🏃‍♂️ 5K Punishment & Live Bar Tab Meter</h2>
+            <p class="text-slate-400 text-xs">10th place runs 5K (3.1 mi) to the bar while 9 teams drink on the loser's open tab!</p>
+          </div>
+          <div class="text-3xl sm:text-4xl">🍻</div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-3">
+          <!-- Current Loser Status -->
+          <div class="bg-slate-900 border-2 border-red-500/70 rounded-2xl p-4 flex flex-col justify-between shadow-xl">
+            <div>
+              <span class="text-xs font-mono font-bold uppercase tracking-wider text-red-400 bg-red-950 border border-red-800 px-2 py-0.5 rounded">Current 10th Place</span>
+              <h3 class="text-xl font-black text-white mt-2">Bryce Wide Shut</h3>
+              <p class="text-xs text-slate-400">Manager: <strong class="text-slate-200">Pedro</strong> • 1-3 (329.68 PF)</p>
+              <div class="mt-3 text-xs bg-red-950/40 border border-red-900 p-2.5 rounded-xl text-red-200 leading-relaxed">
+                Pedro takes back the 5K running shoes! After dropping a week-low 76.48 pts in Week 4, Pedro sits at 329.68 total points—a massive 144 points behind 9th place. Low scorer in 3 of the 4 weeks!
+              </div>
+            </div>
+            <div class="mt-3 pt-3 border-t border-slate-800 flex justify-between items-center text-xs">
+              <span class="text-slate-400">Pace-Car Status:</span>
+              <span class="text-red-400 font-extrabold uppercase animate-pulse">Running Sole Leader</span>
+            </div>
+          </div>
+
+          <!-- Pace & Financial Metrics -->
+          <div class="bg-slate-900 border border-slate-800 rounded-2xl p-4 flex flex-col justify-between shadow-xl">
+            <div>
+              <span class="text-xs font-mono font-bold uppercase tracking-wider text-amber-400 bg-amber-950 border border-amber-800 px-2 py-0.5 rounded">Projected Run Duration</span>
+              <div id="simTime" class="text-3xl sm:text-4xl font-black text-white font-athletic mt-2">62 MINUTES</div>
+              <p id="simPaceNote" class="text-xs text-slate-400">Based on assigned 20:00/mi speed-walk pace.</p>
+            </div>
+            <div class="mt-3 pt-3 border-t border-slate-800 space-y-1.5 text-xs">
+              <div class="flex justify-between">
+                <span class="text-slate-400">Total Distance:</span>
+                <span class="text-slate-200 font-bold">3.1 Miles (5 Kilometers)</span>
+              </div>
+              <div class="flex justify-between">
+                <span class="text-slate-400">Pints Poured (9 Teams):</span>
+                <span id="simPints" class="text-amber-400 font-bold">27 PINTS</span>
+              </div>
+            </div>
+            <div class="mt-3 pt-3 border-t border-slate-800 flex justify-between items-center">
+              <span class="text-xs text-slate-400">Live Bar Tab:</span>
+              <span id="simTab" class="text-2xl font-black text-emerald-400 font-athletic">$175.50</span>
+            </div>
+          </div>
+
+          <!-- The Escaped Contender -->
+          <div class="bg-slate-900 border border-slate-800 rounded-2xl p-4 flex flex-col justify-between shadow-xl">
+            <div>
+              <span class="text-xs font-mono font-bold uppercase tracking-wider text-emerald-400 bg-emerald-950 border border-emerald-800 px-2 py-0.5 rounded">Basement Escape</span>
+              <h3 class="text-xl font-black text-white mt-2">CULT OF THE LAMB</h3>
+              <p class="text-xs text-slate-400">Manager: <strong class="text-slate-200">Franky</strong> • 1-3 (521.94 PF)</p>
+              <div class="mt-3 text-xs bg-slate-950 p-2.5 rounded-xl border border-slate-800 text-slate-300 leading-relaxed">
+                Franky handed the running shoes back to Pedro by dropping 148.60 points on Mark. Franky sits in 8th place with 521.94 points—more total points than two 3-1 division leaders!
+              </div>
+            </div>
+            <div class="mt-3 pt-3 border-t border-slate-800 flex justify-between items-center text-xs">
+              <span class="text-slate-400">Franky Season PF:</span>
+              <span class="text-emerald-400 font-bold font-mono">521.94 PF (Safe on Tiebreaker)</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 10-Team Simulator Grid -->
+        <div class="bg-slate-900 border border-slate-800 rounded-2xl p-4 shadow-xl">
+          <div class="flex justify-between items-center mb-3">
+            <span class="text-xs font-bold uppercase tracking-wider text-slate-300">Tap Any Manager To Simulate Their Bar Tab Liability</span>
+            <span class="text-[11px] text-amber-400 font-semibold">$6.50 / Pint • 9 Thirsty League Mates</span>
+          </div>
+          <div class="grid grid-cols-2 sm:grid-cols-5 gap-2 text-xs">
+            <button onclick="simulateTeam('Pedro', 20, 62, 27, 175.50, this)" class="sim-btn p-2 rounded-lg bg-slate-950 border-2 border-red-500 text-left transition hover:border-red-400">
+              <div class="font-bold text-white">10. Pedro (1-3)</div>
+              <div class="text-[11px] text-red-400 font-mono">20:00/mi • $175.50</div>
+            </button>
+            <button onclick="simulateTeam('Herrador', 18, 56, 25, 162.50, this)" class="sim-btn p-2 rounded-lg bg-slate-950 border border-slate-800 text-left transition hover:border-amber-500">
+              <div class="font-bold text-white">9. Herrador (1-3)</div>
+              <div class="text-[11px] text-slate-400 font-mono">18:00/mi • $162.50</div>
+            </button>
+            <button onclick="simulateTeam('Franky', 20, 62, 27, 175.50, this)" class="sim-btn p-2 rounded-lg bg-slate-950 border border-slate-800 text-left transition hover:border-amber-500">
+              <div class="font-bold text-white">8. Franky (1-3)</div>
+              <div class="text-[11px] text-amber-400 font-mono">20:00/mi • $175.50</div>
+            </button>
+            <button onclick="simulateTeam('Mark', 15, 46, 21, 136.50, this)" class="sim-btn p-2 rounded-lg bg-slate-950 border border-slate-800 text-left transition hover:border-amber-500">
+              <div class="font-bold text-white">7. Mark (2-2)</div>
+              <div class="text-[11px] text-slate-400 font-mono">15:00/mi • $136.50</div>
+            </button>
+            <button onclick="simulateTeam('Eric', 15, 46, 21, 136.50, this)" class="sim-btn p-2 rounded-lg bg-slate-950 border border-slate-800 text-left transition hover:border-amber-500">
+              <div class="font-bold text-white">6. Eric (2-2)</div>
+              <div class="text-[11px] text-slate-400 font-mono">15:00/mi • $136.50</div>
+            </button>
+            <button onclick="simulateTeam('Alex', 13, 40, 18, 117.00, this)" class="sim-btn p-2 rounded-lg bg-slate-950 border border-slate-800 text-left transition hover:border-amber-500">
+              <div class="font-bold text-white">5. Alex (2-2)</div>
+              <div class="text-[11px] text-slate-400 font-mono">13:00/mi • $117.00</div>
+            </button>
+            <button onclick="simulateTeam('Robert', 15, 46, 21, 136.50, this)" class="sim-btn p-2 rounded-lg bg-slate-950 border border-slate-800 text-left transition hover:border-amber-500">
+              <div class="font-bold text-white">4. Robert (2-2)</div>
+              <div class="text-[11px] text-slate-400 font-mono">15:00/mi • $136.50</div>
+            </button>
+            <button onclick="simulateTeam('Joey', 12, 37, 17, 110.50, this)" class="sim-btn p-2 rounded-lg bg-slate-950 border border-slate-800 text-left transition hover:border-amber-500">
+              <div class="font-bold text-white">3. Joey (3-1)</div>
+              <div class="text-[11px] text-slate-400 font-mono">12:00/mi • $110.50</div>
+            </button>
+            <button onclick="simulateTeam('iRob', 18, 56, 25, 162.50, this)" class="sim-btn p-2 rounded-lg bg-slate-950 border border-slate-800 text-left transition hover:border-amber-500">
+              <div class="font-bold text-white">2. iRob (3-1)</div>
+              <div class="text-[11px] text-slate-400 font-mono">18:00/mi • $162.50</div>
+            </button>
+            <button onclick="simulateTeam('Arnulfo', 20, 62, 27, 175.50, this)" class="sim-btn p-2 rounded-lg bg-slate-950 border border-slate-800 text-left transition hover:border-amber-500">
+              <div class="font-bold text-white">1. Arnulfo (3-1)</div>
+              <div class="text-[11px] text-slate-400 font-mono">20:00/mi • $175.50</div>
+            </button>
+          </div>
+        </div>
+      </section>
+
+
+      <!-- SLIDE 4: THE LUCK INDEX -->
+      <section id="wk4-slide-4" class="slide space-y-4 animate-fade">
+        <div class="bg-gradient-to-r from-teal-500/20 via-slate-900 to-slate-900 border border-teal-500/30 rounded-2xl p-5 shadow-xl flex items-center justify-between">
+          <div>
+            <div class="inline-block bg-teal-500 text-slate-950 text-xs font-bold px-2.5 py-0.5 rounded uppercase tracking-wider mb-1">Schedule Analysis</div>
+            <h2 class="text-2xl sm:text-3xl font-black uppercase tracking-tight text-white">🍀 The Week 4 Luck Index</h2>
+            <p class="text-slate-400 text-xs">Exposing who got bailed out by weak matchups vs who got robbed by the fantasy gods.</p>
+          </div>
+          <div class="text-right hidden sm:block">
+            <span class="text-xs text-teal-400 font-mono font-bold bg-teal-950 border border-teal-800 px-2.5 py-1 rounded">4-Week Cumulative Audit</span>
+          </div>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+          <div class="bg-slate-900 border border-emerald-500/40 rounded-xl p-3.5 flex items-center gap-3">
+            <div class="text-2xl">🍀</div>
+            <div>
+              <div class="text-xs font-bold uppercase text-emerald-400">Luckiest Franchise Through 4 Weeks</div>
+              <div class="font-extrabold text-white text-sm">TheGreatSwagsby • 3-1 Actual vs 18-18 All-Play</div>
+              <div class="text-xs text-slate-400 mt-0.5">Joey sits at exactly .500 in All-Play (18-18), yet enjoys a 3-1 record (+1.00 Luck Differential) thanks to facing the softest scoring in the league (367.80 PA).</div>
+            </div>
+          </div>
+          <div class="bg-slate-900 border border-red-500/40 rounded-xl p-3.5 flex items-center gap-3">
+            <div class="text-2xl">💔</div>
+            <div>
+              <div class="text-xs font-bold uppercase text-red-400">Most Robbed Franchise Through 4 Weeks</div>
+              <div class="font-extrabold text-white text-sm">CULT OF THE LAMB • 1-3 Actual vs 21-15 All-Play</div>
+              <div class="text-xs text-slate-400 mt-0.5">Franky is 2nd in the entire league in All-Play wins (21-15) and 3rd in scoring (521.94 PF), yet sits at 1-3 (-1.33 Luck Differential) with 552.56 PA.</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Cumulative All-Play Standings Table -->
+        <div class="bg-slate-900 border border-slate-800 rounded-2xl overflow-hidden shadow-xl">
+          <div class="p-3.5 border-b border-slate-800 flex justify-between items-center text-xs">
+            <span class="font-bold uppercase tracking-wider text-slate-300">Official Cumulative All-Play Standings (36 Total Comparisons)</span>
+            <span class="text-slate-500">Sorted by All-Play Wins</span>
+          </div>
+          <div class="overflow-x-auto">
+            <table class="w-full text-left text-xs">
+              <thead class="bg-slate-950 text-slate-400 uppercase font-mono text-[10px]">
+                <tr>
+                  <th class="p-3">Rank</th>
+                  <th class="p-3">Franchise</th>
+                  <th class="p-3 text-center">Actual</th>
+                  <th class="p-3 text-center">All-Play</th>
+                  <th class="p-3 text-right">W1</th>
+                  <th class="p-3 text-right">W2</th>
+                  <th class="p-3 text-right">W3</th>
+                  <th class="p-3 text-right">W4</th>
+                  <th class="p-3 text-right">Total PF</th>
+                  <th class="p-3 text-center">Luck Rating</th>
+                </tr>
+              </thead>
+              <tbody class="divide-y divide-slate-800/60 font-mono">
+                <tr class="hover:bg-slate-800/40 bg-emerald-950/20">
+                  <td class="p-3 font-bold text-amber-400">#1</td>
+                  <td class="p-3 font-sans font-bold text-white">WE GOIN’ BACK 2 BACK</td>
+                  <td class="p-3 text-center text-slate-200 font-bold">2-2</td>
+                  <td class="p-3 text-center text-emerald-400 font-bold">23-13</td>
+                  <td class="p-3 text-right text-slate-300">113.16</td>
+                  <td class="p-3 text-right text-slate-300">118.50</td>
+                  <td class="p-3 text-right text-slate-300">163.84</td>
+                  <td class="p-3 text-right text-emerald-400 font-bold">159.68</td>
+                  <td class="p-3 text-right text-emerald-400 font-bold">555.18</td>
+                  <td class="p-3 text-center text-amber-400">-0.56 (Scoring King)</td>
+                </tr>
+                <tr class="hover:bg-slate-800/40">
+                  <td class="p-3 font-bold text-slate-400">#2</td>
+                  <td class="p-3 font-sans font-bold text-white">CULT OF THE LAMB</td>
+                  <td class="p-3 text-center text-red-400 font-bold">1-3</td>
+                  <td class="p-3 text-center text-emerald-400 font-bold">21-15</td>
+                  <td class="p-3 text-right text-slate-300">122.10</td>
+                  <td class="p-3 text-right text-slate-300">109.30</td>
+                  <td class="p-3 text-right text-slate-300">141.94</td>
+                  <td class="p-3 text-right text-emerald-400 font-bold">148.60</td>
+                  <td class="p-3 text-right text-slate-200 font-bold">521.94</td>
+                  <td class="p-3 text-center text-red-400 font-bold">-1.33 (Most Robbed)</td>
+                </tr>
+                <tr class="hover:bg-slate-800/40 bg-emerald-950/20">
+                  <td class="p-3 font-bold text-slate-400">#3</td>
+                  <td class="p-3 font-sans font-bold text-white">Njigbas in Paris</td>
+                  <td class="p-3 text-center text-emerald-400 font-bold">3-1</td>
+                  <td class="p-3 text-center text-emerald-400 font-bold">21-15</td>
+                  <td class="p-3 text-right text-slate-300">113.26</td>
+                  <td class="p-3 text-right text-slate-300">127.38</td>
+                  <td class="p-3 text-right text-slate-300">127.64</td>
+                  <td class="p-3 text-right text-slate-300">139.42</td>
+                  <td class="p-3 text-right text-slate-200 font-bold">507.70</td>
+                  <td class="p-3 text-center text-teal-400">+0.67 (Deserved)</td>
+                </tr>
+                <tr class="hover:bg-slate-800/40 bg-emerald-950/20">
+                  <td class="p-3 font-bold text-slate-400">#4</td>
+                  <td class="p-3 font-sans font-bold text-white">MyDakMakesHerWaddle</td>
+                  <td class="p-3 text-center text-emerald-400 font-bold">3-1</td>
+                  <td class="p-3 text-center text-slate-200 font-bold">20-16</td>
+                  <td class="p-3 text-right text-slate-300">122.60</td>
+                  <td class="p-3 text-right text-slate-300">146.56</td>
+                  <td class="p-3 text-right text-slate-300">124.24</td>
+                  <td class="p-3 text-right text-slate-300">114.40</td>
+                  <td class="p-3 text-right text-slate-200 font-bold">507.80</td>
+                  <td class="p-3 text-center text-teal-400">+0.78 (Division Leader)</td>
+                </tr>
+                <tr class="hover:bg-slate-800/40">
+                  <td class="p-3 font-bold text-slate-400">#5</td>
+                  <td class="p-3 font-sans font-bold text-white">Saquon Deez Nacuas</td>
+                  <td class="p-3 text-center text-slate-200 font-bold">2-2</td>
+                  <td class="p-3 text-center text-slate-200">20-16</td>
+                  <td class="p-3 text-right text-slate-300">167.56</td>
+                  <td class="p-3 text-right text-slate-300">53.92</td>
+                  <td class="p-3 text-right text-slate-300">126.88</td>
+                  <td class="p-3 text-right text-slate-300">125.28</td>
+                  <td class="p-3 text-right text-slate-200 font-bold">473.64</td>
+                  <td class="p-3 text-center text-slate-400">-0.22 (Balanced)</td>
+                </tr>
+                <tr class="hover:bg-slate-800/40">
+                  <td class="p-3 font-bold text-slate-400">#6</td>
+                  <td class="p-3 font-sans font-bold text-white">Amon-Ra's Maye-hem</td>
+                  <td class="p-3 text-center text-slate-200 font-bold">2-2</td>
+                  <td class="p-3 text-center text-slate-200">19-17</td>
+                  <td class="p-3 text-right text-slate-300">164.92</td>
+                  <td class="p-3 text-right text-slate-300">135.42</td>
+                  <td class="p-3 text-right text-slate-300">112.46</td>
+                  <td class="p-3 text-right text-slate-300">107.86</td>
+                  <td class="p-3 text-right text-slate-200 font-bold">520.66</td>
+                  <td class="p-3 text-center text-slate-400">-0.11 (Cooling Off)</td>
+                </tr>
+                <tr class="hover:bg-slate-800/40">
+                  <td class="p-3 font-bold text-slate-400">#7</td>
+                  <td class="p-3 font-sans font-bold text-white">Brock To The Future</td>
+                  <td class="p-3 text-center text-red-400 font-bold">1-3</td>
+                  <td class="p-3 text-center text-slate-200">18-18</td>
+                  <td class="p-3 text-right text-slate-300">127.76</td>
+                  <td class="p-3 text-right text-slate-300">139.34</td>
+                  <td class="p-3 text-right text-slate-300">125.40</td>
+                  <td class="p-3 text-right text-slate-300">106.64</td>
+                  <td class="p-3 text-right text-slate-200 font-bold">499.14</td>
+                  <td class="p-3 text-center text-red-400 font-bold">-1.00 (Tough Luck)</td>
+                </tr>
+                <tr class="hover:bg-slate-800/40 bg-emerald-950/20">
+                  <td class="p-3 font-bold text-slate-400">#8</td>
+                  <td class="p-3 font-sans font-bold text-white">TheGreatSwagsby</td>
+                  <td class="p-3 text-center text-emerald-400 font-bold">3-1</td>
+                  <td class="p-3 text-center text-slate-200">18-18</td>
+                  <td class="p-3 text-right text-slate-300">152.42</td>
+                  <td class="p-3 text-right text-slate-300">112.06</td>
+                  <td class="p-3 text-right text-slate-300">99.02</td>
+                  <td class="p-3 text-right text-slate-300">128.52</td>
+                  <td class="p-3 text-right text-slate-200 font-bold">492.20</td>
+                  <td class="p-3 text-center text-emerald-400 font-bold">+1.00 (Schedule Blessing)</td>
+                </tr>
+                <tr class="hover:bg-slate-800/40">
+                  <td class="p-3 font-bold text-slate-400">#9</td>
+                  <td class="p-3 font-sans font-bold text-white">Show me dem TDs</td>
+                  <td class="p-3 text-center text-slate-200 font-bold">2-2</td>
+                  <td class="p-3 text-center text-slate-200">18-18</td>
+                  <td class="p-3 text-right text-slate-300">136.06</td>
+                  <td class="p-3 text-right text-slate-300">144.72</td>
+                  <td class="p-3 text-right text-slate-300">92.36</td>
+                  <td class="p-3 text-right text-slate-300">115.82</td>
+                  <td class="p-3 text-right text-slate-200 font-bold">488.96</td>
+                  <td class="p-3 text-center text-slate-400">0.00 (Neutral)</td>
+                </tr>
+                <tr class="hover:bg-slate-800/40 bg-red-950/20">
+                  <td class="p-3 font-bold text-red-400">#10</td>
+                  <td class="p-3 font-sans font-bold text-white">Bryce Wide Shut</td>
+                  <td class="p-3 text-center text-red-400 font-bold">1-3</td>
+                  <td class="p-3 text-center text-red-400">2-34</td>
+                  <td class="p-3 text-right text-slate-300">92.60</td>
+                  <td class="p-3 text-right text-slate-300">65.46</td>
+                  <td class="p-3 text-right text-slate-300">95.14</td>
+                  <td class="p-3 text-right text-slate-300">76.48</td>
+                  <td class="p-3 text-right text-red-400 font-bold">329.68</td>
+                  <td class="p-3 text-center text-amber-400">+0.78 (Sole Cellar)</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+
+
+      <!-- SLIDE 5: POWER RANKINGS -->
+      <section id="wk4-slide-5" class="slide space-y-4 animate-fade">
+        <div class="bg-gradient-to-r from-purple-950/60 via-slate-900 to-slate-900 border border-purple-500/40 rounded-2xl p-5 shadow-xl flex items-center justify-between">
+          <div>
+            <div class="inline-block bg-purple-500 text-slate-950 text-xs font-bold px-2.5 py-0.5 rounded uppercase tracking-wider mb-1">Rank Movement</div>
+            <h2 class="text-2xl sm:text-3xl font-black uppercase tracking-tight text-white">📈 Power Ranking Board: Week 4</h2>
+            <p class="text-slate-400 text-xs">Separation Sunday creates a 3-tier league hierarchy through the first month of action.</p>
+          </div>
+          <div class="text-right hidden sm:block">
+            <span class="text-xs text-purple-400 font-mono font-bold bg-purple-950 border border-purple-800 px-2.5 py-1 rounded">Week 4 Post-Matchup</span>
+          </div>
+        </div>
+
+        <div class="space-y-2">
+          <!-- #1 WE GOIN' BACK 2 BACK -->
+          <div class="bg-slate-900 border border-emerald-500/40 rounded-xl p-3 flex flex-col sm:flex-row sm:items-center justify-between gap-2 shadow-lg hover:border-emerald-400 transition">
+            <div class="flex items-center gap-3">
+              <span class="text-lg font-black text-amber-400 font-athletic w-6">#1</span>
+              <div>
+                <div class="flex items-center gap-2">
+                  <span class="font-bold text-white text-sm">WE GOIN’ BACK 2 BACK</span>
+                  <span class="text-[10px] text-emerald-400 font-bold bg-emerald-950 border border-emerald-800 px-1.5 py-0.2 rounded font-mono">━ UNSTOPPABLE</span>
+                </div>
+                <div class="text-[11px] text-slate-400">Robert • 2-2 • 555.18 PF (League High Scorer)</div>
+              </div>
+            </div>
+            <div class="text-xs text-slate-300 sm:max-w-md">
+              Averaging 161.76 points over his last two games. Robert is the undisputed #1 power in FFUC. Bijan and Kyren Williams are carrying him into championship form.
+            </div>
+          </div>
+
+          <!-- #2 Njigbas in Paris -->
+          <div class="bg-slate-900 border border-slate-800 rounded-xl p-3 flex flex-col sm:flex-row sm:items-center justify-between gap-2 shadow-lg hover:border-purple-400 transition">
+            <div class="flex items-center gap-3">
+              <span class="text-lg font-black text-slate-400 font-athletic w-6">#2</span>
+              <div>
+                <div class="flex items-center gap-2">
+                  <span class="font-bold text-white text-sm">Njigbas in Paris</span>
+                  <span class="text-[10px] text-emerald-400 font-bold bg-emerald-950 border border-emerald-800 px-1.5 py-0.2 rounded font-mono">▲ +6 SPOTS</span>
+                </div>
+                <div class="text-[11px] text-slate-400">iRob • 3-1 • 507.70 PF • Tetairoa McMillan 38.20</div>
+              </div>
+            </div>
+            <div class="text-xs text-slate-300 sm:max-w-md">
+              Sitting at 3-1 with 507.70 PF (0.10 behind Arnulfo for #1). Tetairoa McMillan exploded for 38.20 pts and Purdy/JSN remain deadly. A true title contender.
+            </div>
+          </div>
+
+          <!-- #3 MyDakMakesHerWaddle -->
+          <div class="bg-slate-900 border border-slate-800 rounded-xl p-3 flex flex-col sm:flex-row sm:items-center justify-between gap-2 shadow-lg hover:border-purple-400 transition">
+            <div class="flex items-center gap-3">
+              <span class="text-lg font-black text-slate-400 font-athletic w-6">#3</span>
+              <div>
+                <div class="flex items-center gap-2">
+                  <span class="font-bold text-white text-sm">MyDakMakesHerWaddle</span>
+                  <span class="text-[10px] text-slate-400 font-bold bg-slate-950 border border-slate-800 px-1.5 py-0.2 rounded font-mono">━ EVEN</span>
+                </div>
+                <div class="text-[11px] text-slate-400">Arnulfo • 3-1 • 507.80 PF (Division Leader)</div>
+              </div>
+            </div>
+            <div class="text-xs text-slate-300 sm:max-w-md">
+              Sole #1 seed in the standings after taking down Alex in a 6.54-point thriller. Emanuel Wilson stepped up with 25.50 pts to keep Arnulfo atop the mountain.
+            </div>
+          </div>
+
+          <!-- #4 CULT OF THE LAMB -->
+          <div class="bg-slate-900 border border-slate-800 rounded-xl p-3 flex flex-col sm:flex-row sm:items-center justify-between gap-2 shadow-lg hover:border-purple-400 transition">
+            <div class="flex items-center gap-3">
+              <span class="text-lg font-black text-slate-400 font-athletic w-6">#4</span>
+              <div>
+                <div class="flex items-center gap-2">
+                  <span class="font-bold text-white text-sm">CULT OF THE LAMB</span>
+                  <span class="text-[10px] text-emerald-400 font-bold bg-emerald-950 border border-emerald-800 px-1.5 py-0.2 rounded font-mono">▲ +1 SPOT</span>
+                </div>
+                <div class="text-[11px] text-slate-400">Franky • 1-3 • 521.94 PF (3rd Highest Scoring)</div>
+              </div>
+            </div>
+            <div class="text-xs text-slate-300 sm:max-w-md">
+              Don't be fooled by the 1-3 record. Franky put up 148.60 points and has scored 521.94 total points on the year (more than Arnulfo, iRob, and Joey). A sleeping giant.
+            </div>
+          </div>
+
+          <!-- #5 TheGreatSwagsby -->
+          <div class="bg-slate-900 border border-slate-800 rounded-xl p-3 flex flex-col sm:flex-row sm:items-center justify-between gap-2 shadow-lg hover:border-purple-400 transition">
+            <div class="flex items-center gap-3">
+              <span class="text-lg font-black text-slate-400 font-athletic w-6">#5</span>
+              <div>
+                <div class="flex items-center gap-2">
+                  <span class="font-bold text-white text-sm">TheGreatSwagsby</span>
+                  <span class="text-[10px] text-emerald-400 font-bold bg-emerald-950 border border-emerald-800 px-1.5 py-0.2 rounded font-mono">▲ +4 SPOTS</span>
+                </div>
+                <div class="text-[11px] text-slate-400">Joey • 3-1 • 492.20 PF • 52-Point Rebound</div>
+              </div>
+            </div>
+            <div class="text-xs text-slate-300 sm:max-w-md">
+              Bounced back from Week 3's dud by crushing Pedro 128.52 to 76.48. Kenneth Walker (30.40) and Nico Collins (27.30) proved Joey can win with authority.
+            </div>
+          </div>
+
+          <!-- #6 Amon-Ra's Maye-hem -->
+          <div class="bg-slate-900 border border-slate-800 rounded-xl p-3 flex flex-col sm:flex-row sm:items-center justify-between gap-2 shadow-lg hover:border-purple-400 transition">
+            <div class="flex items-center gap-3">
+              <span class="text-lg font-black text-slate-400 font-athletic w-6">#6</span>
+              <div>
+                <div class="flex items-center gap-2">
+                  <span class="font-bold text-white text-sm">Amon-Ra's Maye-hem</span>
+                  <span class="text-[10px] text-red-400 font-bold bg-red-950 border border-red-800 px-1.5 py-0.2 rounded font-mono">▼ -4 SPOTS</span>
+                </div>
+                <div class="text-[11px] text-slate-400">Alex • 2-2 • 520.66 PF • Back-to-Back Losses</div>
+              </div>
+            </div>
+            <div class="text-xs text-slate-300 sm:max-w-md">
+              Two straight defeats after starting 2-0. Leaving Drake Maye's 27.16 points on the bench cost Alex a victory over Arnulfo. Still 4th in points, but sliding.
+            </div>
+          </div>
+
+          <!-- #7 Saquon Deez Nacuas -->
+          <div class="bg-slate-900 border border-slate-800 rounded-xl p-3 flex flex-col sm:flex-row sm:items-center justify-between gap-2 shadow-lg hover:border-purple-400 transition">
+            <div class="flex items-center gap-3">
+              <span class="text-lg font-black text-slate-400 font-athletic w-6">#7</span>
+              <div>
+                <div class="flex items-center gap-2">
+                  <span class="font-bold text-white text-sm">Saquon Deez Nacuas</span>
+                  <span class="text-[10px] text-red-400 font-bold bg-red-950 border border-red-800 px-1.5 py-0.2 rounded font-mono">▼ -1 SPOT</span>
+                </div>
+                <div class="text-[11px] text-slate-400">Mark • 2-2 • 473.64 PF • Rashee Rice Injury</div>
+              </div>
+            </div>
+            <div class="text-xs text-slate-300 sm:max-w-md">
+              Scored 125.28 points with Javonte (28.80) and Puka (23.20), but Rashee Rice's early injury doughnut and Saquon's 1.50 dud allowed Franky to take the win.
+            </div>
+          </div>
+
+          <!-- #8 Show me dem TDs -->
+          <div class="bg-slate-900 border border-slate-800 rounded-xl p-3 flex flex-col sm:flex-row sm:items-center justify-between gap-2 shadow-lg hover:border-purple-400 transition">
+            <div class="flex items-center gap-3">
+              <span class="text-lg font-black text-slate-400 font-athletic w-6">#8</span>
+              <div>
+                <div class="flex items-center gap-2">
+                  <span class="font-bold text-white text-sm">Show me dem TDs</span>
+                  <span class="text-[10px] text-red-400 font-bold bg-red-950 border border-red-800 px-1.5 py-0.2 rounded font-mono">▼ -1 SPOT</span>
+                </div>
+                <div class="text-[11px] text-slate-400">Eric • 2-2 • 488.96 PF • 2 Straight Losses</div>
+              </div>
+            </div>
+            <div class="text-xs text-slate-300 sm:max-w-md">
+              Started Jaylen Wright for 0.70 pts as Eric couldn't keep pace with iRob's 139.42 attack. Now faces the terrifying Robert freight train in Week 5.
+            </div>
+          </div>
+
+          <!-- #9 Brock To The Future -->
+          <div class="bg-slate-900 border border-slate-800 rounded-xl p-3 flex flex-col sm:flex-row sm:items-center justify-between gap-2 shadow-lg hover:border-purple-400 transition">
+            <div class="flex items-center gap-3">
+              <span class="text-lg font-black text-slate-400 font-athletic w-6">#9</span>
+              <div>
+                <div class="flex items-center gap-2">
+                  <span class="font-bold text-white text-sm">Brock To The Future</span>
+                  <span class="text-[10px] text-red-400 font-bold bg-red-950 border border-red-800 px-1.5 py-0.2 rounded font-mono">▼ -5 SPOTS</span>
+                </div>
+                <div class="text-[11px] text-slate-400">Herrador • 1-3 • 499.14 PF • 53-Pt Loss</div>
+              </div>
+            </div>
+            <div class="text-xs text-slate-300 sm:max-w-md">
+              Chuba Hubbard dropped 25.40 pts, but Tyler Shough and Chase slowed down against Robert's juggernaut. Sitting at 1-3 with 499 total points.
+            </div>
+          </div>
+
+          <!-- #10 Bryce Wide Shut -->
+          <div class="bg-slate-900 border border-red-500/40 rounded-xl p-3 flex flex-col sm:flex-row sm:items-center justify-between gap-2 shadow-lg hover:border-red-400 transition">
+            <div class="flex items-center gap-3">
+              <span class="text-lg font-black text-red-400 font-athletic w-6">#10</span>
+              <div>
+                <div class="flex items-center gap-2">
+                  <span class="font-bold text-white text-sm">Bryce Wide Shut</span>
+                  <span class="text-[10px] text-red-400 font-bold bg-red-950 border border-red-800 px-1.5 py-0.2 rounded font-mono">━ CELLAR</span>
+                </div>
+                <div class="text-[11px] text-slate-400">Pedro • 1-3 • 329.68 PF (144 pts behind #9)</div>
+              </div>
+            </div>
+            <div class="text-xs text-slate-300 sm:max-w-md">
+              Cratered to 76.48 pts against Joey. Has scored under 80 points in 2 of 4 weeks. 2-34 in All-Play record and carrying a $175.50 bar tab liability.
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+      <!-- SLIDE 6: FAAB RECEIPTS & WAIVER AUDIT -->
+      <section id="wk4-slide-6" class="slide space-y-4 animate-fade">
+        <div class="bg-gradient-to-r from-emerald-900/40 via-slate-900 to-slate-900 border border-emerald-500/40 rounded-2xl p-5 shadow-2xl flex items-center justify-between">
+          <div>
+            <div class="inline-block bg-emerald-500 text-slate-950 text-xs font-bold px-2.5 py-0.5 rounded uppercase tracking-wider mb-1">Waiver Wire Audit</div>
+            <h2 class="text-2xl sm:text-3xl font-black uppercase tracking-tight text-white">💰 FAAB Receipts: Week 4 Free Agent & Waiver Audit</h2>
+            <p class="text-slate-400 text-xs">Tracking who panic-spent their budget, who got robbed, and who struck gold in free agency.</p>
+          </div>
+          <div class="text-3xl sm:text-4xl hidden sm:block">🧾</div>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+          <!-- Featured Receipt 1: iRob's Tetairoa McMillan Masterclass -->
+          <div class="bg-slate-950 border-2 border-emerald-500/80 p-3.5 rounded-xl shadow-xl">
+            <div class="flex items-center justify-between border-b border-slate-800 pb-2">
+              <div>
+                <span class="text-base font-black text-white">Tetairoa McMillan (WR • CAR)</span>
+                <span class="block text-xs text-slate-400">Manager: <strong class="text-slate-200">Njigbas in Paris</strong> (iRob)</span>
+              </div>
+              <span class="text-xs font-mono font-black text-emerald-400 bg-emerald-950 border border-emerald-800 px-2.5 py-1 rounded">GRADE: A+</span>
+            </div>
+            <div class="mt-2.5 space-y-1.5 text-xs">
+              <div class="flex justify-between text-slate-300">
+                <span>Week 4 Output:</span>
+                <span class="font-mono font-bold text-emerald-400">38.20 PTS (WR1 of the Week)</span>
+              </div>
+              <div class="flex justify-between text-slate-300">
+                <span>Incentive Won:</span>
+                <span class="font-mono font-bold text-emerald-400">$10 Cash WR Bounty</span>
+              </div>
+              <div class="flex justify-between text-slate-300">
+                <span>Franchise Impact:</span>
+                <span class="font-mono font-bold text-emerald-400">Elevated iRob to 3-1 tied for 1st</span>
+              </div>
+            </div>
+            <p class="text-xs text-slate-400 mt-2.5 leading-relaxed bg-slate-900/60 p-2 rounded-lg border border-slate-800">
+              The rookie sensation delivered the performance of the week. McMillan caught fire across all four quarters to post 38.20 points and carry iRob to victory over Eric.
+            </p>
+          </div>
+
+          <!-- Featured Receipt 2: Franky's Reshuffled Weapons -->
+          <div class="bg-slate-950 border-2 border-amber-500/80 p-3.5 rounded-xl shadow-xl">
+            <div class="flex items-center justify-between border-b border-slate-800 pb-2">
+              <div>
+                <span class="text-base font-black text-white">CeeDee Lamb (32.8) & Nabers (20.2)</span>
+                <span class="block text-xs text-slate-400">Manager: <strong class="text-slate-200">CULT OF THE LAMB</strong> (Franky)</span>
+              </div>
+              <span class="text-xs font-mono font-black text-amber-400 bg-amber-950 border border-amber-800 px-2.5 py-1 rounded">GRADE: A</span>
+            </div>
+            <div class="mt-2.5 space-y-1.5 text-xs">
+              <div class="flex justify-between text-slate-300">
+                <span>Combined WR Output:</span>
+                <span class="font-mono font-bold text-amber-400">53.00 Combined PTS</span>
+              </div>
+              <div class="flex justify-between text-slate-300">
+                <span>Matchup Score:</span>
+                <span class="font-mono font-bold text-emerald-400">148.60 PTS (Defeated Mark)</span>
+              </div>
+              <div class="flex justify-between text-slate-300">
+                <span>Result:</span>
+                <span class="font-mono font-bold text-emerald-400">First Victory of the Season!</span>
+              </div>
+            </div>
+            <p class="text-xs text-slate-400 mt-2.5 leading-relaxed bg-slate-900/60 p-2 rounded-lg border border-slate-800">
+              Franky reshuffled his bench weapons in free agency and let his alpha wideouts eat. Lamb and Nabers dismantled Mark's secondary to snap the 0-3 streak.
+            </p>
+          </div>
+        </div>
+
+        <!-- 10-Team FAAB Budget Tracker -->
+        <div class="bg-slate-900 border border-slate-800 rounded-2xl p-4 shadow-xl">
+          <div class="flex justify-between items-center mb-3">
+            <span class="text-xs font-bold uppercase tracking-wider text-slate-300">Official 10-Team FAAB War Chest Leaderboard</span>
+            <span class="text-[11px] text-emerald-400 font-semibold">$100 Initial Season Budget</span>
+          </div>
+          <div class="grid grid-cols-2 sm:grid-cols-5 gap-2 text-xs">
+            <div class="bg-slate-950 p-2.5 rounded-lg border border-emerald-500/40">
+              <div class="text-slate-400 text-[10px]">WE GOIN’ BACK 2 BACK</div>
+              <div class="text-white font-bold">Robert • $100 Left</div>
+              <div class="text-emerald-400 text-[10px] font-mono mt-0.5">$0 Spent (100%)</div>
+            </div>
+            <div class="bg-slate-950 p-2.5 rounded-lg border border-emerald-500/40">
+              <div class="text-slate-400 text-[10px]">Saquon Deez Nacuas</div>
+              <div class="text-white font-bold">Mark • $98 Left</div>
+              <div class="text-emerald-400 text-[10px] font-mono mt-0.5">$2 Spent (98%)</div>
+            </div>
+            <div class="bg-slate-950 p-2.5 rounded-lg border border-emerald-500/40">
+              <div class="text-slate-400 text-[10px]">Show me dem TDs</div>
+              <div class="text-white font-bold">Eric • $92 Left</div>
+              <div class="text-emerald-400 text-[10px] font-mono mt-0.5">$8 Spent (92%)</div>
+            </div>
+            <div class="bg-slate-950 p-2.5 rounded-lg border border-slate-800">
+              <div class="text-slate-400 text-[10px]">Amon-Ra's Maye-hem</div>
+              <div class="text-white font-bold">Alex • $90 Left</div>
+              <div class="text-slate-300 text-[10px] font-mono mt-0.5">$10 Spent (90%)</div>
+            </div>
+            <div class="bg-slate-950 p-2.5 rounded-lg border border-slate-800">
+              <div class="text-slate-400 text-[10px]">Njigbas in Paris</div>
+              <div class="text-white font-bold">iRob • $80 Left</div>
+              <div class="text-slate-300 text-[10px] font-mono mt-0.5">$20 Spent (80%)</div>
+            </div>
+            <div class="bg-slate-950 p-2.5 rounded-lg border border-slate-800">
+              <div class="text-slate-400 text-[10px]">Brock To The Future</div>
+              <div class="text-white font-bold">Herrador • $75 Left</div>
+              <div class="text-slate-300 text-[10px] font-mono mt-0.5">$25 Spent (75%)</div>
+            </div>
+            <div class="bg-slate-950 p-2.5 rounded-lg border border-slate-800">
+              <div class="text-slate-400 text-[10px]">CULT OF THE LAMB</div>
+              <div class="text-white font-bold">Franky • $57 Left</div>
+              <div class="text-amber-400 text-[10px] font-mono mt-0.5">$43 Spent (57%)</div>
+            </div>
+            <div class="bg-slate-950 p-2.5 rounded-lg border border-slate-800">
+              <div class="text-slate-400 text-[10px]">MyDakMakesHerWaddle</div>
+              <div class="text-white font-bold">Arnulfo • $45 Left</div>
+              <div class="text-amber-400 text-[10px] font-mono mt-0.5">$55 Spent (45%)</div>
+            </div>
+            <div class="bg-slate-950 p-2.5 rounded-lg border border-slate-800">
+              <div class="text-slate-400 text-[10px]">TheGreatSwagsby</div>
+              <div class="text-white font-bold">Joey • $40 Left</div>
+              <div class="text-amber-400 text-[10px] font-mono mt-0.5">$60 Spent (40%)</div>
+            </div>
+            <div class="bg-slate-950 p-2.5 rounded-lg border border-red-500/40">
+              <div class="text-slate-400 text-[10px]">Bryce Wide Shut</div>
+              <div class="text-white font-bold">Pedro • $18 Left</div>
+              <div class="text-red-400 text-[10px] font-mono mt-0.5">$82 Spent (18%)</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+      <!-- SLIDE 7: PICK-EM LEADERBOARD -->
+      <section id="wk4-slide-7" class="slide space-y-4 animate-fade">
+        <div class="bg-gradient-to-r from-blue-500/20 via-slate-900 to-slate-900 border border-blue-500/30 rounded-2xl p-6 shadow-2xl">
+          <div class="flex items-center justify-between">
+            <div>
+              <div class="inline-block bg-blue-500 text-slate-950 text-xs font-bold px-2.5 py-0.5 rounded uppercase tracking-wider mb-2">Side Action</div>
+              <h2 class="text-3xl sm:text-4xl font-black uppercase tracking-tight text-white">🎯 F.F.U.C. Pick-em Leaderboard</h2>
+              <p class="text-slate-400 text-sm mt-1">Official Sleeper Straight-Up Pool Standings (Week 4 Official Report Pending).</p>
+            </div>
+            <div class="text-right">
+              <div class="text-3xl sm:text-4xl font-black font-athletic text-blue-400">$45.00</div>
+              <div class="text-[10px] uppercase font-bold text-slate-400 tracking-wider">Season Grand Prize</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Pending Status Notice -->
+        <div class="bg-amber-950/40 border border-amber-500/50 rounded-xl p-3.5 flex items-center justify-between text-xs">
+          <div class="flex items-center gap-2">
+            <span class="text-amber-400 text-base animate-pulse">⏳</span>
+            <span class="text-slate-200"><strong>Notice:</strong> Week 4 Pick-em scoring report is currently pending official league tally. Displaying certified standings through Week 3 below.</span>
+          </div>
+          <span class="text-amber-400 font-mono font-bold text-[10px] uppercase px-2 py-0.5 bg-amber-950 border border-amber-800 rounded">Standings Thru Wk 3</span>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-3">
+          <div class="bg-slate-900 border border-emerald-500/40 rounded-xl p-4">
+            <div class="text-xs text-emerald-400 uppercase font-mono font-bold">👑 Solo Mountain Leader</div>
+            <div class="text-lg font-black text-white mt-1">Robert (BACK 2 BACK) • 31.0 PTS</div>
+            <p class="text-xs text-slate-300 mt-1.5 leading-relaxed">
+              Robert maintains sole possession of 1st place on the pick-em mountain with 31 correct picks through Week 3!
+            </p>
+          </div>
+          <div class="bg-slate-900 border border-amber-500/40 rounded-xl p-4">
+            <div class="text-xs text-amber-400 uppercase font-mono font-bold">🔥 Surging Contenders</div>
+            <div class="text-lg font-black text-white mt-1">Arnulfo & iRob • 30.0 PTS</div>
+            <p class="text-xs text-slate-300 mt-1.5 leading-relaxed">
+              Arnulfo and iRob sit tied for 2nd place, breathing right down Robert's neck just 1 point off the summit!
+            </p>
+          </div>
+          <div class="bg-slate-900 border border-slate-800 rounded-xl p-4">
+            <div class="text-xs text-blue-400 uppercase font-mono font-bold">💰 $45 Cash Pot Stakes</div>
+            <div class="text-lg font-black text-white mt-1">6-Point Spread from 1st to 10th</div>
+            <p class="text-xs text-slate-300 mt-1.5 leading-relaxed">
+              All 10 managers are clustered within 6 points of each other. Every straight-up NFL pick matters!
+            </p>
+          </div>
+        </div>
+
+        <!-- Official 1st to 10th Pick-em Standings Table -->
+        <div class="bg-slate-900 border border-slate-800 rounded-2xl overflow-hidden shadow-xl">
+          <div class="p-4 border-b border-slate-800 flex justify-between items-center">
+            <span class="text-xs font-bold uppercase tracking-wider text-slate-300">Official Sleeper Pick-em Standings (Ranks 1 to 10)</span>
+            <span class="text-xs text-blue-400 font-semibold font-mono">Live Sleeper Sync</span>
+          </div>
+          <div class="divide-y divide-slate-800/80 text-sm">
+            <!-- 1st: Robert -->
+            <div class="p-3.5 flex items-center justify-between bg-blue-950/30">
+              <div class="flex items-center gap-3">
+                <span class="w-6 text-center font-athletic text-xl font-bold text-amber-400">1</span>
+                <div>
+                  <span class="font-bold text-white">WE GOIN’ BACK 2 BACK</span>
+                  <span class="text-xs text-slate-400 ml-1">(Robert / YaBoyRoZ)</span>
+                  <span class="text-xs text-emerald-400 ml-2 font-medium">👑 Solo Leader (W1: 12.0 • W2: 11.0 • W3: 8.0)</span>
+                </div>
+              </div>
+              <div class="text-right">
+                <span class="font-mono font-bold text-blue-400 text-base">31.0</span>
+                <span class="text-xs text-slate-500 ml-1">pts</span>
+              </div>
+            </div>
+
+            <!-- T-2nd: Arnulfo -->
+            <div class="p-3.5 flex items-center justify-between bg-emerald-950/20">
+              <div class="flex items-center gap-3">
+                <span class="w-6 text-center font-athletic text-xl font-bold text-slate-300">T-2</span>
+                <div>
+                  <span class="font-bold text-white">MyDakMakesHerWaddle</span>
+                  <span class="text-xs text-slate-400 ml-1">(Arnulfo / AEscamilla94)</span>
+                  <span class="text-xs text-amber-400 ml-2 font-semibold">W1: 9.0 • W2: 10.0 • W3: 11.0</span>
+                </div>
+              </div>
+              <div class="text-right">
+                <span class="font-mono font-bold text-emerald-400 text-base">30.0</span>
+                <span class="text-xs text-slate-500 ml-1">pts</span>
+              </div>
+            </div>
+
+            <!-- T-2nd: iRob -->
+            <div class="p-3.5 flex items-center justify-between">
+              <div class="flex items-center gap-3">
+                <span class="w-6 text-center font-athletic text-xl font-bold text-slate-300">T-2</span>
+                <div>
+                  <span class="font-bold text-slate-200">Njigbas in Paris</span>
+                  <span class="text-xs text-slate-400 ml-1">(iRob / irobgarza16)</span>
+                  <span class="text-xs text-slate-400 ml-2">W1: 11.0 • W2: 11.0 • W3: 8.0</span>
+                </div>
+              </div>
+              <div class="text-right">
+                <span class="font-mono font-bold text-slate-200 text-base">30.0</span>
+                <span class="text-xs text-slate-500 ml-1">pts</span>
+              </div>
+            </div>
+
+            <!-- 4th: Pedro -->
+            <div class="p-3.5 flex items-center justify-between">
+              <div class="flex items-center gap-3">
+                <span class="w-6 text-center font-athletic text-xl font-bold text-slate-400">4</span>
+                <div>
+                  <span class="font-bold text-slate-200">Bryce Wide Shut</span>
+                  <span class="text-xs text-slate-400 ml-1">(Pedro / GuyNamedPedro)</span>
+                  <span class="text-xs text-slate-400 ml-2">W1: 10.0 • W2: 10.0 • W3: 9.0</span>
+                </div>
+              </div>
+              <div class="text-right">
+                <span class="font-mono font-bold text-slate-200 text-base">29.0</span>
+                <span class="text-xs text-slate-500 ml-1">pts</span>
+              </div>
+            </div>
+
+            <!-- T-5th: Herrador -->
+            <div class="p-3.5 flex items-center justify-between bg-slate-950/40">
+              <div class="flex items-center gap-3">
+                <span class="w-6 text-center font-athletic text-xl font-bold text-slate-400">T-5</span>
+                <div>
+                  <span class="font-bold text-slate-300">Brock To The Future</span>
+                  <span class="text-xs text-slate-400 ml-1">(Herrador / DirtyDirties)</span>
+                  <span class="text-xs text-slate-500 ml-2">W1: 10.0 • W2: 10.0 • W3: 8.0</span>
+                </div>
+              </div>
+              <div class="text-right">
+                <span class="font-mono font-bold text-slate-300 text-base">28.0</span>
+                <span class="text-xs text-slate-500 ml-1">pts</span>
+              </div>
+            </div>
+
+            <!-- T-5th: Eric -->
+            <div class="p-3.5 flex items-center justify-between bg-slate-950/40">
+              <div class="flex items-center gap-3">
+                <span class="w-6 text-center font-athletic text-xl font-bold text-slate-400">T-5</span>
+                <div>
+                  <span class="font-bold text-slate-300">Show me dem TDs</span>
+                  <span class="text-xs text-slate-400 ml-1">(Eric / emedina13)</span>
+                  <span class="text-xs text-slate-500 ml-2">W1: 11.0 • W2: 10.0 • W3: 7.0</span>
+                </div>
+              </div>
+              <div class="text-right">
+                <span class="font-mono font-bold text-slate-300 text-base">28.0</span>
+                <span class="text-xs text-slate-500 ml-1">pts</span>
+              </div>
+            </div>
+
+            <!-- T-7th: Mark -->
+            <div class="p-3.5 flex items-center justify-between">
+              <div class="flex items-center gap-3">
+                <span class="w-6 text-center font-athletic text-xl font-bold text-slate-500">T-7</span>
+                <div>
+                  <span class="font-bold text-slate-300">Saquon Deez Nacuas</span>
+                  <span class="text-xs text-slate-400 ml-1">(Mark / fattymcfatty)</span>
+                  <span class="text-xs text-slate-500 ml-2">W1: 11.0 • W2: 9.0 • W3: 7.0</span>
+                </div>
+              </div>
+              <div class="text-right">
+                <span class="font-mono font-bold text-slate-400 text-base">27.0</span>
+                <span class="text-xs text-slate-500 ml-1">pts</span>
+              </div>
+            </div>
+
+            <!-- T-7th: Franky -->
+            <div class="p-3.5 flex items-center justify-between">
+              <div class="flex items-center gap-3">
+                <span class="w-6 text-center font-athletic text-xl font-bold text-slate-500">T-7</span>
+                <div>
+                  <span class="font-bold text-slate-300">CULT OF THE LAMB</span>
+                  <span class="text-xs text-slate-400 ml-1">(Franky / ChanciscoFravez)</span>
+                  <span class="text-xs text-slate-500 ml-2">W1: 10.0 • W2: 11.0 • W3: 6.0</span>
+                </div>
+              </div>
+              <div class="text-right">
+                <span class="font-mono font-bold text-slate-400 text-base">27.0</span>
+                <span class="text-xs text-slate-500 ml-1">pts</span>
+              </div>
+            </div>
+
+            <!-- T-7th: Alex -->
+            <div class="p-3.5 flex items-center justify-between">
+              <div class="flex items-center gap-3">
+                <span class="w-6 text-center font-athletic text-xl font-bold text-slate-500">T-7</span>
+                <div>
+                  <span class="font-bold text-slate-300">Amon-Ra's Maye-hem</span>
+                  <span class="text-xs text-slate-400 ml-1">(Alex / abarrera731)</span>
+                  <span class="text-xs text-slate-500 ml-2">W1: 10.0 • W2: 11.0 • W3: 6.0</span>
+                </div>
+              </div>
+              <div class="text-right">
+                <span class="font-mono font-bold text-slate-400 text-base">27.0</span>
+                <span class="text-xs text-slate-500 ml-1">pts</span>
+              </div>
+            </div>
+
+            <!-- 10th: Joey -->
+            <div class="p-3.5 flex items-center justify-between bg-red-950/20">
+              <div class="flex items-center gap-3">
+                <span class="w-6 text-center font-athletic text-xl font-bold text-red-500">10</span>
+                <div>
+                  <span class="font-bold text-red-300">TheGreatSwagsby</span>
+                  <span class="text-xs text-slate-400 ml-1">(Joey / TheGreatSwagsby)</span>
+                  <span class="text-xs text-red-400/80 ml-2">W1: 10.0 • W2: 9.0 • W3: 6.0</span>
+                </div>
+              </div>
+              <div class="text-right">
+                <span class="font-mono font-bold text-red-400 text-base">25.0</span>
+                <span class="text-xs text-slate-500 ml-1">pts</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <p class="text-xs text-slate-400 italic text-center">
+          *Standings reflect official Sleeper results through Week 3. Week 4 calculations will update once finalized!
+        </p>
+      </section>
+
+
+      <!-- SLIDE 8: BOOMS & BUSTS COMBINED TAB -->
+      <section id="wk4-slide-8" class="slide space-y-4 animate-fade">
+        <div class="bg-gradient-to-r from-emerald-950/70 via-slate-900 to-red-950/70 border border-slate-700 rounded-2xl p-5 shadow-2xl flex flex-col sm:flex-row sm:items-center justify-between gap-3">
+          <div>
+            <div class="flex items-center gap-2">
+              <span class="bg-gradient-to-r from-emerald-500 to-red-500 text-slate-950 text-[10px] font-black px-2.5 py-0.5 rounded uppercase tracking-wider">
+                Extreme Performances
+              </span>
+              <span class="text-[10px] bg-slate-950 text-slate-300 border border-slate-700 px-2 py-0.5 rounded font-mono font-bold">
+                Week 4 Final Split
+              </span>
+            </div>
+            <h2 class="text-2xl sm:text-3xl font-black uppercase tracking-tight text-white mt-1">
+              💥 Booms & Busts: Week 4 Edition
+            </h2>
+            <p class="text-slate-400 text-xs">
+              Monster scoring outbursts that anchored victories vs catastrophic duds and injury heartbreaks.
+            </p>
+          </div>
+          <div class="flex items-center gap-2 text-xs font-mono font-bold">
+            <span class="px-2.5 py-1 rounded bg-emerald-950/80 border border-emerald-500/40 text-emerald-400">🔥 5 Certified Booms</span>
+            <span class="px-2.5 py-1 rounded bg-red-950/80 border border-red-500/40 text-red-400">💀 5 Certified Busts</span>
+          </div>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-4">
+          <!-- Column 1: THE BOOM SQUAD -->
+          <div class="space-y-2.5">
+            <div class="flex items-center justify-between pb-1 border-b border-emerald-500/30">
+              <div class="flex items-center gap-2">
+                <span class="text-emerald-400 text-base">🚀</span>
+                <span class="font-black uppercase tracking-wider text-sm text-emerald-400">The Boom Squad</span>
+              </div>
+              <span class="text-[10px] font-mono text-slate-400">27.0+ PTS Explosions</span>
+            </div>
+
+            <!-- Boom 1: Tetairoa McMillan -->
+            <div class="bg-slate-900 border border-emerald-500/40 rounded-xl p-3 shadow-lg hover:border-emerald-400 transition">
+              <div class="flex justify-between items-center mb-1">
+                <span class="font-extrabold text-white text-sm">Tetairoa McMillan (WR • CAR)</span>
+                <span class="text-emerald-400 font-mono font-black text-sm bg-emerald-950 px-2 py-0.5 rounded border border-emerald-800">38.20 PTS</span>
+              </div>
+              <div class="text-[11px] text-slate-400 mb-1">Owner: <strong class="text-slate-200">Njigbas in Paris (iRob)</strong> • $10 WR Bounty King</div>
+              <p class="text-xs text-slate-300 leading-relaxed">
+                The absolute king of Week 4! Caught multiple touchdowns and burned coverage for 150+ yards to deliver iRob a blowout win over Eric and claim the $10 cash bounty.
+              </p>
+            </div>
+
+            <!-- Boom 2: CeeDee Lamb -->
+            <div class="bg-slate-900 border border-emerald-500/40 rounded-xl p-3 shadow-lg hover:border-emerald-400 transition">
+              <div class="flex justify-between items-center mb-1">
+                <span class="font-extrabold text-white text-sm">CeeDee Lamb (WR • DAL)</span>
+                <span class="text-emerald-400 font-mono font-black text-sm bg-emerald-950 px-2 py-0.5 rounded border border-emerald-800">32.80 PTS</span>
+              </div>
+              <div class="text-[11px] text-slate-400 mb-1">Owner: <strong class="text-slate-200">CULT OF THE LAMB (Franky)</strong> • Exorcism Weapon</div>
+              <p class="text-xs text-slate-300 leading-relaxed">
+                Franky's superstar receiver finally rewarded his faith, putting on a clinic on Thursday night with 32.80 points to lead CULT OF THE LAMB to their first win of 2026.
+              </p>
+            </div>
+
+            <!-- Boom 3: Kyren Williams -->
+            <div class="bg-slate-900 border border-emerald-500/40 rounded-xl p-3 shadow-lg hover:border-emerald-400 transition">
+              <div class="flex justify-between items-center mb-1">
+                <span class="font-extrabold text-white text-sm">Kyren Williams (RB • LAR)</span>
+                <span class="text-emerald-400 font-mono font-black text-sm bg-emerald-950 px-2 py-0.5 rounded border border-emerald-800">31.70 PTS</span>
+              </div>
+              <div class="text-[11px] text-slate-400 mb-1">Owner: <strong class="text-slate-200">WE GOIN’ BACK 2 BACK (Robert)</strong> • RB1 of Week 4</div>
+              <p class="text-xs text-slate-300 leading-relaxed">
+                Rumbled into the end zone repeatedly, posting 31.70 fantasy points as part of Robert's 159.68-point steamroller that obliterated Herrador.
+              </p>
+            </div>
+
+            <!-- Boom 4: Kenneth Walker -->
+            <div class="bg-slate-900 border border-emerald-500/40 rounded-xl p-3 shadow-lg hover:border-emerald-400 transition">
+              <div class="flex justify-between items-center mb-1">
+                <span class="font-extrabold text-white text-sm">Kenneth Walker (RB • KC)</span>
+                <span class="text-emerald-400 font-mono font-black text-sm bg-emerald-950 px-2 py-0.5 rounded border border-emerald-800">30.40 PTS</span>
+              </div>
+              <div class="text-[11px] text-slate-400 mb-1">Owner: <strong class="text-slate-200">TheGreatSwagsby (Joey)</strong> • Seattle/KC Ground Engine</div>
+              <p class="text-xs text-slate-300 leading-relaxed">
+                Showcased explosive acceleration and goal line dominance, posting 30.40 points to power Joey to a 52-point rout over Pedro.
+              </p>
+            </div>
+
+            <!-- Boom 5: Javonte Williams -->
+            <div class="bg-slate-900 border border-emerald-500/40 rounded-xl p-3 shadow-lg hover:border-emerald-400 transition">
+              <div class="flex justify-between items-center mb-1">
+                <span class="font-extrabold text-white text-sm">Javonte Williams (RB • DAL)</span>
+                <span class="text-emerald-400 font-mono font-black text-sm bg-emerald-950 px-2 py-0.5 rounded border border-emerald-800">28.80 PTS</span>
+              </div>
+              <div class="text-[11px] text-slate-400 mb-1">Owner: <strong class="text-slate-200">Saquon Deez Nacuas (Mark)</strong> • Lone Bright Spot</div>
+              <p class="text-xs text-slate-300 leading-relaxed">
+                Nearly saved Mark from disaster with 28.80 points, breaking tackles and scoring twice to keep the matchup competitive despite Rice's injury.
+              </p>
+            </div>
+          </div>
+
+          <!-- Column 2: THE BUST APPARATUS -->
+          <div class="space-y-2.5">
+            <div class="flex items-center justify-between pb-1 border-b border-red-500/30">
+              <div class="flex items-center gap-2">
+                <span class="text-red-400 text-base">🕳️</span>
+                <span class="font-black uppercase tracking-wider text-sm text-red-400">The Bust Apparatus</span>
+              </div>
+              <span class="text-[10px] font-mono text-slate-400">Sub-2.5 PTS Disasters</span>
+            </div>
+
+            <!-- Bust 1: Rashee Rice -->
+            <div class="bg-slate-900 border border-red-500/40 rounded-xl p-3 shadow-lg hover:border-red-400 transition">
+              <div class="flex justify-between items-center mb-1">
+                <span class="font-extrabold text-white text-sm">Rashee Rice (WR • KC)</span>
+                <span class="text-red-400 font-mono font-black text-sm bg-red-950 px-2 py-0.5 rounded border border-red-800">0.00 PTS</span>
+              </div>
+              <div class="text-[11px] text-slate-400 mb-1">Owner: <strong class="text-slate-200">Saquon Deez Nacuas (Mark)</strong> • Injury Nightmare</div>
+              <p class="text-xs text-slate-300 leading-relaxed">
+                The ultimate fantasy tragedy. Suffered a severe knee injury on an interception return during his first drive, logging a 0.00 doughnut that cost Mark the matchup.
+              </p>
+            </div>
+
+            <!-- Bust 2: Jaylen Wright -->
+            <div class="bg-slate-900 border border-red-500/40 rounded-xl p-3 shadow-lg hover:border-red-400 transition">
+              <div class="flex justify-between items-center mb-1">
+                <span class="font-extrabold text-white text-sm">Jaylen Wright (RB • MIA)</span>
+                <span class="text-red-400 font-mono font-black text-sm bg-red-950 px-2 py-0.5 rounded border border-red-800">0.70 PTS</span>
+              </div>
+              <div class="text-[11px] text-slate-400 mb-1">Owner: <strong class="text-slate-200">Show me dem TDs (Eric)</strong> • Starter Flop</div>
+              <p class="text-xs text-slate-300 leading-relaxed">
+                Started in Eric's RB slot and touched the ball only a handful of times for 0.70 points, killing offensive momentum as Eric took his 2nd straight loss.
+              </p>
+            </div>
+
+            <!-- Bust 3: Dalton Kincaid -->
+            <div class="bg-slate-900 border border-red-500/40 rounded-xl p-3 shadow-lg hover:border-red-400 transition">
+              <div class="flex justify-between items-center mb-1">
+                <span class="font-extrabold text-white text-sm">Dalton Kincaid (TE • BUF)</span>
+                <span class="text-red-400 font-mono font-black text-sm bg-red-950 px-2 py-0.5 rounded border border-red-800">1.20 PTS</span>
+              </div>
+              <div class="text-[11px] text-slate-400 mb-1">Owner: <strong class="text-slate-200">MyDakMakesHerWaddle (Arnulfo)</strong> • Buffalo Disappearing Act</div>
+              <p class="text-xs text-slate-300 leading-relaxed">
+                Buffalo's pass offense bypassed Kincaid completely. Hauled in just one short reception for 1.20 points, though Arnulfo still survived to reach 3-1.
+              </p>
+            </div>
+
+            <!-- Bust 4: Saquon Barkley -->
+            <div class="bg-slate-900 border border-red-500/40 rounded-xl p-3 shadow-lg hover:border-red-400 transition">
+              <div class="flex justify-between items-center mb-1">
+                <span class="font-extrabold text-white text-sm">Saquon Barkley (RB • PHI)</span>
+                <span class="text-red-400 font-mono font-black text-sm bg-red-950 px-2 py-0.5 rounded border border-red-800">1.50 PTS</span>
+              </div>
+              <div class="text-[11px] text-slate-400 mb-1">Owner: <strong class="text-slate-200">Saquon Deez Nacuas (Mark)</strong> • Namesake Lockdown</div>
+              <p class="text-xs text-slate-300 leading-relaxed">
+                Completely smothered by Tampa Bay's front seven. Stuffed for no gains repeatedly and held to an unfathomable 1.50 fantasy points.
+              </p>
+            </div>
+
+            <!-- Bust 5: Kalif Raymond -->
+            <div class="bg-slate-900 border border-red-500/40 rounded-xl p-3 shadow-lg hover:border-red-400 transition">
+              <div class="flex justify-between items-center mb-1">
+                <span class="font-extrabold text-white text-sm">Kalif Raymond (WR • CHI)</span>
+                <span class="text-red-400 font-mono font-black text-sm bg-red-950 px-2 py-0.5 rounded border border-red-800">1.60 PTS</span>
+              </div>
+              <div class="text-[11px] text-slate-400 mb-1">Owner: <strong class="text-slate-200">Bryce Wide Shut (Pedro)</strong> • Cellar Depth</div>
+              <p class="text-xs text-slate-300 leading-relaxed">
+                Forced into Pedro's starting lineup due to injuries, generating just 1.60 points as Pedro plummeted to a week-low 76.48 total points.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+      <!-- SLIDE 9: VEGAS SPORTSBOOK & LEAGUE PROPS -->
+      <section id="wk4-slide-9" class="slide space-y-4 animate-fade">
+        <div class="relative overflow-hidden bg-gradient-to-r from-amber-950/80 via-slate-900 to-yellow-950/80 border-2 border-amber-500/60 rounded-2xl p-5 shadow-2xl">
+          <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3">
+            <div>
+              <div class="flex items-center gap-2">
+                <span class="bg-amber-500 text-slate-950 text-[10px] font-black px-2.5 py-0.5 rounded uppercase tracking-wider shadow">
+                  🎰 F.F.U.C. SPORTSBOOK
+                </span>
+                <span class="text-[10px] bg-slate-950 text-amber-300 border border-amber-500/40 px-2 py-0.5 rounded font-mono font-bold">
+                  Week 4 Settled • Week 5 Board Live
+                </span>
+              </div>
+              <h2 class="text-2xl sm:text-3xl font-black uppercase tracking-tight text-white mt-1">
+                Vegas Odds & League Props
+              </h2>
+              <p class="text-slate-400 text-xs">
+                Review official Week 4 settled tickets, then lock in your picks for the Week 5 slate!
+              </p>
+            </div>
+            <div class="text-right">
+              <span class="text-xs font-mono font-bold text-amber-400 bg-amber-950 border border-amber-800 px-3 py-1.5 rounded-lg shadow">
+                Week 5 Lines Open
+              </span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Section 1: WEEK 4 SETTLED RESULTS -->
+        <div class="bg-slate-900 border border-slate-800 rounded-2xl p-4 shadow-xl space-y-3">
+          <div class="flex justify-between items-center border-b border-slate-800 pb-2">
+            <span class="text-xs font-bold uppercase text-slate-300">Week 4 Ticket Settlements (Official Ledger)</span>
+            <span class="text-emerald-400 text-xs font-mono font-bold">All 4 Bets Resolved</span>
+          </div>
+
+          <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-2.5 text-xs">
+            <!-- Settled Prop 1: Cult Win -->
+            <div class="bg-slate-950 p-3 rounded-xl border border-emerald-500/50 flex flex-col justify-between">
+              <div>
+                <div class="flex justify-between items-center">
+                  <span class="font-bold text-white">CULT 1st Win vs Saquon?</span>
+                  <span class="bg-emerald-950 text-emerald-400 border border-emerald-800 text-[10px] font-bold px-2 py-0.5 rounded">✓ CASHED (+120)</span>
+                </div>
+                <p class="text-slate-400 text-[11px] mt-1.5 leading-relaxed">
+                  Franky exploded for 148.60 pts to beat Mark (125.28) and escape 0-4! Underdog cash!
+                </p>
+              </div>
+              <div class="text-[10px] font-mono text-emerald-400 mt-2 font-bold">Outcome: YES (CULT 148.60)</div>
+            </div>
+
+            <!-- Settled Prop 2: WR Bounty O/U 27.5 -->
+            <div class="bg-slate-950 p-3 rounded-xl border border-emerald-500/50 flex flex-col justify-between">
+              <div>
+                <div class="flex justify-between items-center">
+                  <span class="font-bold text-white">WR Bounty O/U 27.5 PTS</span>
+                  <span class="bg-emerald-950 text-emerald-400 border border-emerald-800 text-[10px] font-bold px-2 py-0.5 rounded">✓ OVER CASHED</span>
+                </div>
+                <p class="text-slate-400 text-[11px] mt-1.5 leading-relaxed">
+                  Tetairoa McMillan dropped 38.20 and CeeDee Lamb had 32.80! Total explosion!
+                </p>
+              </div>
+              <div class="text-[10px] font-mono text-emerald-400 mt-2 font-bold">Outcome: 38.20 PTS (OVER)</div>
+            </div>
+
+            <!-- Settled Prop 3: Pedro O/U 98.5 -->
+            <div class="bg-slate-950 p-3 rounded-xl border border-emerald-500/50 flex flex-col justify-between">
+              <div>
+                <div class="flex justify-between items-center">
+                  <span class="font-bold text-white">Pedro Total Points O/U 98.5</span>
+                  <span class="bg-emerald-950 text-emerald-400 border border-emerald-800 text-[10px] font-bold px-2 py-0.5 rounded">✓ UNDER CASHED</span>
+                </div>
+                <p class="text-slate-400 text-[11px] mt-1.5 leading-relaxed">
+                  Pedro struggled mightily against Joey, held to a week-low 76.48 pts.
+                </p>
+              </div>
+              <div class="text-[10px] font-mono text-emerald-400 mt-2 font-bold">Outcome: 76.48 PTS (UNDER)</div>
+            </div>
+
+            <!-- Settled Prop 4: Shootout O/U 245.5 -->
+            <div class="bg-slate-950 p-3 rounded-xl border border-emerald-500/50 flex flex-col justify-between">
+              <div>
+                <div class="flex justify-between items-center">
+                  <span class="font-bold text-white">MyDak vs Amon-Ra O/U 245.5</span>
+                  <span class="bg-emerald-950 text-emerald-400 border border-emerald-800 text-[10px] font-bold px-2 py-0.5 rounded">✓ UNDER CASHED</span>
+                </div>
+                <p class="text-slate-400 text-[11px] mt-1.5 leading-relaxed">
+                  Turned into a defensive battle: MyDak (114.40) + Alex (107.86) = 222.26 combined pts.
+                </p>
+              </div>
+              <div class="text-[10px] font-mono text-emerald-400 mt-2 font-bold">Outcome: 222.26 PTS (UNDER)</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Section 2: WEEK 5 INTERACTIVE ACTION BOARD -->
+        <div class="bg-slate-900 border border-slate-800 rounded-2xl p-4 shadow-xl space-y-3">
+          <div class="flex justify-between items-center border-b border-slate-800 pb-2">
+            <div>
+              <span class="text-xs font-bold uppercase text-amber-400">🔥 Week 5 Interactive Community Board</span>
+              <p class="text-[11px] text-slate-400">Vote on lines below. Your selections persist locally and track league consensus!</p>
+            </div>
+            <span class="text-xs text-slate-400 font-mono">Live Interactive Voting</span>
+          </div>
+
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-3.5">
+            <!-- Prop 1: Robert Hattrick O/U 145.5 -->
+            <div class="bg-slate-950 border border-slate-800 p-3.5 rounded-xl space-y-2.5">
+              <div class="flex justify-between items-start">
+                <div>
+                  <span class="text-xs font-black text-white">Robert (BACK 2 BACK) High Roller Hat-Trick?</span>
+                  <span class="block text-[11px] text-slate-400">Can Robert post 145.5+ points for the 3rd straight week against Eric?</span>
+                </div>
+                <span class="text-[10px] font-mono font-bold bg-amber-950 text-amber-300 border border-amber-800 px-2 py-0.5 rounded">O/U 145.5 PTS</span>
+              </div>
+              <div class="grid grid-cols-2 gap-2">
+                <button onclick="castVegasVote('prop_wk5_b2b_hattrick', 'over')" id="btn-prop_wk5_b2b_hattrick-over" class="vegas-btn p-2 rounded-lg bg-slate-900 border border-slate-800 hover:border-amber-500/70 text-left transition flex flex-col justify-between">
+                  <div class="flex items-center justify-between w-full">
+                    <span class="text-xs font-bold text-white">OVER 145.5 PTS</span>
+                    <span class="text-[10px] font-mono font-bold text-emerald-400">-110</span>
+                  </div>
+                  <div class="flex items-center justify-between w-full mt-1">
+                    <span class="text-[10px] text-slate-400 font-mono tally-label" id="tally-prop_wk5_b2b_hattrick-over">8 Picks (73%)</span>
+                    <span class="text-[9px] text-amber-400 font-bold hidden pick-indicator">✓ YOUR PICK</span>
+                  </div>
+                </button>
+                <button onclick="castVegasVote('prop_wk5_b2b_hattrick', 'under')" id="btn-prop_wk5_b2b_hattrick-under" class="vegas-btn p-2 rounded-lg bg-slate-900 border border-slate-800 hover:border-amber-500/70 text-left transition flex flex-col justify-between">
+                  <div class="flex items-center justify-between w-full">
+                    <span class="text-xs font-bold text-white">UNDER 145.5 PTS</span>
+                    <span class="text-[10px] font-mono font-bold text-red-400">-110</span>
+                  </div>
+                  <div class="flex items-center justify-between w-full mt-1">
+                    <span class="text-[10px] text-slate-400 font-mono tally-label" id="tally-prop_wk5_b2b_hattrick-under">3 Picks (27%)</span>
+                    <span class="text-[9px] text-amber-400 font-bold hidden pick-indicator">✓ YOUR PICK</span>
+                  </div>
+                </button>
+              </div>
+              <div class="w-full bg-slate-900 rounded-full h-1.5 overflow-hidden flex">
+                <div id="bar-prop_wk5_b2b_hattrick-over" class="bg-emerald-500 h-1.5 transition-all duration-300" style="width: 73%"></div>
+                <div id="bar-prop_wk5_b2b_hattrick-under" class="bg-red-500 h-1.5 transition-all duration-300" style="width: 27%"></div>
+              </div>
+            </div>
+
+            <!-- Prop 2: Week 5 TE Bounty O/U 18.5 -->
+            <div class="bg-slate-950 border border-slate-800 p-3.5 rounded-xl space-y-2.5">
+              <div class="flex justify-between items-start">
+                <div>
+                  <span class="text-xs font-black text-white">Week 5 TE Bounty High Scorer</span>
+                  <span class="block text-[11px] text-slate-400">Will the winning tight end break 18.5 fantasy points? (Bowers, Kittle, McBride)</span>
+                </div>
+                <span class="text-[10px] font-mono font-bold bg-purple-950 text-purple-300 border border-purple-800 px-2 py-0.5 rounded">O/U 18.5 PTS</span>
+              </div>
+              <div class="grid grid-cols-2 gap-2">
+                <button onclick="castVegasVote('prop_wk5_bounty_te', 'over')" id="btn-prop_wk5_bounty_te-over" class="vegas-btn p-2 rounded-lg bg-slate-900 border border-slate-800 hover:border-amber-500/70 text-left transition flex flex-col justify-between">
+                  <div class="flex items-center justify-between w-full">
+                    <span class="text-xs font-bold text-white">OVER 18.5 PTS</span>
+                    <span class="text-[10px] font-mono font-bold text-emerald-400">-115</span>
+                  </div>
+                  <div class="flex items-center justify-between w-full mt-1">
+                    <span class="text-[10px] text-slate-400 font-mono tally-label" id="tally-prop_wk5_bounty_te-over">6 Picks (55%)</span>
+                    <span class="text-[9px] text-amber-400 font-bold hidden pick-indicator">✓ YOUR PICK</span>
+                  </div>
+                </button>
+                <button onclick="castVegasVote('prop_wk5_bounty_te', 'under')" id="btn-prop_wk5_bounty_te-under" class="vegas-btn p-2 rounded-lg bg-slate-900 border border-slate-800 hover:border-amber-500/70 text-left transition flex flex-col justify-between">
+                  <div class="flex items-center justify-between w-full">
+                    <span class="text-xs font-bold text-white">UNDER 18.5 PTS</span>
+                    <span class="text-[10px] font-mono font-bold text-red-400">-105</span>
+                  </div>
+                  <div class="flex items-center justify-between w-full mt-1">
+                    <span class="text-[10px] text-slate-400 font-mono tally-label" id="tally-prop_wk5_bounty_te-under">5 Picks (45%)</span>
+                    <span class="text-[9px] text-amber-400 font-bold hidden pick-indicator">✓ YOUR PICK</span>
+                  </div>
+                </button>
+              </div>
+              <div class="w-full bg-slate-900 rounded-full h-1.5 overflow-hidden flex">
+                <div id="bar-prop_wk5_bounty_te-over" class="bg-emerald-500 h-1.5 transition-all duration-300" style="width: 55%"></div>
+                <div id="bar-prop_wk5_bounty_te-under" class="bg-red-500 h-1.5 transition-all duration-300" style="width: 45%"></div>
+              </div>
+            </div>
+
+            <!-- Prop 3: Pedro Upset Over iRob -->
+            <div class="bg-slate-950 border border-slate-800 p-3.5 rounded-xl space-y-2.5">
+              <div class="flex justify-between items-start">
+                <div>
+                  <span class="text-xs font-black text-white">Can Pedro (1-3) Shock 3-1 iRob?</span>
+                  <span class="block text-[11px] text-slate-400">Matchup 1: 10th-place Bryce Wide Shut vs #2 Njigbas in Paris</span>
+                </div>
+                <span class="text-[10px] font-mono font-bold bg-blue-950 text-blue-300 border border-blue-800 px-2 py-0.5 rounded">MONEYLINE</span>
+              </div>
+              <div class="grid grid-cols-2 gap-2">
+                <button onclick="castVegasVote('prop_wk5_pedro_irob', 'over')" id="btn-prop_wk5_pedro_irob-over" class="vegas-btn p-2 rounded-lg bg-slate-900 border border-slate-800 hover:border-amber-500/70 text-left transition flex flex-col justify-between">
+                  <div class="flex items-center justify-between w-full">
+                    <span class="text-xs font-bold text-white">PEDRO UPSET</span>
+                    <span class="text-[10px] font-mono font-bold text-emerald-400">+165</span>
+                  </div>
+                  <div class="flex items-center justify-between w-full mt-1">
+                    <span class="text-[10px] text-slate-400 font-mono tally-label" id="tally-prop_wk5_pedro_irob-over">3 Picks (27%)</span>
+                    <span class="text-[9px] text-amber-400 font-bold hidden pick-indicator">✓ YOUR PICK</span>
+                  </div>
+                </button>
+                <button onclick="castVegasVote('prop_wk5_pedro_irob', 'under')" id="btn-prop_wk5_pedro_irob-under" class="vegas-btn p-2 rounded-lg bg-slate-900 border border-slate-800 hover:border-amber-500/70 text-left transition flex flex-col justify-between">
+                  <div class="flex items-center justify-between w-full">
+                    <span class="text-xs font-bold text-white">iRob HOLDS</span>
+                    <span class="text-[10px] font-mono font-bold text-red-400">-195</span>
+                  </div>
+                  <div class="flex items-center justify-between w-full mt-1">
+                    <span class="text-[10px] text-slate-400 font-mono tally-label" id="tally-prop_wk5_pedro_irob-under">8 Picks (73%)</span>
+                    <span class="text-[9px] text-amber-400 font-bold hidden pick-indicator">✓ YOUR PICK</span>
+                  </div>
+                </button>
+              </div>
+              <div class="w-full bg-slate-900 rounded-full h-1.5 overflow-hidden flex">
+                <div id="bar-prop_wk5_pedro_irob-over" class="bg-emerald-500 h-1.5 transition-all duration-300" style="width: 27%"></div>
+                <div id="bar-prop_wk5_pedro_irob-under" class="bg-red-500 h-1.5 transition-all duration-300" style="width: 73%"></div>
+              </div>
+            </div>
+
+            <!-- Prop 4: Swagsby vs Maye-hem Shootout -->
+            <div class="bg-slate-950 border border-slate-800 p-3.5 rounded-xl space-y-2.5">
+              <div class="flex justify-between items-start">
+                <div>
+                  <span class="text-xs font-black text-white">Joey vs Alex Combined Points O/U 238.5</span>
+                  <span class="block text-[11px] text-slate-400">Matchup 2: 3-1 Swagsby vs 2-2 Maye-hem bounce-back battle</span>
+                </div>
+                <span class="text-[10px] font-mono font-bold bg-red-950 text-red-300 border border-red-800 px-2 py-0.5 rounded">O/U 238.5 PTS</span>
+              </div>
+              <div class="grid grid-cols-2 gap-2">
+                <button onclick="castVegasVote('prop_wk5_swagsby_maye', 'over')" id="btn-prop_wk5_swagsby_maye-over" class="vegas-btn p-2 rounded-lg bg-slate-900 border border-slate-800 hover:border-amber-500/70 text-left transition flex flex-col justify-between">
+                  <div class="flex items-center justify-between w-full">
+                    <span class="text-xs font-bold text-white">OVER 238.5 PTS</span>
+                    <span class="text-[10px] font-mono font-bold text-emerald-400">-110</span>
+                  </div>
+                  <div class="flex items-center justify-between w-full mt-1">
+                    <span class="text-[10px] text-slate-400 font-mono tally-label" id="tally-prop_wk5_swagsby_maye-over">7 Picks (64%)</span>
+                    <span class="text-[9px] text-amber-400 font-bold hidden pick-indicator">✓ YOUR PICK</span>
+                  </div>
+                </button>
+                <button onclick="castVegasVote('prop_wk5_swagsby_maye', 'under')" id="btn-prop_wk5_swagsby_maye-under" class="vegas-btn p-2 rounded-lg bg-slate-900 border border-slate-800 hover:border-amber-500/70 text-left transition flex flex-col justify-between">
+                  <div class="flex items-center justify-between w-full">
+                    <span class="text-xs font-bold text-white">UNDER 238.5 PTS</span>
+                    <span class="text-[10px] font-mono font-bold text-red-400">-110</span>
+                  </div>
+                  <div class="flex items-center justify-between w-full mt-1">
+                    <span class="text-[10px] text-slate-400 font-mono tally-label" id="tally-prop_wk5_swagsby_maye-under">4 Picks (36%)</span>
+                    <span class="text-[9px] text-amber-400 font-bold hidden pick-indicator">✓ YOUR PICK</span>
+                  </div>
+                </button>
+              </div>
+              <div class="w-full bg-slate-900 rounded-full h-1.5 overflow-hidden flex">
+                <div id="bar-prop_wk5_swagsby_maye-over" class="bg-emerald-500 h-1.5 transition-all duration-300" style="width: 64%"></div>
+                <div id="bar-prop_wk5_swagsby_maye-under" class="bg-red-500 h-1.5 transition-all duration-300" style="width: 36%"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+      <!-- SLIDE 10: CASUALTY WARD -->
+      <section id="wk4-slide-10" class="slide space-y-4 animate-fade">
+        <div class="bg-gradient-to-r from-rose-950/60 via-slate-900 to-slate-900 border border-rose-500/40 rounded-2xl p-5 shadow-xl flex items-center justify-between">
+          <div>
+            <div class="inline-block bg-rose-500 text-slate-950 text-xs font-bold px-2.5 py-0.5 rounded uppercase tracking-wider mb-1">M.A.S.H. Unit</div>
+            <h2 class="text-2xl sm:text-3xl font-black uppercase tracking-tight text-white">🏥 The Casualty Ward: Injury Report</h2>
+            <p class="text-slate-400 text-xs">Tracking real league injuries, estimated return dates, and IR timeline projections.</p>
+          </div>
+          <div class="text-right hidden sm:block">
+            <span class="text-xs text-rose-400 font-mono font-bold bg-rose-950 border border-rose-800 px-2.5 py-1 rounded">Week 4 Medical Audit</span>
+          </div>
+        </div>
+
+        <!-- Featured Injury Card: Rashee Rice Tragedy -->
+        <div class="bg-gradient-to-r from-red-950/80 via-slate-900 to-rose-950/80 border-2 border-red-500/60 rounded-xl p-4 shadow-xl">
+          <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 pb-2 border-b border-red-500/30">
+            <div class="flex items-center gap-2">
+              <span class="bg-red-500 text-slate-950 text-[10px] font-black uppercase px-2 py-0.5 rounded tracking-wider animate-pulse">BREAKING TRAGEDY</span>
+              <span class="text-white font-black text-base sm:text-lg">Rashee Rice (WR • KC)</span>
+            </div>
+            <div class="flex items-center gap-2">
+              <span class="text-xs font-mono font-bold text-red-400 bg-red-950 border border-red-800 px-2.5 py-0.5 rounded">🚨 SEVERE KNEE INJURY (IR WATCH)</span>
+            </div>
+          </div>
+          <div class="mt-2.5 grid grid-cols-1 sm:grid-cols-3 gap-3 text-xs">
+            <div class="bg-slate-950/60 p-2.5 rounded-lg border border-slate-800">
+              <div class="text-[10px] uppercase font-mono text-slate-400">Owner & Role</div>
+              <div class="text-white font-bold mt-0.5">Saquon Deez Nacuas (Mark)</div>
+              <div class="text-amber-400 font-mono font-black text-xs">Alpha WR1 Cornerstone</div>
+            </div>
+            <div class="bg-slate-950/60 p-2.5 rounded-lg border border-slate-800">
+              <div class="text-[10px] uppercase font-mono text-slate-400">Week 4 Impact</div>
+              <div class="text-rose-400 font-bold mt-0.5">0.00 PTS (Injured 1st Drive)</div>
+              <div class="text-slate-400 text-[11px]">Cost Mark the matchup vs Franky</div>
+            </div>
+            <div class="bg-slate-950/60 p-2.5 rounded-lg border border-slate-800">
+              <div class="text-[10px] uppercase font-mono text-slate-400">Projected Timeline</div>
+              <div class="text-red-400 font-bold mt-0.5">Indefinite / Season Threat</div>
+              <div class="text-slate-400 text-[11px]">Undergoing MRI & surgical evaluations</div>
+            </div>
+          </div>
+          <p class="text-xs text-slate-300 mt-2.5 leading-relaxed bg-red-950/30 p-2.5 rounded-lg border border-red-900/40">
+            <strong class="text-amber-400">The Medical Diagnosis:</strong> On a freak collision following an interception in Los Angeles, Rice was hit awkwardly in the knee and had to be carted to the locker room. This is a devastating blow to Mark's starting lineup as Rice was averaging 20+ points per game.
+          </p>
+        </div>
+
+        <!-- Casualty Ward Grid: 6 Key Injuries -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+          <!-- 1. Jonah Coleman -->
+          <div class="bg-slate-900 border border-slate-800 rounded-xl p-4 shadow-lg transition">
+            <div class="flex justify-between items-center mb-1">
+              <span class="font-extrabold text-white text-sm">Jonah Coleman (RB • DEN)</span>
+              <span class="bg-red-950 text-red-400 border border-red-800 text-[10px] font-bold px-2 py-0.5 rounded">🚨 ON IR (0 Snaps)</span>
+            </div>
+            <div class="text-[11px] text-slate-400 mb-2">Franchise: <strong class="text-slate-200">Njigbas in Paris (iRob)</strong></div>
+            <p class="text-xs text-slate-300 leading-relaxed">
+              iRob's $18 marquee waiver addition continues to occupy the injured reserve slot without playing a single snap. Fortunately, Tetairoa McMillan and Purdy have carried iRob to 3-1.
+            </p>
+          </div>
+
+          <!-- 2. Christian McCaffrey -->
+          <div class="bg-slate-900 border border-slate-800 rounded-xl p-4 shadow-lg transition">
+            <div class="flex justify-between items-center mb-1">
+              <span class="font-extrabold text-white text-sm">Christian McCaffrey (RB • SF)</span>
+              <span class="bg-amber-950 text-amber-400 border border-amber-800 text-[10px] font-bold px-2 py-0.5 rounded">⚠️ ACHILLES TENDINITIS</span>
+            </div>
+            <div class="text-[11px] text-slate-400 mb-2">Franchise: <strong class="text-slate-200">TheGreatSwagsby (Joey)</strong></div>
+            <p class="text-xs text-slate-300 leading-relaxed">
+              Managing bilateral Achilles tendinitis. Sidelined on IR in Germany receiving specialist treatments, leaving Joey to lean heavily on Kenneth Walker and David Montgomery.
+            </p>
+          </div>
+
+          <!-- 3. Jaxson Dart -->
+          <div class="bg-slate-900 border border-slate-800 rounded-xl p-4 shadow-lg transition">
+            <div class="flex justify-between items-center mb-1">
+              <span class="font-extrabold text-white text-sm">Jaxson Dart (QB • NYG)</span>
+              <span class="bg-red-950 text-red-400 border border-red-800 text-[10px] font-bold px-2 py-0.5 rounded">🚨 OUT (Knee Sprain)</span>
+            </div>
+            <div class="text-[11px] text-slate-400 mb-2">Franchise: <strong class="text-slate-200">CULT OF THE LAMB (Franky)</strong></div>
+            <p class="text-xs text-slate-300 leading-relaxed">
+              Remains out with a knee sprain. Patrick Mahomes handled QB duties effectively in Week 4 as Franky broke into the win column with 148.60 points.
+            </p>
+          </div>
+
+          <!-- 4. Jayden Daniels -->
+          <div class="bg-slate-900 border border-slate-800 rounded-xl p-4 shadow-lg transition">
+            <div class="flex justify-between items-center mb-1">
+              <span class="font-extrabold text-white text-sm">Jayden Daniels (QB • WAS)</span>
+              <span class="bg-red-950 text-red-400 border border-red-800 text-[10px] font-bold px-2 py-0.5 rounded">🚨 OUT (Elbow Soreness)</span>
+            </div>
+            <div class="text-[11px] text-slate-400 mb-2">Franchise: <strong class="text-slate-200">Brock To The Future (Herrador)</strong></div>
+            <p class="text-xs text-slate-300 leading-relaxed">
+              Throwing elbow soreness held Daniels out for another week. Tyler Shough had a modest showing against Robert as Herrador took a 53-point loss.
+            </p>
+          </div>
+
+          <!-- 5. Puka Nacua (Returned!) -->
+          <div class="bg-slate-900 border border-emerald-500/40 rounded-xl p-4 shadow-lg transition">
+            <div class="flex justify-between items-center mb-1">
+              <span class="font-extrabold text-white text-sm">Puka Nacua (WR • LAR)</span>
+              <span class="bg-emerald-950 text-emerald-400 border border-emerald-800 text-[10px] font-bold px-2 py-0.5 rounded">⚡ ACTIVE (23.20 PTS)</span>
+            </div>
+            <div class="text-[11px] text-slate-400 mb-2">Franchise: <strong class="text-slate-200">Saquon Deez Nacuas (Mark)</strong></div>
+            <p class="text-xs text-slate-300 leading-relaxed">
+              Returned with a vengeance after missing Week 3 with hip soreness, hauling in 23.20 points to provide a massive boost to Mark's receiving room.
+            </p>
+          </div>
+
+          <!-- 6. Nico Collins (Returned!) -->
+          <div class="bg-slate-900 border border-emerald-500/40 rounded-xl p-4 shadow-lg transition">
+            <div class="flex justify-between items-center mb-1">
+              <span class="font-extrabold text-white text-sm">Nico Collins (WR • HOU)</span>
+              <span class="bg-emerald-950 text-emerald-400 border border-emerald-800 text-[10px] font-bold px-2 py-0.5 rounded">⚡ ACTIVE (27.30 PTS)</span>
+            </div>
+            <div class="text-[11px] text-slate-400 mb-2">Franchise: <strong class="text-slate-200">TheGreatSwagsby (Joey)</strong></div>
+            <p class="text-xs text-slate-300 leading-relaxed">
+              Shook off a hamstring strain and balled out for Joey with 27.30 points, proving that Swagsby's offense is dangerous whenever Collins is healthy.
+            </p>
+          </div>
+        </div>
+      </section>
+
+
+      <!-- SLIDE 11: WEEK 4 SCOREBOARD -->
+      <section id="wk4-slide-11" class="slide space-y-4 animate-fade">
+        <div class="bg-gradient-to-r from-blue-950/60 to-slate-900 border border-blue-500/40 rounded-2xl p-5 shadow-xl">
+          <div class="flex items-center gap-2">
+            <span class="text-2xl">📊</span>
+            <div>
+              <h2 class="text-2xl sm:text-3xl font-black uppercase tracking-tight text-white">Week 4 Scoreboard</h2>
+              <p class="text-blue-400 text-xs font-semibold">Official Final Sleeper Matchup Results & Box Score Breakdown</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="space-y-3">
+          <!-- Matchup 1: Swagsby vs Pedro -->
+          <div class="bg-slate-900 border border-slate-800 rounded-xl p-3.5 space-y-2 shadow-lg">
+            <div class="text-[11px] font-mono text-slate-400 uppercase font-bold flex justify-between">
+              <span>Matchup 1 • The 52-Point Route</span>
+              <span class="text-emerald-400 font-bold">FINAL</span>
+            </div>
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 items-center">
+              <div class="bg-slate-950/70 p-3 rounded-lg border border-emerald-500/40 flex justify-between items-center">
+                <div>
+                  <div class="font-black text-white text-sm">TheGreatSwagsby (Joey)</div>
+                  <div class="text-[11px] text-slate-400">Walker 30.4 • Collins 27.3 • Montgomery 18.1</div>
+                </div>
+                <div class="text-xl font-black text-emerald-400 font-athletic">128.52 PTS</div>
+              </div>
+              <div class="bg-slate-950/70 p-3 rounded-lg border border-slate-800 flex justify-between items-center">
+                <div>
+                  <div class="font-black text-slate-300 text-sm">Bryce Wide Shut (Pedro)</div>
+                  <div class="text-[11px] text-slate-400">Wilson 14.5 • Jeanty 13.7 • McLaughlin 2.0</div>
+                </div>
+                <div class="text-xl font-black text-slate-400 font-athletic">76.48 PTS</div>
+              </div>
+            </div>
+            <div class="text-xs text-slate-400 bg-slate-950/40 p-2 rounded border border-slate-800/60">
+              <strong class="text-emerald-400">Recap:</strong> Joey climbs to 3-1 with authority! Kenneth Walker (30.40) and Nico Collins (27.30) ran wild as Pedro stumbled back into the 5K punishment danger zone with a week-low 76.48 points.
+            </div>
+          </div>
+
+          <!-- Matchup 2: TDs vs Paris -->
+          <div class="bg-slate-900 border border-slate-800 rounded-xl p-3.5 space-y-2 shadow-lg">
+            <div class="text-[11px] font-mono text-slate-400 uppercase font-bold flex justify-between">
+              <span>Matchup 2 • The McMillan 38.20 Clinic</span>
+              <span class="text-emerald-400 font-bold">FINAL</span>
+            </div>
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 items-center">
+              <div class="bg-slate-950/70 p-3 rounded-lg border border-slate-800 flex justify-between items-center">
+                <div>
+                  <div class="font-black text-slate-300 text-sm">Show me dem TDs (Eric)</div>
+                  <div class="text-[11px] text-slate-400">Allen 22.1 • Higgins 21.2 • Jefferson 11.4</div>
+                </div>
+                <div class="text-xl font-black text-slate-400 font-athletic">115.82 PTS</div>
+              </div>
+              <div class="bg-slate-950/70 p-3 rounded-lg border border-emerald-500/40 flex justify-between items-center">
+                <div>
+                  <div class="font-black text-white text-sm">Njigbas in Paris (iRob)</div>
+                  <div class="text-[11px] text-slate-400">McMillan 38.20 • Purdy 19.3 • Hall 14.1</div>
+                </div>
+                <div class="text-xl font-black text-emerald-400 font-athletic">139.42 PTS</div>
+              </div>
+            </div>
+            <div class="text-xs text-slate-400 bg-slate-950/40 p-2 rounded border border-slate-800/60">
+              <strong class="text-emerald-400">Recap:</strong> iRob vaults to 3-1! Tetairoa McMillan's 38.20-point explosion collected the $10 WR Bounty and handed Eric his 2nd consecutive defeat (115.82 to 139.42).
+            </div>
+          </div>
+
+          <!-- Matchup 3: MyDak vs Maye-hem -->
+          <div class="bg-slate-900 border border-slate-800 rounded-xl p-3.5 space-y-2 shadow-lg">
+            <div class="text-[11px] font-mono text-slate-400 uppercase font-bold flex justify-between">
+              <span>Matchup 3 • The 6.54-Point Shootout</span>
+              <span class="text-emerald-400 font-bold">FINAL</span>
+            </div>
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 items-center">
+              <div class="bg-slate-950/70 p-3 rounded-lg border border-emerald-500/40 flex justify-between items-center">
+                <div>
+                  <div class="font-black text-white text-sm">MyDakMakesHerWaddle (Arnulfo)</div>
+                  <div class="text-[11px] text-slate-400">Wilson 25.5 • Watson 15.6 • Gibbs 14.8</div>
+                </div>
+                <div class="text-xl font-black text-emerald-400 font-athletic">114.40 PTS</div>
+              </div>
+              <div class="bg-slate-950/70 p-3 rounded-lg border border-slate-800 flex justify-between items-center">
+                <div>
+                  <div class="font-black text-slate-300 text-sm">Amon-Ra's Maye-hem (Alex)</div>
+                  <div class="text-[11px] text-slate-400">Henry 20.9 • St. Brown 17.5 • Stafford 13.9</div>
+                </div>
+                <div class="text-xl font-black text-slate-400 font-athletic">107.86 PTS</div>
+              </div>
+            </div>
+            <div class="text-xs text-slate-400 bg-slate-950/40 p-2 rounded border border-slate-800/60">
+              <strong class="text-emerald-400">Recap:</strong> Arnulfo claims sole 1st place! Emanuel Wilson (25.50) came through in the clutch as Alex left Drake Maye's 27.16 points on the bench to take his 2nd loss.
+            </div>
+          </div>
+
+          <!-- Matchup 4: Brock vs Back 2 Back -->
+          <div class="bg-slate-900 border border-slate-800 rounded-xl p-3.5 space-y-2 shadow-lg">
+            <div class="text-[11px] font-mono text-slate-400 uppercase font-bold flex justify-between">
+              <span>Matchup 4 • The 159.68 Juggernaut</span>
+              <span class="text-emerald-400 font-bold">FINAL</span>
+            </div>
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 items-center">
+              <div class="bg-slate-950/70 p-3 rounded-lg border border-slate-800 flex justify-between items-center">
+                <div>
+                  <div class="font-black text-slate-300 text-sm">Brock To The Future (Herrador)</div>
+                  <div class="text-[11px] text-slate-400">Hubbard 25.4 • Bowers 15.2 • Chase 12.8</div>
+                </div>
+                <div class="text-xl font-black text-slate-400 font-athletic">106.64 PTS</div>
+              </div>
+              <div class="bg-slate-950/70 p-3 rounded-lg border border-emerald-500/40 flex justify-between items-center">
+                <div>
+                  <div class="font-black text-white text-sm">WE GOIN’ BACK 2 BACK (Robert)</div>
+                  <div class="text-[11px] text-slate-400">Williams 31.7 • Bijan 27.2 • Lamar 21.68</div>
+                </div>
+                <div class="text-xl font-black text-emerald-400 font-athletic">159.68 PTS</div>
+              </div>
+            </div>
+            <div class="text-xs text-slate-400 bg-slate-950/40 p-2 rounded border border-slate-800/60">
+              <strong class="text-emerald-400">Recap:</strong> Robert cannot be stopped! Kyren Williams (31.70) and Bijan Robinson (27.20) blew Herrador out of the water by 53 points to claim back-to-back weekly high-roller honors.
+            </div>
+          </div>
+
+          <!-- Matchup 5: Saquon vs Cult of the Lamb -->
+          <div class="bg-slate-900 border border-slate-800 rounded-xl p-3.5 space-y-2 shadow-lg">
+            <div class="text-[11px] font-mono text-slate-400 uppercase font-bold flex justify-between">
+              <span>Matchup 5 • The Exorcism of 0-3</span>
+              <span class="text-emerald-400 font-bold">FINAL</span>
+            </div>
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 items-center">
+              <div class="bg-slate-950/70 p-3 rounded-lg border border-slate-800 flex justify-between items-center">
+                <div>
+                  <div class="font-black text-slate-300 text-sm">Saquon Deez Nacuas (Mark)</div>
+                  <div class="text-[11px] text-slate-400">Williams 28.8 • Nacua 23.2 • Flowers 21.8</div>
+                </div>
+                <div class="text-xl font-black text-slate-400 font-athletic">125.28 PTS</div>
+              </div>
+              <div class="bg-slate-950/70 p-3 rounded-lg border border-emerald-500/40 flex justify-between items-center">
+                <div>
+                  <div class="font-black text-white text-sm">CULT OF THE LAMB (Franky)</div>
+                  <div class="text-[11px] text-slate-400">Lamb 32.8 • Nabers 20.2 • Cook 18.2</div>
+                </div>
+                <div class="text-xl font-black text-emerald-400 font-athletic">148.60 PTS</div>
+              </div>
+            </div>
+            <div class="text-xs text-slate-400 bg-slate-950/40 p-2 rounded border border-slate-800/60">
+              <strong class="text-emerald-400">Recap:</strong> Franky wins! CeeDee Lamb (32.80) and Malik Nabers (20.20) propelled Franky to 148.60 pts as Mark suffered from Rashee Rice's injury (0.0 pts) and Saquon's 1.50-point dud.
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+      <!-- SLIDE 12: WEEK 5 GAMEDAY HUB -->
+      <section id="wk4-slide-12" class="slide space-y-4 animate-fade">
+        <div class="bg-gradient-to-r from-red-950/60 via-slate-900 to-blue-950/60 border border-amber-500/50 rounded-2xl p-5 shadow-2xl flex flex-col sm:flex-row sm:items-center justify-between gap-3">
+          <div>
+            <div class="inline-flex items-center gap-1.5 bg-blue-600 text-white text-[10px] font-black px-2.5 py-0.5 rounded uppercase tracking-wider mb-1">
+              LOOKAHEAD • WEEK 5 SCHEDULE READY
+            </div>
+            <h2 class="text-2xl sm:text-3xl font-black uppercase tracking-tight text-white">⚡ Week 5 Gameday Hub & Matchup Previews</h2>
+            <p class="text-slate-300 text-xs mt-0.5">Three 3-1 leaders battle for dominance while four 2-2 squads fight to avoid falling to .500!</p>
+          </div>
+          <div class="text-right">
+            <span class="text-xs font-mono font-bold text-amber-400 bg-slate-950 border border-amber-500/40 px-3 py-1.5 rounded-lg shadow">
+              Week 5 Kickoff Approaching
+            </span>
+          </div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-3.5">
+          <!-- Matchup 1 Preview: Pedro vs iRob -->
+          <div class="bg-slate-900 border border-slate-800 rounded-xl p-4 shadow-lg space-y-2">
+            <div class="flex justify-between items-center border-b border-slate-800 pb-2">
+              <span class="text-xs font-mono font-bold text-amber-400 uppercase">Matchup 1</span>
+              <span class="text-[10px] text-slate-400 font-mono">Basement vs #2 Seed</span>
+            </div>
+            <div class="flex justify-between items-center text-sm font-bold text-white">
+              <span>Bryce Wide Shut (1-3 • Pedro)</span>
+              <span class="text-slate-500 font-mono text-xs">VS</span>
+              <span>Njigbas in Paris (3-1 • iRob)</span>
+            </div>
+            <p class="text-xs text-slate-300 leading-relaxed">
+              Pedro is desperate to rebound after taking a 76-point beating, but faces red-hot iRob, fresh off Tetairoa McMillan's 38.20-point explosion. Can Pedro pull off an upset or will iRob stay atop the standings?
+            </p>
+          </div>
+
+          <!-- Matchup 2 Preview: Swagsby vs Maye-hem -->
+          <div class="bg-slate-900 border border-slate-800 rounded-xl p-4 shadow-lg space-y-2">
+            <div class="flex justify-between items-center border-b border-slate-800 pb-2">
+              <span class="text-xs font-mono font-bold text-amber-400 uppercase">Matchup 2 • Clash of Contenders</span>
+              <span class="text-[10px] text-purple-400 font-mono font-bold">3-1 vs 2-2</span>
+            </div>
+            <div class="flex justify-between items-center text-sm font-bold text-white">
+              <span>TheGreatSwagsby (3-1 • Joey)</span>
+              <span class="text-slate-500 font-mono text-xs">VS</span>
+              <span>Amon-Ra's Maye-hem (2-2 • Alex)</span>
+            </div>
+            <p class="text-xs text-slate-300 leading-relaxed">
+              Joey rides a 52-point victory behind Kenneth Walker and Nico Collins, while Alex looks to snap a 2-game skid. Alex must figure out his QB room (Maye vs Stafford) to avoid falling under .500.
+            </p>
+          </div>
+
+          <!-- Matchup 3 Preview: TDs vs Back 2 Back -->
+          <div class="bg-slate-900 border border-slate-800 rounded-xl p-4 shadow-lg space-y-2">
+            <div class="flex justify-between items-center border-b border-slate-800 pb-2">
+              <span class="text-xs font-mono font-bold text-amber-400 uppercase">Matchup 3 • Freight Train Test</span>
+              <span class="text-[10px] text-red-400 font-mono font-bold">High Roller Alert</span>
+            </div>
+            <div class="flex justify-between items-center text-sm font-bold text-white">
+              <span>Show me dem TDs (2-2 • Eric)</span>
+              <span class="text-slate-500 font-mono text-xs">VS</span>
+              <span>WE GOIN’ BACK 2 BACK (2-2 • Robert)</span>
+            </div>
+            <p class="text-xs text-slate-300 leading-relaxed">
+              Eric has lost two straight games and now faces the scariest opponent in the league. Robert has averaged 161.76 points over his last two weeks behind Kyren and Bijan. Can Josh Allen slow down the champ?
+            </p>
+          </div>
+
+          <!-- Matchup 4 Preview: Cult vs MyDak -->
+          <div class="bg-slate-900 border border-slate-800 rounded-xl p-4 shadow-lg space-y-2">
+            <div class="flex justify-between items-center border-b border-slate-800 pb-2">
+              <span class="text-xs font-mono font-bold text-amber-400 uppercase">Matchup 4 • Heavyweight Clash</span>
+              <span class="text-[10px] text-emerald-400 font-mono font-bold">148.60 Surge vs #1 Seed</span>
+            </div>
+            <div class="flex justify-between items-center text-sm font-bold text-white">
+              <span>CULT OF THE LAMB (1-3 • Franky)</span>
+              <span class="text-slate-500 font-mono text-xs">VS</span>
+              <span>MyDakMakesHerWaddle (3-1 • Arnulfo)</span>
+            </div>
+            <p class="text-xs text-slate-300 leading-relaxed">
+              Franky is finally on the board after dropping 148.60 points with CeeDee Lamb and Nabers. Now he challenges the division leader Arnulfo (507.80 PF). If Franky wins, he is right back in the playoff mix.
+            </p>
+          </div>
+
+          <!-- Matchup 5 Preview: Saquon vs Brock -->
+          <div class="bg-slate-900 border border-slate-800 rounded-xl p-4 shadow-lg space-y-2 md:col-span-2">
+            <div class="flex justify-between items-center border-b border-slate-800 pb-2">
+              <span class="text-xs font-mono font-bold text-amber-400 uppercase">Matchup 5 • Battle for Survival</span>
+              <span class="text-[10px] text-blue-400 font-mono font-bold">Rebound Stakes</span>
+            </div>
+            <div class="flex justify-between items-center text-sm font-bold text-white">
+              <span>Saquon Deez Nacuas (2-2 • Mark)</span>
+              <span class="text-slate-500 font-mono text-xs">VS</span>
+              <span>Brock To The Future (1-3 • Herrador)</span>
+            </div>
+            <p class="text-xs text-slate-300 leading-relaxed">
+              Mark must navigate life without Rashee Rice while hoping Saquon Barkley bounces back from his 1.50-point dud. Meanwhile, Herrador sits at 1-3 despite putting up 499 total points. Both squads need a win to secure their playoff trajectory.
+            </p>
+          </div>
+        </div>
+      </section>
+
+    </div>
+
+    <!-- ========================================== -->
+    <!-- DECK 3: WEEK 3 OFFICIAL REPORT (ARCHIVE)   -->
+    <!-- ========================================== -->
+    <div id="deck-wk3" class="hidden">
 
       <!-- SLIDE 0: HARDWARE & ROASTS -->
       <section id="wk3-slide-0" class="slide active space-y-4 animate-fade">
@@ -8236,20 +10314,22 @@
     });
 
     // Slide Deck Controller (for View 1: Weekly Report)
-    let currentEdition = 'wk3';
+    let currentEdition = 'wk4';
     let currentSlide = 0;
     const totalSlides = 13;
 
     function handleArchiveSelect(val) {
-      if (val === 'wk1' || val === 'wk2' || val === 'wk3') {
+      if (val === 'wk1' || val === 'wk2' || val === 'wk3' || val === 'wk4') {
         currentEdition = val;
         currentSlide = 0;
         const d1 = document.getElementById('deck-wk1');
         const d2 = document.getElementById('deck-wk2');
         const d3 = document.getElementById('deck-wk3');
+        const d4 = document.getElementById('deck-wk4');
         if (d1) d1.classList.toggle('hidden', currentEdition !== 'wk1');
         if (d2) d2.classList.toggle('hidden', currentEdition !== 'wk2');
         if (d3) d3.classList.toggle('hidden', currentEdition !== 'wk3');
+        if (d4) d4.classList.toggle('hidden', currentEdition !== 'wk4');
         updateSlides();
       }
     }
@@ -8362,43 +10442,39 @@
 
     // Copy Sleeper Announcement
     function copySleeperBlast() {
-      const blast = `🏈 F.F.U.C. WEEK 3 OFFICIAL REPORT IS LIVE! 🏈
+      const blast = `🏈 F.F.U.C. WEEK 4 OFFICIAL REPORT IS LIVE! 🏈
 ` +
-        `Matchups are finalized, payouts are locked, and the portal is updated!
+        `Matchups are finalized, payouts are locked, and the website portal is fully updated!
 
 ` +
         `👑 HIGH ROLLER OF THE WEEK ($10 Bounty):
 ` +
-        `• WE GOIN’ BACK 2 BACK (Robert) drops 163.84 PTS (2026 Season Record)!
+        `• WE GOIN’ BACK 2 BACK (Robert) claims back-to-back scoring crowns with 159.68 PTS (league-leading 555.18 season PF)!
 ` +
-        `• Arnulfo (MyDakMakesHerWaddle) wins $10 RB Bounty — Jahmyr Gibbs explodes for 37.90 PTS!
+        `• Brock To The Future (Herrador) falls 159.68 - 106.64 in a 53.04-point blowout!
 
 ` +
-        `💀 HEARTBREAK OF THE CENTURY:
+        `⚡ $10 WR BOUNTY WINNER:
 ` +
-        `• CULT OF THE LAMB puts up 141.94 PTS (2nd in the league)... and STILL LOSES! 0-3 crisis with top-tier scoring!
+        `• Tetairoa McMillan (CAR • 38.20 PTS) propels iRob (Njigbas in Paris) to the $10 cash prize and a 139.42 - 115.82 win over Eric (Show me dem TDs)! Runner-up: CeeDee Lamb (32.80 PTS).
 
 ` +
-        `🎰 VEGAS PROPS CASHED:
+        `🔥 FRANKY EXORCISM / FIRST BLOOD:
 ` +
-        `• Pedro (Bryce Wide Shut) wins 1st game of 2026 (95.14-92.36) — Dowdle +155 moneyline hits!
-` +
-        `• Saquon Total Points O/U 115.5 PTS -> OVER CASHES (126.88)!
-` +
-        `• Joey FAAB ROI: Dalton Schultz ($18 FAAB) held to 4.5 PTS!
+        `• CULT OF THE LAMB (Franky) drops 148.60 PTS to defeat Saquon Deez Nacuas (Mark: 125.28 PTS), avoiding the 0-4 crisis and earning his 1st win of 2026!
 
 ` +
-        `🚽 5K PUNISHMENT RUNNER OF THE WEEK:
+        `🚽 5K TOILET DANGER ZONE:
 ` +
-        `• Show me dem TDs (Eric) hits the cellar with 92.36 PTS!
+        `• Pedro (Bryce Wide Shut) posts a league-low 76.48 PTS in a 128.52 - 76.48 loss to Joey (TheGreatSwagsby). Pedro sits in 10th at 1-3 with 329.68 PF (over 140 PTS adrift from 9th)!
 
 ` +
-        `💥 6-WAY TIE FOR 1ST PLACE (2-1):
+        `💥 3-WAY STANDINGS LEADERSHIP (3-1):
 ` +
-        `Alex, Arnulfo, Eric, iRob, Joey & Mark all locked at 2-1!
+        `• Arnulfo (507.80 PF), iRob (507.70 PF), and Joey (492.20 PF) lead the pack!
 
 ` +
-        `🎰 VOTE ON WEEK 4 VEGAS PROPS & CHECK WEEK 3 BOX SCORES:
+        `🎰 VOTE ON WEEK 5 VEGAS PROPS & EXPLORE THE FULL 13-SLIDE REPORT:
 ` +
         `👉 https://ffucleague.com`;
 
@@ -8554,16 +10630,14 @@
 
     // ================= VEGAS SPORTSBOOK & LEAGUE PROPS ENGINE =================
     const defaultVegasData = {
+      prop_wk5_pedro_irob: { overVotes: 3, underVotes: 8, name: 'Pedro (+210 ML) vs iRob (-260 ML)' },
+      prop_wk5_swagsby_maye: { overVotes: 7, underVotes: 4, name: 'Joey vs Alex Combined Points O/U 238.5' },
+      prop_wk5_b2b_hattrick: { overVotes: 8, underVotes: 3, name: 'Robert 3-Peat High Roller O/U 145.5 PTS' },
+      prop_wk5_bounty_te: { overVotes: 6, underVotes: 5, name: 'Week 5 TE Bounty Winning Score O/U 18.5 PTS' },
       prop_cult_win: { overVotes: 6, underVotes: 5, name: 'CULT OF THE LAMB 1st Win vs Saquon' },
       prop_wr_bounty_ou: { overVotes: 7, underVotes: 4, name: 'Week 4 WR Bounty O/U 27.5 PTS' },
       prop_pedro_ou: { overVotes: 5, underVotes: 6, name: 'Pedro Total Points O/U 98.5' },
-      prop_heavyweight_ou: { overVotes: 8, underVotes: 3, name: 'MyDak vs Amon-Ra O/U 245.5 PTS' },
-      prop_dowdle_win: { overVotes: 7, underVotes: 4, name: 'Dowdle First Win ML (+155)' },
-      prop_saquon_pts: { overVotes: 9, underVotes: 3, name: 'Saquon Team Points O/U 115.5' },
-      prop_cult_comeback: { overVotes: 4, underVotes: 8, name: 'Desperation Bowl CULT Comeback' },
-      prop_joey_te_roi: { overVotes: 3, underVotes: 9, name: 'Joey FAAB ROI (Schultz + Tucker)' },
-      prop_rb_bounty_34: { overVotes: 5, underVotes: 6, name: '$10 RB Bounty Catch Bijan 34.30' },
-      prop_bartab_200: { overVotes: 7, underVotes: 4, name: '$200 Bar Tab Liability' }
+      prop_heavyweight_ou: { overVotes: 8, underVotes: 3, name: 'MyDak vs Amon-Ra O/U 245.5 PTS' }
     };
 
     function getVegasCommunityVotes() {
