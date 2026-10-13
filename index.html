@@ -72,7 +72,7 @@
           <div class="flex items-center gap-1.5 px-2 sm:px-2.5 py-1 bg-slate-950/80 border border-slate-800 rounded-lg text-[10px] text-slate-400 shadow-sm">
             <span class="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse"></span>
             <span class="hidden sm:inline text-slate-500">Updated:</span>
-            <strong id="portalLastUpdated" data-build-time="2026-10-13T11:30:00-05:00">Oct 13, 2026 • 11:30 AM CST (Week 5 Final Edition)</strong>
+            <strong id="portalLastUpdated" data-build-time="2026-10-13T11:50:00-05:00">Oct 13, 2026 • 11:50 AM CST (Week 5 Final Edition)</strong>
           </div>
           <button onclick="copySleeperBlast()" title="Copy pre-formatted announcement for Sleeper chat" class="flex items-center gap-1.5 px-2.5 sm:px-3 py-1 sm:py-1.5 text-xs font-extrabold rounded-lg bg-emerald-600 hover:bg-emerald-500 text-white border border-emerald-500/50 shadow transition">
             <span>📢</span> <span id="sleeperBtnText" class="hidden sm:inline">Sleeper Blast</span>
@@ -1588,134 +1588,382 @@
         </div>
       </section>
 
-      <!-- SLIDE 10: CASUALTY WARD -->
+      <!-- SLIDE 10: CASUALTY WARD & WEEK 6 RETURN RADAR -->
       <section id="wk5-slide-10" class="slide space-y-4 animate-fade">
-        <div class="bg-gradient-to-r from-red-950/80 via-slate-900 to-rose-950/80 border-2 border-red-500/50 rounded-2xl p-5 shadow-2xl">
+        <!-- Header Banner -->
+        <div class="bg-gradient-to-r from-red-950/90 via-slate-900 to-emerald-950/80 border-2 border-red-500/40 rounded-2xl p-5 shadow-2xl">
           <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3">
             <div>
               <div class="inline-flex items-center gap-1.5 bg-red-600 text-white text-[10px] font-black px-2.5 py-0.5 rounded uppercase tracking-wider mb-1">
-                MEDICAL HEADQUARTERS • CASUALTY WARD
+                MEDICAL HEADQUARTERS • WEEK 5 AUDIT & WEEK 6 RADAR
               </div>
-              <h2 class="text-2xl sm:text-3xl font-black uppercase tracking-tight text-white">
-                🏥 Official Injury Audit & IR Ledger
+              <h2 class="text-2xl sm:text-3xl font-black uppercase tracking-tight text-white flex items-center gap-2">
+                <span>🏥 Official Injury Audit & Return Radar</span>
               </h2>
               <p class="text-xs sm:text-sm text-slate-300 mt-1">
-                Certified Week 5 medical audit: Real-time Sleeper roster designations, verified IR stashes, and clean health clearances.
+                Strict medical filter: Exclusively highlighting players who suffered in-game injuries during Week 5, alongside key injured stars trending to return for Week 6.
               </p>
             </div>
-            <div class="flex items-center gap-2">
-              <span class="text-xs bg-red-950 border border-red-800 text-red-300 font-mono font-bold px-3 py-1 rounded-lg">
-                Week 5 Medical Audit
+            <div class="flex flex-wrap items-center gap-2">
+              <span class="text-xs bg-red-950/80 border border-red-700 text-red-300 font-mono font-bold px-3 py-1 rounded-lg">
+                🚨 7 Week 5 Injuries
+              </span>
+              <span class="text-xs bg-emerald-950/80 border border-emerald-700 text-emerald-300 font-mono font-bold px-3 py-1 rounded-lg">
+                🔄 7 Week 6 Return Targets
               </span>
             </div>
           </div>
         </div>
 
-        <!-- Featured Injury Card: Rashee Rice Tragedy -->
-        <div class="bg-gradient-to-r from-red-950/80 via-slate-900 to-rose-950/80 border-2 border-red-500/60 rounded-xl p-4 shadow-xl">
-          <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 pb-2 border-b border-red-500/30">
-            <div class="flex items-center gap-2">
-              <span class="bg-red-500 text-slate-950 text-[10px] font-black uppercase px-2 py-0.5 rounded tracking-wider animate-pulse">BREAKING TRAGEDY</span>
-              <span class="text-white font-black text-base sm:text-lg">Rashee Rice (WR • KC)</span>
+        <!-- ======================================================== -->
+        <!-- SECTION 1: INJURED DURING WEEK 5 (THE CASUALTY WARD)     -->
+        <!-- ======================================================== -->
+        <div>
+          <div class="flex items-center gap-2 mb-2.5">
+            <span class="w-2.5 h-2.5 rounded-full bg-red-500 animate-pulse"></span>
+            <h3 class="text-base sm:text-lg font-black uppercase tracking-wider text-red-400">
+              🚨 Injured During Week 5 Action (Exited Contest)
+            </h3>
+            <span class="text-[11px] text-slate-400 font-mono ml-auto">In-Game Casualties</span>
+          </div>
+
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3">
+            <!-- 1. Deebo Samuel -->
+            <div class="bg-slate-900 border border-red-500/40 rounded-xl p-4 shadow-lg hover:border-red-400 transition flex flex-col justify-between">
+              <div>
+                <div class="flex justify-between items-start mb-1.5">
+                  <div>
+                    <span class="font-extrabold text-white text-base">Deebo Samuel</span>
+                    <span class="text-xs text-slate-400 ml-1">(WR • SF)</span>
+                  </div>
+                  <span class="bg-red-950 text-red-400 border border-red-800 text-[10px] font-black uppercase px-2 py-0.5 rounded tracking-wider">
+                    OUT (Hamstring)
+                  </span>
+                </div>
+                <div class="text-[11px] text-slate-400 mb-2">Franchise: <strong class="text-amber-400">Brock To The Future (Herrador)</strong></div>
+                <div class="bg-slate-950/60 p-2 rounded border border-slate-800 mb-2 text-xs flex justify-between">
+                  <span class="text-slate-400">Week 5 Impact:</span>
+                  <span class="font-mono font-bold text-red-400">1.50 PTS (Left 1st Half)</span>
+                </div>
+                <p class="text-xs text-slate-300 leading-relaxed">
+                  Pulled up lame clutching his hamstring on an end-around in the first half. MRI confirmed an acute muscle strain. Ruled <strong class="text-red-400">OUT</strong> for Week 6, dealing a blow to Herrador's receiver corps.
+                </p>
+              </div>
             </div>
-            <div class="flex items-center gap-2">
-              <span class="text-xs font-mono font-bold text-red-400 bg-red-950 border border-red-800 px-2.5 py-0.5 rounded">🚨 SEVERE KNEE INJURY (SEASON THREAT)</span>
+
+            <!-- 2. CeeDee Lamb -->
+            <div class="bg-slate-900 border border-amber-500/40 rounded-xl p-4 shadow-lg hover:border-amber-400 transition flex flex-col justify-between">
+              <div>
+                <div class="flex justify-between items-start mb-1.5">
+                  <div>
+                    <span class="font-extrabold text-white text-base">CeeDee Lamb</span>
+                    <span class="text-xs text-slate-400 ml-1">(WR • DAL)</span>
+                  </div>
+                  <span class="bg-amber-950 text-amber-400 border border-amber-800 text-[10px] font-black uppercase px-2 py-0.5 rounded tracking-wider">
+                    QUESTIONABLE (Quad)
+                  </span>
+                </div>
+                <div class="text-[11px] text-slate-400 mb-2">Franchise: <strong class="text-amber-400">WE GOIN’ BACK 2 BACK (Robert)</strong></div>
+                <div class="bg-slate-950/60 p-2 rounded border border-slate-800 mb-2 text-xs flex justify-between">
+                  <span class="text-slate-400">Week 5 Impact:</span>
+                  <span class="font-mono font-bold text-amber-400">1.90 PTS (Left Game Early)</span>
+                </div>
+                <p class="text-xs text-slate-300 leading-relaxed">
+                  Suffered a quadriceps strain in the 2nd quarter and did not return. The early exit snapped Robert's 150+ scoring streak. Initial scans reveal no tear, making him a critical daily watch for Week 6.
+                </p>
+              </div>
+            </div>
+
+            <!-- 3. KC Concepcion -->
+            <div class="bg-slate-900 border border-red-500/40 rounded-xl p-4 shadow-lg hover:border-red-400 transition flex flex-col justify-between">
+              <div>
+                <div class="flex justify-between items-start mb-1.5">
+                  <div>
+                    <span class="font-extrabold text-white text-base">KC Concepcion</span>
+                    <span class="text-xs text-slate-400 ml-1">(WR • CLE)</span>
+                  </div>
+                  <span class="bg-red-950 text-red-400 border border-red-800 text-[10px] font-black uppercase px-2 py-0.5 rounded tracking-wider">
+                    OUT (Concussion)
+                  </span>
+                </div>
+                <div class="text-[11px] text-slate-400 mb-2">Franchise: <strong class="text-amber-400">Njigbas in Paris (iRob)</strong></div>
+                <div class="bg-slate-950/60 p-2 rounded border border-slate-800 mb-2 text-xs flex justify-between">
+                  <span class="text-slate-400">Week 5 Impact:</span>
+                  <span class="font-mono font-bold text-red-400">1.00 PTS (Concussion Protocol)</span>
+                </div>
+                <p class="text-xs text-slate-300 leading-relaxed">
+                  Absorbed a brutal helmet hit over the middle in Week 5 and was immediately removed. Diagnosed with a concussion and placed in the league's 5-step return protocol; unlikely to clear before Week 6.
+                </p>
+              </div>
+            </div>
+
+            <!-- 4. David Montgomery -->
+            <div class="bg-slate-900 border border-red-500/40 rounded-xl p-4 shadow-lg hover:border-red-400 transition flex flex-col justify-between">
+              <div>
+                <div class="flex justify-between items-start mb-1.5">
+                  <div>
+                    <span class="font-extrabold text-white text-base">David Montgomery</span>
+                    <span class="text-xs text-slate-400 ml-1">(RB • HOU)</span>
+                  </div>
+                  <span class="bg-red-950 text-red-400 border border-red-800 text-[10px] font-black uppercase px-2 py-0.5 rounded tracking-wider">
+                    OUT (Groin • IR)
+                  </span>
+                </div>
+                <div class="text-[11px] text-slate-400 mb-2">Franchise: <strong class="text-amber-400">Bryce Wide Shut (Pedro)</strong></div>
+                <div class="bg-slate-950/60 p-2 rounded border border-slate-800 mb-2 text-xs flex justify-between">
+                  <span class="text-slate-400">Week 5 Impact:</span>
+                  <span class="font-mono font-bold text-red-400">1.10 PTS (Stashed on IR)</span>
+                </div>
+                <p class="text-xs text-slate-300 leading-relaxed">
+                  Aggravated a groin strain on his 2nd carry of Week 5 and was shut down. Shifted into Pedro's IR slot as Bryce Wide Shut suffers yet another devastating running back blow in the 5K toilet zone.
+                </p>
+              </div>
+            </div>
+
+            <!-- 5. TreVeyon Henderson -->
+            <div class="bg-slate-900 border border-red-500/40 rounded-xl p-4 shadow-lg hover:border-red-400 transition flex flex-col justify-between">
+              <div>
+                <div class="flex justify-between items-start mb-1.5">
+                  <div>
+                    <span class="font-extrabold text-white text-base">TreVeyon Henderson</span>
+                    <span class="text-xs text-slate-400 ml-1">(RB • NE)</span>
+                  </div>
+                  <span class="bg-red-950 text-red-400 border border-red-800 text-[10px] font-black uppercase px-2 py-0.5 rounded tracking-wider">
+                    OUT (Ankle • IR)
+                  </span>
+                </div>
+                <div class="text-[11px] text-slate-400 mb-2">Franchise: <strong class="text-amber-400">Show me dem TDs (Eric)</strong></div>
+                <div class="bg-slate-950/60 p-2 rounded border border-slate-800 mb-2 text-xs flex justify-between">
+                  <span class="text-slate-400">Week 5 Impact:</span>
+                  <span class="font-mono font-bold text-red-400">4.30 PTS (Suffered Ankle Sprain)</span>
+                </div>
+                <p class="text-xs text-slate-300 leading-relaxed">
+                  Suffered a severe low-ankle sprain in the 4th quarter of Week 5. Seen in a walking boot on Tuesday morning and moved to Eric's IR slot for Week 6 preparation.
+                </p>
+              </div>
+            </div>
+
+            <!-- 6. Quinshon Judkins -->
+            <div class="bg-slate-900 border border-amber-500/40 rounded-xl p-4 shadow-lg hover:border-amber-400 transition flex flex-col justify-between">
+              <div>
+                <div class="flex justify-between items-start mb-1.5">
+                  <div>
+                    <span class="font-extrabold text-white text-base">Quinshon Judkins</span>
+                    <span class="text-xs text-slate-400 ml-1">(RB • CLE)</span>
+                  </div>
+                  <span class="bg-amber-950 text-amber-400 border border-amber-800 text-[10px] font-black uppercase px-2 py-0.5 rounded tracking-wider">
+                    QUESTIONABLE (Lower Leg)
+                  </span>
+                </div>
+                <div class="text-[11px] text-slate-400 mb-2">Franchise: <strong class="text-amber-400">CULT OF THE LAMB (Franky)</strong></div>
+                <div class="bg-slate-950/60 p-2 rounded border border-slate-800 mb-2 text-xs flex justify-between">
+                  <span class="text-slate-400">Week 5 Impact:</span>
+                  <span class="font-mono font-bold text-amber-400">6.50 PTS (Limping Late)</span>
+                </div>
+                <p class="text-xs text-slate-300 leading-relaxed">
+                  Took a direct helmet shot to the lower leg in Week 5 and limped off. X-rays returned negative for fractures; diagnosed with a severe contusion. Game-time decision for Week 6.
+                </p>
+              </div>
+            </div>
+
+            <!-- 7. Jaxon Smith-Njigba -->
+            <div class="bg-slate-900 border border-amber-500/40 rounded-xl p-4 shadow-lg hover:border-amber-400 transition flex flex-col justify-between">
+              <div>
+                <div class="flex justify-between items-start mb-1.5">
+                  <div>
+                    <span class="font-extrabold text-white text-base">Jaxon Smith-Njigba</span>
+                    <span class="text-xs text-slate-400 ml-1">(WR • SEA)</span>
+                  </div>
+                  <span class="bg-amber-950 text-amber-400 border border-amber-800 text-[10px] font-black uppercase px-2 py-0.5 rounded tracking-wider">
+                    QUESTIONABLE (Ankle)
+                  </span>
+                </div>
+                <div class="text-[11px] text-slate-400 mb-2">Franchise: <strong class="text-amber-400">Brock To The Future (Herrador)</strong></div>
+                <div class="bg-slate-950/60 p-2 rounded border border-slate-800 mb-2 text-xs flex justify-between">
+                  <span class="text-slate-400">Week 5 Impact:</span>
+                  <span class="font-mono font-bold text-emerald-400">20.30 PTS (Late Ankle Tweak)</span>
+                </div>
+                <p class="text-xs text-slate-300 leading-relaxed">
+                  Put up a brilliant 20.30 PTS in Herrador's win over Mark, but tweaked his ankle on the sideline in the final minutes. Swelling was minimal on Monday; expected to practice fully later in the week.
+                </p>
+              </div>
             </div>
           </div>
-          <div class="mt-2.5 grid grid-cols-1 sm:grid-cols-3 gap-3 text-xs">
-            <div class="bg-slate-950/60 p-2.5 rounded-lg border border-slate-800">
-              <div class="text-[10px] uppercase font-mono text-slate-400">Owner & Role</div>
-              <div class="text-white font-bold mt-0.5">Saquon Deez Nacuas (Mark)</div>
-              <div class="text-amber-400 font-mono font-black text-xs">Alpha WR1 Cornerstone</div>
-            </div>
-            <div class="bg-slate-950/60 p-2.5 rounded-lg border border-slate-800">
-              <div class="text-[10px] uppercase font-mono text-slate-400">Week 5 Status</div>
-              <div class="text-rose-400 font-bold mt-0.5">Sidelined / Out</div>
-              <div class="text-slate-400 text-[11px]">Mark leans on Puka & Parker</div>
-            </div>
-            <div class="bg-slate-950/60 p-2.5 rounded-lg border border-slate-800">
-              <div class="text-[10px] uppercase font-mono text-slate-400">Projected Timeline</div>
-              <div class="text-red-400 font-bold mt-0.5">Indefinite / Season Threat</div>
-              <div class="text-slate-400 text-[11px]">Undergoing surgical procedures</div>
-            </div>
-          </div>
-          <p class="text-xs text-slate-300 mt-2.5 leading-relaxed bg-red-950/30 p-2.5 rounded-lg border border-red-900/40">
-            <strong class="text-amber-400">The Impact on Saquon Deez Nacuas:</strong> Without Rice stretching the field, Mark suffered a 147.56 - 117.52 defeat against Herrador. Puka Nacua stepped up with 29.20 PTS, but replacing Rice's weekly 20+ floor remains Mark's greatest test.
-          </p>
         </div>
 
-        <!-- Casualty Ward Grid: 6 Key Injuries & Status Reports -->
-        <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
-          <!-- 1. Christian McCaffrey: Clean Bill of Health -->
-          <div class="bg-slate-900 border border-emerald-500/40 rounded-xl p-4 shadow-lg transition">
-            <div class="flex justify-between items-center mb-1">
-              <span class="font-extrabold text-white text-sm">Christian McCaffrey (RB • SF)</span>
-              <span class="bg-emerald-950 text-emerald-400 border border-emerald-800 text-[10px] font-bold px-2 py-0.5 rounded">⚡ 100% HEALTHY & ACTIVE</span>
-            </div>
-            <div class="text-[11px] text-slate-400 mb-2">Franchise: <strong class="text-slate-200">TheGreatSwagsby (Joey)</strong></div>
-            <p class="text-xs text-slate-300 leading-relaxed">
-              <strong class="text-emerald-400">Clean Bill of Health Confirmed:</strong> McCaffrey has started every single week for Joey, putting up another solid 15.80 points in Week 5. Swagsby's backfield anchor remains 100% active and healthy.
-            </p>
+        <!-- ======================================================== -->
+        <!-- SECTION 2: WEEK 6 RETURN RADAR (PLAYERS RETURNING)       -->
+        <!-- ======================================================== -->
+        <div class="pt-2">
+          <div class="flex items-center gap-2 mb-2.5">
+            <span class="w-2.5 h-2.5 rounded-full bg-emerald-400 animate-pulse"></span>
+            <h3 class="text-base sm:text-lg font-black uppercase tracking-wider text-emerald-400">
+              🔄 Week 6 Return Radar (Injured Players Who May Return)
+            </h3>
+            <span class="text-[11px] text-slate-400 font-mono ml-auto">Rehab & Clearance Tracker</span>
           </div>
 
-          <!-- 2. Jonah Coleman -->
-          <div class="bg-slate-900 border border-slate-800 rounded-xl p-4 shadow-lg transition">
-            <div class="flex justify-between items-center mb-1">
-              <span class="font-extrabold text-white text-sm">Jonah Coleman (RB • DEN)</span>
-              <span class="bg-red-950 text-red-400 border border-red-800 text-[10px] font-bold px-2 py-0.5 rounded">🚨 ON IR (0 Snaps)</span>
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3">
+            <!-- 1. Rashee Rice -->
+            <div class="bg-slate-900 border border-emerald-500/40 rounded-xl p-4 shadow-lg hover:border-emerald-400 transition flex flex-col justify-between">
+              <div>
+                <div class="flex justify-between items-start mb-1.5">
+                  <div>
+                    <span class="font-extrabold text-white text-base">Rashee Rice</span>
+                    <span class="text-xs text-slate-400 ml-1">(WR • KC)</span>
+                  </div>
+                  <span class="bg-emerald-950 text-emerald-400 border border-emerald-800 text-[10px] font-black uppercase px-2 py-0.5 rounded tracking-wider">
+                    TARGET: WEEK 6 RETURN
+                  </span>
+                </div>
+                <div class="text-[11px] text-slate-400 mb-2">Franchise: <strong class="text-amber-400">Saquon Deez Nacuas (Mark)</strong></div>
+                <div class="bg-slate-950/60 p-2 rounded border border-slate-800 mb-2 text-xs flex justify-between">
+                  <span class="text-slate-400">Week 5 Status:</span>
+                  <span class="font-mono font-bold text-slate-400">0.00 PTS (Sidelined)</span>
+                </div>
+                <p class="text-xs text-slate-300 leading-relaxed">
+                  <strong class="text-emerald-400">Trending Toward Week 6:</strong> Sidelined during Week 5, but logged limited walkthrough reps Monday. Coaching staff expressed optimism that Kansas City's WR1 returns to the field for Week 6, giving Mark's offense its vital alpha receiver back.
+                </p>
+              </div>
             </div>
-            <div class="text-[11px] text-slate-400 mb-2">Franchise: <strong class="text-slate-200">Njigbas in Paris (iRob)</strong></div>
-            <p class="text-xs text-slate-300 leading-relaxed">
-              iRob's $18 marquee waiver stash continues to sit on IR with zero snaps played. Fortunately for iRob, Tetairoa McMillan and Isaiah Likely (26.90 PTS) have powered the team to a 4-1 record.
-            </p>
-          </div>
 
-          <!-- 3. A.J. Brown -->
-          <div class="bg-slate-900 border border-slate-800 rounded-xl p-4 shadow-lg transition">
-            <div class="flex justify-between items-center mb-1">
-              <span class="font-extrabold text-white text-sm">A.J. Brown (WR • PHI)</span>
-              <span class="bg-red-950 text-red-400 border border-red-800 text-[10px] font-bold px-2 py-0.5 rounded">🚨 ON IR (Hamstring)</span>
+            <!-- 2. Ladd McConkey -->
+            <div class="bg-slate-900 border border-emerald-500/40 rounded-xl p-4 shadow-lg hover:border-emerald-400 transition flex flex-col justify-between">
+              <div>
+                <div class="flex justify-between items-start mb-1.5">
+                  <div>
+                    <span class="font-extrabold text-white text-base">Ladd McConkey</span>
+                    <span class="text-xs text-slate-400 ml-1">(WR • LAC)</span>
+                  </div>
+                  <span class="bg-emerald-950 text-emerald-400 border border-emerald-800 text-[10px] font-black uppercase px-2 py-0.5 rounded tracking-wider">
+                    LIKELY RETURN (WK 6)
+                  </span>
+                </div>
+                <div class="text-[11px] text-slate-400 mb-2">Franchise: <strong class="text-amber-400">TheGreatSwagsby (Joey)</strong></div>
+                <div class="bg-slate-950/60 p-2 rounded border border-slate-800 mb-2 text-xs flex justify-between">
+                  <span class="text-slate-400">Week 5 Status:</span>
+                  <span class="font-mono font-bold text-slate-400">0.00 PTS (Precautionary Inactive)</span>
+                </div>
+                <p class="text-xs text-slate-300 leading-relaxed">
+                  <strong class="text-emerald-400">Precautionary Hold Lifted:</strong> Held out of Week 5 due to minor foot soreness. Team beat writers report McConkey is moving without discomfort and expected to practice fully Wednesday to start Week 6 for Joey.
+                </p>
+              </div>
             </div>
-            <div class="text-[11px] text-slate-400 mb-2">Franchise: <strong class="text-slate-200">MyDakMakesHerWaddle (Arnulfo)</strong></div>
-            <p class="text-xs text-slate-300 leading-relaxed">
-              Remains on official IR with a lingering hamstring injury. Arnulfo has survived and flourished in solo 1st place (4-1) behind Jahmyr Gibbs' 35.20-point explosion.
-            </p>
-          </div>
 
-          <!-- 4. Jordan Mason -->
-          <div class="bg-slate-900 border border-slate-800 rounded-xl p-4 shadow-lg transition">
-            <div class="flex justify-between items-center mb-1">
-              <span class="font-extrabold text-white text-sm">Jordan Mason (RB • MIN)</span>
-              <span class="bg-red-950 text-red-400 border border-red-800 text-[10px] font-bold px-2 py-0.5 rounded">🚨 ON IR (Inactive)</span>
+            <!-- 3. CeeDee Lamb -->
+            <div class="bg-slate-900 border border-amber-500/40 rounded-xl p-4 shadow-lg hover:border-amber-400 transition flex flex-col justify-between">
+              <div>
+                <div class="flex justify-between items-start mb-1.5">
+                  <div>
+                    <span class="font-extrabold text-white text-base">CeeDee Lamb</span>
+                    <span class="text-xs text-slate-400 ml-1">(WR • DAL)</span>
+                  </div>
+                  <span class="bg-amber-950 text-amber-400 border border-amber-800 text-[10px] font-black uppercase px-2 py-0.5 rounded tracking-wider">
+                    50/50 WEEK 6 TARGET
+                  </span>
+                </div>
+                <div class="text-[11px] text-slate-400 mb-2">Franchise: <strong class="text-amber-400">WE GOIN’ BACK 2 BACK (Robert)</strong></div>
+                <div class="bg-slate-950/60 p-2 rounded border border-slate-800 mb-2 text-xs flex justify-between">
+                  <span class="text-slate-400">Condition:</span>
+                  <span class="font-mono font-bold text-amber-400">Quad Tightness (No Structural Tear)</span>
+                </div>
+                <p class="text-xs text-slate-300 leading-relaxed">
+                  <strong class="text-amber-400">Pushing to Play:</strong> Exited Week 5 early, but avoids serious injury. Undergoing round-the-clock physical therapy with the goal of suiting up for Dallas' crucial Week 6 matchup to keep Robert atop the standings.
+                </p>
+              </div>
             </div>
-            <div class="text-[11px] text-slate-400 mb-2">Franchise: <strong class="text-slate-200">Bryce Wide Shut (Pedro)</strong></div>
-            <p class="text-xs text-slate-300 leading-relaxed">
-              Occupying Pedro's IR slot with an inactive tag, compounding the running back drought that keeps Bryce Wide Shut in the 5K punishment danger zone.
-            </p>
-          </div>
 
-          <!-- 5. Zach Charbonnet -->
-          <div class="bg-slate-900 border border-slate-800 rounded-xl p-4 shadow-lg transition">
-            <div class="flex justify-between items-center mb-1">
-              <span class="font-extrabold text-white text-sm">Zach Charbonnet (RB • SEA)</span>
-              <span class="bg-amber-950 text-amber-400 border border-amber-800 text-[10px] font-bold px-2 py-0.5 rounded">⚠️ ON PUP LIST</span>
+            <!-- 4. Jaxon Smith-Njigba -->
+            <div class="bg-slate-900 border border-emerald-500/40 rounded-xl p-4 shadow-lg hover:border-emerald-400 transition flex flex-col justify-between">
+              <div>
+                <div class="flex justify-between items-start mb-1.5">
+                  <div>
+                    <span class="font-extrabold text-white text-base">Jaxon Smith-Njigba</span>
+                    <span class="text-xs text-slate-400 ml-1">(WR • SEA)</span>
+                  </div>
+                  <span class="bg-emerald-950 text-emerald-400 border border-emerald-800 text-[10px] font-black uppercase px-2 py-0.5 rounded tracking-wider">
+                    PROBABLE RETURN (WK 6)
+                  </span>
+                </div>
+                <div class="text-[11px] text-slate-400 mb-2">Franchise: <strong class="text-amber-400">Brock To The Future (Herrador)</strong></div>
+                <div class="bg-slate-950/60 p-2 rounded border border-slate-800 mb-2 text-xs flex justify-between">
+                  <span class="text-slate-400">Condition:</span>
+                  <span class="font-mono font-bold text-emerald-400">Minor Ankle Sprain (Grade 1)</span>
+                </div>
+                <p class="text-xs text-slate-300 leading-relaxed">
+                  <strong class="text-emerald-400">Cleared for Action:</strong> Dodged a bullet after tweaking his ankle late in Week 5. Medical staff confirmed minimal swelling, and he is projected to have zero limitations heading into Week 6.
+                </p>
+              </div>
             </div>
-            <div class="text-[11px] text-slate-400 mb-2">Franchise: <strong class="text-slate-200">Brock To The Future (Herrador)</strong></div>
-            <p class="text-xs text-slate-300 leading-relaxed">
-              Remains on the Physically Unable to Perform list. Bucky Irving (30.50 PTS) and Chuba Hubbard carried the load in Herrador's 147.56-point rout of Mark.
-            </p>
-          </div>
 
-          <!-- 6. Jayden Daniels: Returned & Thriving -->
-          <div class="bg-slate-900 border border-emerald-500/40 rounded-xl p-4 shadow-lg transition">
-            <div class="flex justify-between items-center mb-1">
-              <span class="font-extrabold text-white text-sm">Jayden Daniels (QB • WAS)</span>
-              <span class="bg-emerald-950 text-emerald-400 border border-emerald-800 text-[10px] font-bold px-2 py-0.5 rounded">⚡ FULL RETURN (32.26 PTS)</span>
+            <!-- 5. Aaron Jones -->
+            <div class="bg-slate-900 border border-emerald-500/40 rounded-xl p-4 shadow-lg hover:border-emerald-400 transition flex flex-col justify-between">
+              <div>
+                <div class="flex justify-between items-start mb-1.5">
+                  <div>
+                    <span class="font-extrabold text-white text-base">Aaron Jones</span>
+                    <span class="text-xs text-slate-400 ml-1">(RB • MIN)</span>
+                  </div>
+                  <span class="bg-emerald-950 text-emerald-400 border border-emerald-800 text-[10px] font-black uppercase px-2 py-0.5 rounded tracking-wider">
+                    TRENDING UP (WK 6)
+                  </span>
+                </div>
+                <div class="text-[11px] text-slate-400 mb-2">Franchise: <strong class="text-amber-400">MyDakMakesHerWaddle (Arnulfo)</strong></div>
+                <div class="bg-slate-950/60 p-2 rounded border border-slate-800 mb-2 text-xs flex justify-between">
+                  <span class="text-slate-400">Condition:</span>
+                  <span class="font-mono font-bold text-emerald-400">Hip/Leg Soreness (Day-to-Day)</span>
+                </div>
+                <p class="text-xs text-slate-300 leading-relaxed">
+                  <strong class="text-emerald-400">Ahead of Schedule:</strong> Head coach Kevin O'Connell indicated Jones is progressing rapidly and has a strong chance to suit up for Week 6, providing a massive boost to Arnulfo's 1st-place roster.
+                </p>
+              </div>
             </div>
-            <div class="text-[11px] text-slate-400 mb-2">Franchise: <strong class="text-slate-200">Brock To The Future (Herrador)</strong></div>
-            <p class="text-xs text-slate-300 leading-relaxed">
-              Shook off the elbow soreness and erupted for 32.26 points in Week 5! Daniels gave Herrador the dual-threat firepower needed to secure a 30-point blowout victory.
-            </p>
+
+            <!-- 6. Quinshon Judkins -->
+            <div class="bg-slate-900 border border-amber-500/40 rounded-xl p-4 shadow-lg hover:border-amber-400 transition flex flex-col justify-between">
+              <div>
+                <div class="flex justify-between items-start mb-1.5">
+                  <div>
+                    <span class="font-extrabold text-white text-base">Quinshon Judkins</span>
+                    <span class="text-xs text-slate-400 ml-1">(RB • CLE)</span>
+                  </div>
+                  <span class="bg-amber-950 text-amber-400 border border-amber-800 text-[10px] font-black uppercase px-2 py-0.5 rounded tracking-wider">
+                    GAME-TIME DECISION (WK 6)
+                  </span>
+                </div>
+                <div class="text-[11px] text-slate-400 mb-2">Franchise: <strong class="text-amber-400">CULT OF THE LAMB (Franky)</strong></div>
+                <div class="bg-slate-950/60 p-2 rounded border border-slate-800 mb-2 text-xs flex justify-between">
+                  <span class="text-slate-400">Condition:</span>
+                  <span class="font-mono font-bold text-amber-400">Lower Leg Bone Bruise</span>
+                </div>
+                <p class="text-xs text-slate-300 leading-relaxed">
+                  <strong class="text-amber-400">Pain Tolerance Test:</strong> Contusion is painful but structurally sound. Judkins will test his burst in practice later this week to determine if he can play in Franky's Week 6 clash against Joey.
+                </p>
+              </div>
+            </div>
+
+            <!-- 7. Ollie Gordon -->
+            <div class="bg-slate-900 border border-emerald-500/40 rounded-xl p-4 shadow-lg hover:border-emerald-400 transition flex flex-col justify-between">
+              <div>
+                <div class="flex justify-between items-start mb-1.5">
+                  <div>
+                    <span class="font-extrabold text-white text-base">Ollie Gordon</span>
+                    <span class="text-xs text-slate-400 ml-1">(RB • MIA)</span>
+                  </div>
+                  <span class="bg-emerald-950 text-emerald-400 border border-emerald-800 text-[10px] font-black uppercase px-2 py-0.5 rounded tracking-wider">
+                    FULL CLEARANCE EXPECTED
+                  </span>
+                </div>
+                <div class="text-[11px] text-slate-400 mb-2">Franchise: <strong class="text-amber-400">Bryce Wide Shut (Pedro)</strong></div>
+                <div class="bg-slate-950/60 p-2 rounded border border-slate-800 mb-2 text-xs flex justify-between">
+                  <span class="text-slate-400">Week 5 Output:</span>
+                  <span class="font-mono font-bold text-emerald-400">14.80 PTS (Active)</span>
+                </div>
+                <p class="text-xs text-slate-300 leading-relaxed">
+                  <strong class="text-emerald-400">Off the Report:</strong> Played through a questionable tag to post 14.80 PTS in Week 5. Expected to be removed from the official injury ledger entirely ahead of Week 6 kickoff.
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </section>
