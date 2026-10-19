@@ -1,8 +1,24 @@
-import urllib.request, urllib.parse, json, sys, time, os, argparse
+import urllib.request, urllib.parse, json, sys, time, os, argparse, re
 sys.stdout.reconfigure(encoding='utf-8')
 
 ALLTALK_BASE_URL = "http://192.168.86.67:7851"
 DEFAULT_OUT_DIR = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "assets", "audio")
+
+def sanitize_for_tts(text):
+    """
+    Cleans text for XTTSv2 / AllTalk to prevent hallucination and audio glitching:
+    - Normalizes acronyms and hyphens in compound words
+    - Expands currency ($10 -> ten dollar)
+    - Expands numbers (e.g. 5K -> five K, Week 6 -> Week six)
+    - Cleans abrupt question marks and odd characters
+    """
+    t = text
+    t = re.sub(r'\$([0-9]+)', r'\1 dollar', t)
+    t = re.sub(r'\b5K\b', 'five K', t, flags=re.IGNORECASE)
+    t = re.sub(r'\bPick-Em\b|\bPick-em\b', 'pick em', t, flags=re.IGNORECASE)
+    t = re.sub(r'\bWeek\s*([0-9]+)\b', lambda m: f"Week {['zero','one','two','three','four','five','six','seven','eight','nine','ten','eleven','twelve','thirteen','fourteen','fifteen','sixteen','seventeen','eighteen'][int(m.group(1))]}" if int(m.group(1)) <= 18 else m.group(0), t, flags=re.IGNORECASE)
+    t = t.replace('?', ',')
+    return t
 
 def list_voices():
     try:
@@ -18,14 +34,16 @@ def list_voices():
 def generate_audio(text, voice="Morgan_Freeman CC3.wav", output_name="custom_broadcast"):
     os.makedirs(DEFAULT_OUT_DIR, exist_ok=True)
     clean_output_name = output_name.replace('.wav', '')
+    sanitized_text = sanitize_for_tts(text)
     
     print(f"\n🎙️ Connecting to AllTalk TTS at {ALLTALK_BASE_URL}...")
     print(f"   Voice: {voice}")
     print(f"   Output: {clean_output_name}.wav")
-    print(f"   Text ({len(text)} chars): \"{text[:80]}...\"")
+    print(f"   Original Text ({len(text)} chars): \"{text[:70]}...\"")
+    print(f"   Sanitized Text: \"{sanitized_text[:70]}...\"")
     
     payload = {
-        "text_input": text,
+        "text_input": sanitized_text,
         "text_filtering": "standard",
         "character_voice_gen": voice,
         "narrator_enabled": False,
