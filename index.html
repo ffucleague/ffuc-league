@@ -244,17 +244,23 @@
                 <span id="audioPulseRing" class="absolute -inset-1 rounded-full bg-amber-400/40 animate-ping hidden pointer-events-none"></span>
               </div>
               <div>
-                <div class="flex flex-wrap items-center gap-2 mb-1">
+                <div class="flex flex-wrap items-center gap-2 mb-1.5">
                   <span class="inline-flex items-center gap-1.5 bg-indigo-500/20 text-indigo-300 border border-indigo-500/30 text-[10px] font-mono font-bold px-2.5 py-0.5 rounded-full uppercase tracking-wider">
                     <span class="w-2 h-2 rounded-full bg-indigo-400 animate-pulse"></span>
                     FFUC AI Studio • Local Broadcast
                   </span>
-                  <span class="text-[11px] bg-slate-950 border border-amber-500/30 text-amber-400 font-mono font-bold px-2 py-0.5 rounded-md">
-                    🎙️ Narrated by AI Morgan Freeman
-                  </span>
+                  <!-- Voice Switcher Pills -->
+                  <div class="inline-flex items-center bg-slate-950 border border-slate-700 rounded-lg p-0.5 text-[11px] font-mono font-bold">
+                    <button id="voiceBtnMcafee" onclick="switchVoice('mcafee')" class="px-2.5 py-0.5 rounded bg-amber-500 text-slate-950 transition cursor-pointer">
+                      🔥 Pat McAfee
+                    </button>
+                    <button id="voiceBtnFreeman" onclick="switchVoice('freeman')" class="px-2.5 py-0.5 rounded text-slate-400 hover:text-white transition cursor-pointer">
+                      👑 Morgan Freeman
+                    </button>
+                  </div>
                 </div>
                 <div class="text-white font-extrabold text-sm sm:text-base tracking-tight flex items-center gap-2">
-                  <span>Week 5 Official Audio Recap & League Roasts</span>
+                  <span id="broadcastTitleText">Week 5 Official Audio Recap (Pat McAfee Edition)</span>
                   <!-- Animated Waveform Equalizer -->
                   <div id="audioWaveform" class="flex items-end gap-0.5 h-4 opacity-40 transition-opacity">
                     <span class="w-1 bg-amber-400 rounded-full h-2 animate-bounce" style="animation-delay: 0.1s"></span>
@@ -263,8 +269,8 @@
                     <span class="w-1 bg-amber-400 rounded-full h-1 animate-bounce" style="animation-delay: 0.4s"></span>
                   </div>
                 </div>
-                <div class="text-xs text-slate-400 mt-0.5">
-                  Listen to the AI studio recap: Alex's 167.94 record, Franky's 3.96 heartbreak, Robert's Pick-Em lead, and Pedro's toilet watch.
+                <div id="broadcastDescText" class="text-xs text-slate-400 mt-0.5">
+                  High-energy recap: Alex's 167.94 record, Franky's 3.96 heartbreak, Robert's Pick-Em lead, and Pedro's 5K panic.
                 </div>
               </div>
             </div>
@@ -289,8 +295,8 @@
             </div>
           </div>
 
-          <!-- Hidden Native Audio Element -->
-          <audio id="broadcastAudio" src="assets/audio/wk5_recap_freeman.wav" preload="metadata" ontimeupdate="updateBroadcastProgress()" onended="onBroadcastAudioEnded()"></audio>
+          <!-- Hidden Native Audio Element (Default: Pat McAfee) -->
+          <audio id="broadcastAudio" src="assets/audio/wk5_recap_mcafee.wav" preload="metadata" ontimeupdate="updateBroadcastProgress()" onended="onBroadcastAudioEnded()"></audio>
         </div>
 
 
@@ -12623,6 +12629,39 @@
     // ==========================================
     // FFUC AI STUDIO BROADCAST AUDIO CONTROLLER
     // ==========================================
+    
+    function switchVoice(v) {
+      const audio = document.getElementById('broadcastAudio');
+      const btnM = document.getElementById('voiceBtnMcafee');
+      const btnF = document.getElementById('voiceBtnFreeman');
+      const title = document.getElementById('broadcastTitleText');
+      const desc = document.getElementById('broadcastDescText');
+      const isPlaying = audio && !audio.paused;
+
+      if (v === 'mcafee') {
+        if (audio) audio.src = 'assets/audio/wk5_recap_mcafee.wav';
+        if (btnM) { btnM.className = 'px-2.5 py-0.5 rounded bg-amber-500 text-slate-950 transition cursor-pointer font-bold'; }
+        if (btnF) { btnF.className = 'px-2.5 py-0.5 rounded text-slate-400 hover:text-white transition cursor-pointer font-semibold'; }
+        if (title) title.innerText = 'Week 5 Official Audio Recap (Pat McAfee Edition)';
+        if (desc) desc.innerText = 'High-energy recap: Alex\'s 167.94 record, Franky\'s 3.96 heartbreak, Robert\'s Pick-Em lead, and Pedro\'s 5K panic.';
+      } else {
+        if (audio) audio.src = 'assets/audio/wk5_recap_freeman.wav';
+        if (btnF) { btnF.className = 'px-2.5 py-0.5 rounded bg-amber-500 text-slate-950 transition cursor-pointer font-bold'; }
+        if (btnM) { btnM.className = 'px-2.5 py-0.5 rounded text-slate-400 hover:text-white transition cursor-pointer font-semibold'; }
+        if (title) title.innerText = 'Week 5 Official Audio Recap (Morgan Freeman Edition)';
+        if (desc) desc.innerText = 'Smooth dramatic recap: Alex\'s 167.94 record, Franky\'s 3.96 heartbreak, Robert\'s Pick-Em lead, and Pedro\'s toilet watch.';
+      }
+
+      if (audio) {
+        audio.load();
+        if (isPlaying) {
+          audio.play().catch(e => console.warn(e));
+        } else {
+          onBroadcastAudioEnded();
+        }
+      }
+    }
+
     function toggleBroadcastAudio() {
       const audio = document.getElementById('broadcastAudio');
       const playIcon = document.getElementById('playIcon');
