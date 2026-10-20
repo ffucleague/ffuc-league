@@ -1,0 +1,102 @@
+[
+  {
+    "manager": "iRob",
+    "actual_w": 5,
+    "actual_l": 1,
+    "fpts": 746.66,
+    "ap_w": 29,
+    "ap_l": 25,
+    "exp_w": 3.2222222222222223,
+    "luck": 1.7777777777777777
+  },
+  {
+    "manager": "Pedro",
+    "actual_w": 2,
+    "actual_l": 4,
+    "fpts": 550.56,
+    "ap_w": 8,
+    "ap_l": 46,
+    "exp_w": 0.8888888888888888,
+    "luck": 1.1111111111111112
+  },
+  {
+    "manager": "Arnulfo",
+    "actual_w": 4,
+    "actual_l": 2,
+    "fpts": 742.36,
+    "ap_w": 29,
+    "ap_l": 25,
+    "exp_w": 3.2222222222222223,
+    "luck": 0.7777777777777777
+  },
+  {
+    "manager": "Eric",
+    "actual_w": 3,
+    "actual_l": 3,
+    "fpts": 703.86,
+    "ap_w": 23,
+    "ap_l": 31,
+    "exp_w": 2.5555555555555554,
+    "luck": 0.44444444444444464
+  },
+  {
+    "manager": "Mark",
+    "actual_w": 3,
+    "actual_l": 3,
+    "fpts": 692.58,
+    "ap_w": 25,
+    "ap_l": 29,
+    "exp_w": 2.7777777777777777,
+    "luck": 0.22222222222222232
+  },
+  {
+    "manager": "Alex",
+    "actual_w": 3,
+    "actual_l": 3,
+    "fpts": 775.64,
+    "ap_w": 30,
+    "ap_l": 24,
+    "exp_w": 3.3333333333333335,
+    "luck": -0.3333333333333335
+  },
+  {
+    "manager": "Joey",
+    "actual_w": 3,
+    "actual_l": 3,
+    "fpts": 776.14,
+    "ap_w": 33,
+    "ap_l": 21,
+    "exp_w": 3.6666666666666665,
+    "luck": -0.6666666666666665
+  },
+  {
+    "manager": "Herrador",
+    "actual_w": 3,
+    "actual_l": 3,
+    "fpts": 784.1,
+    "ap_w": 33,
+    "ap_l": 21,
+    "exp_w": 3.6666666666666665,
+    "luck": -0.6666666666666665
+  },
+  {
+    "manager": "Robert",
+    "actual_w": 2,
+    "actual_l": 4,
+    "fpts": 754.54,
+    "ap_w": 25,
+    "ap_l": 29,
+    "exp_w": 2.7777777777777777,
+    "luck": -0.7777777777777777
+  },
+  {
+    "manager": "Franky",
+    "actual_w": 2,
+    "actual_l": 4,
+    "fpts": 814.62,
+    "ap_w": 35,
+    "ap_l": 19,
+    "exp_w": 3.888888888888889,
+    "luck": -1.8888888888888888
+  }
+]
