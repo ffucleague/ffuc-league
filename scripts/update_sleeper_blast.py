@@ -13,7 +13,7 @@ blast_text = """🚨 F.F.U.C. WEEK 6 OFFICIAL REPORT IS LIVE! 🚨
 💵 Next Up (Week 7 Bounty): Narrowest Margin of Victory ($10)
 
 🎙️ AI Broadcasts: Pat McAfee & Morgan Freeman Voice Recaps
-🎬 FaceFusion Videos: Franky Coronation & Pedro Forrest Gump 5K Meter
+🎬 LivePortrait Videos: Franky Coronation & Pedro Forrest Gump 5K Meter
 📊 Updated Standings, Power Rankings, All-Play Luck Index & FAAB Ledger:
 👉 https://ffucleague.com"""
 

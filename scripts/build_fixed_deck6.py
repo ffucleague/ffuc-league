@@ -124,11 +124,11 @@ slide_0 = """      <!-- SLIDE 0: HARDWARE & ROASTS -->
             <p class="text-xs text-slate-300 mt-2 leading-relaxed">
               Franky unleashes an unstoppable 149.80-point offensive clinic! Led by James Cook (22.80), Bhayshul Tuten (22.70), Malik Nabers (22.50), and Colston Loveland (15.50), Franky outduels Joey in a 285-point slugfest, collects the $10 High Roller bounty, and captures the #1 overall season scoring throne (814.62 PF)!
             </p>
-            <!-- FaceFusion AI Coronation Video -->
+            <!-- LivePortrait AI Coronation Video -->
             <div class="mt-3 relative rounded-xl overflow-hidden border border-amber-500/40 shadow-lg bg-slate-950">
               <div class="absolute top-2 left-2 z-10 bg-slate-950/80 backdrop-blur-sm border border-amber-500/40 text-[9px] font-mono font-bold text-amber-400 px-2 py-0.5 rounded-full flex items-center gap-1">
                 <span class="w-1.5 h-1.5 rounded-full bg-amber-400 animate-pulse"></span>
-                FaceFusion AI Meme • Franky Coronation Toast
+                LivePortrait AI Meme • Franky Coronation Toast
               </div>
               <video class="w-full h-44 sm:h-52 object-cover" autoplay loop muted playsinline>
                 <source src="assets/video/franky_high_roller.mp4" type="video/mp4">
@@ -443,11 +443,11 @@ slide_3 = """      <!-- SLIDE 3: BAR TAB & 5K TOILET METER -->
                 Pedro picked up a huge Week 6 victory and the $10 defense bounty, but his season total of 550.56 PF remains firmly anchored in last place—sitting <strong class="text-red-400">142.02 points behind Mark (692.58 PF)</strong> and over 215 points behind the league average. Pedro remains the odds-on favorite to lace up the running shoes!
               </p>
 
-              <!-- FaceFusion AI 5K Punishment Video -->
+              <!-- LivePortrait AI 5K Punishment Video -->
               <div class="mt-3 relative rounded-xl overflow-hidden border border-red-500/50 shadow-lg bg-slate-950">
                 <div class="absolute top-2 left-2 z-10 bg-slate-950/80 backdrop-blur-sm border border-red-500/40 text-[9px] font-mono font-bold text-red-400 px-2 py-0.5 rounded-full flex items-center gap-1">
                   <span class="w-1.5 h-1.5 rounded-full bg-red-400 animate-pulse"></span>
-                  FaceFusion AI Meme • Pedro Forrest Gump 5K Training
+                  LivePortrait AI Meme • Pedro Forrest Gump 5K Training
                 </div>
                 <video class="w-full h-44 sm:h-52 object-cover" autoplay loop muted playsinline>
                   <source src="assets/video/pedro_5k_runner.mp4" type="video/mp4">
