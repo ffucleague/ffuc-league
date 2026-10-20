@@ -162,7 +162,7 @@
         <!-- Slide Navigator Buttons -->
         <div class="flex items-center gap-2 bg-slate-950 border border-slate-800 px-3 py-1.5 rounded-lg shadow-inner">
           <button onclick="prevSlide()" class="px-2.5 py-1 text-xs font-bold rounded bg-slate-800 hover:bg-slate-700 text-slate-300 hover:text-white transition">◀ Prev</button>
-          <span id="slideIndicator" class="text-xs font-mono font-semibold text-amber-400 px-2 whitespace-nowrap">Slide 1 / 12</span>
+          <span id="slideIndicator" class="text-xs font-mono font-semibold text-amber-400 px-2 whitespace-nowrap">Slide 1 / 11</span>
           <button onclick="nextSlide()" class="px-2.5 py-1 text-xs font-bold rounded bg-slate-800 hover:bg-slate-700 text-slate-300 hover:text-white transition">Next ▶</button>
         </div>
       </div>
@@ -178,9 +178,8 @@
         <button onclick="goToSlide(6)" class="nav-pill px-3 py-1.5 rounded-full text-xs font-semibold whitespace-nowrap transition bg-slate-900 text-slate-400 hover:text-white">7. 💰 FAAB Receipts</button>
         <button onclick="goToSlide(7)" class="nav-pill px-3 py-1.5 rounded-full text-xs font-semibold whitespace-nowrap transition bg-slate-900 text-slate-400 hover:text-white">8. 🎯 Pick-em ($45)</button>
         <button onclick="goToSlide(8)" class="nav-pill px-3 py-1.5 rounded-full text-xs font-semibold whitespace-nowrap transition bg-slate-900 text-slate-400 hover:text-white">9. 💥 Booms & Busts</button>
-        <button onclick="goToSlide(9)" class="nav-pill px-3 py-1.5 rounded-full text-xs font-semibold whitespace-nowrap transition bg-slate-900 text-slate-400 hover:text-white">10. 🏥 Injuries</button>
-        <button onclick="goToSlide(10)" class="nav-pill px-3 py-1.5 rounded-full text-xs font-semibold whitespace-nowrap transition bg-slate-900 text-slate-400 hover:text-white">11. ⚔️ Scoreboard</button>
-        <button onclick="goToSlide(11)" class="nav-pill px-3 py-1.5 rounded-full text-xs font-semibold whitespace-nowrap bg-slate-900 text-slate-400 hover:text-white transition">12. ⚡ Wk 7 Gameday Hub</button>
+        <button onclick="goToSlide(9)" class="nav-pill px-3 py-1.5 rounded-full text-xs font-semibold whitespace-nowrap transition bg-slate-900 text-slate-400 hover:text-white">10. ⚔️ Scoreboard</button>
+        <button onclick="goToSlide(10)" class="nav-pill px-3 py-1.5 rounded-full text-xs font-semibold whitespace-nowrap bg-slate-900 text-slate-400 hover:text-white transition">11. ⚡ Wk 7 Gameday Hub</button>
       </nav>
 
       <!-- ================= WEEK 3 ACTIVE DECK & ARCHIVES ================= -->
@@ -1451,200 +1450,8 @@
         </div>
       </section>
 
-      <!-- SLIDE 9: INJURIES (WEEK 6 AUDIT & WEEK 7 RADAR) -->
+      <!-- SLIDE 9: SCOREBOARD -->
       <section id="wk6-slide-9" class="slide space-y-4 animate-fade">
-        <!-- Header Banner -->
-        <div class="bg-gradient-to-r from-red-950/90 via-slate-900 to-emerald-950/80 border-2 border-red-500/40 rounded-2xl p-5 shadow-2xl">
-          <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3">
-            <div>
-              <div class="inline-flex items-center gap-1.5 bg-red-600 text-white text-[10px] font-black px-2.5 py-0.5 rounded uppercase tracking-wider mb-1">
-                MEDICAL HEADQUARTERS • WEEK 6 AUDIT & WEEK 7 RADAR
-              </div>
-              <h2 class="text-2xl sm:text-3xl font-black uppercase tracking-tight text-white flex items-center gap-2">
-                <span>🏥 Official Injury Audit & Return Radar</span>
-              </h2>
-              <p class="text-xs sm:text-sm text-slate-300 mt-1">
-                Strict medical filter: Exclusively highlighting players who suffered in-game injuries during Week 6, alongside key injured stars trending to return for Week 7.
-              </p>
-            </div>
-            <div class="flex flex-wrap items-center gap-2">
-              <span class="text-xs bg-red-950/80 border border-red-700 text-red-300 font-mono font-bold px-3 py-1 rounded-lg">
-                🚨 Week 6 In-Game Casualties
-              </span>
-              <span class="text-xs bg-emerald-950/80 border border-emerald-700 text-emerald-300 font-mono font-bold px-3 py-1 rounded-lg">
-                🔄 Week 7 Return Targets
-              </span>
-            </div>
-          </div>
-        </div>
-
-        <!-- SECTION 1: INJURED DURING WEEK 6 -->
-        <div>
-          <div class="flex items-center gap-2 mb-2.5">
-            <span class="w-2.5 h-2.5 rounded-full bg-red-500 animate-pulse"></span>
-            <h3 class="text-base sm:text-lg font-black uppercase tracking-wider text-red-400">
-              🚨 Injured During Week 6 Action (Exited Contest / New Concerns)
-            </h3>
-            <span class="text-[11px] text-slate-400 font-mono ml-auto">In-Game Casualties</span>
-          </div>
-
-          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3">
-            <!-- 1. Chris Olave -->
-            <div class="bg-slate-900 border border-red-500/40 rounded-xl p-4 shadow-lg hover:border-red-400 transition flex flex-col justify-between">
-              <div>
-                <div class="flex justify-between items-start mb-1.5">
-                  <div>
-                    <span class="font-extrabold text-white text-base">Chris Olave</span>
-                    <span class="text-xs text-slate-400 ml-1">(WR • NO)</span>
-                  </div>
-                  <span class="bg-red-950 text-red-400 border border-red-800 text-[10px] font-black uppercase px-2 py-0.5 rounded tracking-wider">
-                    CONCUSSION PROTOCOL
-                  </span>
-                </div>
-                <div class="text-[11px] text-slate-400 mb-2">Franchise: <strong class="text-amber-400">Amon-Ra's Maye-hem (Alex)</strong></div>
-                <div class="bg-slate-950/60 p-2 rounded border border-slate-800 mb-2 text-xs flex justify-between">
-                  <span class="text-slate-400">Week 6 Impact:</span>
-                  <span class="font-mono font-bold text-red-400">Exited 1st Quarter</span>
-                </div>
-                <p class="text-xs text-slate-300 leading-relaxed">
-                  Absorbed a helmet-to-helmet blow and was immediately ruled out with a concussion. Enters strict NFL protocol on a short turnaround for Week 7.
-                </p>
-              </div>
-            </div>
-
-            <!-- 2. Marvin Harrison Jr. -->
-            <div class="bg-slate-900 border border-red-500/40 rounded-xl p-4 shadow-lg hover:border-red-400 transition flex flex-col justify-between">
-              <div>
-                <div class="flex justify-between items-start mb-1.5">
-                  <div>
-                    <span class="font-extrabold text-white text-base">Marvin Harrison Jr.</span>
-                    <span class="text-xs text-slate-400 ml-1">(WR • ARI)</span>
-                  </div>
-                  <span class="bg-red-950 text-red-400 border border-red-800 text-[10px] font-black uppercase px-2 py-0.5 rounded tracking-wider">
-                    CONCUSSION PROTOCOL
-                  </span>
-                </div>
-                <div class="text-[11px] text-slate-400 mb-2">Franchise: <strong class="text-amber-400">Brock To The Future (Herrador)</strong></div>
-                <div class="bg-slate-950/60 p-2 rounded border border-slate-800 mb-2 text-xs flex justify-between">
-                  <span class="text-slate-400">Week 6 Impact:</span>
-                  <span class="font-mono font-bold text-red-400">Exited 2nd Quarter</span>
-                </div>
-                <p class="text-xs text-slate-300 leading-relaxed">
-                  Hit the turf hard after an incomplete target against Green Bay. Diagnosed with a concussion. Must clear all five protocol phases before Week 7 kickoff.
-                </p>
-              </div>
-            </div>
-
-            <!-- 3. Dallas Goedert -->
-            <div class="bg-slate-900 border border-red-500/40 rounded-xl p-4 shadow-lg hover:border-red-400 transition flex flex-col justify-between">
-              <div>
-                <div class="flex justify-between items-start mb-1.5">
-                  <div>
-                    <span class="font-extrabold text-white text-base">Dallas Goedert</span>
-                    <span class="text-xs text-slate-400 ml-1">(TE • PHI)</span>
-                  </div>
-                  <span class="bg-red-950 text-red-400 border border-red-800 text-[10px] font-black uppercase px-2 py-0.5 rounded tracking-wider">
-                    HAMSTRING STRAIN
-                  </span>
-                </div>
-                <div class="text-[11px] text-slate-400 mb-2">Franchise: <strong class="text-amber-400">Saquon Deez Nacuas (Mark)</strong></div>
-                <div class="bg-slate-950/60 p-2 rounded border border-slate-800 mb-2 text-xs flex justify-between">
-                  <span class="text-slate-400">Week 6 Impact:</span>
-                  <span class="font-mono font-bold text-red-400">0 Targets (Left Early)</span>
-                </div>
-                <p class="text-xs text-slate-300 leading-relaxed">
-                  Suffered a hamstring pull on the opening offensive series. Expected to miss at least Week 7 as the Eagles manage his recovery conservatively.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- SECTION 2: RETURNING FOR WEEK 7 -->
-        <div class="pt-2">
-          <div class="flex items-center gap-2 mb-2.5">
-            <span class="w-2.5 h-2.5 rounded-full bg-emerald-500 animate-pulse"></span>
-            <h3 class="text-base sm:text-lg font-black uppercase tracking-wider text-emerald-400">
-              🔄 Projected Returns & Health Upgrades for Week 7
-            </h3>
-            <span class="text-[11px] text-slate-400 font-mono ml-auto">Re-Entering Lineups</span>
-          </div>
-
-          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3">
-            <!-- 1. Christian McCaffrey -->
-            <div class="bg-slate-900 border border-emerald-500/40 rounded-xl p-4 shadow-lg hover:border-emerald-400 transition flex flex-col justify-between">
-              <div>
-                <div class="flex justify-between items-start mb-1.5">
-                  <div>
-                    <span class="font-extrabold text-white text-base">Christian McCaffrey</span>
-                    <span class="text-xs text-slate-400 ml-1">(RB • SF)</span>
-                  </div>
-                  <span class="bg-emerald-950 text-emerald-400 border border-emerald-800 text-[10px] font-black uppercase px-2 py-0.5 rounded tracking-wider">
-                    100% BELLCOW ROLE
-                  </span>
-                </div>
-                <div class="text-[11px] text-slate-400 mb-2">Franchise: <strong class="text-amber-400">TheGreatSwagsby (Joey)</strong></div>
-                <div class="bg-slate-950/60 p-2 rounded border border-slate-800 mb-2 text-xs flex justify-between">
-                  <span class="text-slate-400">Week 6 Validation:</span>
-                  <span class="font-mono font-bold text-emerald-400">26.20 PTS (Full Workload)</span>
-                </div>
-                <p class="text-xs text-slate-300 leading-relaxed">
-                  Proven fully healthy with zero snap restrictions. Handled all high-leverage red zone work and looks like the consensus #1 overall cheat code once again for Week 7.
-                </p>
-              </div>
-            </div>
-
-            <!-- 2. Malik Nabers -->
-            <div class="bg-slate-900 border border-emerald-500/40 rounded-xl p-4 shadow-lg hover:border-emerald-400 transition flex flex-col justify-between">
-              <div>
-                <div class="flex justify-between items-start mb-1.5">
-                  <div>
-                    <span class="font-extrabold text-white text-base">Malik Nabers</span>
-                    <span class="text-xs text-slate-400 ml-1">(WR • NYG)</span>
-                  </div>
-                  <span class="bg-emerald-950 text-emerald-400 border border-emerald-800 text-[10px] font-black uppercase px-2 py-0.5 rounded tracking-wider">
-                    FULLY CLEARED
-                  </span>
-                </div>
-                <div class="text-[11px] text-slate-400 mb-2">Franchise: <strong class="text-amber-400">CULT OF THE LAMB (Franky)</strong></div>
-                <div class="bg-slate-950/60 p-2 rounded border border-slate-800 mb-2 text-xs flex justify-between">
-                  <span class="text-slate-400">Week 6 Validation:</span>
-                  <span class="font-mono font-bold text-emerald-400">22.50 PTS (Alpha Target Share)</span>
-                </div>
-                <p class="text-xs text-slate-300 leading-relaxed">
-                  Put to rest all concussion protocol doubts with a dominant 22.50-point clinic. Anchors Franky's #1 ranked league scoring offense heading into Week 7.
-                </p>
-              </div>
-            </div>
-
-            <!-- 3. Jonathan Taylor -->
-            <div class="bg-slate-900 border border-amber-500/40 rounded-xl p-4 shadow-lg hover:border-amber-400 transition flex flex-col justify-between">
-              <div>
-                <div class="flex justify-between items-start mb-1.5">
-                  <div>
-                    <span class="font-extrabold text-white text-base">Jonathan Taylor</span>
-                    <span class="text-xs text-slate-400 ml-1">(RB • IND)</span>
-                  </div>
-                  <span class="bg-amber-950 text-amber-400 border border-amber-800 text-[10px] font-black uppercase px-2 py-0.5 rounded tracking-wider">
-                    TESTING ANKLE FOR WK 7
-                  </span>
-                </div>
-                <div class="text-[11px] text-slate-400 mb-2">Franchise: <strong class="text-amber-400">Show me dem TDs (Eric)</strong></div>
-                <div class="bg-slate-950/60 p-2 rounded border border-slate-800 mb-2 text-xs flex justify-between">
-                  <span class="text-slate-400">Status:</span>
-                  <span class="font-mono font-bold text-amber-400">High Ankle Sprain Rehab</span>
-                </div>
-                <p class="text-xs text-slate-300 leading-relaxed">
-                  Has ramped up linear running drills without a walking boot. Colts coaching staff optimistic he can participate in practice and suit up for Week 7.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- SLIDE 10: SCOREBOARD -->
-      <section id="wk6-slide-10" class="slide space-y-4 animate-fade">
         <div class="bg-gradient-to-r from-slate-900 via-indigo-950/80 to-slate-900 border border-indigo-500/40 rounded-2xl p-5 shadow-2xl flex flex-col sm:flex-row sm:items-center justify-between gap-3">
           <div>
             <div class="inline-flex items-center gap-1.5 bg-indigo-600 text-white text-[10px] font-black px-2.5 py-0.5 rounded uppercase tracking-wider mb-1">
@@ -1791,8 +1598,8 @@
         </div>
       </section>
 
-      <!-- SLIDE 11: WEEK 7 GAMEDAY HUB (LOOKAHEAD) -->
-      <section id="wk6-slide-11" class="slide space-y-4 animate-fade">
+      <!-- SLIDE 10: WEEK 7 GAMEDAY HUB (LOOKAHEAD) -->
+      <section id="wk6-slide-10" class="slide space-y-4 animate-fade">
         <div class="bg-gradient-to-r from-red-950/60 via-slate-900 to-blue-950/60 border border-amber-500/50 rounded-2xl p-5 shadow-2xl flex flex-col sm:flex-row sm:items-center justify-between gap-3">
           <div>
             <div class="inline-flex items-center gap-1.5 bg-blue-600 text-white text-[10px] font-black px-2.5 py-0.5 rounded uppercase tracking-wider mb-1">
@@ -14018,7 +13825,7 @@
         ◀ Prev
       </button>
       <span id="bottomSlideIndicator" class="text-xs font-mono font-bold text-amber-400 px-2 whitespace-nowrap">
-        Slide 1 / 12
+        Slide 1 / 11
       </span>
       <button onclick="nextSlide()" class="px-3 py-1 text-xs font-bold rounded-full bg-amber-500 hover:bg-amber-400 text-slate-950 font-extrabold transition shadow">
         Next ▶
@@ -14146,7 +13953,7 @@
     // Slide Deck Controller (for View 1: Weekly Report)
     let currentEdition = 'wk6';
     let currentSlide = 0;
-    const totalSlides = 12;
+    const totalSlides = 11;
 
     function handleArchiveSelect(val) {
       if (val === 'wk1' || val === 'wk2' || val === 'wk3' || val === 'wk4' || val === 'wk5' || val === 'wk6') {
