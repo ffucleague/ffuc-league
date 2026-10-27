@@ -126,7 +126,7 @@ for m in matchups:
 
 matchup_scores.sort(key=lambda x: x['points'], reverse=True)
 
-# High Roller ($10 Bounty Winner) & Toilet Bowl Nominee (5K Runner)
+# High Roller (Top Scorer) & Toilet Bowl Nominee (5K Runner)
 high_roller = matchup_scores[0]
 toilet_nominee = matchup_scores[-1]
 
@@ -202,7 +202,7 @@ def push_to_github(website_dir):
 def generate_sleeper_announcement(high_roller_team, high_roller_pts, toilet_team, toilet_pts, week_num, domain, website_dir):
     announcement = (
         f"🏈 F.F.U.C. WEEK {week_num} OFFICIAL REPORT IS LIVE! 🏈\n\n"
-        f"👑 High Roller ($10 Bounty): {high_roller_team} ({high_roller_pts:.2f} PTS)\n"
+        f"👑 High Roller (Top Scorer): {high_roller_team} ({high_roller_pts:.2f} PTS)\n"
         f"🤡 Toilet Nominee (5K Runner): {toilet_team} ({toilet_pts:.2f} PTS)\n\n"
         f"📊 View the full newsletter, roasts, 5K open bar meter & Pick-Em standings:\n"
         f"👉 https://{domain}"
