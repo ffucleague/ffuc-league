@@ -28,12 +28,12 @@ default_config = {
         "6": "Highest Scoring DEF ($10)",
         "7": "Narrowest Victory ($10)",
         "8": "Biggest Blowout ($10)",
-        "9": "Highest Scoring Flex ($10)",
-        "10": "Highest Scoring Kicker ($10)",
-        "11": "Highest Scoring Bench Player ($10)",
-        "12": "Most Total Touchdowns ($10)",
-        "13": "Highest Scoring QB+WR Stack ($10)",
-        "14": "Most Points Overall ($10)"
+        "9": "Highest Scoring QB ($10)",
+        "10": "Highest Scoring RB ($10)",
+        "11": "Highest Scoring WR ($10)",
+        "12": "Highest Scoring TE ($10)",
+        "13": "Highest Scoring DEF ($10)",
+        "14": "Most Points Scored in a Loss ($10)"
     },
     "paces": {
         "1": 15, "2": 12, "3": 18, "4": 20, "5": 15,
