@@ -111,6 +111,9 @@
     "server_host": "192.168.86.67",
     "ollama_url": "http://192.168.86.67:11434",
     "default_vision_model": "qwen3-vl:32b",
-    "liveportrait_url": "http://192.168.86.67:8890"
+    "liveportrait_url": "http://192.168.86.67:8890",
+    "default_broadcast_model": "qwen3-vl:32b",
+    "alltalk_url": "http://192.168.86.67:7851",
+    "default_broadcast_voice": "male_01.wav"
   }
 }

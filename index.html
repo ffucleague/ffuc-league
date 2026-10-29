@@ -231,7 +231,7 @@
                     FFUC Official Broadcast Studio
                   </span>
                   <span class="inline-flex items-center gap-1.5 bg-amber-500/20 text-amber-300 border border-amber-500/40 text-[10px] font-mono font-bold px-2.5 py-0.5 rounded-full uppercase tracking-wider">
-                    🎙️ Official League Voice • Week 7 Recap
+                    🎙️ Official League Voice (Qwen3 Scripted) • Week 7 Recap
                   </span>
                 </div>
                 <div class="text-white font-extrabold text-sm sm:text-base tracking-tight flex items-center gap-2">
@@ -255,7 +255,7 @@
               <div class="flex items-center justify-between sm:justify-end gap-3 text-xs font-mono w-full">
                 <span id="audioCurrentTime" class="text-amber-400 font-bold">0:00</span>
                 <span class="text-slate-600">/</span>
-                <span id="audioDuration" class="text-slate-400">0:47</span>
+                <span id="audioDuration" class="text-slate-400">1:17</span>
               </div>
               <div class="w-full bg-slate-950 rounded-full h-2 border border-slate-800 cursor-pointer overflow-hidden" onclick="seekBroadcastAudio(event)">
                 <div id="audioProgressBar" class="bg-gradient-to-r from-amber-500 to-yellow-400 h-full w-0 rounded-full transition-all duration-100"></div>
@@ -264,7 +264,7 @@
             </div>
           </div>
           <!-- Audio Element -->
-          <audio id="broadcastAudio" src="assets/audio/wk7_recap.mp3" preload="metadata" ontimeupdate="updateBroadcastProgress()" onended="onBroadcastAudioEnded()"></audio>
+          <audio id="broadcastAudio" src="assets/audio/wk7_recap.mp3?v=20261029_qwen3" preload="metadata" ontimeupdate="updateBroadcastProgress()" onended="onBroadcastAudioEnded()"></audio>
         </div>
 
         <!-- AWARDS GRID -->

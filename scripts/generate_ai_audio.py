@@ -68,7 +68,7 @@ def generate_audio(text, voice="Morgan_Freeman CC3.wav", output_name="custom_bro
     
     t0 = time.time()
     try:
-        with urllib.request.urlopen(req, timeout=120) as resp:
+        with urllib.request.urlopen(req, timeout=360) as resp:
             result = json.loads(resp.read().decode('utf-8'))
             elapsed = time.time() - t0
             print(f"   ✅ Audio generated on server in {elapsed:.1f}s!")
