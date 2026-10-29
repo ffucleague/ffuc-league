@@ -106,5 +106,11 @@
     "8": 18,
     "9": 13,
     "10": 15
+  },
+  "ai_endpoints": {
+    "server_host": "192.168.86.67",
+    "ollama_url": "http://192.168.86.67:11434",
+    "default_vision_model": "qwen3-vl:32b",
+    "liveportrait_url": "http://192.168.86.67:8890"
   }
 }
