@@ -1,0 +1,172 @@
+[
+  {
+    "manager": "Robert",
+    "username": "YaBoyRoZ",
+    "team_name": "YaBoyRoZ",
+    "total": 77.0,
+    "w8": 11.0,
+    "weeks": [
+      12.0,
+      11.0,
+      8.0,
+      10.0,
+      9.0,
+      8.0,
+      8.0,
+      11.0
+    ]
+  },
+  {
+    "manager": "Arnulfo",
+    "username": "AEscamilla94",
+    "team_name": "AEscamilla94",
+    "total": 75.0,
+    "w8": 8.0,
+    "weeks": [
+      9.0,
+      10.0,
+      11.0,
+      10.0,
+      8.0,
+      10.0,
+      9.0,
+      8.0
+    ]
+  },
+  {
+    "manager": "iRob",
+    "username": "irobgarza16",
+    "team_name": "irobgarza16",
+    "total": 75.0,
+    "w8": 10.0,
+    "weeks": [
+      11.0,
+      11.0,
+      8.0,
+      9.0,
+      9.0,
+      8.0,
+      9.0,
+      10.0
+    ]
+  },
+  {
+    "manager": "Herrador",
+    "username": "DirtyDirties",
+    "team_name": "DirtyDirties",
+    "total": 74.0,
+    "w8": 10.0,
+    "weeks": [
+      10.0,
+      10.0,
+      8.0,
+      10.0,
+      9.0,
+      9.0,
+      8.0,
+      10.0
+    ]
+  },
+  {
+    "manager": "Mark",
+    "username": "fattymcfatty",
+    "team_name": "fattymcfatty",
+    "total": 72.0,
+    "w8": 13.0,
+    "weeks": [
+      11.0,
+      9.0,
+      7.0,
+      10.0,
+      7.0,
+      8.0,
+      7.0,
+      13.0
+    ]
+  },
+  {
+    "manager": "Alex",
+    "username": "abarrera731",
+    "team_name": "abarrera731",
+    "total": 72.0,
+    "w8": 12.0,
+    "weeks": [
+      10.0,
+      11.0,
+      6.0,
+      9.0,
+      8.0,
+      9.0,
+      7.0,
+      12.0
+    ]
+  },
+  {
+    "manager": "Franky",
+    "username": "ChanciscoFravez",
+    "team_name": "ChanciscoFravez",
+    "total": 71.0,
+    "w8": 9.0,
+    "weeks": [
+      10.0,
+      11.0,
+      6.0,
+      10.0,
+      7.0,
+      10.0,
+      8.0,
+      9.0
+    ]
+  },
+  {
+    "manager": "Pedro",
+    "username": "GuyNamedPedro",
+    "team_name": "GuyNamedPedro",
+    "total": 70.0,
+    "w8": 9.0,
+    "weeks": [
+      10.0,
+      10.0,
+      9.0,
+      10.0,
+      8.0,
+      7.0,
+      7.0,
+      9.0
+    ]
+  },
+  {
+    "manager": "Eric",
+    "username": "emedina13",
+    "team_name": "emedina13",
+    "total": 70.0,
+    "w8": 9.0,
+    "weeks": [
+      11.0,
+      10.0,
+      7.0,
+      10.0,
+      8.0,
+      7.0,
+      8.0,
+      9.0
+    ]
+  },
+  {
+    "manager": "Joey",
+    "username": "TheGreatSwagsby",
+    "team_name": "TheGreatSwagsby",
+    "total": 69.0,
+    "w8": 7.0,
+    "weeks": [
+      10.0,
+      9.0,
+      6.0,
+      9.0,
+      10.0,
+      9.0,
+      9.0,
+      7.0
+    ]
+  }
+]

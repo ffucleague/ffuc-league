@@ -129,7 +129,7 @@ def load_week_summary(week_num):
 def build_prompt(week_num, summary_data=None, custom_notes=None):
     """Constructs prompt for Qwen3-VL to draft a sports broadcast script"""
     
-    # Hardcoded or dynamic context for Week 7
+    # Context definitions for specific weeks or dynamic fallback
     if week_num == 7:
         context = (
             "FFUC Fantasy Football League - Week 7 Highlights:\n"
@@ -141,6 +141,19 @@ def build_prompt(week_num, summary_data=None, custom_notes=None):
             "- Shootouts & Standings: Mark beat iRob 145.2 to 104.1. Five teams are now tied at 3-4.\n"
             "- Pick'em: Arnulfo leads solo with 67 points."
         )
+        mandatory_notes = "You MUST mention Robert's high score of 153.8 points, Pedro losing by over 100 points, Arnulfo's ten dollar narrow victory bounty, and Franky's 150-point explosion."
+    elif week_num == 8:
+        context = (
+            "FFUC Fantasy Football League - Week 8 Highlights:\n"
+            "- High Roller Champion: Herrador erupts for a league-leading 148.78 points, powered by Brock Bowers (24.70), Ja'Marr Chase (25.60), and Tampa Bay Defense (18.00)!\n"
+            "- $10 Weekly Bounty (Biggest Blowout): Mark annihilates defending champion Robert 131.98 to 86.60 (a 45.38-point blowout margin) to claim the $10 cash bounty and surge into a tie for 2nd place at 5-3!\n"
+            "- Defending Champ Robert Cellar Shock: Right after winning Week 7 High Roller, Robert crashes to dead last with 86.60 points after starting zero-point Lamar Jackson!\n"
+            "- Heartbreak Bad Beat: Alex pours on 142.36 points (3rd highest in FFUC) only to suffer a brutal 6.42-point loss to Herrador's 148.78! Alex has officially changed his team name to 'LEAGUE MEDIAN ADVOCATE' in protest!\n"
+            "- Joe Burrow Nuclear Blast: Joe Burrow drops 42.48 points to carry iRob to 146.48 and sole possession of 1st place at 6-2!\n"
+            "- League Chaos: Eric crushes Joey by 43 points, Pedro upsets Franky, creating a savage 4-way tie at 3-5 at the bottom!\n"
+            "- Pick'em: Robert rebounds in Pick'em to claim solo 1st place at 77 points, while Mark went a blistering 13-and-3 on the week!"
+        )
+        mandatory_notes = "You MUST mention Herrador's 148.78 High Roller win, Mark winning the ten dollar biggest blowout bounty over Robert by 45 points, Robert starting zero-point Lamar Jackson, Alex's 142-point heartbreak loss, Joe Burrow's 42-point bomb putting eye Rob in solo first place, and Robert leading Pick'em."
     elif summary_data:
         m_lines = "\n".join([f"- {m['winner']} ({m['winner_score']}) defeated {m['loser']} ({m['loser_score']}) by {m['margin']} pts" for m in summary_data.get("matchups", [])])
         hr = summary_data.get("high_roller", {})
@@ -153,20 +166,22 @@ def build_prompt(week_num, summary_data=None, custom_notes=None):
             f"- Closest Matchup: {cl.get('winner', {}).get('manager_name')} ({cl.get('winner', {}).get('points')}) beat {cl.get('loser', {}).get('manager_name')} ({cl.get('loser', {}).get('points')}) by {round(cl.get('margin', 0), 2)} pts\n"
             f"Matchup Results:\n{m_lines}"
         )
+        mandatory_notes = f"Highlight the High Roller {hr.get('manager_name')}, the blowout winner, and the key playoff race storylines."
     else:
         context = f"FFUC Fantasy Football League - Week {week_num} Recap."
+        mandatory_notes = "Highlight key winners and losers."
 
     if custom_notes:
         context += f"\nSpecial Commissioner Notes: {custom_notes}"
 
     prompt = (
         f"You are the lead sports radio broadcast anchor for the FFUC (Fantasy Football Ultimate Championship). "
-        f"Draft a punchy, energetic, 45-to-60 second weekly league recap script based on the following highlights:\n\n"
+        f"Draft a punchy, energetic, 50-to-70 second weekly league recap script based on the following highlights:\n\n"
         f"{context}\n\n"
         f"STRICT RULES FOR BROADCAST SCRIPT:\n"
         f"1. Voice & Tone: Authentic, energetic male sports anchor delivery (think ESPN Radio / local sports anchor). NO celebrity impersonations (no Morgan Freeman, no Pat McAfee).\n"
-        f"2. Mandatory Stories: You MUST mention Robert's high score of 153.8 points, Pedro losing by over 100 points, Arnulfo's $10 narrow victory bounty, and Franky's 150-point explosion.\n"
-        f"3. Spoken Phonetic Formatting: Write out numbers phonetically (e.g. 'one hundred fifty-three point eight points', 'one hundred points', 'ten dollar bounty', 'Week seven') so it sounds natural in text-to-speech.\n"
+        f"2. Mandatory Stories: {mandatory_notes}\n"
+        f"3. Spoken Phonetic Formatting: Write out numbers phonetically (e.g. 'one hundred forty-eight point seven eight points', 'forty-five points', 'ten dollar bounty', 'Week eight', 'six and two') so it sounds natural in text-to-speech.\n"
         f"4. Pronunciation: Pronounce iRob as 'eye Rob', FFUC as 'F.F.U.C.', and FAAB as 'fab'.\n"
         f"5. NO Markdown: Do not use asterisks, bold tags, bullet points, or headers. Output ONLY the raw spoken radio script as a continuous paragraph."
     )
@@ -191,7 +206,7 @@ def generate_script(week_num=7, model=DEFAULT_MODEL, ollama_url=DEFAULT_OLLAMA_U
         "stream": True,
         "options": {
             "temperature": 0.7,
-            "num_predict": 1200
+            "num_predict": 2500
         }
     }
     

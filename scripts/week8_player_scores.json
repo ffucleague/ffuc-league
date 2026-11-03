@@ -1,0 +1,1514 @@
+[
+  {
+    "pid": "6770",
+    "name": "Joe Burrow",
+    "pos": "QB",
+    "team": "CIN",
+    "pts": 42.48,
+    "manager": "iRob",
+    "starter": true
+  },
+  {
+    "pid": "6801",
+    "name": "Tee Higgins",
+    "pos": "WR",
+    "team": "CIN",
+    "pts": 32.5,
+    "manager": "Eric",
+    "starter": true
+  },
+  {
+    "pid": "12490",
+    "name": "Bhayshul Tuten",
+    "pos": "RB",
+    "team": "JAX",
+    "pts": 28.9,
+    "manager": "Franky",
+    "starter": true
+  },
+  {
+    "pid": "1166",
+    "name": "Kirk Cousins",
+    "pos": "QB",
+    "team": "LV",
+    "pts": 28.18,
+    "manager": "Mark",
+    "starter": true
+  },
+  {
+    "pid": "4984",
+    "name": "Josh Allen",
+    "pos": "QB",
+    "team": "BUF",
+    "pts": 27.56,
+    "manager": "Eric",
+    "starter": true
+  },
+  {
+    "pid": "5967",
+    "name": "Tony Pollard",
+    "pos": "RB",
+    "team": "TEN",
+    "pts": 27.2,
+    "manager": "Robert",
+    "starter": true
+  },
+  {
+    "pid": "6790",
+    "name": "D'Andre Swift",
+    "pos": "RB",
+    "team": "CHI",
+    "pts": 26.9,
+    "manager": "Herrador",
+    "starter": false
+  },
+  {
+    "pid": "7564",
+    "name": "Ja'Marr Chase",
+    "pos": "WR",
+    "team": "CIN",
+    "pts": 25.6,
+    "manager": "Herrador",
+    "starter": true
+  },
+  {
+    "pid": "4046",
+    "name": "Patrick Mahomes",
+    "pos": "QB",
+    "team": "KC",
+    "pts": 25.44,
+    "manager": "Mark",
+    "starter": false
+  },
+  {
+    "pid": "11604",
+    "name": "Brock Bowers",
+    "pos": "TE",
+    "team": "LV",
+    "pts": 24.7,
+    "manager": "Herrador",
+    "starter": true
+  },
+  {
+    "pid": "9221",
+    "name": "Jahmyr Gibbs",
+    "pos": "RB",
+    "team": "DET",
+    "pts": 23.8,
+    "manager": "Arnulfo",
+    "starter": true
+  },
+  {
+    "pid": "10232",
+    "name": "Michael Wilson",
+    "pos": "WR",
+    "team": "ARI",
+    "pts": 22.8,
+    "manager": "Alex",
+    "starter": true
+  },
+  {
+    "pid": "13337",
+    "name": "Emmett Johnson",
+    "pos": "RB",
+    "team": "KC",
+    "pts": 22.8,
+    "manager": "Pedro",
+    "starter": false
+  },
+  {
+    "pid": "6804",
+    "name": "Jordan Love",
+    "pos": "QB",
+    "team": "GB",
+    "pts": 22.52,
+    "manager": "Alex",
+    "starter": false
+  },
+  {
+    "pid": "11564",
+    "name": "Drake Maye",
+    "pos": "QB",
+    "team": "NE",
+    "pts": 22.46,
+    "manager": "Alex",
+    "starter": true
+  },
+  {
+    "pid": "11576",
+    "name": "Braelon Allen",
+    "pos": "RB",
+    "team": "NYJ",
+    "pts": 22.3,
+    "manager": "Joey",
+    "starter": true
+  },
+  {
+    "pid": "7594",
+    "name": "Chuba Hubbard",
+    "pos": "RB",
+    "team": "CAR",
+    "pts": 21.4,
+    "manager": "Herrador",
+    "starter": true
+  },
+  {
+    "pid": "11584",
+    "name": "Bucky Irving",
+    "pos": "RB",
+    "team": "TB",
+    "pts": 21.0,
+    "manager": "Herrador",
+    "starter": true
+  },
+  {
+    "pid": "PIT",
+    "name": "Pittsburgh Steelers",
+    "pos": "DEF",
+    "team": "PIT",
+    "pts": 21.0,
+    "manager": "Alex",
+    "starter": true
+  },
+  {
+    "pid": "5849",
+    "name": "Kyler Murray",
+    "pos": "QB",
+    "team": "MIN",
+    "pts": 20.9,
+    "manager": "Arnulfo",
+    "starter": false
+  },
+  {
+    "pid": "8228",
+    "name": "Jaylen Warren",
+    "pos": "RB",
+    "team": "PIT",
+    "pts": 20.8,
+    "manager": "Alex",
+    "starter": true
+  },
+  {
+    "pid": "9488",
+    "name": "Jaxon Smith-Njigba",
+    "pos": "WR",
+    "team": "SEA",
+    "pts": 20.8,
+    "manager": "iRob",
+    "starter": true
+  },
+  {
+    "pid": "5850",
+    "name": "Josh Jacobs",
+    "pos": "RB",
+    "team": "GB",
+    "pts": 20.2,
+    "manager": "Arnulfo",
+    "starter": true
+  },
+  {
+    "pid": "JAX",
+    "name": "Jacksonville Jaguars",
+    "pos": "DEF",
+    "team": "JAX",
+    "pts": 20.0,
+    "manager": "Mark",
+    "starter": true
+  },
+  {
+    "pid": "3294",
+    "name": "Dak Prescott",
+    "pos": "QB",
+    "team": "DAL",
+    "pts": 19.8,
+    "manager": "Arnulfo",
+    "starter": true
+  },
+  {
+    "pid": "9493",
+    "name": "Puka Nacua",
+    "pos": "WR",
+    "team": "LAR",
+    "pts": 19.5,
+    "manager": "Mark",
+    "starter": true
+  },
+  {
+    "pid": "7523",
+    "name": "Trevor Lawrence",
+    "pos": "QB",
+    "team": "JAX",
+    "pts": 19.4,
+    "manager": "Pedro",
+    "starter": true
+  },
+  {
+    "pid": "13345",
+    "name": "Jonah Coleman",
+    "pos": "RB",
+    "team": "DEN",
+    "pts": 18.4,
+    "manager": "iRob",
+    "starter": true
+  },
+  {
+    "pid": "12506",
+    "name": "Harold Fannin",
+    "pos": "TE",
+    "team": "CLE",
+    "pts": 18.4,
+    "manager": "Robert",
+    "starter": true
+  },
+  {
+    "pid": "TB",
+    "name": "Tampa Bay Buccaneers",
+    "pos": "DEF",
+    "team": "TB",
+    "pts": 18.0,
+    "manager": "Herrador",
+    "starter": true
+  },
+  {
+    "pid": "12501",
+    "name": "Matthew Golden",
+    "pos": "WR",
+    "team": "GB",
+    "pts": 17.4,
+    "manager": "Pedro",
+    "starter": true
+  },
+  {
+    "pid": "8138",
+    "name": "James Cook",
+    "pos": "RB",
+    "team": "BUF",
+    "pts": 17.1,
+    "manager": "Franky",
+    "starter": true
+  },
+  {
+    "pid": "8130",
+    "name": "Trey McBride",
+    "pos": "TE",
+    "team": "ARI",
+    "pts": 16.7,
+    "manager": "Alex",
+    "starter": true
+  },
+  {
+    "pid": "10236",
+    "name": "Dalton Kincaid",
+    "pos": "TE",
+    "team": "BUF",
+    "pts": 16.6,
+    "manager": "Arnulfo",
+    "starter": false
+  },
+  {
+    "pid": "8161",
+    "name": "Malik Willis",
+    "pos": "QB",
+    "team": "MIA",
+    "pts": 15.64,
+    "manager": "Joey",
+    "starter": true
+  },
+  {
+    "pid": "9501",
+    "name": "DeMario Douglas",
+    "pos": "WR",
+    "team": "NE",
+    "pts": 15.1,
+    "manager": "Alex",
+    "starter": false
+  },
+  {
+    "pid": "12519",
+    "name": "Luther Burden",
+    "pos": "WR",
+    "team": "CHI",
+    "pts": 15.1,
+    "manager": "Mark",
+    "starter": true
+  },
+  {
+    "pid": "8148",
+    "name": "Jameson Williams",
+    "pos": "WR",
+    "team": "DET",
+    "pts": 15.0,
+    "manager": "Eric",
+    "starter": true
+  },
+  {
+    "pid": "11566",
+    "name": "Jayden Daniels",
+    "pos": "QB",
+    "team": "WAS",
+    "pts": 14.98,
+    "manager": "Herrador",
+    "starter": true
+  },
+  {
+    "pid": "10229",
+    "name": "Rashee Rice",
+    "pos": "WR",
+    "team": "KC",
+    "pts": 14.8,
+    "manager": "Mark",
+    "starter": false
+  },
+  {
+    "pid": "4983",
+    "name": "DJ Moore",
+    "pos": "WR",
+    "team": "BUF",
+    "pts": 14.6,
+    "manager": "iRob",
+    "starter": true
+  },
+  {
+    "pid": "9484",
+    "name": "Tucker Kraft",
+    "pos": "TE",
+    "team": "GB",
+    "pts": 14.3,
+    "manager": "Joey",
+    "starter": true
+  },
+  {
+    "pid": "WAS",
+    "name": "Washington Commanders",
+    "pos": "DEF",
+    "team": "WAS",
+    "pts": 14.0,
+    "manager": "Eric",
+    "starter": true
+  },
+  {
+    "pid": "11560",
+    "name": "Caleb Williams",
+    "pos": "QB",
+    "team": "CHI",
+    "pts": 13.98,
+    "manager": "Franky",
+    "starter": false
+  },
+  {
+    "pid": "5844",
+    "name": "T.J. Hockenson",
+    "pos": "TE",
+    "team": "MIN",
+    "pts": 13.8,
+    "manager": "Mark",
+    "starter": true
+  },
+  {
+    "pid": "7526",
+    "name": "Jaylen Waddle",
+    "pos": "WR",
+    "team": "DEN",
+    "pts": 13.4,
+    "manager": "Arnulfo",
+    "starter": false
+  },
+  {
+    "pid": "11586",
+    "name": "Blake Corum",
+    "pos": "RB",
+    "team": "LAR",
+    "pts": 13.3,
+    "manager": "Franky",
+    "starter": true
+  },
+  {
+    "pid": "8167",
+    "name": "Christian Watson",
+    "pos": "WR",
+    "team": "GB",
+    "pts": 13.3,
+    "manager": "Arnulfo",
+    "starter": true
+  },
+  {
+    "pid": "3198",
+    "name": "Derrick Henry",
+    "pos": "RB",
+    "team": "BAL",
+    "pts": 13.0,
+    "manager": "Alex",
+    "starter": true
+  },
+  {
+    "pid": "8136",
+    "name": "Rachaad White",
+    "pos": "RB",
+    "team": "WAS",
+    "pts": 13.0,
+    "manager": "iRob",
+    "starter": false
+  },
+  {
+    "pid": "11610",
+    "name": "Malik Washington",
+    "pos": "WR",
+    "team": "MIA",
+    "pts": 12.5,
+    "manager": "Robert",
+    "starter": false
+  },
+  {
+    "pid": "8150",
+    "name": "Kyren Williams",
+    "pos": "RB",
+    "team": "LAR",
+    "pts": 12.4,
+    "manager": "Robert",
+    "starter": true
+  },
+  {
+    "pid": "10219",
+    "name": "Chris Rodriguez",
+    "pos": "RB",
+    "team": "JAX",
+    "pts": 12.3,
+    "manager": "Pedro",
+    "starter": true
+  },
+  {
+    "pid": "9224",
+    "name": "Chase Brown",
+    "pos": "RB",
+    "team": "CIN",
+    "pts": 12.1,
+    "manager": "iRob",
+    "starter": true
+  },
+  {
+    "pid": "11533",
+    "name": "Brandon Aubrey",
+    "pos": "K",
+    "team": "DAL",
+    "pts": 12.0,
+    "manager": "Pedro",
+    "starter": true
+  },
+  {
+    "pid": "6650",
+    "name": "Chase McLaughlin",
+    "pos": "K",
+    "team": "TB",
+    "pts": 12.0,
+    "manager": "iRob",
+    "starter": true
+  },
+  {
+    "pid": "4866",
+    "name": "Saquon Barkley",
+    "pos": "RB",
+    "team": "PHI",
+    "pts": 11.9,
+    "manager": "Mark",
+    "starter": true
+  },
+  {
+    "pid": "6794",
+    "name": "Justin Jefferson",
+    "pos": "WR",
+    "team": "MIN",
+    "pts": 11.8,
+    "manager": "Eric",
+    "starter": true
+  },
+  {
+    "pid": "7021",
+    "name": "Rico Dowdle",
+    "pos": "RB",
+    "team": "PIT",
+    "pts": 11.6,
+    "manager": "Eric",
+    "starter": true
+  },
+  {
+    "pid": "9228",
+    "name": "Bryce Young",
+    "pos": "QB",
+    "team": "CAR",
+    "pts": 11.36,
+    "manager": "Pedro",
+    "starter": false
+  },
+  {
+    "pid": "8146",
+    "name": "Garrett Wilson",
+    "pos": "WR",
+    "team": "NYJ",
+    "pts": 11.3,
+    "manager": "Pedro",
+    "starter": true
+  },
+  {
+    "pid": "2449",
+    "name": "Stefon Diggs",
+    "pos": "WR",
+    "team": "WAS",
+    "pts": 11.3,
+    "manager": "Mark",
+    "starter": true
+  },
+  {
+    "pid": "LAR",
+    "name": "Los Angeles Rams",
+    "pos": "DEF",
+    "team": "LAR",
+    "pts": 11.0,
+    "manager": "Pedro",
+    "starter": true
+  },
+  {
+    "pid": "11620",
+    "name": "Rome Odunze",
+    "pos": "WR",
+    "team": "CHI",
+    "pts": 10.7,
+    "manager": "Robert",
+    "starter": true
+  },
+  {
+    "pid": "11635",
+    "name": "Ladd McConkey",
+    "pos": "WR",
+    "team": "LAC",
+    "pts": 10.6,
+    "manager": "Alex",
+    "starter": true
+  },
+  {
+    "pid": "7611",
+    "name": "Rhamondre Stevenson",
+    "pos": "RB",
+    "team": "NE",
+    "pts": 10.5,
+    "manager": "Arnulfo",
+    "starter": true
+  },
+  {
+    "pid": "8151",
+    "name": "Kenneth Walker",
+    "pos": "RB",
+    "team": "KC",
+    "pts": 10.4,
+    "manager": "Joey",
+    "starter": true
+  },
+  {
+    "pid": "9500",
+    "name": "Josh Downs",
+    "pos": "WR",
+    "team": "IND",
+    "pts": 10.3,
+    "manager": "Alex",
+    "starter": false
+  },
+  {
+    "pid": "9756",
+    "name": "Jordan Addison",
+    "pos": "WR",
+    "team": "MIN",
+    "pts": 10.1,
+    "manager": "Arnulfo",
+    "starter": false
+  },
+  {
+    "pid": "3163",
+    "name": "Jared Goff",
+    "pos": "QB",
+    "team": "DET",
+    "pts": 10.04,
+    "manager": "Robert",
+    "starter": false
+  },
+  {
+    "pid": "6083",
+    "name": "Matt Gay",
+    "pos": "K",
+    "team": "LV",
+    "pts": 10.0,
+    "manager": "Eric",
+    "starter": true
+  },
+  {
+    "pid": "6786",
+    "name": "CeeDee Lamb",
+    "pos": "WR",
+    "team": "DAL",
+    "pts": 9.3,
+    "manager": "Franky",
+    "starter": true
+  },
+  {
+    "pid": "421",
+    "name": "Matthew Stafford",
+    "pos": "QB",
+    "team": "LAR",
+    "pts": 9.28,
+    "manager": "Eric",
+    "starter": false
+  },
+  {
+    "pid": "1466",
+    "name": "Travis Kelce",
+    "pos": "TE",
+    "team": "KC",
+    "pts": 9.2,
+    "manager": "Arnulfo",
+    "starter": true
+  },
+  {
+    "pid": "7547",
+    "name": "Amon-Ra St. Brown",
+    "pos": "WR",
+    "team": "DET",
+    "pts": 9.1,
+    "manager": "Alex",
+    "starter": true
+  },
+  {
+    "pid": "10955",
+    "name": "Chad Ryland",
+    "pos": "K",
+    "team": "ARI",
+    "pts": 9.0,
+    "manager": "Herrador",
+    "starter": true
+  },
+  {
+    "pid": "LV",
+    "name": "Las Vegas Raiders",
+    "pos": "DEF",
+    "team": "LV",
+    "pts": 9.0,
+    "manager": "Arnulfo",
+    "starter": true
+  },
+  {
+    "pid": "8134",
+    "name": "Khalil Shakir",
+    "pos": "WR",
+    "team": "BUF",
+    "pts": 8.9,
+    "manager": "Eric",
+    "starter": false
+  },
+  {
+    "pid": "12527",
+    "name": "Ashton Jeanty",
+    "pos": "RB",
+    "team": "LV",
+    "pts": 8.8,
+    "manager": "Pedro",
+    "starter": true
+  },
+  {
+    "pid": "12526",
+    "name": "Tetairoa McMillan",
+    "pos": "WR",
+    "team": "CAR",
+    "pts": 8.8,
+    "manager": "iRob",
+    "starter": true
+  },
+  {
+    "pid": "13294",
+    "name": "Makai Lemon",
+    "pos": "WR",
+    "team": "PHI",
+    "pts": 8.7,
+    "manager": "Joey",
+    "starter": true
+  },
+  {
+    "pid": "11646",
+    "name": "Jalen Coker",
+    "pos": "WR",
+    "team": "CAR",
+    "pts": 8.6,
+    "manager": "Herrador",
+    "starter": true
+  },
+  {
+    "pid": "12517",
+    "name": "Colston Loveland",
+    "pos": "TE",
+    "team": "CHI",
+    "pts": 8.0,
+    "manager": "Franky",
+    "starter": true
+  },
+  {
+    "pid": "13301",
+    "name": "Antonio Williams",
+    "pos": "WR",
+    "team": "WAS",
+    "pts": 7.9,
+    "manager": "Herrador",
+    "starter": false
+  },
+  {
+    "pid": "9509",
+    "name": "Bijan Robinson",
+    "pos": "RB",
+    "team": "ATL",
+    "pts": 7.6,
+    "manager": "Robert",
+    "starter": true
+  },
+  {
+    "pid": "MIN",
+    "name": "Minnesota Vikings",
+    "pos": "DEF",
+    "team": "MIN",
+    "pts": 7.0,
+    "manager": "Franky",
+    "starter": true
+  },
+  {
+    "pid": "CIN",
+    "name": "Cincinnati Bengals",
+    "pos": "DEF",
+    "team": "CIN",
+    "pts": 7.0,
+    "manager": "iRob",
+    "starter": true
+  },
+  {
+    "pid": "12495",
+    "name": "Ollie Gordon",
+    "pos": "RB",
+    "team": "MIA",
+    "pts": 6.9,
+    "manager": "Joey",
+    "starter": true
+  },
+  {
+    "pid": "13346",
+    "name": "Denzel Boston",
+    "pos": "WR",
+    "team": "CLE",
+    "pts": 6.7,
+    "manager": "Pedro",
+    "starter": true
+  },
+  {
+    "pid": "9480",
+    "name": "Brenton Strange",
+    "pos": "TE",
+    "team": "JAX",
+    "pts": 6.5,
+    "manager": "Pedro",
+    "starter": true
+  },
+  {
+    "pid": "13296",
+    "name": "Caleb Douglas",
+    "pos": "WR",
+    "team": "MIA",
+    "pts": 6.3,
+    "manager": "Joey",
+    "starter": true
+  },
+  {
+    "pid": "7588",
+    "name": "Javonte Williams",
+    "pos": "RB",
+    "team": "DAL",
+    "pts": 6.2,
+    "manager": "Mark",
+    "starter": true
+  },
+  {
+    "pid": "1433",
+    "name": "Brandon McManus",
+    "pos": "K",
+    "team": null,
+    "pts": 6.0,
+    "manager": "Arnulfo",
+    "starter": true
+  },
+  {
+    "pid": "11786",
+    "name": "Cam Little",
+    "pos": "K",
+    "team": "JAX",
+    "pts": 6.0,
+    "manager": "Mark",
+    "starter": true
+  },
+  {
+    "pid": "11539",
+    "name": "Jake Bates",
+    "pos": "K",
+    "team": "DET",
+    "pts": 6.0,
+    "manager": "Robert",
+    "starter": true
+  },
+  {
+    "pid": "12512",
+    "name": "Quinshon Judkins",
+    "pos": "RB",
+    "team": "CLE",
+    "pts": 5.9,
+    "manager": "Arnulfo",
+    "starter": false
+  },
+  {
+    "pid": "8137",
+    "name": "George Pickens",
+    "pos": "WR",
+    "team": "DAL",
+    "pts": 5.8,
+    "manager": "iRob",
+    "starter": true
+  },
+  {
+    "pid": "7561",
+    "name": "Elijah Mitchell",
+    "pos": "RB",
+    "team": null,
+    "pts": 5.7,
+    "manager": "Mark",
+    "starter": false
+  },
+  {
+    "pid": "13274",
+    "name": "Germie Bernard",
+    "pos": "WR",
+    "team": "PIT",
+    "pts": 5.5,
+    "manager": "Herrador",
+    "starter": true
+  },
+  {
+    "pid": "13298",
+    "name": "KC Concepcion",
+    "pos": "WR",
+    "team": "CLE",
+    "pts": 5.2,
+    "manager": "Arnulfo",
+    "starter": true
+  },
+  {
+    "pid": "5022",
+    "name": "Dallas Goedert",
+    "pos": "TE",
+    "team": "PHI",
+    "pts": 5.2,
+    "manager": "Arnulfo",
+    "starter": true
+  },
+  {
+    "pid": "4199",
+    "name": "Aaron Jones",
+    "pos": "RB",
+    "team": "MIN",
+    "pts": 5.0,
+    "manager": "Herrador",
+    "starter": false
+  },
+  {
+    "pid": "7839",
+    "name": "Evan McPherson",
+    "pos": "K",
+    "team": "CIN",
+    "pts": 5.0,
+    "manager": "Alex",
+    "starter": true
+  },
+  {
+    "pid": "10859",
+    "name": "Sam LaPorta",
+    "pos": "TE",
+    "team": "DET",
+    "pts": 5.0,
+    "manager": "Eric",
+    "starter": true
+  },
+  {
+    "pid": "CLE",
+    "name": "Cleveland Browns",
+    "pos": "DEF",
+    "team": "CLE",
+    "pts": 5.0,
+    "manager": "Joey",
+    "starter": true
+  },
+  {
+    "pid": "6813",
+    "name": "Jonathan Taylor",
+    "pos": "RB",
+    "team": "IND",
+    "pts": 4.7,
+    "manager": "Eric",
+    "starter": true
+  },
+  {
+    "pid": "3214",
+    "name": "Hunter Henry",
+    "pos": "TE",
+    "team": "NE",
+    "pts": 4.5,
+    "manager": "iRob",
+    "starter": true
+  },
+  {
+    "pid": "3257",
+    "name": "Jacoby Brissett",
+    "pos": "QB",
+    "team": "ARI",
+    "pts": 4.46,
+    "manager": "Franky",
+    "starter": true
+  },
+  {
+    "pid": "9753",
+    "name": "Zach Charbonnet",
+    "pos": "RB",
+    "team": "SEA",
+    "pts": 4.4,
+    "manager": "Herrador",
+    "starter": false
+  },
+  {
+    "pid": "11647",
+    "name": "Kimani Vidal",
+    "pos": "RB",
+    "team": "LAC",
+    "pts": 4.0,
+    "manager": "Eric",
+    "starter": false
+  },
+  {
+    "pid": "12518",
+    "name": "Tyler Warren",
+    "pos": "TE",
+    "team": "IND",
+    "pts": 3.8,
+    "manager": "Franky",
+    "starter": false
+  },
+  {
+    "pid": "12507",
+    "name": "Omarion Hampton",
+    "pos": "RB",
+    "team": "LAC",
+    "pts": 3.7,
+    "manager": "Herrador",
+    "starter": false
+  },
+  {
+    "pid": "4454",
+    "name": "Kendrick Bourne",
+    "pos": "WR",
+    "team": "ARI",
+    "pts": 3.4,
+    "manager": "Eric",
+    "starter": true
+  },
+  {
+    "pid": "9487",
+    "name": "Parker Washington",
+    "pos": "WR",
+    "team": "JAX",
+    "pts": 3.1,
+    "manager": "Franky",
+    "starter": true
+  },
+  {
+    "pid": "SEA",
+    "name": "Seattle Seahawks",
+    "pos": "DEF",
+    "team": "SEA",
+    "pts": 3.0,
+    "manager": "Robert",
+    "starter": true
+  },
+  {
+    "pid": "13424",
+    "name": "Seth McGowan",
+    "pos": "RB",
+    "team": "IND",
+    "pts": 2.9,
+    "manager": "Joey",
+    "starter": true
+  },
+  {
+    "pid": "11624",
+    "name": "Xavier Worthy",
+    "pos": "WR",
+    "team": "KC",
+    "pts": 2.8,
+    "manager": "Pedro",
+    "starter": false
+  },
+  {
+    "pid": "13287",
+    "name": "Jeremiyah Love",
+    "pos": "RB",
+    "team": "ARI",
+    "pts": 2.3,
+    "manager": "Franky",
+    "starter": false
+  },
+  {
+    "pid": "8210",
+    "name": "Chig Okonkwo",
+    "pos": "TE",
+    "team": "WAS",
+    "pts": 2.2,
+    "manager": "Pedro",
+    "starter": false
+  },
+  {
+    "pid": "8408",
+    "name": "Jordan Mason",
+    "pos": "RB",
+    "team": "MIN",
+    "pts": 2.0,
+    "manager": "Pedro",
+    "starter": true
+  },
+  {
+    "pid": "13545",
+    "name": "Trey Smack",
+    "pos": "K",
+    "team": "GB",
+    "pts": 2.0,
+    "manager": "Robert",
+    "starter": false
+  },
+  {
+    "pid": "6806",
+    "name": "J.K. Dobbins",
+    "pos": "RB",
+    "team": "DEN",
+    "pts": 1.3,
+    "manager": "Alex",
+    "starter": false
+  },
+  {
+    "pid": "8112",
+    "name": "Drake London",
+    "pos": "WR",
+    "team": "ATL",
+    "pts": 1.3,
+    "manager": "Robert",
+    "starter": true
+  },
+  {
+    "pid": "12185",
+    "name": "Spencer Shrader",
+    "pos": "K",
+    "team": "IND",
+    "pts": 1.0,
+    "manager": "Franky",
+    "starter": true
+  },
+  {
+    "pid": "5846",
+    "name": "DK Metcalf",
+    "pos": "WR",
+    "team": "PIT",
+    "pts": 0.9,
+    "manager": "Alex",
+    "starter": true
+  },
+  {
+    "pid": "12530",
+    "name": "Travis Hunter",
+    "pos": "DB",
+    "team": "JAX",
+    "pts": 0.5,
+    "manager": "Pedro",
+    "starter": false
+  },
+  {
+    "pid": "0",
+    "name": "0",
+    "pos": "DEF",
+    "team": "0",
+    "pts": 0.0,
+    "manager": "Herrador",
+    "starter": true
+  },
+  {
+    "pid": "12545",
+    "name": "Tyler Shough",
+    "pos": "QB",
+    "team": "NO",
+    "pts": 0.0,
+    "manager": "Herrador",
+    "starter": false
+  },
+  {
+    "pid": "13281",
+    "name": "Jordyn Tyson",
+    "pos": "WR",
+    "team": "NO",
+    "pts": 0.0,
+    "manager": "Herrador",
+    "starter": false
+  },
+  {
+    "pid": "7525",
+    "name": "DeVonta Smith",
+    "pos": "WR",
+    "team": "PHI",
+    "pts": 0.0,
+    "manager": "Herrador",
+    "starter": false
+  },
+  {
+    "pid": "12481",
+    "name": "Cam Skattebo",
+    "pos": "RB",
+    "team": "NYG",
+    "pts": 0.0,
+    "manager": "Alex",
+    "starter": false
+  },
+  {
+    "pid": "3451",
+    "name": "Ka'imi Fairbairn",
+    "pos": "K",
+    "team": "HOU",
+    "pts": 0.0,
+    "manager": "Alex",
+    "starter": false
+  },
+  {
+    "pid": "12718",
+    "name": "Konata Mumpfield",
+    "pos": "WR",
+    "team": "LAR",
+    "pts": 0.0,
+    "manager": "Pedro",
+    "starter": false
+  },
+  {
+    "pid": "10213",
+    "name": "Tre Tucker",
+    "pos": "WR",
+    "team": "LV",
+    "pts": 0.0,
+    "manager": "Franky",
+    "starter": true
+  },
+  {
+    "pid": "11435",
+    "name": "Emanuel Wilson",
+    "pos": "RB",
+    "team": "SEA",
+    "pts": 0.0,
+    "manager": "Franky",
+    "starter": false
+  },
+  {
+    "pid": "11632",
+    "name": "Malik Nabers",
+    "pos": "WR",
+    "team": "NYG",
+    "pts": 0.0,
+    "manager": "Franky",
+    "starter": false
+  },
+  {
+    "pid": "8142",
+    "name": "Alec Pierce",
+    "pos": "WR",
+    "team": "IND",
+    "pts": 0.0,
+    "manager": "Franky",
+    "starter": false
+  },
+  {
+    "pid": "8144",
+    "name": "Chris Olave",
+    "pos": "WR",
+    "team": "NO",
+    "pts": 0.0,
+    "manager": "Franky",
+    "starter": false
+  },
+  {
+    "pid": "12489",
+    "name": "RJ Harvey",
+    "pos": "RB",
+    "team": "DEN",
+    "pts": 0.0,
+    "manager": "iRob",
+    "starter": false
+  },
+  {
+    "pid": "12534",
+    "name": "Kyle Monangai",
+    "pos": "RB",
+    "team": "CHI",
+    "pts": 0.0,
+    "manager": "iRob",
+    "starter": false
+  },
+  {
+    "pid": "5872",
+    "name": "Deebo Samuel",
+    "pos": "WR",
+    "team": "SF",
+    "pts": 0.0,
+    "manager": "iRob",
+    "starter": false
+  },
+  {
+    "pid": "8131",
+    "name": "Isaiah Likely",
+    "pos": "TE",
+    "team": "NYG",
+    "pts": 0.0,
+    "manager": "iRob",
+    "starter": false
+  },
+  {
+    "pid": "8155",
+    "name": "Breece Hall",
+    "pos": "RB",
+    "team": "NYJ",
+    "pts": 0.0,
+    "manager": "iRob",
+    "starter": false
+  },
+  {
+    "pid": "8183",
+    "name": "Brock Purdy",
+    "pos": "QB",
+    "team": "SF",
+    "pts": 0.0,
+    "manager": "iRob",
+    "starter": false
+  },
+  {
+    "pid": "13279",
+    "name": "Carnell Tate",
+    "pos": "WR",
+    "team": "TEN",
+    "pts": 0.0,
+    "manager": "Arnulfo",
+    "starter": false
+  },
+  {
+    "pid": "5859",
+    "name": "A.J. Brown",
+    "pos": "WR",
+    "team": "NE",
+    "pts": 0.0,
+    "manager": "Arnulfo",
+    "starter": false
+  },
+  {
+    "pid": "11237",
+    "name": "Jacob Saylors",
+    "pos": "RB",
+    "team": "DET",
+    "pts": 0.0,
+    "manager": "Eric",
+    "starter": false
+  },
+  {
+    "pid": "12529",
+    "name": "TreVeyon Henderson",
+    "pos": "RB",
+    "team": "NE",
+    "pts": 0.0,
+    "manager": "Eric",
+    "starter": false
+  },
+  {
+    "pid": "8129",
+    "name": "Dameon Pierce",
+    "pos": "RB",
+    "team": "PHI",
+    "pts": 0.0,
+    "manager": "Eric",
+    "starter": false
+  },
+  {
+    "pid": "HOU",
+    "name": "Houston Texans",
+    "pos": "DEF",
+    "team": "HOU",
+    "pts": 0.0,
+    "manager": "Eric",
+    "starter": false
+  },
+  {
+    "pid": "11792",
+    "name": "Will Reichard",
+    "pos": "K",
+    "team": "MIN",
+    "pts": 0.0,
+    "manager": "Joey",
+    "starter": true
+  },
+  {
+    "pid": "12514",
+    "name": "Emeka Egbuka",
+    "pos": "WR",
+    "team": "TB",
+    "pts": 0.0,
+    "manager": "Joey",
+    "starter": false
+  },
+  {
+    "pid": "13414",
+    "name": "Kaelon Black",
+    "pos": "RB",
+    "team": "SF",
+    "pts": 0.0,
+    "manager": "Joey",
+    "starter": false
+  },
+  {
+    "pid": "2216",
+    "name": "Mike Evans",
+    "pos": "WR",
+    "team": "SF",
+    "pts": 0.0,
+    "manager": "Joey",
+    "starter": false
+  },
+  {
+    "pid": "4034",
+    "name": "Christian McCaffrey",
+    "pos": "RB",
+    "team": "SF",
+    "pts": 0.0,
+    "manager": "Joey",
+    "starter": false
+  },
+  {
+    "pid": "5892",
+    "name": "David Montgomery",
+    "pos": "RB",
+    "team": "HOU",
+    "pts": 0.0,
+    "manager": "Joey",
+    "starter": false
+  },
+  {
+    "pid": "7569",
+    "name": "Nico Collins",
+    "pos": "WR",
+    "team": "HOU",
+    "pts": 0.0,
+    "manager": "Joey",
+    "starter": false
+  },
+  {
+    "pid": "9502",
+    "name": "Tank Dell",
+    "pos": "WR",
+    "team": "HOU",
+    "pts": 0.0,
+    "manager": "Joey",
+    "starter": false
+  },
+  {
+    "pid": "9997",
+    "name": "Zay Flowers",
+    "pos": "WR",
+    "team": "BAL",
+    "pts": 0.0,
+    "manager": "Mark",
+    "starter": true
+  },
+  {
+    "pid": "11628",
+    "name": "Marvin Harrison",
+    "pos": "WR",
+    "team": "ARI",
+    "pts": 0.0,
+    "manager": "Mark",
+    "starter": false
+  },
+  {
+    "pid": "12474",
+    "name": "Woody Marks",
+    "pos": "RB",
+    "team": "HOU",
+    "pts": 0.0,
+    "manager": "Mark",
+    "starter": false
+  },
+  {
+    "pid": "4217",
+    "name": "George Kittle",
+    "pos": "TE",
+    "team": "SF",
+    "pts": 0.0,
+    "manager": "Mark",
+    "starter": false
+  },
+  {
+    "pid": "4881",
+    "name": "Lamar Jackson",
+    "pos": "QB",
+    "team": "BAL",
+    "pts": 0.0,
+    "manager": "Robert",
+    "starter": true
+  },
+  {
+    "pid": "13276",
+    "name": "Omar Cooper",
+    "pos": "WR",
+    "team": "NYJ",
+    "pts": 0.0,
+    "manager": "Robert",
+    "starter": true
+  },
+  {
+    "pid": "11834",
+    "name": "Devaughn Vele",
+    "pos": "WR",
+    "team": "NO",
+    "pts": 0.0,
+    "manager": "Robert",
+    "starter": false
+  },
+  {
+    "pid": "2133",
+    "name": "Davante Adams",
+    "pos": "WR",
+    "team": "LAR",
+    "pts": 0.0,
+    "manager": "Robert",
+    "starter": false
+  },
+  {
+    "pid": "7543",
+    "name": "Travis Etienne",
+    "pos": "RB",
+    "team": "NO",
+    "pts": 0.0,
+    "manager": "Robert",
+    "starter": false
+  },
+  {
+    "pid": "8121",
+    "name": "Romeo Doubs",
+    "pos": "WR",
+    "team": "NE",
+    "pts": 0.0,
+    "manager": "Robert",
+    "starter": false
+  }
+]
