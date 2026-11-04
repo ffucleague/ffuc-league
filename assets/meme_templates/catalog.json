@@ -1,0 +1,67 @@
+{
+  "version": "1.0",
+  "description": "FFUC Dynamic Meme Template Catalog for Slide 1 Honors",
+  "categories": {
+    "high_roller": {
+      "display_name": "High Roller Champion",
+      "folder": "high_roller",
+      "target_award": "Highest Scoring Team of the Week ($10 Bounty)",
+      "templates": [
+        {
+          "id": "gatsby_toast",
+          "file": "gatsby_toast.mp4",
+          "title": "Great Gatsby Champagne Toast",
+          "character": "Jay Gatsby (Leonardo DiCaprio)",
+          "vibe": "Opulence, smug celebration, toast to victory with fireworks",
+          "resolution": "512x288",
+          "face_angle": "Frontal, slight smile",
+          "tags": ["champagne", "fireworks", "toast", "celebration", "smug"]
+        }
+      ]
+    },
+    "heartbreak": {
+      "display_name": "Heartbreak of the Week",
+      "folder": "heartbreak",
+      "target_award": "Brutal Loss / High Score in a Loss / Bad Beat",
+      "templates": [
+        {
+          "id": "dawson_crying",
+          "file": "dawson_crying.mp4",
+          "title": "Dawson Leery Ugly Cry",
+          "character": "Dawson Leery (James Van Der Beek)",
+          "vibe": "Agonizing grimace, uncontrollable crying, total emotional collapse",
+          "resolution": "480x360",
+          "face_angle": "Frontal close-up",
+          "tags": ["crying", "ugly cry", "bad beat", "collapse", "agony"]
+        },
+        {
+          "id": "escobar_waiting",
+          "file": "escobar_waiting.mp4",
+          "title": "Pablo Escobar Waiting Alone",
+          "character": "Pablo Escobar (Wagner Moura)",
+          "vibe": "Staring into the void, swing set emptiness, quiet despair",
+          "resolution": "480x270",
+          "face_angle": "Frontal/slight 3/4",
+          "tags": ["waiting", "empty", "lonely", "despair", "swing"]
+        }
+      ]
+    },
+    "toilet_runner": {
+      "display_name": "5K Toilet Runner",
+      "folder": "toilet_runner",
+      "target_award": "Lowest Scorer / Relegation Panic / Blowout Loser",
+      "templates": [
+        {
+          "id": "forrest_gump_run",
+          "file": "forrest_gump_run.mp4",
+          "title": "Forrest Gump Running Across America",
+          "character": "Forrest Gump (Tom Hanks)",
+          "vibe": "Sprinting down a dirt road in panic, running for dear life",
+          "resolution": "480x204",
+          "face_angle": "Frontal runner with red trucker cap",
+          "tags": ["running", "sprint", "panic", "dirt road", "trucker hat"]
+        }
+      ]
+    }
+  }
+}

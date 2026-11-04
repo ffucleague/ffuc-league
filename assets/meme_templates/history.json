@@ -1,0 +1,44 @@
+{
+  "week_6": {
+    "high_roller": {
+      "template_id": "gatsby_toast",
+      "manager": "franky"
+    },
+    "heartbreak": {
+      "template_id": "dawson_crying",
+      "manager": "joey"
+    },
+    "toilet_runner": {
+      "template_id": "forrest_gump_run",
+      "manager": "pedro"
+    }
+  },
+  "week_7": {
+    "high_roller": {
+      "template_id": "gatsby_toast",
+      "manager": "robert"
+    },
+    "heartbreak": {
+      "template_id": "dawson_crying",
+      "manager": "alex"
+    },
+    "toilet_runner": {
+      "template_id": "forrest_gump_run",
+      "manager": "pedro"
+    }
+  },
+  "week_8": {
+    "high_roller": {
+      "template_id": "gatsby_toast",
+      "manager": "herrador"
+    },
+    "heartbreak": {
+      "template_id": "dawson_crying",
+      "manager": "alex"
+    },
+    "toilet_runner": {
+      "template_id": "forrest_gump_run",
+      "manager": "robert"
+    }
+  }
+}
