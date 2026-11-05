@@ -15,7 +15,34 @@
           "vibe": "Opulence, smug celebration, toast to victory with fireworks",
           "resolution": "512x288",
           "face_angle": "Frontal, slight smile",
-          "tags": ["champagne", "fireworks", "toast", "celebration", "smug"]
+          "tags": [
+            "champagne",
+            "fireworks",
+            "toast",
+            "celebration",
+            "smug"
+          ]
+        },
+        {
+          "id": "vince_mcmahon_strut",
+          "file": "vince_mcmahon_strut.mp4",
+          "title": "Vince McMahon Billionaire Strut",
+          "character": "Vince McMahon",
+          "vibe": "Over-the-top swagger, billionaire power walk into the arena"
+        },
+        {
+          "id": "celebration_sparkles",
+          "file": "celebration_sparkles.mp4",
+          "title": "Sparkle Celebration Fist Pump",
+          "character": "Celebration Guy",
+          "vibe": "Flashy sparkly jacket, triumphant fist pump with sparkles"
+        },
+        {
+          "id": "mason_ramsey_dance",
+          "file": "mason_ramsey_dance.mp4",
+          "title": "Mason Ramsey Cowboy Dance",
+          "character": "Mason Ramsey",
+          "vibe": "Smug cowboy hat shuffle, finger guns, confident victory dance"
         }
       ]
     },
@@ -32,7 +59,13 @@
           "vibe": "Agonizing grimace, uncontrollable crying, total emotional collapse",
           "resolution": "480x360",
           "face_angle": "Frontal close-up",
-          "tags": ["crying", "ugly cry", "bad beat", "collapse", "agony"]
+          "tags": [
+            "crying",
+            "ugly cry",
+            "bad beat",
+            "collapse",
+            "agony"
+          ]
         },
         {
           "id": "escobar_waiting",
@@ -42,7 +75,13 @@
           "vibe": "Staring into the void, swing set emptiness, quiet despair",
           "resolution": "480x270",
           "face_angle": "Frontal/slight 3/4",
-          "tags": ["waiting", "empty", "lonely", "despair", "swing"]
+          "tags": [
+            "waiting",
+            "empty",
+            "lonely",
+            "despair",
+            "swing"
+          ]
         }
       ]
     },
@@ -59,7 +98,13 @@
           "vibe": "Sprinting down a dirt road in panic, running for dear life",
           "resolution": "480x204",
           "face_angle": "Frontal runner with red trucker cap",
-          "tags": ["running", "sprint", "panic", "dirt road", "trucker hat"]
+          "tags": [
+            "running",
+            "sprint",
+            "panic",
+            "dirt road",
+            "trucker hat"
+          ]
         }
       ]
     }

@@ -114,6 +114,9 @@ def query_vision_ai(prompt, image_path):
             "model": VISION_MODEL,
             "prompt": prompt,
             "stream": False,
+            "options": {
+                "num_ctx": 4096
+            },
             "images": [img_b64]
         }
         req = urllib.request.Request(
