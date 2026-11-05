@@ -64,6 +64,20 @@
           "title": "Paid Off Cash Celebration",
           "character": "Michael Torpey (Paid Off)",
           "vibe": "High-energy game show host screaming and flaunting cold hard cash"
+        },
+        {
+          "id": "salt_bae",
+          "file": "salt_bae.mp4",
+          "title": "Salt Bae Gold Steak Seasoning",
+          "character": "Salt Bae (Nusret G\u00f6k\u00e7e)",
+          "vibe": "Flamboyant wrist flick sprinkling salt over luxury steak"
+        },
+        {
+          "id": "ric_flair_wooo",
+          "file": "ric_flair_wooo.mp4",
+          "title": "Ric Flair WOOOO Strut",
+          "character": "Ric Flair",
+          "vibe": "Flamboyant robe, strutting across the ring yelling WOOOO!"
         }
       ]
     },
@@ -131,6 +145,27 @@
           "title": "Spider-Man Peter Parker Crying",
           "character": "Peter Parker (Tobey Maguire)",
           "vibe": "Iconic sobbing grimace, tear rolling down, utter heartbreak"
+        },
+        {
+          "id": "jordan_crying",
+          "file": "jordan_crying.mp4",
+          "title": "Michael Jordan Crying Face",
+          "character": "Michael Jordan",
+          "vibe": "Tears streaming down, Hall of Fame weeping expression"
+        },
+        {
+          "id": "walter_white_collapse",
+          "file": "walter_white_collapse.mp4",
+          "title": "Walter White Desert Collapse",
+          "character": "Walter White (Bryan Cranston)",
+          "vibe": "Falling to the desert ground in sheer shock and heartbreak"
+        },
+        {
+          "id": "ben_affleck_smoking",
+          "file": "ben_affleck_smoking.mp4",
+          "title": "Ben Affleck Exhausted Smoking",
+          "character": "Ben Affleck",
+          "vibe": "Smoking cigarette with closed eyes, utterly drained and stressed"
         }
       ]
     },
@@ -175,6 +210,27 @@
           "title": "Empty Wallet Broke Panic",
           "character": "Struggling Manager",
           "vibe": "Staring inside empty wallet with utter despair and financial ruin"
+        },
+        {
+          "id": "indiana_jones_boulder",
+          "file": "indiana_jones_boulder.mp4",
+          "title": "Indiana Jones Boulder Sprint",
+          "character": "Indiana Jones (Harrison Ford)",
+          "vibe": "Sprinting down temple cave running away from giant rolling boulder"
+        },
+        {
+          "id": "phoebe_running",
+          "file": "phoebe_running.mp4",
+          "title": "Phoebe Buffay Wild Central Park Run",
+          "character": "Phoebe Buffay (Lisa Kudrow)",
+          "vibe": "Flailing arms, wild unhinged running style through the park"
+        },
+        {
+          "id": "jack_sparrow_run",
+          "file": "jack_sparrow_run.mp4",
+          "title": "Captain Jack Sparrow Beach Sprint",
+          "character": "Captain Jack Sparrow (Johnny Depp)",
+          "vibe": "Flailing hands sprinting down the beach running away in terror"
         }
       ]
     }
