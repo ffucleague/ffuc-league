@@ -43,6 +43,27 @@
           "title": "Mason Ramsey Cowboy Dance",
           "character": "Mason Ramsey",
           "vibe": "Smug cowboy hat shuffle, finger guns, confident victory dance"
+        },
+        {
+          "id": "shaq_shimmy",
+          "file": "shaq_shimmy.mp4",
+          "title": "Shaq Shimmy Celebration",
+          "character": "Shaquille O'Neal",
+          "vibe": "Smug shoulder shimmy victory bounce with big grin"
+        },
+        {
+          "id": "wolf_chest_thump",
+          "file": "wolf_chest_thump.mp4",
+          "title": "Wolf of Wall Street Chest Thump",
+          "character": "Mark Hanna (Matthew McConaughey)",
+          "vibe": "Wall street chest-thumping rhythm, humming, high roller intensity"
+        },
+        {
+          "id": "paid_off_cash",
+          "file": "paid_off_cash.mp4",
+          "title": "Paid Off Cash Celebration",
+          "character": "Michael Torpey (Paid Off)",
+          "vibe": "High-energy game show host screaming and flaunting cold hard cash"
         }
       ]
     },
@@ -82,6 +103,34 @@
             "despair",
             "swing"
           ]
+        },
+        {
+          "id": "michael_scott_heartbreak",
+          "file": "michael_scott_heartbreak.mp4",
+          "title": "Michael Scott Holding Back Tears",
+          "character": "Michael Scott (Steve Carell)",
+          "vibe": "Grimacing, biting lip, nodding and holding back painful tears"
+        },
+        {
+          "id": "homelander_stress",
+          "file": "homelander_stress.mp4",
+          "title": "Homelander Psychotic Stare",
+          "character": "Homelander (Antony Starr)",
+          "vibe": "Suppressed rage, twitching eye, internal devastation and panic"
+        },
+        {
+          "id": "dazn_waiting",
+          "file": "dazn_waiting.mp4",
+          "title": "Sad Stadium Fan Waiting",
+          "character": "Sad Fan",
+          "vibe": "Slumped over in stadium seats, lonely depression after a brutal defeat"
+        },
+        {
+          "id": "spiderman_crying",
+          "file": "spiderman_crying.mp4",
+          "title": "Spider-Man Peter Parker Crying",
+          "character": "Peter Parker (Tobey Maguire)",
+          "vibe": "Iconic sobbing grimace, tear rolling down, utter heartbreak"
         }
       ]
     },
@@ -105,6 +154,27 @@
             "dirt road",
             "trucker hat"
           ]
+        },
+        {
+          "id": "frankie_lapenna_run",
+          "file": "frankie_lapenna_run.mp4",
+          "title": "Frankie LaPenna Power Sprint",
+          "character": "Frankie LaPenna",
+          "vibe": "High-speed frantic running with huge dump truck hips fleeing last place"
+        },
+        {
+          "id": "forrest_field_sprint",
+          "file": "forrest_field_sprint.mp4",
+          "title": "Forrest Gump Football Field Sprint",
+          "character": "Forrest Gump (Tom Hanks)",
+          "vibe": "Endless sprint across the gridiron out of the stadium in full panic"
+        },
+        {
+          "id": "empty_wallet_broke",
+          "file": "empty_wallet_broke.mp4",
+          "title": "Empty Wallet Broke Panic",
+          "character": "Struggling Manager",
+          "vibe": "Staring inside empty wallet with utter despair and financial ruin"
         }
       ]
     }
