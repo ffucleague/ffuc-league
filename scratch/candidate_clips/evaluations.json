@@ -1,0 +1,32 @@
+{
+  "vince_mcmahon_strut": {
+    "width": 300,
+    "height": 350,
+    "duration": "2.800000",
+    "review": "1. The frame shows **Vince McMahon** (WWE executive/legend) mid-strut in a suit, with the WWE logo visible in the corner.  \n2. **Face Swap Feasibility**: The face is clear, front-facing, and unobscured (no sunglasses, hands, or blur). It is well-lit and distinct, making it ideal for face detection tools like FaceFusion/YOLO.  \n3. **High Roller Vibe & Comedic Value**: The confident, almost-egomaniacal \"strut\" perfectly embodies a fantasy manager celebrating a dominant league performance. The over-the-top swagger matches the \"High Roller\" theme while being inherently humorous.  \n4. **Final Recommendation**: [APPROVED] \u2013 The clear face, iconic WWE context, and high-energy strut make it a top-tier fit for the \"High Roller Champion\" award. No issues with face swap or comedic relevance."
+  },
+  "celebration_kid": {
+    "width": 252,
+    "height": 166,
+    "duration": "1.133333",
+    "review": "1. The frame shows a man in a light blue, sparkly denim jacket with a patterned scarf, flanked by two partially visible individuals. The background includes subtle sparkles, suggesting a celebratory or performance context.  \n\n2. The central figure\u2019s face is **clear, front-facing, and unobscured** (no sunglasses, hands, or blur). The lighting and angle are ideal for FaceFusion/YOLO face detection.  \n\n3. The flashy attire (sparkly jacket, bold scarf) and celebratory sparkles align with a \u201cHigh Roller\u201d vibe\u2014perfect for a manager who just scored the league\u2019s highest points. The retro, over-the-top style adds **strong comedic value** for a victory celebration.  \n\n4. [APPROVED] The face is swap-ready, the vibe matches a record-breaking score, and the retro flair delivers maximum comedic appeal for the award."
+  },
+  "mason_ramsey_dance": {
+    "width": 368,
+    "height": 480,
+    "duration": "1.680000",
+    "review": "1. The frame shows **Mason Ramsey** (the \"I Don't Know\" kid) mid-dance in a cowboy hat, checkered shirt, jeans, and large belt buckle, with onlookers in the background.  \n\n2. **Face Swap Feasibility**: The face is clear, front-facing, and unobscured (no hands, sunglasses, or severe blur on the face; minor motion blur in limbs doesn\u2019t affect facial detection). YOLO/face detection would work.  \n\n3. **High Roller Vibe & Comedic Value**: The energetic, confident dance and cowboy aesthetic perfectly mirror the \"just dropped the league\u2019s highest score\" swagger\u2014highly relatable and comedic for a fantasy manager\u2019s victory.  \n\n4. **Final Recommendation**: **[APPROVED]**. The face is swap-ready, the meme\u2019s iconic energy fits the \"High Roller\" theme, and it delivers maximum comedic value for a top-score celebration."
+  },
+  "cheers_toast": {
+    "width": 400,
+    "height": 224,
+    "duration": "2.000000",
+    "review": "1. The frame shows **Leonardo DiCaprio as Jay Gatsby** from *The Great Gatsby*, holding a champagne glass in a luxurious, festive setting (e.g., a Gatsby-era party).  \n\n2. **Face Swap Feasibility: High.** The face is clear, front-facing, and unobscured (no sunglasses, hands, or motion blur). The well-lit, static shot ensures reliable face detection for tools like FaceFusion or YOLO.  \n\n3. **High Roller Vibe & Comedic Value: Strong.** The opulent setting, confident smirk, and champagne toast perfectly mirror a fantasy manager\u2019s \u201chigh-roller\u201d celebration after a record-breaking score. The smirk adds comedic arrogance, ideal for mocking or celebrating a dominant performance.  \n\n4. **Final Recommendation: [APPROVED]**  \nThis clip embodies the \"High Roller\" persona with unmatched visual flair (luxury, confidence, celebration) and is technically suitable for face swaps. It\u2019s a perfect fit for the award\u2019s theme."
+  },
+  "mls_boss_sunglasses": {
+    "width": 480,
+    "height": 422,
+    "duration": "2.850000",
+    "review": "1. The frame shows a man in a white polo shirt removing dark sunglasses, set against a bright outdoor background with a building and greenery.  \n\n2. **Face Swap Feasibility**: The face is front-facing but partially obscured by sunglasses (covering eyes) and a hand holding the glasses, which may disrupt face detection tools like YOLO or FaceFusion. This increases the risk of failed/low-quality swaps.  \n\n3. **High Roller Vibe & Comedic Value**: The \u201csunglasses-off\u201d action conveys a cocky, confident \u201cI just dominated\u201d energy\u2014perfect for a fantasy manager celebrating a league-high score. The visual aligns with the \u201cunhinged win\u201d humor expected for the award.  \n\n4. **Final Recommendation**: [CONDITIONALLY APPROVED]  \n*The high-roller vibe is spot-on, but the sunglasses and hand near the face may hinder seamless face swaps, making it risky for consistent meme quality.*"
+  }
+}

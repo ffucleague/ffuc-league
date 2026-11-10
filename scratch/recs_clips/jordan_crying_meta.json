@@ -1,0 +1,14 @@
+{
+    "programs": [
+
+    ],
+    "streams": [
+        {
+            "width": 480,
+            "height": 264,
+            "r_frame_rate": "25/1",
+            "duration": "0.240000",
+            "nb_frames": "6"
+        }
+    ]
+}

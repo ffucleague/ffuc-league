@@ -1,0 +1,47 @@
+{
+  "frankie_lapenna_run": {
+    "title": "Frankie LaPenna Power Sprint",
+    "character": "Frankie LaPenna",
+    "vibe": "High-speed frantic running with exaggerated dump truck body",
+    "width": 384,
+    "height": 480,
+    "duration": "3.266667",
+    "review": "1. Face Swap Feasibility: Yes, his face is unobstructed and clearly visible; FaceFusion will detect and swap reliably.  \n2. Comedic/Vibe Fit: The urgent sprinting motion and chaotic background (including the surreal figure) perfectly match a manager frantically fleeing relegation panic.  \n3. Final Verdict: [APPROVED] This frame\u2019s clear face, dynamic action, and chaotic energy make it ideal for the \"5K Toilet Runner\" award."
+  },
+  "hallway_sprint": {
+    "title": "Panic Hallway Sprint",
+    "character": "Sprinting Office Guy",
+    "vibe": "Panic escape through hallways looking back in fear",
+    "width": 480,
+    "height": 256,
+    "duration": "3.866667",
+    "review": ""
+  },
+  "panic_run_away": {
+    "title": "Forrest Gump Football Field Sprint",
+    "character": "Forrest Gump",
+    "vibe": "Sprinting endlessly down the football field in panic",
+    "width": 286,
+    "height": 240,
+    "duration": "3.466667",
+    "review": "1. Face Swap Feasibility: The face is unobstructed (no hands/hats covering features) and well-lit; FaceFusion will detect/scale reliably.  \n2. Comedic/Vibe Fit: The earnest, slightly tense expression and outdoor field setting mirror a manager\u2019s frantic \"run from relegation\" energy, aligning perfectly with the award theme.  \n3. Final Verdict: [APPROVED] This frame\u2019s clear face and panic-adjacent vibe make it ideal for the 5K Toilet Runner award."
+  },
+  "empty_wallet_broke": {
+    "title": "Empty Wallet Out of Cash",
+    "character": "Struggling Guy with Wallet",
+    "vibe": "Looking inside completely empty leather wallet with despair",
+    "width": 300,
+    "height": 264,
+    "duration": "2.333333",
+    "review": "1. Face Swap Feasibility: The face is clear with visible facial structure and no major obstructions; FaceFusion will likely detect and swap reliably.  \n2. Comedic/Vibe Fit: The distressed expression aligns perfectly with a manager panicking over financial/league struggles, fitting the \"5K Toilet Runner\" theme of desperate flight from failure"
+  },
+  "paid_off_screaming": {
+    "title": "Michael Torpey Panic Screaming",
+    "character": "Michael Torpey",
+    "vibe": "Agonized open-mouthed scream of financial panic",
+    "width": 480,
+    "height": 480,
+    "duration": "3.466667",
+    "review": "1. Face Swap Feasibility: The face is clear with no obstructions; FaceFusion will detect and swap reliably.  \n2. Comedic/Vibe Fit: The smug, money-holding expression contradicts panic/last-place desperation (vibe mismatch).  \n3. Final Verdict: [NOT RECOMMENDED] This smug \"winning\" expression fails to convey the required panic for a relegation/last-place scenario."
+  }
+}
