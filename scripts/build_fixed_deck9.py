@@ -117,14 +117,14 @@ slide_0 = """      <!-- SLIDE 0: HARDWARE & ROASTS -->
               Mark puts on an absolute clinic in Week 9, detonating for 137.28 points to take the scoring title and crush Pedro 137.28 to 104.18! Powered by Puka Nacua (28.00) in his signature alpha performance, alongside Jalen Hurts (20.40), Matthew Stafford (19.50), Jayden Reed (17.20), Cam Little (17.00), and Kyle Pitts (7.80), Mark captures his first High Roller crown of 2026 and forces a three-way tie atop the league at 6-3!
             </p>
             <!-- FaceFusion AI High Roller Video / GIF -->
-            <div class="mt-3 relative rounded-xl overflow-hidden border border-amber-500/40 shadow-lg bg-slate-950">
+            <div class="mt-3 relative rounded-xl overflow-hidden border border-amber-500/40 shadow-lg bg-slate-950 flex items-center justify-center min-h-[256px] sm:min-h-[288px]">
               <div class="absolute top-2 left-2 z-10 bg-slate-950/80 backdrop-blur-sm border border-amber-500/40 text-[9px] font-mono font-bold text-amber-400 px-2 py-0.5 rounded-full flex items-center gap-1">
                 <span class="w-1.5 h-1.5 rounded-full bg-amber-400 animate-pulse"></span>
                 FaceFusion AI • Mark Billionaire Vince Strut (Screened by Qwen3-VL 32B)
               </div>
-              <video class="w-full h-44 sm:h-52 object-cover" autoplay loop muted playsinline poster="assets/video/mark_high_roller.gif">
+              <video class="w-full h-64 sm:h-72 object-contain bg-slate-950 mx-auto" autoplay loop muted playsinline poster="assets/video/mark_high_roller.gif">
                 <source src="assets/video/mark_high_roller.mp4" type="video/mp4">
-                <img src="assets/video/mark_high_roller.gif" alt="Mark High Roller Vince McMahon Strut" class="w-full h-44 sm:h-52 object-cover">
+                <img src="assets/video/mark_high_roller.gif" alt="Mark High Roller Vince McMahon Strut" class="w-full h-64 sm:h-72 object-contain bg-slate-950 mx-auto">
               </video>
             </div>
             <div class="mt-3.5 pt-3 border-t border-slate-800/80 flex items-center justify-between text-xs">
@@ -160,14 +160,14 @@ slide_0 = """      <!-- SLIDE 0: HARDWARE & ROASTS -->
               Utter schedule agony! One week after hoisting the High Roller crown, Herrador dropped 122.76 points—the 4th highest total across the entire league—backed by Bucky Irving (26.50), Ja'Marr Chase (26.50), and Brock Bowers (18.80)! Herrador would have comfortably defeated 6 of the other 8 franchises, but ran directly into Franky's 136.46 scoring barrage to suffer a heartbreaking 13.70-point defeat!
             </p>
             <!-- FaceFusion AI Heartbreak Video -->
-            <div class="mt-3 relative rounded-xl overflow-hidden border border-rose-500/40 shadow-lg bg-slate-950">
+            <div class="mt-3 relative rounded-xl overflow-hidden border border-rose-500/40 shadow-lg bg-slate-950 flex items-center justify-center min-h-[256px] sm:min-h-[288px]">
               <div class="absolute top-2 left-2 z-10 bg-slate-950/80 backdrop-blur-sm border border-rose-500/40 text-[9px] font-mono font-bold text-rose-400 px-2 py-0.5 rounded-full flex items-center gap-1">
                 <span class="w-1.5 h-1.5 rounded-full bg-rose-400 animate-pulse"></span>
-                FaceFusion AI Video • Herrador Escobar Waiting Alone (Screened by Qwen3-VL 32B)
+                FaceFusion AI Video • Herrador Peter Parker Crying (Screened by Qwen3-VL 32B)
               </div>
-              <video class="w-full h-44 sm:h-52 object-cover" autoplay loop muted playsinline poster="assets/video/herrador_heartbreak.gif">
+              <video class="w-full h-64 sm:h-72 object-contain bg-slate-950 mx-auto" autoplay loop muted playsinline poster="assets/video/herrador_heartbreak.gif">
                 <source src="assets/video/herrador_heartbreak.mp4" type="video/mp4">
-                <img src="assets/video/herrador_heartbreak.gif" alt="Herrador Escobar Waiting Meme" class="w-full h-44 sm:h-52 object-cover">
+                <img src="assets/video/herrador_heartbreak.gif" alt="Herrador Peter Parker Crying Meme" class="w-full h-64 sm:h-72 object-contain bg-slate-950 mx-auto">
               </video>
             </div>
             <div class="mt-3.5 pt-3 border-t border-slate-800/80 flex items-center justify-between text-xs">
@@ -187,14 +187,14 @@ slide_0 = """      <!-- SLIDE 0: HARDWARE & ROASTS -->
               <strong class="text-red-400">THE WEEK 9 SLUMP:</strong> Eric went ice-cold in Week 9, managing just 86.36 points in a 12.98-point loss to Alex (99.34). With zero players topping 18 points and duds from Jonathan Taylor (6.90), Dylan Sampson (6.30), Sam LaPorta (5.20), and Keenan Allen (4.60), Eric drops to 4-5 and earns this week's 5K Toilet Sprint! Meanwhile, Pedro's loss keeps Pedro anchored in the season-long cellar at 814.46 PF.
             </p>
             <!-- 5K Runner Video -->
-            <div class="mt-3 relative rounded-xl overflow-hidden border border-red-500/50 shadow-lg bg-slate-950">
+            <div class="mt-3 relative rounded-xl overflow-hidden border border-red-500/50 shadow-lg bg-slate-950 flex items-center justify-center min-h-[256px] sm:min-h-[288px]">
               <div class="absolute top-2 left-2 z-10 bg-slate-950/80 backdrop-blur-sm border border-red-500/50 text-[9px] font-mono font-bold text-red-400 px-2 py-0.5 rounded-full flex items-center gap-1">
                 <span class="w-1.5 h-1.5 rounded-full bg-red-400 animate-pulse"></span>
                 FaceFusion AI • Eric Frankie LaPenna Power Sprint (Screened by Qwen3-VL 32B)
               </div>
-              <video class="w-full h-44 sm:h-52 object-cover" autoplay loop muted playsinline poster="assets/video/eric_toilet_runner.gif">
+              <video class="w-full h-64 sm:h-72 object-contain bg-slate-950 mx-auto" autoplay loop muted playsinline poster="assets/video/eric_toilet_runner.gif">
                 <source src="assets/video/eric_toilet_runner.mp4" type="video/mp4">
-                <img src="assets/video/eric_toilet_runner.gif" alt="Eric 5K Toilet Runner Meme" class="w-full h-44 sm:h-52 object-cover">
+                <img src="assets/video/eric_toilet_runner.gif" alt="Eric 5K Toilet Runner Meme" class="w-full h-64 sm:h-72 object-contain bg-slate-950 mx-auto">
               </video>
             </div>
             <div class="mt-3.5 pt-3 border-t border-slate-800/80 flex items-center justify-between text-xs">
@@ -514,14 +514,14 @@ slide_3 = """      <!-- SLIDE 3: THE BAR TAB & 5K TOILET METER -->
               </p>
 
               <!-- LivePortrait AI 5K Punishment Video -->
-              <div class="mt-3 relative rounded-xl overflow-hidden border border-red-500/50 shadow-lg bg-slate-950">
+              <div class="mt-3 relative rounded-xl overflow-hidden border border-red-500/50 shadow-lg bg-slate-950 flex items-center justify-center min-h-[256px] sm:min-h-[288px]">
                 <div class="absolute top-2 left-2 z-10 bg-slate-950/80 backdrop-blur-sm border border-red-500/50 text-[9px] font-mono font-bold text-red-400 px-2 py-0.5 rounded-full flex items-center gap-1">
                   <span class="w-1.5 h-1.5 rounded-full bg-red-400 animate-pulse"></span>
                   FaceFusion AI Meme • Pedro Forrest Gump 5K Punishment Sprint
                 </div>
-                <video class="w-full h-44 sm:h-52 object-cover" autoplay loop muted playsinline poster="assets/video/pedro_5k_runner.gif">
+                <video class="w-full h-64 sm:h-72 object-contain bg-slate-950 mx-auto" autoplay loop muted playsinline poster="assets/video/pedro_5k_runner.gif">
                   <source src="assets/video/pedro_5k_runner.mp4" type="video/mp4">
-                  <img src="assets/video/pedro_5k_runner.gif" alt="Pedro 5K Toilet Runner Sprint" class="w-full h-44 sm:h-52 object-cover">
+                  <img src="assets/video/pedro_5k_runner.gif" alt="Pedro 5K Toilet Runner Sprint" class="w-full h-64 sm:h-72 object-contain bg-slate-950 mx-auto">
                 </video>
               </div>
 
@@ -1698,14 +1698,16 @@ new_ticker = f"""<div class="ticker-wrap flex-1 min-w-0">
 
 html = re.sub(r'<div class="ticker-wrap flex-1 min-w-0">.*?(?=<!-- Quick Action Tab Button -->)', new_ticker + "\n\n      ", html, count=1, flags=re.DOTALL)
 
-# E. Rename audio element IDs in archived deck-wk8 to avoid conflicts
-# We do this specifically inside deck-wk8
-if '<div id="deck-wk8">' in html:
-    # Extract deck-wk8 content
+# E. Insert or Replace Deck 9
+if '<div id="deck-wk9">' in html:
+    print("Replacing existing deck-wk9...")
+    deck_wk9_pattern = r'<div id="deck-wk9">.*?</div>\s*(?=<!-- ========================================== -->\s*<!-- DECK 8)'
+    html = re.sub(deck_wk9_pattern, deck_wk9_html + "\n\n    ", html, count=1, flags=re.DOTALL)
+elif '<div id="deck-wk8">' in html:
+    print("Archiving deck-wk8 and inserting deck-wk9...")
     m_deck8 = re.search(r'(<div id="deck-wk8">.*?</div>\s*<!-- ========================================== -->\s*<!-- DECK 7)', html, re.DOTALL)
     if m_deck8:
         deck8_str = m_deck8.group(1)
-        # Rename broadcast elements inside deck 8
         deck8_str_fixed = deck8_str.replace('id="broadcastAudio"', 'id="broadcastAudioWk8"')
         deck8_str_fixed = deck8_str_fixed.replace('id="broadcastPlayBtn"', 'id="broadcastPlayBtnWk8"')
         deck8_str_fixed = deck8_str_fixed.replace('id="playIcon"', 'id="playIconWk8"')
@@ -1719,7 +1721,6 @@ if '<div id="deck-wk8">' in html:
         deck8_str_fixed = deck8_str_fixed.replace('id="audioProgressBar"', 'id="audioProgressBarWk8"')
         html = html.replace(deck8_str, deck8_str_fixed)
 
-    # Insert Deck 9 and archive Deck 8
     html = html.replace('<div id="deck-wk8">', '<div id="deck-wk8" style="display:none;">')
     html = html.replace('<div id="deck-wk8" style="display:none;">', deck_wk9_html + '\n\n    <!-- ========================================== -->\n    <!-- DECK 8: WEEK 8 OFFICIAL REPORT (ARCHIVED)  -->\n    <!-- ========================================== -->\n    <div id="deck-wk8" style="display:none;">')
 

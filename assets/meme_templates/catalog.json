@@ -103,22 +103,6 @@
           ]
         },
         {
-          "id": "escobar_waiting",
-          "file": "escobar_waiting.mp4",
-          "title": "Pablo Escobar Waiting Alone",
-          "character": "Pablo Escobar (Wagner Moura)",
-          "vibe": "Staring into the void, swing set emptiness, quiet despair",
-          "resolution": "480x270",
-          "face_angle": "Frontal/slight 3/4",
-          "tags": [
-            "waiting",
-            "empty",
-            "lonely",
-            "despair",
-            "swing"
-          ]
-        },
-        {
           "id": "michael_scott_heartbreak",
           "file": "michael_scott_heartbreak.mp4",
           "title": "Michael Scott Holding Back Tears",
