@@ -1,0 +1,27 @@
+[
+  {
+    "matchup_id": 1,
+    "team1": "Pedro",
+    "team2": "Herrador"
+  },
+  {
+    "matchup_id": 2,
+    "team1": "Mark",
+    "team2": "Arnulfo"
+  },
+  {
+    "matchup_id": 3,
+    "team1": "Franky",
+    "team2": "Eric"
+  },
+  {
+    "matchup_id": 4,
+    "team1": "Joey",
+    "team2": "Robert"
+  },
+  {
+    "matchup_id": 5,
+    "team1": "iRob",
+    "team2": "Alex"
+  }
+]

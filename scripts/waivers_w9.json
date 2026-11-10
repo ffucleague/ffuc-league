@@ -1,0 +1,193 @@
+[
+  {
+    "type": "free_agent",
+    "manager": "Franky",
+    "bid": 0,
+    "adds": [],
+    "drops": [
+      "Denver Broncos (DEF - DEN)"
+    ]
+  },
+  {
+    "type": "free_agent",
+    "manager": "Alex",
+    "bid": 0,
+    "adds": [],
+    "drops": [
+      "Michael Wilson (WR - ARI)"
+    ]
+  },
+  {
+    "type": "free_agent",
+    "manager": "Mark",
+    "bid": 0,
+    "adds": [
+      "Ty Johnson (RB - BUF)"
+    ],
+    "drops": []
+  },
+  {
+    "type": "free_agent",
+    "manager": "Mark",
+    "bid": 0,
+    "adds": [],
+    "drops": [
+      "Buffalo Bills (DEF - BUF)"
+    ]
+  },
+  {
+    "type": "free_agent",
+    "manager": "Mark",
+    "bid": 0,
+    "adds": [
+      "Buffalo Bills (DEF - BUF)"
+    ],
+    "drops": []
+  },
+  {
+    "type": "free_agent",
+    "manager": "Arnulfo",
+    "bid": 0,
+    "adds": [
+      "New York Giants (DEF - NYG)"
+    ],
+    "drops": [
+      "Las Vegas Raiders (DEF - LV)"
+    ]
+  },
+  {
+    "type": "free_agent",
+    "manager": "Alex",
+    "bid": 0,
+    "adds": [
+      "Demarcus Robinson (WR - SF)"
+    ],
+    "drops": []
+  },
+  {
+    "type": "free_agent",
+    "manager": "Arnulfo",
+    "bid": 0,
+    "adds": [
+      "Kyle Pitts (TE - ATL)"
+    ],
+    "drops": [
+      "Juwan Johnson (TE - NO)"
+    ]
+  },
+  {
+    "type": "waiver",
+    "manager": "Mark",
+    "bid": 0,
+    "adds": [
+      "Adonai Mitchell (WR - NYJ)"
+    ],
+    "drops": []
+  },
+  {
+    "type": "free_agent",
+    "manager": "iRob",
+    "bid": 0,
+    "adds": [
+      "Jaylen Waddle (WR - DEN)"
+    ],
+    "drops": [
+      "Adonai Mitchell (WR - NYJ)"
+    ]
+  },
+  {
+    "type": "free_agent",
+    "manager": "Pedro",
+    "bid": 0,
+    "adds": [
+      "Chicago Bears (DEF - CHI)"
+    ],
+    "drops": [
+      "Los Angeles Rams (DEF - LAR)"
+    ]
+  },
+  {
+    "type": "free_agent",
+    "manager": "Pedro",
+    "bid": 0,
+    "adds": [
+      "Alvin Kamara (RB - NO)"
+    ],
+    "drops": [
+      "Konata Mumpfield (WR - LAR)"
+    ]
+  },
+  {
+    "type": "free_agent",
+    "manager": "Pedro",
+    "bid": 0,
+    "adds": [
+      "Mike Gesicki (TE - CIN)"
+    ],
+    "drops": [
+      "Chig Okonkwo (TE - WAS)"
+    ]
+  },
+  {
+    "type": "free_agent",
+    "manager": "Eric",
+    "bid": 0,
+    "adds": [
+      "Dylan Sampson (RB - CLE)"
+    ],
+    "drops": [
+      "Washington Commanders (DEF - WAS)"
+    ]
+  },
+  {
+    "type": "waiver",
+    "manager": "Alex",
+    "bid": 2,
+    "adds": [
+      "Kansas City Chiefs (DEF - KC)"
+    ],
+    "drops": [
+      "Pittsburgh Steelers (DEF - PIT)"
+    ]
+  },
+  {
+    "type": "waiver",
+    "manager": "iRob",
+    "bid": 10,
+    "adds": [
+      "Adonai Mitchell (WR - NYJ)"
+    ],
+    "drops": [
+      "Hunter Henry (TE - NE)"
+    ]
+  },
+  {
+    "type": "waiver",
+    "manager": "Franky",
+    "bid": 4,
+    "adds": [
+      "Denver Broncos (DEF - DEN)"
+    ],
+    "drops": [
+      "Tre Tucker (WR - LV)"
+    ]
+  },
+  {
+    "type": "waiver",
+    "manager": "Franky",
+    "bid": 9,
+    "adds": [
+      "Devin Singletary (RB - NYG)"
+    ],
+    "drops": []
+  },
+  {
+    "type": "waiver",
+    "manager": "Franky",
+    "bid": 13,
+    "adds": [
+      "Mike Washington (RB - LV)"
+    ],
+    "drops": []
+  }
+]

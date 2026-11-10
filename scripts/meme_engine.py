@@ -126,7 +126,7 @@ def query_vision_ai(prompt, image_path):
         )
         with urllib.request.urlopen(req, timeout=120) as resp:
             res = json.loads(resp.read().decode("utf-8"))
-            return res.get("response", "").strip()
+            return (res.get("response") or res.get("thinking", "")).strip()
     except Exception as e:
         print(f"⚠️ Vision AI check notice: {e}")
         return "Vision check skipped."
@@ -147,7 +147,9 @@ def run_meme_pipeline(category, manager, template_id=None, week=None, screen=Tru
     container_out = f"/facefusion/{manager.lower()}_{category}.mp4"
     
     # Copy manager face to container if not already there
-    cmd_cp_mgr = f"docker cp '{manager_jpg}' {CONTAINER_NAME}:{container_source}"
+    remote_mgr_tmp = f"/tmp/{manager.lower()}.jpg"
+    subprocess.run(["scp", manager_jpg, f"{SSH_USER}@{SERVER_HOST}:{remote_mgr_tmp}"], check=True)
+    cmd_cp_mgr = f"docker cp {remote_mgr_tmp} {CONTAINER_NAME}:{container_source}"
     subprocess.run(["ssh", f"{SSH_USER}@{SERVER_HOST}", cmd_cp_mgr], check=True)
     
     # 2. Run FaceFusion headless run
@@ -175,7 +177,8 @@ def run_meme_pipeline(category, manager, template_id=None, week=None, screen=Tru
     subprocess.run(["ssh", f"{SSH_USER}@{SERVER_HOST}", f"docker cp {CONTAINER_NAME}:{container_out} {host_mp4}"], check=True)
     
     # 4. Extract verification frame
-    subprocess.run(["ssh", f"{SSH_USER}@{SERVER_HOST}", f"ffmpeg -y -ss 00:00:01.5 -i {host_mp4} -vframes 1 {host_frame}"], check=True)
+    cmd_extract_frame = f"ffmpeg -y -ss 00:00:00.3 -i {host_mp4} -vframes 1 {host_frame} 2>/dev/null || ffmpeg -y -i {host_mp4} -vframes 1 {host_frame}"
+    subprocess.run(["ssh", f"{SSH_USER}@{SERVER_HOST}", cmd_extract_frame], check=True)
     
     local_frame = os.path.join(VIDEO_DIR, f"{manager.lower()}_{category}_frame.jpg")
     subprocess.run(["scp", f"{SSH_USER}@{SERVER_HOST}:{host_frame}", local_frame], check=True)
@@ -209,6 +212,12 @@ def run_meme_pipeline(category, manager, template_id=None, week=None, screen=Tru
     
     subprocess.run(["scp", f"{SSH_USER}@{SERVER_HOST}:{host_mp4}", local_mp4], check=True)
     subprocess.run(["scp", f"{SSH_USER}@{SERVER_HOST}:{host_gif}", local_gif], check=True)
+
+    if category == "toilet_runner":
+        runner_mp4 = os.path.join(VIDEO_DIR, f"{manager.lower()}_5k_runner.mp4")
+        runner_gif = os.path.join(VIDEO_DIR, f"{manager.lower()}_5k_runner.gif")
+        shutil.copyfile(local_mp4, runner_mp4)
+        shutil.copyfile(local_gif, runner_gif)
     
     mp4_kb = os.path.getsize(local_mp4) / 1024
     gif_kb = os.path.getsize(local_gif) / 1024

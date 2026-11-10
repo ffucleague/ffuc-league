@@ -40,5 +40,19 @@
       "template_id": "forrest_gump_run",
       "manager": "robert"
     }
+  },
+  "week_9": {
+    "high_roller": {
+      "template_id": "vince_mcmahon_strut",
+      "manager": "mark"
+    },
+    "heartbreak": {
+      "template_id": "escobar_waiting",
+      "manager": "herrador"
+    },
+    "toilet_runner": {
+      "template_id": "frankie_lapenna_run",
+      "manager": "eric"
+    }
   }
 }

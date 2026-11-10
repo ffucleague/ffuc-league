@@ -154,6 +154,19 @@ def build_prompt(week_num, summary_data=None, custom_notes=None):
             "- Pick'em: Robert rebounds in Pick'em to claim solo 1st place at 77 points, while Mark went a blistering 13-and-3 on the week!"
         )
         mandatory_notes = "You MUST mention Herrador's 148.78 High Roller win, Mark winning the ten dollar biggest blowout bounty over Robert by 45 points, Robert starting zero-point Lamar Jackson, Alex's 142-point heartbreak loss, Joe Burrow's 42-point bomb putting eye Rob in solo first place, and Robert leading Pick'em."
+    elif week_num == 9:
+        context = (
+            "FFUC Fantasy Football League - Week 9 Highlights:\n"
+            "- High Roller Champion: Mark captures the Week 9 High Roller crown with 137.28 points, edging Franky's 136.46 points in a photo-finish by less than one single point (0.82 margin)!\n"
+            "- $10 Weekly Bounty (Highest Scoring QB): iRob takes the $10 cash bounty as Joe Burrow detonates for 29.54 points to lead all league quarterbacks!\n"
+            "- Three-Way Tie For 1st Place: The championship race is deadlocked at 6-3 with iRob, Mark, and Arnulfo all knotted at the top of the standings!\n"
+            "- Heartbreak Loss of the Week: Herrador drops 122.76 points (3rd highest in the entire league this week) but suffers brutal defeat running into Franky's 136.46 explosion!\n"
+            "- Biggest Blowout: Mark destroys Pedro 137.28 to 104.18 (33.10-point blowout), leaving Pedro buried at 3-6 in last place with zero remaining FAAB!\n"
+            "- 5K Toilet Runner: Eric collapses to the cellar with a league-low 86.36 points.\n"
+            "- Pick'em Explosion: Arnulfo records a league season-high 15-point week to surge into a tie with Robert for 1st place at 90 points, with iRob breathing down their necks at 89 points!\n"
+            "- Week 10 Clash of Titans: Next week features an epic showdown between 6-3 Mark and 6-3 Arnulfo for sole possession of 1st place!"
+        )
+        mandatory_notes = "You MUST mention Mark winning High Roller with 137.28 points over Franky by less than one point, eye Rob winning the ten dollar QB bounty with Joe Burrow's 29.5 points, the three-way tie for first place between eye Rob, Mark, and Arnulfo, Herrador's 122-point heartbreak loss to Franky, Eric hitting the toilet cellar with 86 points, Arnulfo's 15-point Pick'em surge, and the huge Week ten clash between Mark and Arnulfo."
     elif summary_data:
         m_lines = "\n".join([f"- {m['winner']} ({m['winner_score']}) defeated {m['loser']} ({m['loser_score']}) by {m['margin']} pts" for m in summary_data.get("matchups", [])])
         hr = summary_data.get("high_roller", {})
@@ -205,6 +218,7 @@ def generate_script(week_num=7, model=DEFAULT_MODEL, ollama_url=DEFAULT_OLLAMA_U
         "prompt": prompt,
         "stream": True,
         "options": {
+            "num_ctx": 4096,
             "temperature": 0.7,
             "num_predict": 2500
         }
@@ -264,9 +278,14 @@ def synthesize_audio(script_text, week_num, voice=DEFAULT_VOICE):
     local_wav = generate_audio(script_text, voice=voice, output_name=output_name)
     if local_wav and os.path.exists(local_wav):
         print(f"✅ WAV generated at {local_wav}")
-        # Convert to MP3
+        # Convert to MP3 using remote server ffmpeg
         mp3_path = local_wav.replace(".wav", ".mp3")
-        os.system(f'ffmpeg -y -i "{local_wav}" -codec:a libmp3lame -qscale:a 2 "{mp3_path}" >nul 2>&1')
+        import subprocess
+        remote_wav = f"/tmp/{output_name}.wav"
+        remote_mp3 = f"/tmp/{output_name}.mp3"
+        subprocess.run(["scp", local_wav, f"mark@192.168.86.67:{remote_wav}"], check=True)
+        subprocess.run(["ssh", "mark@192.168.86.67", f"ffmpeg -y -i {remote_wav} -codec:a libmp3lame -qscale:a 2 {remote_mp3}"], check=True)
+        subprocess.run(["scp", f"mark@192.168.86.67:{remote_mp3}", mp3_path], check=True)
         if os.path.exists(mp3_path):
             print(f"🎉 Created broadcast MP3 at {mp3_path}")
             return mp3_path
