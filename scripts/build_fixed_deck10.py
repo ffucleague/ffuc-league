@@ -109,10 +109,6 @@ slide_0 = """      <!-- SLIDE 0: HARDWARE & ROASTS -->
             </p>
             <!-- FaceFusion AI High Roller Video / GIF -->
             <div class="mt-3 relative rounded-xl overflow-hidden border border-amber-500/40 shadow-lg bg-slate-950 flex items-center justify-center min-h-[256px] sm:min-h-[288px]">
-              <div class="absolute top-2 left-2 z-10 bg-slate-950/80 backdrop-blur-sm border border-amber-500/40 text-[9px] font-mono font-bold text-amber-400 px-2 py-0.5 rounded-full flex items-center gap-1">
-                <span class="w-1.5 h-1.5 rounded-full bg-amber-400 animate-pulse"></span>
-                FaceFusion AI • iRob Shaq Shimmy Celebration (Screened by Qwen3-VL 32B)
-              </div>
               <video class="w-full h-64 sm:h-72 object-contain bg-slate-950 mx-auto" autoplay loop muted playsinline poster="assets/video/irob_high_roller.gif">
                 <source src="assets/video/irob_high_roller.mp4" type="video/mp4">
                 <img src="assets/video/irob_high_roller.gif" alt="iRob High Roller Shaq Shimmy" class="w-full h-64 sm:h-72 object-contain bg-slate-950 mx-auto">
@@ -152,10 +148,6 @@ slide_0 = """      <!-- SLIDE 0: HARDWARE & ROASTS -->
             </p>
             <!-- FaceFusion AI Heartbreak Video -->
             <div class="mt-3 relative rounded-xl overflow-hidden border border-rose-500/40 shadow-lg bg-slate-950 flex items-center justify-center min-h-[256px] sm:min-h-[288px]">
-              <div class="absolute top-2 left-2 z-10 bg-slate-950/80 backdrop-blur-sm border border-rose-500/40 text-[9px] font-mono font-bold text-rose-400 px-2 py-0.5 rounded-full flex items-center gap-1">
-                <span class="w-1.5 h-1.5 rounded-full bg-rose-400 animate-pulse"></span>
-                FaceFusion AI Video • Mark Michael Scott Holding Back Tears (Screened by Qwen3-VL 32B)
-              </div>
               <video class="w-full h-64 sm:h-72 object-contain bg-slate-950 mx-auto" autoplay loop muted playsinline poster="assets/video/mark_heartbreak.gif">
                 <source src="assets/video/mark_heartbreak.mp4" type="video/mp4">
                 <img src="assets/video/mark_heartbreak.gif" alt="Mark Michael Scott Heartbreak Meme" class="w-full h-64 sm:h-72 object-contain bg-slate-950 mx-auto">
@@ -179,10 +171,6 @@ slide_0 = """      <!-- SLIDE 0: HARDWARE & ROASTS -->
             </p>
             <!-- 5K Runner Video -->
             <div class="mt-3 relative rounded-xl overflow-hidden border border-red-500/50 shadow-lg bg-slate-950 flex items-center justify-center min-h-[256px] sm:min-h-[288px]">
-              <div class="absolute top-2 left-2 z-10 bg-slate-950/80 backdrop-blur-sm border border-red-500/50 text-[9px] font-mono font-bold text-red-400 px-2 py-0.5 rounded-full flex items-center gap-1">
-                <span class="w-1.5 h-1.5 rounded-full bg-red-400 animate-pulse"></span>
-                FaceFusion AI • Eric Forrest Gump Field Sprint (Screened by Qwen3-VL 32B)
-              </div>
               <video class="w-full h-64 sm:h-72 object-contain bg-slate-950 mx-auto" autoplay loop muted playsinline poster="assets/video/eric_toilet_runner.gif">
                 <source src="assets/video/eric_toilet_runner.mp4" type="video/mp4">
                 <img src="assets/video/eric_toilet_runner.gif" alt="Eric 5K Toilet Runner Meme" class="w-full h-64 sm:h-72 object-contain bg-slate-950 mx-auto">
@@ -501,10 +489,6 @@ slide_3 = """      <!-- SLIDE 3: THE BAR TAB & 5K TOILET METER -->
 
               <!-- LivePortrait AI 5K Punishment Video -->
               <div class="mt-3 relative rounded-xl overflow-hidden border border-red-500/50 shadow-lg bg-slate-950 flex items-center justify-center min-h-[256px] sm:min-h-[288px]">
-                <div class="absolute top-2 left-2 z-10 bg-slate-950/80 backdrop-blur-sm border border-red-500/50 text-[9px] font-mono font-bold text-red-400 px-2 py-0.5 rounded-full flex items-center gap-1">
-                  <span class="w-1.5 h-1.5 rounded-full bg-red-400 animate-pulse"></span>
-                  FaceFusion AI Meme • Pedro Forrest Gump 5K Punishment Sprint
-                </div>
                 <video class="w-full h-64 sm:h-72 object-contain bg-slate-950 mx-auto" autoplay loop muted playsinline poster="assets/video/pedro_5k_runner.gif">
                   <source src="assets/video/pedro_5k_runner.mp4" type="video/mp4">
                   <img src="assets/video/pedro_5k_runner.gif" alt="Pedro 5K Toilet Runner Sprint" class="w-full h-64 sm:h-72 object-contain bg-slate-950 mx-auto">
