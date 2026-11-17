@@ -54,5 +54,19 @@
       "template_id": "frankie_lapenna_run",
       "manager": "eric"
     }
+  },
+  "week_10": {
+    "high_roller": {
+      "template_id": "shaq_shimmy",
+      "manager": "irob"
+    },
+    "heartbreak": {
+      "template_id": "michael_scott_heartbreak",
+      "manager": "mark"
+    },
+    "toilet_runner": {
+      "template_id": "forrest_field_sprint",
+      "manager": "eric"
+    }
   }
 }

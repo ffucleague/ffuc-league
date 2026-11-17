@@ -1,0 +1,210 @@
+[
+  {
+    "type": "free_agent",
+    "manager": "Alex",
+    "bid": 0,
+    "adds": [
+      "Bo Nix (QB - DEN)"
+    ],
+    "drops": []
+  },
+  {
+    "type": "free_agent",
+    "manager": "Franky",
+    "bid": 0,
+    "adds": [
+      "Kaleb Johnson (RB - GB)"
+    ],
+    "drops": []
+  },
+  {
+    "type": "free_agent",
+    "manager": "Franky",
+    "bid": 0,
+    "adds": [],
+    "drops": [
+      "Alec Pierce (WR - IND)"
+    ]
+  },
+  {
+    "type": "free_agent",
+    "manager": "Alex",
+    "bid": 0,
+    "adds": [
+      "Pittsburgh Steelers (DEF - PIT)"
+    ],
+    "drops": [
+      "DeMario Douglas (WR - NE)"
+    ]
+  },
+  {
+    "type": "free_agent",
+    "manager": "Arnulfo",
+    "bid": 0,
+    "adds": [
+      "Chris Boswell (K - PIT)"
+    ],
+    "drops": [
+      "Cameron Dicker (K - LAC)"
+    ]
+  },
+  {
+    "type": "free_agent",
+    "manager": "Arnulfo",
+    "bid": 0,
+    "adds": [
+      "Jakobi Meyers (WR - JAX)"
+    ],
+    "drops": [
+      "Kyle Pitts (TE - ATL)"
+    ]
+  },
+  {
+    "type": "free_agent",
+    "manager": "Arnulfo",
+    "bid": 0,
+    "adds": [
+      "Wan'Dale Robinson (WR - TEN)"
+    ],
+    "drops": [
+      "Kyler Murray (QB - MIN)"
+    ]
+  },
+  {
+    "type": "free_agent",
+    "manager": "Pedro",
+    "bid": 0,
+    "adds": [
+      "Cleveland Browns (DEF - CLE)"
+    ],
+    "drops": [
+      "Xavier Worthy (WR - KC)"
+    ]
+  },
+  {
+    "type": "free_agent",
+    "manager": "Alex",
+    "bid": 0,
+    "adds": [
+      "Keenan Allen (WR - IND)"
+    ],
+    "drops": [
+      "Demarcus Robinson (WR - SF)"
+    ]
+  },
+  {
+    "type": "waiver",
+    "manager": "Arnulfo",
+    "bid": 0,
+    "adds": [
+      "New Orleans Saints (DEF - NO)"
+    ],
+    "drops": [
+      "New York Giants (DEF - NYG)"
+    ]
+  },
+  {
+    "type": "trade",
+    "manager": "Arnulfo",
+    "bid": 0,
+    "adds": [
+      "A.J. Brown (WR - NE)",
+      "Tyler Allgeier (RB - ARI)"
+    ],
+    "drops": [
+      "A.J. Brown (WR - NE)",
+      "Tyler Allgeier (RB - ARI)"
+    ]
+  },
+  {
+    "type": "free_agent",
+    "manager": "Eric",
+    "bid": 0,
+    "adds": [
+      "Pierre Strong (RB - GB)"
+    ],
+    "drops": []
+  },
+  {
+    "type": "free_agent",
+    "manager": "Mark",
+    "bid": 0,
+    "adds": [
+      "MarShawn Lloyd (RB - GB)"
+    ],
+    "drops": [
+      "Pierre Strong (RB - GB)"
+    ]
+  },
+  {
+    "type": "free_agent",
+    "manager": "Eric",
+    "bid": 0,
+    "adds": [
+      "Ashton Dulin (WR - IND)"
+    ],
+    "drops": [
+      "Jacob Saylors (RB - DET)"
+    ]
+  },
+  {
+    "type": "free_agent",
+    "manager": "Eric",
+    "bid": 0,
+    "adds": [
+      "Tutu Atwell (WR - LAR)"
+    ],
+    "drops": [
+      "Dameon Pierce (RB - PHI)"
+    ]
+  },
+  {
+    "type": "free_agent",
+    "manager": "Herrador",
+    "bid": 0,
+    "adds": [
+      "Buffalo Bills (DEF - BUF)"
+    ],
+    "drops": [
+      "New Orleans Saints (DEF - NO)"
+    ]
+  },
+  {
+    "type": "free_agent",
+    "manager": "Mark",
+    "bid": 0,
+    "adds": [
+      "Pierre Strong (RB - GB)"
+    ],
+    "drops": []
+  },
+  {
+    "type": "free_agent",
+    "manager": "Eric",
+    "bid": 0,
+    "adds": [],
+    "drops": [
+      "Keenan Allen (WR - IND)"
+    ]
+  },
+  {
+    "type": "waiver",
+    "manager": "Franky",
+    "bid": 6,
+    "adds": [
+      "C.J. Stroud (QB - HOU)"
+    ],
+    "drops": [
+      "Devin Singletary (RB - NYG)"
+    ]
+  },
+  {
+    "type": "waiver",
+    "manager": "Franky",
+    "bid": 6,
+    "adds": [
+      "Los Angeles Rams (DEF - LAR)"
+    ],
+    "drops": []
+  }
+]

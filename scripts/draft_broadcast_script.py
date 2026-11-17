@@ -167,6 +167,18 @@ def build_prompt(week_num, summary_data=None, custom_notes=None):
             "- Week 10 Clash of Titans: Next week features an epic showdown between 6-3 Mark and 6-3 Arnulfo for sole possession of 1st place!"
         )
         mandatory_notes = "You MUST mention Mark winning High Roller with 137.28 points over Franky by less than one point, eye Rob winning the ten dollar QB bounty with Joe Burrow's 29.5 points, the three-way tie for first place between eye Rob, Mark, and Arnulfo, Herrador's 122-point heartbreak loss to Franky, Eric hitting the toilet cellar with 86 points, Arnulfo's 15-point Pick'em surge, and the huge Week ten clash between Mark and Arnulfo."
+    elif week_num == 10:
+        context = (
+            "FFUC Fantasy Football League - Week 10 Highlights:\n"
+            "- High Roller Champion & Monster Detonation: iRob explodes for a season-high 191.46 points to obliterate Alex 191.46 to 110.92 (an 80.54-point blowout) and capture the High Roller crown!\n"
+            "- First Place Standings & Pick-em Sweep: With the victory, iRob claims sole possession of 1st place in FFUC at 7-3 and takes solo 1st place in Pick-em at 100 total points!\n"
+            "- Game of the Week Clash: In a battle for the top of the standings, Arnulfo edges Mark 118.92 to 113.22 behind Jahmyr Gibbs' 40.70-point barrage and Dak Prescott's 35.42 points, handing Mark a heartbreaking 5.70-point defeat!\n"
+            "- $10 Weekly Bounty (Highest Scoring RB): Joey takes the $10 cash bounty as Christian McCaffrey erupts for a league-high 44.30 points in a 137.78 to 105.12 blowout of Robert!\n"
+            "- 5K Toilet Runner: Eric hits rock bottom with a league-low 89.04 points, suffering back-to-back toilet runner weeks in a 50.10-point blowout loss to Franky (139.14)!\n"
+            "- Cellar Anchor: Pedro remains stuck in 10th place at 3-7 with 926.14 points, trailing safety by 285.94 points with zero FAAB remaining!\n"
+            "- Week 11 Preview: Crucial matchups next week including Mark vs Joey, and a colossal battle between Franky and 1st-place iRob!"
+        )
+        mandatory_notes = "You MUST mention eye Rob's season-high 191.46 points and 80-point blowout, eye Rob taking sole first place in the league and Pick-em with one hundred points, Arnulfo defeating Mark by 5.70 points in the first-place showdown, Joey winning the ten dollar running back bounty with Christian McCaffrey's 44.30 points, and Eric's back-to-back toilet sprints with 89 points."
     elif summary_data:
         m_lines = "\n".join([f"- {m['winner']} ({m['winner_score']}) defeated {m['loser']} ({m['loser_score']}) by {m['margin']} pts" for m in summary_data.get("matchups", [])])
         hr = summary_data.get("high_roller", {})
